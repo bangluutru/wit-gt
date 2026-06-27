@@ -7,6 +7,8 @@
 import type { Chapter, Lesson, DictionaryTerm } from './types';
 import lessonNhanQuaVi from '../content/lesson-nhan-thuc-ve-nhan-qua.vi.md?raw';
 import lessonNLASVi from '../content/lesson-nguyen-ly-anh-sang.vi.md?raw';
+import lessonNLKHNVi from '../content/lesson-nguyen-ly-kich-hoat-nao.vi.md?raw';
+import lessonNLNVVi from '../content/lesson-nguyen-ly-nghi-van.vi.md?raw';
 
 export const SEED_CHAPTERS: Chapter[] = [
   {
@@ -138,9 +140,9 @@ export const SEED_LESSONS: Lesson[] = [
     titleEn: 'Nguyên lý Kích hoạt não',
     titleJp: 'Nguyên lý Kích hoạt não',
     summaryVi: '', summaryEn: '', summaryJp: '',
-    contentVi: 'Đây là nội dung minh hoạ cho học phần “Nguyên lý Kích hoạt não”. Nội dung chi tiết của học phần này sẽ được Team biên soạn WiT cập nhật.',
-    contentEn: 'This is illustrative content for the lesson “Nguyên lý Kích hoạt não”. The full content of this lesson will be updated by the WiT editorial team.',
-    contentJp: 'これはレッスン「Nguyên lý Kích hoạt não」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
+    contentVi: lessonNLKHNVi,
+    contentEn: 'The full content for this lesson is currently available in Vietnamese. The English translation will be updated by the WiT editorial team.',
+    contentJp: 'このレッスンの全内容は現在ベトナム語でご利用いただけます。日本語翻訳はWiT編集チームにより更新されます。',
     status: 'published',
     createdAt: new Date(), updatedAt: new Date(),
   },
@@ -152,9 +154,9 @@ export const SEED_LESSONS: Lesson[] = [
     titleEn: 'Nguyên lý Nghi vấn thuận chiều mong muốn',
     titleJp: 'Nguyên lý Nghi vấn thuận chiều mong muốn',
     summaryVi: '', summaryEn: '', summaryJp: '',
-    contentVi: 'Đây là nội dung minh hoạ cho học phần “Nguyên lý Nghi vấn thuận chiều mong muốn”. Nội dung chi tiết của học phần này sẽ được Team biên soạn WiT cập nhật.',
-    contentEn: 'This is illustrative content for the lesson “Nguyên lý Nghi vấn thuận chiều mong muốn”. The full content of this lesson will be updated by the WiT editorial team.',
-    contentJp: 'これはレッスン「Nguyên lý Nghi vấn thuận chiều mong muốn」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
+    contentVi: lessonNLNVVi,
+    contentEn: 'The full content for this lesson is currently available in Vietnamese. The English translation will be updated by the WiT editorial team.',
+    contentJp: 'このレッスンの全内容は現在ベトナム語でご利用いただけます。日本語翻訳はWiT編集チームにより更新されます。',
     status: 'published',
     createdAt: new Date(), updatedAt: new Date(),
   },
