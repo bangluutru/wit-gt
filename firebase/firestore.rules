@@ -1,0 +1,62 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ============================================================
+    // Helper functions
+    // ============================================================
+
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+
+    function isAdmin() {
+      return isAuthenticated() &&
+        get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == "admin";
+    }
+
+    // ============================================================
+    // Chapters - Public readable content
+    // ============================================================
+    match /chapters/{chapterId} {
+      allow read: if isAuthenticated();
+      allow write: if isAdmin();
+    }
+
+    // ============================================================
+    // Lessons - Public readable content
+    // ============================================================
+    match /lessons/{lessonId} {
+      allow read: if isAuthenticated();
+      allow write: if isAdmin();
+    }
+
+    // ============================================================
+    // Dictionary - Public readable content
+    // ============================================================
+    match /dictionary/{termId} {
+      allow read: if isAuthenticated();
+      allow write: if isAdmin();
+    }
+
+    // ============================================================
+    // User Profiles + Progress
+    // ============================================================
+    match /users/{userId} {
+      // Users can read/write their own profile
+      allow read, write: if isOwner(userId);
+      // Admins can read any user profile (for admin panel)
+      allow read: if isAdmin();
+
+      // Progress subcollection
+      match /progress/{lessonId} {
+        allow read, write: if isOwner(userId);
+        allow read: if isAdmin();
+      }
+    }
+  }
+}
