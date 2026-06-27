@@ -9,6 +9,13 @@ import lessonNhanQuaVi from '../content/lesson-nhan-thuc-ve-nhan-qua.vi.md?raw';
 import lessonNLASVi from '../content/lesson-nguyen-ly-anh-sang.vi.md?raw';
 import lessonNLKHNVi from '../content/lesson-nguyen-ly-kich-hoat-nao.vi.md?raw';
 import lessonNLNVVi from '../content/lesson-nguyen-ly-nghi-van.vi.md?raw';
+import lessonNLVTTVi from '../content/lesson-nguyen-ly-vong-tri-thuc.vi.md?raw';
+import lessonCTCNVi from '../content/lesson-cong-thuc-coi-nguon.vi.md?raw';
+import lessonCTCNCTVi from '../content/lesson-cau-truc-con-nguoi-chan-that.vi.md?raw';
+import lessonCTCNVGTVi from '../content/lesson-cau-truc-con-nguoi-ve-goi-ten.vi.md?raw';
+import lessonCTCNTKVi from '../content/lesson-cau-truc-con-nguoi-tanh-khong.vi.md?raw';
+import lessonCTCNTNVi from '../content/lesson-cau-truc-con-nguoi-tanh-nguoi.vi.md?raw';
+import lessonCTCN3KDVi from '../content/lesson-cau-truc-con-nguoi-3-khoi-duc.vi.md?raw';
 
 export const SEED_CHAPTERS: Chapter[] = [
   {
