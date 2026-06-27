@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { collection, getDocs, query, orderBy } from 'firebase/firestore';
 import { db } from '../lib/firebase';
 import type { Lesson, Chapter } from '../lib/types';
+import { SEED_LESSONS, SEED_CHAPTERS } from '../lib/seedContent';
 
 export function useLessons() {
   const [lessons, setLessons] = useState<Lesson[]>([]);
@@ -16,23 +17,26 @@ export function useLessons() {
           getDocs(query(collection(db, 'chapters'), orderBy('orderIndex'))),
         ]);
 
-        setLessons(
-          lessonsSnap.docs.map((d) => ({
-            id: d.id,
-            ...d.data(),
-            createdAt: d.data().createdAt?.toDate?.() || new Date(),
-            updatedAt: d.data().updatedAt?.toDate?.() || new Date(),
-          })) as Lesson[]
-        );
+        const fetchedLessons = lessonsSnap.docs.map((d) => ({
+          id: d.id,
+          ...d.data(),
+          createdAt: d.data().createdAt?.toDate?.() || new Date(),
+          updatedAt: d.data().updatedAt?.toDate?.() || new Date(),
+        })) as Lesson[];
 
-        setChapters(
-          chaptersSnap.docs.map((d) => ({
-            id: d.id,
-            ...d.data(),
-          })) as Chapter[]
-        );
+        const fetchedChapters = chaptersSnap.docs.map((d) => ({
+          id: d.id,
+          ...d.data(),
+        })) as Chapter[];
+
+        // Fall back to bundled seed content when Firestore is empty.
+        setLessons(fetchedLessons.length > 0 ? fetchedLessons : SEED_LESSONS);
+        setChapters(fetchedChapters.length > 0 ? fetchedChapters : SEED_CHAPTERS);
       } catch (err) {
         console.error('Failed to fetch lessons/chapters:', err);
+        // Network/permission failure — use bundled seed content.
+        setLessons(SEED_LESSONS);
+        setChapters(SEED_CHAPTERS);
       } finally {
         setLoading(false);
       }

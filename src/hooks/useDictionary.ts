@@ -2,6 +2,7 @@ import { useEffect, useState, useMemo } from 'react';
 import { collection, getDocs } from 'firebase/firestore';
 import { db } from '../lib/firebase';
 import type { DictionaryTerm, Language } from '../lib/types';
+import { SEED_TERMS } from '../lib/seedContent';
 
 export function useDictionary() {
   const [terms, setTerms] = useState<DictionaryTerm[]>([]);
@@ -11,14 +12,15 @@ export function useDictionary() {
     const fetchTerms = async () => {
       try {
         const snap = await getDocs(collection(db, 'dictionary'));
-        setTerms(
-          snap.docs.map((d) => ({
-            id: d.id,
-            ...d.data(),
-          })) as DictionaryTerm[]
-        );
+        const fetched = snap.docs.map((d) => ({
+          id: d.id,
+          ...d.data(),
+        })) as DictionaryTerm[];
+        // Fall back to bundled seed terms when Firestore is empty.
+        setTerms(fetched.length > 0 ? fetched : SEED_TERMS);
       } catch (err) {
         console.error('Failed to fetch dictionary:', err);
+        setTerms(SEED_TERMS);
       } finally {
         setLoading(false);
       }
