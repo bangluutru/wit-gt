@@ -65,7 +65,7 @@ export default function Dashboard() {
 
   if (loading) {
     return (
-      <div className="page-enter flex items-center justify-center min-h-[60vh]">
+      <div className="flex items-center justify-center min-h-[60vh]">
         <div className="flex flex-col items-center gap-4">
           <div className="w-10 h-10 border-3 border-wit-line border-t-wit-gold rounded-full animate-spin" />
           <p className="text-wit-text-secondary text-sm">Đang tải...</p>
@@ -75,7 +75,7 @@ export default function Dashboard() {
   }
 
   return (
-    <div className="page-enter space-y-8">
+    <div className="space-y-8">
       {/* ── Greeting ── */}
       <section>
         <h1 className="text-2xl font-semibold text-wit-text">
@@ -87,9 +87,9 @@ export default function Dashboard() {
       </section>
 
       {/* ── Main Row: Progress Ring + Continue Learning ── */}
-      <div className="flex flex-col md:flex-row gap-6">
+      <div className="grid grid-cols-1 xl:grid-cols-[280px_minmax(0,1fr)] gap-6">
         {/* Progress Ring Card */}
-        <div className="bg-wit-surface rounded-xl shadow-card p-8 flex flex-col items-center min-w-[220px]">
+        <div className="bg-wit-surface rounded-xl shadow-card p-6 sm:p-8 flex flex-col items-center justify-center min-h-[260px]">
           <svg
             width={radius * 2 + strokeWidth * 2}
             height={radius * 2 + strokeWidth * 2}
@@ -129,7 +129,7 @@ export default function Dashboard() {
         </div>
 
         {/* Continue Learning Card */}
-        <div className="flex-1 bg-wit-surface rounded-xl shadow-card p-8 flex flex-col justify-between">
+        <div className="bg-wit-surface rounded-xl shadow-card p-6 sm:p-8 min-h-[260px] flex flex-col justify-between">
           {allCompleted ? (
             /* All lessons completed */
             <div className="flex flex-col items-center justify-center h-full text-center gap-4 py-4">
@@ -156,9 +156,9 @@ export default function Dashboard() {
           ) : nextLesson ? (
             /* Next lesson available */
             <div className="flex flex-col justify-between h-full gap-6">
-              <div>
+              <div className="min-w-0">
                 <div className="flex items-center gap-2 mb-3">
-                  <Sparkles className="w-4 h-4 text-wit-gold" />
+                  <Sparkles className="w-4 h-4 text-wit-gold shrink-0" />
                   <span className="text-sm font-medium text-wit-gold">Tiếp tục học</span>
                 </div>
                 <h2 className="text-xl font-semibold text-wit-text font-serif leading-snug">
@@ -170,8 +170,8 @@ export default function Dashboard() {
                 </p>
                 {nextChapter && (
                   <p className="text-xs text-wit-text-tertiary mt-3 flex items-center gap-1.5">
-                    <Calendar className="w-3.5 h-3.5" />
-                    {getLocalized(nextChapter, 'title', interfaceLang)}
+                    <Calendar className="w-3.5 h-3.5 shrink-0" />
+                    <span className="truncate">{getLocalized(nextChapter, 'title', interfaceLang)}</span>
                   </p>
                 )}
               </div>
@@ -184,44 +184,58 @@ export default function Dashboard() {
               </Link>
             </div>
           ) : (
-            /* No lessons loaded yet */
-            <div className="flex items-center justify-center h-full">
-              <p className="text-wit-text-tertiary">Chưa có bài học nào.</p>
+            /* No lessons loaded — show helpful empty state */
+            <div className="flex flex-col items-center justify-center h-full text-center gap-4 py-4">
+              <div className="w-16 h-16 rounded-full bg-wit-gold-soft flex items-center justify-center">
+                <BookOpen className="w-8 h-8 text-wit-gold" />
+              </div>
+              <div>
+                <h2 className="text-lg font-semibold text-wit-text font-serif">
+                  Chào mừng đến WiT!
+                </h2>
+                <p className="text-sm text-wit-text-secondary mt-2 max-w-sm">
+                  Giáo trình chưa được tải lên. Nếu bạn là admin, hãy vào{' '}
+                  <Link to="/admin/import" className="text-wit-red font-medium hover:underline">
+                    Admin Import
+                  </Link>{' '}
+                  để nhập dữ liệu bài học từ file CSV.
+                </p>
+              </div>
             </div>
           )}
         </div>
       </div>
 
       {/* ── Stats Grid ── */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
         <StatCard
           icon={<BookOpen className="w-5 h-5 text-wit-red" />}
           value={completedCount}
           label="Bài đã học"
-          bgColor="bg-wit-red-soft"
+          variant="red"
         />
         <StatCard
           icon={<Map className="w-5 h-5 text-wit-success" />}
           value={chaptersCompleted}
           label="Chương hoàn thành"
-          bgColor="bg-wit-success-soft"
+          variant="success"
         />
         <StatCard
           icon={<Languages className="w-5 h-5 text-wit-info" />}
           value={terms.length}
           label="Thuật ngữ"
-          bgColor="bg-wit-info-soft"
+          variant="info"
         />
         <StatCard
           icon={<GraduationCap className="w-5 h-5 text-wit-gold" />}
           value={TOTAL_CHAPTERS}
           label="Tổng chương"
-          bgColor="bg-wit-gold-soft"
+          variant="gold"
         />
       </div>
 
       {/* ── Quick Links ── */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <QuickLink
           to="/roadmap"
           icon={<Map className="w-5 h-5 text-wit-gold" />}
@@ -247,25 +261,32 @@ export default function Dashboard() {
 
 /* ── Sub-components ── */
 
+const BG_MAP: Record<string, string> = {
+  red: 'bg-wit-red-soft',
+  success: 'bg-wit-success-soft',
+  info: 'bg-wit-info-soft',
+  gold: 'bg-wit-gold-soft',
+};
+
 function StatCard({
   icon,
   value,
   label,
-  bgColor,
+  variant,
 }: {
   icon: React.ReactNode;
   value: number;
   label: string;
-  bgColor: string;
+  variant: string;
 }) {
   return (
     <div className="bg-wit-surface rounded-xl shadow-card p-5 flex items-center gap-4">
-      <div className={`w-10 h-10 rounded-lg ${bgColor} flex items-center justify-center shrink-0`}>
+      <div className={`w-10 h-10 rounded-lg ${BG_MAP[variant] || 'bg-wit-surface-alt'} flex items-center justify-center shrink-0`}>
         {icon}
       </div>
-      <div>
+      <div className="min-w-0">
         <p className="text-2xl font-bold text-wit-text leading-none">{value}</p>
-        <p className="text-xs text-wit-text-secondary mt-1">{label}</p>
+        <p className="text-xs text-wit-text-secondary mt-1 truncate">{label}</p>
       </div>
     </div>
   );

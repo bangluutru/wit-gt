@@ -40,7 +40,7 @@ export function Sidebar() {
   };
 
   return (
-    <aside className="sidebar hidden lg:flex lg:flex-col fixed left-0 top-0 w-[260px] h-screen bg-wit-surface shadow-sidebar border-r border-wit-line/50 z-40">
+    <aside className="sidebar hidden lg:flex lg:flex-col fixed left-0 top-0 w-[260px] h-dvh bg-wit-surface shadow-sidebar border-r border-wit-line/50 z-40">
       {/* Logo area */}
       <div className="px-6 pt-6 pb-4">
         <NavLink to="/" className="flex items-center gap-3 group">

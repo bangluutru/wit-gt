@@ -46,8 +46,8 @@ export default function Login() {
   if (loading) return null;
 
   return (
-    <div className="min-h-screen bg-wit-paper flex items-center justify-center px-4 py-12">
-      <div className="w-full max-w-sm page-enter">
+    <div className="min-h-dvh bg-wit-paper flex items-center justify-center px-4 py-10">
+      <div className="w-full max-w-md page-enter">
         {/* Logo / Brand */}
         <div className="text-center mb-8">
           <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-wit-red mb-4 shadow-card">
@@ -60,7 +60,7 @@ export default function Login() {
         </div>
 
         {/* Form card */}
-        <div className="bg-wit-surface rounded-xl shadow-card border border-wit-line/50 p-6">
+        <div className="bg-wit-surface rounded-2xl shadow-card border border-wit-line/50 p-6 sm:p-8">
           <form onSubmit={handleSubmit} className="space-y-5">
             {/* Error */}
             {error && (

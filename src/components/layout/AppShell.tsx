@@ -13,9 +13,11 @@ export function AppShell() {
       <Header />
 
       {/* Main content area */}
-      <main className="main-content lg:ml-[260px] min-h-screen pb-20 lg:pb-0">
-        <div className="page-enter">
-          <Outlet />
+      <main className="main-content min-h-screen pb-20 lg:pb-0 lg:pl-[260px]">
+        <div className="mx-auto w-full max-w-7xl px-4 py-5 sm:px-6 sm:py-6 lg:px-8 lg:py-8">
+          <div className="page-enter">
+            <Outlet />
+          </div>
         </div>
       </main>
 
