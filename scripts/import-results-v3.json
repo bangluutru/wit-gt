@@ -1,0 +1,58 @@
+[
+  {
+    "lessonId": "l32",
+    "file": "Lộ trình biến mọi nghề thành Nghề Ước Mơ",
+    "mdFile": "lesson-lo-trinh-bien-nghe-thanh-nghe-uoc-mo.vi.md",
+    "slug": "lo-trinh-bien-nghe-thanh-nghe-uoc-mo",
+    "lines": 135
+  },
+  {
+    "lessonId": "l33",
+    "file": "Lộ trình chinh phục cuộc sống Lục Lộc Đại Thuận",
+    "mdFile": "lesson-lo-trinh-chinh-phuc-luc-loc-dai-thuan.vi.md",
+    "slug": "lo-trinh-chinh-phuc-luc-loc-dai-thuan",
+    "lines": 140
+  },
+  {
+    "lessonId": "l34",
+    "file": "Lộ trình nâng cao Cảnh Giới Cuộc Sống",
+    "mdFile": "lesson-lo-trinh-nang-cao-canh-gioi-cuoc-song.vi.md",
+    "slug": "lo-trinh-nang-cao-canh-gioi-cuoc-song",
+    "lines": 128
+  },
+  {
+    "lessonId": "l56",
+    "file": "Quy luật Chu kỳ - Nguyên lý Nhịp điệu",
+    "mdFile": "lesson-quy-luat-chu-ky-nguyen-ly-nhip-dieu.vi.md",
+    "slug": "quy-luat-chu-ky-nguyen-ly-nhip-dieu",
+    "lines": 124
+  },
+  {
+    "lessonId": "l51",
+    "file": "Quy luật Cộng sinh trong nhân sinh",
+    "mdFile": "lesson-quy-luat-cong-sinh-trong-nhan-sinh.vi.md",
+    "slug": "quy-luat-cong-sinh-trong-nhan-sinh",
+    "lines": 271
+  },
+  {
+    "lessonId": "l57",
+    "file": "Quy luật Cung cầu",
+    "mdFile": "lesson-quy-luat-cung-cau.vi.md",
+    "slug": "quy-luat-cung-cau",
+    "lines": 124
+  },
+  {
+    "lessonId": "l58",
+    "file": "Quy luật Tâm thức",
+    "mdFile": "lesson-quy-luat-tam-thuc.vi.md",
+    "slug": "quy-luat-tam-thuc",
+    "lines": 93
+  },
+  {
+    "lessonId": "l52",
+    "file": "Quy luật Trả giá",
+    "mdFile": "lesson-quy-luat-tra-gia.vi.md",
+    "slug": "quy-luat-tra-gia",
+    "lines": 302
+  }
+]

@@ -52,6 +52,16 @@ import lessonTGHTVi from '../content/lesson-tam-giac-hien-thuc.vi.md?raw';
 import lessonGiauNangLucVi from '../content/lesson-giau-nang-luc.vi.md?raw';
 import lessonGiauTheChatVi from '../content/lesson-giau-the-chat.vi.md?raw';
 import lessonGiauVatChatVi from '../content/lesson-giau-vat-chat.vi.md?raw';
+// v3 imports (l32-l34, l51, l52, l56-l58)
+import lessonLTBMNTNUMVi from '../content/lesson-lo-trinh-bien-nghe-thanh-nghe-uoc-mo.vi.md?raw';
+import lessonLTCPLLDTVi from '../content/lesson-lo-trinh-chinh-phuc-luc-loc-dai-thuan.vi.md?raw';
+import lessonLTNCCGCSVi from '../content/lesson-lo-trinh-nang-cao-canh-gioi-cuoc-song.vi.md?raw';
+import lessonQLCSTNSVi from '../content/lesson-quy-luat-cong-sinh-trong-nhan-sinh.vi.md?raw';
+import lessonQLTGVi from '../content/lesson-quy-luat-tra-gia.vi.md?raw';
+import lessonQLCKVi from '../content/lesson-quy-luat-chu-ky-nguyen-ly-nhip-dieu.vi.md?raw';
+import lessonQLCCVi from '../content/lesson-quy-luat-cung-cau.vi.md?raw';
+import lessonQLTThucVi from '../content/lesson-quy-luat-tam-thuc.vi.md?raw';
+
 
 
 
@@ -591,7 +601,7 @@ export const SEED_LESSONS: Lesson[] = [
     titleEn: 'Lộ trình biến mọi nghề thành Nghề Ước Mơ',
     titleJp: 'Lộ trình biến mọi nghề thành Nghề Ước Mơ',
     summaryVi: '', summaryEn: '', summaryJp: '',
-    contentVi: 'Đây là nội dung minh hoạ cho học phần “Lộ trình biến mọi nghề thành Nghề Ước Mơ”. Nội dung chi tiết của học phần này sẽ được Team biên soạn WiT cập nhật.',
+    contentVi: lessonLTBMNTNUMVi,
     contentEn: 'This is illustrative content for the lesson “Lộ trình biến mọi nghề thành Nghề Ước Mơ”. The full content of this lesson will be updated by the WiT editorial team.',
     contentJp: 'これはレッスン「Lộ trình biến mọi nghề thành Nghề Ước Mơ」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',
@@ -605,7 +615,7 @@ export const SEED_LESSONS: Lesson[] = [
     titleEn: 'Lộ trình chinh phục cuộc sống Lục Lộc Đại Thuận',
     titleJp: 'Lộ trình chinh phục cuộc sống Lục Lộc Đại Thuận',
     summaryVi: '', summaryEn: '', summaryJp: '',
-    contentVi: 'Đây là nội dung minh hoạ cho học phần “Lộ trình chinh phục cuộc sống Lục Lộc Đại Thuận”. Nội dung chi tiết của học phần này sẽ được Team biên soạn WiT cập nhật.',
+    contentVi: lessonLTCPLLDTVi,
     contentEn: 'This is illustrative content for the lesson “Lộ trình chinh phục cuộc sống Lục Lộc Đại Thuận”. The full content of this lesson will be updated by the WiT editorial team.',
     contentJp: 'これはレッスン「Lộ trình chinh phục cuộc sống Lục Lộc Đại Thuận」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',
@@ -619,7 +629,7 @@ export const SEED_LESSONS: Lesson[] = [
     titleEn: 'Lộ trình nâng cao Cảnh Giới Cuộc Sống',
     titleJp: 'Lộ trình nâng cao Cảnh Giới Cuộc Sống',
     summaryVi: '', summaryEn: '', summaryJp: '',
-    contentVi: 'Đây là nội dung minh hoạ cho học phần “Lộ trình nâng cao Cảnh Giới Cuộc Sống”. Nội dung chi tiết của học phần này sẽ được Team biên soạn WiT cập nhật.',
+    contentVi: lessonLTNCCGCSVi,
     contentEn: 'This is illustrative content for the lesson “Lộ trình nâng cao Cảnh Giới Cuộc Sống”. The full content of this lesson will be updated by the WiT editorial team.',
     contentJp: 'これはレッスン「Lộ trình nâng cao Cảnh Giới Cuộc Sống」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',
@@ -857,7 +867,7 @@ export const SEED_LESSONS: Lesson[] = [
     titleEn: 'Quy luật Cộng sinh trong nhân sinh',
     titleJp: 'Quy luật Cộng sinh trong nhân sinh',
     summaryVi: '', summaryEn: '', summaryJp: '',
-    contentVi: 'Đây là nội dung minh hoạ cho học phần “Quy luật Cộng sinh trong nhân sinh”. Nội dung chi tiết của học phần này sẽ được Team biên soạn WiT cập nhật.',
+    contentVi: lessonQLCSTNSVi,
     contentEn: 'This is illustrative content for the lesson “Quy luật Cộng sinh trong nhân sinh”. The full content of this lesson will be updated by the WiT editorial team.',
     contentJp: 'これはレッスン「Quy luật Cộng sinh trong nhân sinh」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',
@@ -871,7 +881,7 @@ export const SEED_LESSONS: Lesson[] = [
     titleEn: 'Quy luật Trả giá',
     titleJp: 'Quy luật Trả giá',
     summaryVi: '', summaryEn: '', summaryJp: '',
-    contentVi: 'Đây là nội dung minh hoạ cho học phần “Quy luật Trả giá”. Nội dung chi tiết của học phần này sẽ được Team biên soạn WiT cập nhật.',
+    contentVi: lessonQLTGVi,
     contentEn: 'This is illustrative content for the lesson “Quy luật Trả giá”. The full content of this lesson will be updated by the WiT editorial team.',
     contentJp: 'これはレッスン「Quy luật Trả giá」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',
@@ -927,7 +937,7 @@ export const SEED_LESSONS: Lesson[] = [
     titleEn: 'Quy luật Chu kỳ - Nguyên lý Nhịp điệu',
     titleJp: 'Quy luật Chu kỳ - Nguyên lý Nhịp điệu',
     summaryVi: '', summaryEn: '', summaryJp: '',
-    contentVi: 'Đây là nội dung minh hoạ cho học phần “Quy luật Chu kỳ - Nguyên lý Nhịp điệu”. Nội dung chi tiết của học phần này sẽ được Team biên soạn WiT cập nhật.',
+    contentVi: lessonQLCKVi,
     contentEn: 'This is illustrative content for the lesson “Quy luật Chu kỳ - Nguyên lý Nhịp điệu”. The full content of this lesson will be updated by the WiT editorial team.',
     contentJp: 'これはレッスン「Quy luật Chu kỳ - Nguyên lý Nhịp điệu」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',
@@ -941,7 +951,7 @@ export const SEED_LESSONS: Lesson[] = [
     titleEn: 'Quy luật Cung cầu',
     titleJp: 'Quy luật Cung cầu',
     summaryVi: '', summaryEn: '', summaryJp: '',
-    contentVi: 'Đây là nội dung minh hoạ cho học phần “Quy luật Cung cầu”. Nội dung chi tiết của học phần này sẽ được Team biên soạn WiT cập nhật.',
+    contentVi: lessonQLCCVi,
     contentEn: 'This is illustrative content for the lesson “Quy luật Cung cầu”. The full content of this lesson will be updated by the WiT editorial team.',
     contentJp: 'これはレッスン「Quy luật Cung cầu」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',
@@ -955,7 +965,7 @@ export const SEED_LESSONS: Lesson[] = [
     titleEn: 'Quy luật Tâm thức',
     titleJp: 'Quy luật Tâm thức',
     summaryVi: '', summaryEn: '', summaryJp: '',
-    contentVi: 'Đây là nội dung minh hoạ cho học phần “Quy luật Tâm thức”. Nội dung chi tiết của học phần này sẽ được Team biên soạn WiT cập nhật.',
+    contentVi: lessonQLTThucVi,
     contentEn: 'This is illustrative content for the lesson “Quy luật Tâm thức”. The full content of this lesson will be updated by the WiT editorial team.',
     contentJp: 'これはレッスン「Quy luật Tâm thức」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',
