@@ -45,6 +45,14 @@ import lessonNguyenTacDaoTaoVi from '../content/lesson-nguyen-tac-dao-tao.vi.md?
 import lessonThuDacGiaTocVi from '../content/lesson-phuong-phap-thu-dac-gia-toc-tu-chung.vi.md?raw';
 import lessonBonDoHinhVi from '../content/lesson-bon-do-hinh-nhan-sinh.vi.md?raw';
 import lessonQuyLuatThuHutVi from '../content/lesson-quy-luat-thu-hut-anh-huong-gia-tri.vi.md?raw';
+// v2 imports (l12, l14, l15, l20-l22)
+import lessonCTCNTNTPVi from '../content/lesson-cau-truc-con-nguoi-tong-nghiep-tiem-thuc.vi.md?raw';
+import lessonCTCNTTVi from '../content/lesson-cau-truc-con-nguoi-tam-thuc.vi.md?raw';
+import lessonTGHTVi from '../content/lesson-tam-giac-hien-thuc.vi.md?raw';
+import lessonGiauNangLucVi from '../content/lesson-giau-nang-luc.vi.md?raw';
+import lessonGiauTheChatVi from '../content/lesson-giau-the-chat.vi.md?raw';
+import lessonGiauVatChatVi from '../content/lesson-giau-vat-chat.vi.md?raw';
+
 
 
 export const SEED_CHAPTERS: Chapter[] = [
@@ -303,7 +311,7 @@ export const SEED_LESSONS: Lesson[] = [
     titleEn: 'Cấu trúc con người - Tổng nghiệp - Nguyên lý vận hành của tiềm thức',
     titleJp: 'Cấu trúc con người - Tổng nghiệp - Nguyên lý vận hành của tiềm thức',
     summaryVi: '', summaryEn: '', summaryJp: '',
-    contentVi: 'Đây là nội dung minh hoạ cho học phần “Cấu trúc con người - Tổng nghiệp - Nguyên lý vận hành của tiềm thức”. Nội dung chi tiết của học phần này sẽ được Team biên soạn WiT cập nhật.',
+    contentVi: lessonCTCNTNTPVi,
     contentEn: 'This is illustrative content for the lesson “Cấu trúc con người - Tổng nghiệp - Nguyên lý vận hành của tiềm thức”. The full content of this lesson will be updated by the WiT editorial team.',
     contentJp: 'これはレッスン「Cấu trúc con người - Tổng nghiệp - Nguyên lý vận hành của tiềm thức」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',
@@ -331,7 +339,7 @@ export const SEED_LESSONS: Lesson[] = [
     titleEn: 'Cấu trúc con người - Nguyên lý vận hành của tâm thức',
     titleJp: 'Cấu trúc con người - Nguyên lý vận hành của tâm thức',
     summaryVi: '', summaryEn: '', summaryJp: '',
-    contentVi: 'Đây là nội dung minh hoạ cho học phần “Cấu trúc con người - Nguyên lý vận hành của tâm thức”. Nội dung chi tiết của học phần này sẽ được Team biên soạn WiT cập nhật.',
+    contentVi: lessonCTCNTTVi,
     contentEn: 'This is illustrative content for the lesson “Cấu trúc con người - Nguyên lý vận hành của tâm thức”. The full content of this lesson will be updated by the WiT editorial team.',
     contentJp: 'これはレッスン「Cấu trúc con người - Nguyên lý vận hành của tâm thức」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',
@@ -345,7 +353,7 @@ export const SEED_LESSONS: Lesson[] = [
     titleEn: 'Tam giác hiện thực',
     titleJp: 'Tam giác hiện thực',
     summaryVi: '', summaryEn: '', summaryJp: '',
-    contentVi: 'Đây là nội dung minh hoạ cho học phần “Tam giác hiện thực”. Nội dung chi tiết của học phần này sẽ được Team biên soạn WiT cập nhật.',
+    contentVi: lessonTGHTVi,
     contentEn: 'This is illustrative content for the lesson “Tam giác hiện thực”. The full content of this lesson will be updated by the WiT editorial team.',
     contentJp: 'これはレッスン「Tam giác hiện thực」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',
@@ -415,7 +423,7 @@ export const SEED_LESSONS: Lesson[] = [
     titleEn: 'Giàu năng lực',
     titleJp: 'Giàu năng lực',
     summaryVi: '', summaryEn: '', summaryJp: '',
-    contentVi: 'Đây là nội dung minh hoạ cho học phần “Giàu năng lực”. Nội dung chi tiết của học phần này sẽ được Team biên soạn WiT cập nhật.',
+    contentVi: lessonGiauNangLucVi,
     contentEn: 'This is illustrative content for the lesson “Giàu năng lực”. The full content of this lesson will be updated by the WiT editorial team.',
     contentJp: 'これはレッスン「Giàu năng lực」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',
@@ -429,7 +437,7 @@ export const SEED_LESSONS: Lesson[] = [
     titleEn: 'Giàu thể chất',
     titleJp: 'Giàu thể chất',
     summaryVi: '', summaryEn: '', summaryJp: '',
-    contentVi: 'Đây là nội dung minh hoạ cho học phần “Giàu thể chất”. Nội dung chi tiết của học phần này sẽ được Team biên soạn WiT cập nhật.',
+    contentVi: lessonGiauTheChatVi,
     contentEn: 'This is illustrative content for the lesson “Giàu thể chất”. The full content of this lesson will be updated by the WiT editorial team.',
     contentJp: 'これはレッスン「Giàu thể chất」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',
@@ -443,7 +451,7 @@ export const SEED_LESSONS: Lesson[] = [
     titleEn: 'Giàu vật chất',
     titleJp: 'Giàu vật chất',
     summaryVi: '', summaryEn: '', summaryJp: '',
-    contentVi: 'Đây là nội dung minh hoạ cho học phần “Giàu vật chất”. Nội dung chi tiết của học phần này sẽ được Team biên soạn WiT cập nhật.',
+    contentVi: lessonGiauVatChatVi,
     contentEn: 'This is illustrative content for the lesson “Giàu vật chất”. The full content of this lesson will be updated by the WiT editorial team.',
     contentJp: 'これはレッスン「Giàu vật chất」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',

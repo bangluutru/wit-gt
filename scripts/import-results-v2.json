@@ -1,0 +1,44 @@
+[
+  {
+    "lessonId": "l14",
+    "file": "Cấu trúc con người - Nguyên lý vận hành của tâm thức",
+    "mdFile": "lesson-cau-truc-con-nguoi-tam-thuc.vi.md",
+    "slug": "cau-truc-con-nguoi-tam-thuc",
+    "lines": 50
+  },
+  {
+    "lessonId": "l12",
+    "file": "Cấu trúc con người - Tổng nghiệp - Nguyên lý vận hành của tiềm thức",
+    "mdFile": "lesson-cau-truc-con-nguoi-tong-nghiep-tiem-thuc.vi.md",
+    "slug": "cau-truc-con-nguoi-tong-nghiep-tiem-thuc",
+    "lines": 61
+  },
+  {
+    "lessonId": "l20",
+    "file": "Giàu năng lực",
+    "mdFile": "lesson-giau-nang-luc.vi.md",
+    "slug": "giau-nang-luc",
+    "lines": 133
+  },
+  {
+    "lessonId": "l21",
+    "file": "Giàu thể chất",
+    "mdFile": "lesson-giau-the-chat.vi.md",
+    "slug": "giau-the-chat",
+    "lines": 75
+  },
+  {
+    "lessonId": "l22",
+    "file": "Giàu vật chất",
+    "mdFile": "lesson-giau-vat-chat.vi.md",
+    "slug": "giau-vat-chat",
+    "lines": 156
+  },
+  {
+    "lessonId": "l15",
+    "file": "Tam giác hiện thực",
+    "mdFile": "lesson-tam-giac-hien-thuc.vi.md",
+    "slug": "tam-giac-hien-thuc",
+    "lines": 130
+  }
+]
