@@ -15,6 +15,7 @@ import Curriculum from './pages/Curriculum';
 import LessonReader from './pages/LessonReader';
 import Dictionary from './pages/Dictionary';
 import Team from './pages/Team';
+import Advisors from './pages/Advisors';
 import Settings from './pages/Settings';
 import AdminImport from './pages/AdminImport';
 
@@ -37,6 +38,7 @@ export default function App() {
                 <Route path="/lessons/:id" element={<LessonReader />} />
                 <Route path="/dictionary" element={<Dictionary />} />
                 <Route path="/team" element={<Team />} />
+                <Route path="/advisors" element={<Advisors />} />
                 <Route path="/settings" element={<Settings />} />
                 <Route path="/admin/import" element={<AdminImport />} />
               </Route>

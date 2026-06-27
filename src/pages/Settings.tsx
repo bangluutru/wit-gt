@@ -1,75 +1,12 @@
-import {
-  Palette,
-  BookOpen,
-  Languages,
-  User,
-  LogOut,
-  Sun,
-  Sunset,
-  Moon,
-  Type,
-  Monitor,
-  Columns2,
-} from 'lucide-react';
+// ============================================================
+// WiT Platform - Settings Page
+// ============================================================
+
+import { Palette, BookOpen, Languages, User, LogOut, Sun, Moon, Type, LayoutGrid } from 'lucide-react';
 import { useSettings } from '../contexts/SettingsContext';
 import { useAuth } from '../contexts/AuthContext';
 import type { Theme, FontSize, DisplayMode } from '../lib/types';
 import LanguageSwitcher from '../components/dictionary/LanguageSwitcher';
-
-const THEME_OPTIONS: { value: Theme; label: string; icon: typeof Sun }[] = [
-  { value: 'light', label: 'Sáng', icon: Sun },
-  { value: 'warm', label: 'Ấm', icon: Sunset },
-  { value: 'dark', label: 'Tối', icon: Moon },
-];
-
-const FONT_SIZE_OPTIONS: { value: FontSize; label: string }[] = [
-  { value: 'small', label: 'Nhỏ' },
-  { value: 'medium', label: 'Trung bình' },
-  { value: 'large', label: 'Lớn' },
-];
-
-const DISPLAY_MODE_OPTIONS: { value: DisplayMode; label: string; icon: typeof Monitor }[] = [
-  { value: 'single', label: 'Một cột', icon: Monitor },
-  { value: 'dual', label: 'Hai cột', icon: Columns2 },
-];
-
-interface SettingSectionProps {
-  icon: React.ReactNode;
-  title: string;
-  children: React.ReactNode;
-}
-
-function SettingSection({ icon, title, children }: SettingSectionProps) {
-  return (
-    <div className="bg-wit-surface rounded-xl shadow-card border border-wit-line/50 p-5 sm:p-6">
-      <h2 className="text-base font-semibold text-wit-text flex items-center gap-2.5 mb-5">
-        <span className="text-wit-red">{icon}</span>
-        {title}
-      </h2>
-      <div className="space-y-5">{children}</div>
-    </div>
-  );
-}
-
-interface SettingRowProps {
-  label: string;
-  description?: string;
-  children: React.ReactNode;
-}
-
-function SettingRow({ label, description, children }: SettingRowProps) {
-  return (
-    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-      <div className="min-w-0">
-        <p className="text-sm font-medium text-wit-text">{label}</p>
-        {description && (
-          <p className="text-xs text-wit-text-tertiary mt-0.5">{description}</p>
-        )}
-      </div>
-      <div className="shrink-0">{children}</div>
-    </div>
-  );
-}
 
 export default function Settings() {
   const {
@@ -88,143 +25,189 @@ export default function Settings() {
   } = useSettings();
   const { profile, signOut } = useAuth();
 
+  const getLocalizedText = (vi: string, en: string, jp: string) => {
+    if (interfaceLang === 'en') return en;
+    if (interfaceLang === 'jp') return jp;
+    return vi;
+  };
+
+  const fontBtnClass = (active: boolean) =>
+    `flex-1 py-2.5 rounded-xl border text-sm font-semibold transition-all cursor-pointer ${
+      active
+        ? 'border-wit-red bg-wit-red-soft text-wit-red'
+        : 'border-wit-line bg-wit-surface text-wit-text-secondary hover:bg-wit-surface-2'
+    }`;
+
   return (
-    <div className="page-enter p-4 sm:p-6 max-w-2xl mx-auto space-y-6">
+    <div className="page-enter max-w-2xl mx-auto space-y-6">
       {/* Header */}
       <div>
-        <h1 className="text-2xl font-bold text-wit-text font-serif">Cài đặt</h1>
-        <p className="text-sm text-wit-text-secondary mt-1">Tùy chỉnh trải nghiệm học tập</p>
+        <span className="text-xs font-bold uppercase tracking-[1.6px] text-wit-gold">
+          {getLocalizedText('Cá nhân hoá trải nghiệm đọc', 'Personalize Reading Experience', '読書体験のパーソナライズ')}
+        </span>
+        <h1 className="font-serif text-3xl font-bold text-wit-text mt-1">
+          {getLocalizedText('Cài đặt giao diện', 'Theme Settings', '画面設定')}
+        </h1>
       </div>
 
-      {/* ── Giao diện ── */}
-      <SettingSection icon={<Palette className="h-5 w-5" />} title="Giao diện">
-        {/* Language */}
-        <SettingRow label="Ngôn ngữ giao diện" description="Thay đổi ngôn ngữ hiển thị">
-          <LanguageSwitcher value={interfaceLang} onChange={setInterfaceLang} />
-        </SettingRow>
-
-        {/* Theme */}
-        <SettingRow label="Chủ đề" description="Chọn giao diện sáng, ấm hoặc tối">
-          <div className="inline-flex rounded-lg bg-wit-surface-alt p-1 gap-0.5">
-            {THEME_OPTIONS.map(({ value, label, icon: Icon }) => (
-              <button
-                key={value}
-                type="button"
-                onClick={() => setTheme(value)}
-                className={`
-                  flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium rounded-md
-                  transition-all duration-200 cursor-pointer
-                  ${
-                    theme === value
-                      ? 'bg-wit-red text-white shadow-sm'
-                      : 'text-wit-text-secondary hover:text-wit-text hover:bg-wit-surface'
-                  }
-                `}
-              >
-                <Icon className="h-3.5 w-3.5" />
-                {label}
-              </button>
-            ))}
+      {/* Settings Container Panel */}
+      <div className="bg-wit-surface border border-wit-line rounded-2xl shadow-sm overflow-hidden divide-y divide-wit-line">
+        {/* Toggle Theme / Dark Mode */}
+        <div className="p-5 flex items-center justify-between gap-6">
+          <div className="min-w-0">
+            <h3 className="text-[15px] font-bold text-wit-text">
+              {getLocalizedText('Chế độ tối / sáng', 'Dark / Light Mode', 'ダーク/ライトモード')}
+            </h3>
+            <p className="text-xs text-wit-text-secondary mt-1 leading-relaxed">
+              {getLocalizedText(
+                'Nền ấm tối, dịu mắt khi đọc bài học vào ban đêm.',
+                'Warm dark background, easy on the eyes for night reading.',
+                '夜間の読書に適した、目に優しい温かみのあるダーク背景。'
+              )}
+            </p>
           </div>
-        </SettingRow>
-
-        {/* Font size */}
-        <SettingRow label="Cỡ chữ" description="Kích thước chữ khi đọc bài">
-          <div className="inline-flex rounded-lg bg-wit-surface-alt p-1 gap-0.5">
-            {FONT_SIZE_OPTIONS.map(({ value, label }) => (
-              <button
-                key={value}
-                type="button"
-                onClick={() => setFontSize(value)}
-                className={`
-                  flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium rounded-md
-                  transition-all duration-200 cursor-pointer
-                  ${
-                    fontSize === value
-                      ? 'bg-wit-red text-white shadow-sm'
-                      : 'text-wit-text-secondary hover:text-wit-text hover:bg-wit-surface'
-                  }
-                `}
-              >
-                <Type className="h-3.5 w-3.5" />
-                {label}
-              </button>
-            ))}
-          </div>
-        </SettingRow>
-      </SettingSection>
-
-      {/* ── Đọc bài ── */}
-      <SettingSection icon={<BookOpen className="h-5 w-5" />} title="Đọc bài">
-        <SettingRow label="Chế độ hiển thị" description="Một cột hoặc hai cột song ngữ">
-          <div className="inline-flex rounded-lg bg-wit-surface-alt p-1 gap-0.5">
-            {DISPLAY_MODE_OPTIONS.map(({ value, label, icon: Icon }) => (
-              <button
-                key={value}
-                type="button"
-                onClick={() => setDisplayMode(value)}
-                className={`
-                  flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium rounded-md
-                  transition-all duration-200 cursor-pointer
-                  ${
-                    displayMode === value
-                      ? 'bg-wit-red text-white shadow-sm'
-                      : 'text-wit-text-secondary hover:text-wit-text hover:bg-wit-surface'
-                  }
-                `}
-              >
-                <Icon className="h-3.5 w-3.5" />
-                {label}
-              </button>
-            ))}
-          </div>
-        </SettingRow>
-      </SettingSection>
-
-      {/* ── Từ điển ── */}
-      <SettingSection icon={<Languages className="h-5 w-5" />} title="Từ điển">
-        <SettingRow label="Ngôn ngữ gốc" description="Ngôn ngữ chính khi tra từ">
-          <LanguageSwitcher value={preferredSourceLang} onChange={setSourceLang} />
-        </SettingRow>
-
-        <SettingRow label="Ngôn ngữ đích" description="Ngôn ngữ dịch sang">
-          <LanguageSwitcher value={preferredTargetLang} onChange={setTargetLang} />
-        </SettingRow>
-      </SettingSection>
-
-      {/* ── Tài khoản ── */}
-      <SettingSection icon={<User className="h-5 w-5" />} title="Tài khoản">
-        <SettingRow label="Email" description="Tài khoản đang đăng nhập">
-          <span className="text-sm text-wit-text-secondary">{profile?.email || '—'}</span>
-        </SettingRow>
-
-        <SettingRow label="Tên hiển thị">
-          <span className="text-sm text-wit-text">{profile?.displayName || '—'}</span>
-        </SettingRow>
-
-        <SettingRow label="Vai trò">
-          <span
-            className={`inline-block px-2.5 py-1 text-xs font-semibold rounded-md ${
-              profile?.role === 'admin'
-                ? 'bg-wit-red-soft text-wit-red'
-                : 'bg-wit-surface-alt text-wit-text-secondary'
-            }`}
-          >
-            {profile?.role === 'admin' ? 'Quản trị viên' : 'Người dùng'}
-          </span>
-        </SettingRow>
-
-        <div className="pt-2 border-t border-wit-line/50">
           <button
-            type="button"
-            onClick={signOut}
-            className="flex items-center gap-2 px-4 py-2.5 rounded-lg text-sm font-medium text-wit-red hover:bg-wit-red-soft transition-colors cursor-pointer"
+            onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+            className="relative w-14 h-8 rounded-full border-none cursor-pointer transition-colors duration-200"
+            style={{ backgroundColor: theme === 'dark' ? 'var(--color-wit-red)' : 'var(--color-wit-line)' }}
+            aria-label="Toggle theme"
           >
-            <LogOut className="h-4 w-4" />
-            Đăng xuất
+            <span
+              className="absolute top-1 left-1 w-6 h-6 rounded-full bg-white transition-all duration-200 shadow-md flex items-center justify-center text-wit-red-dark"
+              style={{ transform: theme === 'dark' ? 'translateX(24px)' : 'none' }}
+            >
+              {theme === 'dark' ? <Moon className="h-3.5 w-3.5" /> : <Sun className="h-3.5 w-3.5" />}
+            </span>
           </button>
         </div>
-      </SettingSection>
+
+        {/* Font Size Selection */}
+        <div className="p-5 space-y-3">
+          <div>
+            <h3 className="text-[15px] font-bold text-wit-text">
+              {getLocalizedText('Cỡ chữ bài học', 'Lesson Font Size', 'レッスンのフォントサイズ')}
+            </h3>
+            <p className="text-xs text-wit-text-secondary mt-1">
+              {getLocalizedText('Điều chỉnh cỡ chữ phần nội dung đọc.', 'Adjust the text size for reading.', '読書時のテキストサイズを調整します。')}
+            </p>
+          </div>
+          <div className="flex gap-2.5">
+            <button
+              onClick={() => setFontSize('small')}
+              className={fontBtnClass(fontSize === 'small')}
+            >
+              {getLocalizedText('A nhỏ', 'A Small', 'A 小')}
+            </button>
+            <button
+              onClick={() => setFontSize('medium')}
+              className={fontBtnClass(fontSize === 'medium')}
+            >
+              {getLocalizedText('A vừa', 'A Medium', 'A 中')}
+            </button>
+            <button
+              onClick={() => setFontSize('large')}
+              className={fontBtnClass(fontSize === 'large')}
+            >
+              {getLocalizedText('A lớn', 'A Large', 'A 大')}
+            </button>
+          </div>
+        </div>
+
+        {/* Reading display mode */}
+        <div className="p-5 space-y-3">
+          <div>
+            <h3 className="text-[15px] font-bold text-wit-text">
+              {getLocalizedText('Chế độ hiển thị', 'Display Mode', '表示モード')}
+            </h3>
+            <p className="text-xs text-wit-text-secondary mt-1">
+              {getLocalizedText('Một cột hoặc hai cột song ngữ trên máy tính.', 'Single or dual column bilingual layout on desktop.', 'デスクトップでの1列または2列のバイリンガル表示。')}
+            </p>
+          </div>
+          <div className="flex gap-2.5">
+            <button
+              onClick={() => setDisplayMode('single')}
+              className={fontBtnClass(displayMode === 'single')}
+            >
+              {getLocalizedText('Một cột', 'Single Column', '1列')}
+            </button>
+            <button
+              onClick={() => setDisplayMode('dual')}
+              className={fontBtnClass(displayMode === 'dual')}
+            >
+              {getLocalizedText('Hai cột', 'Dual Columns', '2列')}
+            </button>
+          </div>
+        </div>
+
+        {/* Dictionary Language Preferences */}
+        <div className="p-5 space-y-4">
+          <div>
+            <h3 className="text-[15px] font-bold text-wit-text">
+              {getLocalizedText('Ngôn ngữ tra cứu mặc định', 'Default Lookup Language', 'デフォルトの検索言語')}
+            </h3>
+            <p className="text-xs text-wit-text-secondary mt-1">
+              {getLocalizedText('Cấu hình mặc định cho ngôn ngữ gốc/đích khi tra từ điển.', 'Configure default source/target languages for search.', '辞書検索のデフォルトの元言語/対象言語を設定します。')}
+            </p>
+          </div>
+          <div className="flex flex-col sm:flex-row gap-6">
+            <LanguageSwitcher
+              value={preferredSourceLang}
+              onChange={setSourceLang}
+              label={getLocalizedText('Ngôn ngữ gốc', 'Source Language', '元の言語')}
+            />
+            <LanguageSwitcher
+              value={preferredTargetLang}
+              onChange={setTargetLang}
+              label={getLocalizedText('Ngôn ngữ dịch sang', 'Translate to', '翻訳先')}
+            />
+          </div>
+        </div>
+
+        {/* Account Details */}
+        <div className="p-5 space-y-3.5">
+          <h3 className="text-[15px] font-bold text-wit-text flex items-center gap-2">
+            <User className="h-4.5 w-4.5 text-wit-red" />
+            <span>{getLocalizedText('Tài khoản học viên', 'Student Account', '受講生アカウント')}</span>
+          </h3>
+          <div className="grid grid-cols-2 gap-y-2 text-sm max-w-md">
+            <span className="text-wit-text-tertiary">Email:</span>
+            <span className="text-wit-text font-semibold truncate">{profile?.email || '—'}</span>
+            <span className="text-wit-text-tertiary">{getLocalizedText('Tên hiển thị:', 'Name:', '表示名:')}</span>
+            <span className="text-wit-text font-semibold">{profile?.displayName || '—'}</span>
+            <span className="text-wit-text-tertiary">{getLocalizedText('Vai trò:', 'Role:', '役割:')}</span>
+            <span className="text-wit-text">
+              <span className={`inline-block px-2.5 py-0.5 rounded-lg text-xs font-bold ${
+                profile?.role === 'admin'
+                  ? 'bg-wit-red-soft text-wit-red'
+                  : 'bg-wit-surface-2 text-wit-text-secondary'
+              }`}>
+                {profile?.role === 'admin'
+                  ? getLocalizedText('Quản trị viên', 'Administrator', '管理者')
+                  : getLocalizedText('Học viên', 'Student', '受講生')}
+              </span>
+            </span>
+          </div>
+
+          <div className="pt-3 border-t border-wit-line">
+            <button
+              onClick={signOut}
+              className="flex items-center gap-2 px-4 py-2.5 rounded-xl border border-wit-line hover:bg-red-50 hover:border-red-200 hover:text-red-600 transition-all font-semibold text-sm text-wit-text-secondary cursor-pointer"
+            >
+              <LogOut className="h-4 w-4" />
+              <span>{getLocalizedText('Đăng xuất tài khoản', 'Log out account', 'アカウントからログアウト')}</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Note under Panel */}
+      <div className="p-4 rounded-xl bg-wit-surface-2 border border-wit-line text-sm text-wit-text-secondary leading-relaxed">
+        {getLocalizedText(
+          'Giao diện hỗ trợ mở rộng thêm ngôn ngữ trong tương lai (Trung, Hàn…). Cấu trúc dữ liệu giữ đơn giản: hệ thống chỉ ghi nhận học phần đã hoàn thành để tự mở khoá phần kế tiếp.',
+          'The interface supports expanding more languages in the future (Chinese, Korean...). The data structure is kept simple: the system only records completed parts to automatically unlock the next one.',
+          'インターフェースは将来的に多言語（中国語、韓国語など）の拡張をサポートします。データ構造はシンプルに保たれており、システムは次のパートのロックを自動的に解除するために完了したパートのみを記録します。'
+        )}
+      </div>
     </div>
   );
 }

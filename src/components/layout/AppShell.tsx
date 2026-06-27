@@ -1,25 +1,33 @@
+// ============================================================
+// WiT Platform - AppShell Layout Component
+// ============================================================
+
+import { useState } from 'react';
 import { Outlet } from 'react-router-dom';
 import { Sidebar } from './Sidebar';
 import { Header } from './Header';
 import { MobileNav } from './MobileNav';
 
 export function AppShell() {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
   return (
-    <div className="min-h-screen bg-wit-paper">
-      {/* Desktop sidebar */}
-      <Sidebar />
+    <div className="min-h-dvh bg-wit-paper text-wit-text antialiased">
+      {/* Sidebar with drawer support */}
+      <Sidebar isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />
 
-      {/* Mobile header */}
-      <Header />
+      {/* Main layout container shifted left on desktop */}
+      <div className="lg:pl-[280px] min-h-dvh flex flex-col">
+        {/* Header always visible at the top of content */}
+        <Header onMenuToggle={() => setIsSidebarOpen(true)} />
 
-      {/* Main content area */}
-      <main className="main-content min-h-screen pb-20 lg:pb-0 lg:pl-[260px]">
-        <div className="mx-auto w-full max-w-7xl px-4 py-5 sm:px-6 sm:py-6 lg:px-8 lg:py-8">
+        {/* Main Content Area */}
+        <main className="flex-1 mx-auto w-full max-w-5xl px-4 sm:px-6 py-6 sm:py-8 pb-24 lg:pb-8">
           <div className="page-enter">
             <Outlet />
           </div>
-        </div>
-      </main>
+        </main>
+      </div>
 
       {/* Mobile bottom nav */}
       <MobileNav />

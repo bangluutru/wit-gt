@@ -1,155 +1,162 @@
+// ============================================================
+// WiT Platform - Team Page
+// ============================================================
+
 import { Users, Heart } from 'lucide-react';
-import type { TeamSection } from '../lib/types';
+import { useSettings } from '../contexts/SettingsContext';
 
-const TEAM_DATA: TeamSection[] = [
-  {
-    title: 'Chủ biên',
-    members: [
-      {
-        name: 'TS. Trần Hải Bằng',
-        role: 'Chủ biên',
-        description: 'Tổng biên tập và kiến trúc nội dung giáo trình WiT.',
-      },
-    ],
-  },
-  {
-    title: 'Ban biên soạn',
-    members: [
-      {
-        name: 'ThS. Nguyễn Minh Anh',
-        role: 'Biên soạn viên',
-        description: 'Phụ trách nội dung chương 1–3: Nhận thức & Nội tâm.',
-      },
-      {
-        name: 'ThS. Lê Thanh Hà',
-        role: 'Biên soạn viên',
-        description: 'Phụ trách nội dung chương 4–6: Phẩm chất & Quan hệ.',
-      },
-      {
-        name: 'CN. Phạm Quốc Đạt',
-        role: 'Biên soạn viên',
-        description: 'Phụ trách nội dung chương 7–9: Quy luật & Giáo dục.',
-      },
-    ],
-  },
-  {
-    title: 'Ban cố vấn',
-    members: [
-      {
-        name: 'PGS.TS. Vũ Thị Lan',
-        role: 'Cố vấn học thuật',
-        description: 'Cố vấn về phương pháp giáo dục và tâm lý học.',
-      },
-      {
-        name: 'TS. Yamamoto Kenji',
-        role: 'Cố vấn ngôn ngữ',
-        description: 'Cố vấn bản dịch tiếng Nhật và giao thoa văn hóa.',
-      },
-    ],
-  },
-  {
-    title: 'Tổ công nghệ',
-    members: [
-      {
-        name: 'KS. Đỗ Hoàng Long',
-        role: 'Lead Developer',
-        description: 'Kiến trúc hệ thống và phát triển nền tảng WiT.',
-      },
-      {
-        name: 'CN. Trương Thị Mai',
-        role: 'UI/UX Designer',
-        description: 'Thiết kế giao diện và trải nghiệm người dùng.',
-      },
-    ],
-  },
-];
-
-function getInitials(name: string): string {
-  const parts = name.replace(/^(TS\.|PGS\.TS\.|ThS\.|CN\.|KS\.)\s*/i, '').trim().split(' ');
-  if (parts.length >= 2) {
-    return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
-  }
-  return parts[0].substring(0, 2).toUpperCase();
+interface TeamMember {
+  initials: string;
+  nameVi: string;
+  nameEn: string;
+  nameJp: string;
+  roleVi: string;
+  roleEn: string;
+  roleJp: string;
+  noteVi: string;
+  noteEn: string;
+  noteJp: string;
 }
 
-const AVATAR_COLORS = [
-  'bg-wit-red text-white',
-  'bg-wit-gold text-white',
-  'bg-wit-success text-white',
-  'bg-[#3B7DD8] text-white',
-  'bg-[#8B5CF6] text-white',
-  'bg-[#EC4899] text-white',
-  'bg-[#F59E0B] text-white',
-  'bg-[#10B981] text-white',
+const TEAM_MEMBERS: TeamMember[] = [
+  {
+    initials: 'CB',
+    nameVi: 'Chủ biên',
+    nameEn: 'Editor-in-Chief',
+    nameJp: '主編',
+    roleVi: 'Tổng chủ biên nội dung',
+    roleEn: 'Content Editor-in-Chief',
+    roleJp: 'コンテンツ総主編',
+    noteVi: 'Xây dựng khung 76 học phần và triết lý giáo dục tận gốc.',
+    noteEn: 'Building the framework of 76 parts and root education philosophy.',
+    noteJp: '76のパートのフレームワークと根本教育哲学を構築する。',
+  },
+  {
+    initials: 'BS',
+    nameVi: 'Ban Biên soạn',
+    nameEn: 'Editorial Board',
+    nameJp: '編集委員会',
+    roleVi: 'Biên soạn & hệ thống hoá',
+    roleEn: 'Compilation & Systematization',
+    roleJp: '編集と系統化',
+    noteVi: 'Sắp xếp nội dung theo 9 chương và lộ trình học.',
+    noteEn: 'Arranging content into 9 chapters and the learning path.',
+    noteJp: 'コンテンツを9つの章と学習ロードマップに整理する。',
+  },
+  {
+    initials: 'DT',
+    nameVi: 'Tổ Dịch thuật',
+    nameEn: 'Translation Team',
+    nameJp: '翻訳チーム',
+    roleVi: 'Dịch Việt · Anh · Nhật',
+    roleEn: 'Vietnamese · English · Japanese translation',
+    roleJp: '越・英・日翻訳',
+    noteVi: 'Chuyển ngữ thuật ngữ nhân sinh sang ba ngôn ngữ.',
+    noteEn: 'Translating human life terminology into three languages.',
+    noteJp: '人生の用語を3つの言語に翻訳する。',
+  },
+  {
+    initials: 'KD',
+    nameVi: 'Tổ Kiểm định',
+    nameEn: 'Verification Team',
+    nameJp: '検証チーム',
+    roleVi: 'Hiệu đính & kiểm định',
+    roleEn: 'Proofreading & Verification',
+    roleJp: '校正と検証',
+    noteVi: 'Đối chiếu thuật ngữ với từ điển witdict.',
+    noteEn: 'Cross-checking terminology with the witdict dictionary.',
+    noteJp: '用語をwitdict辞書とクロスチェックする。',
+  },
+  {
+    initials: 'TK',
+    nameVi: 'Tổ Thiết kế',
+    nameEn: 'Design Team',
+    nameJp: 'デザインチーム',
+    roleVi: 'Thiết kế & trải nghiệm',
+    roleEn: 'Design & Experience',
+    roleJp: 'デザインと体験',
+    noteVi: 'Giao diện đọc và tra cứu thân thiện.',
+    noteEn: 'Creating user-friendly reading and lookup interfaces.',
+    noteJp: '使いやすい読書および検索インターフェースの作成。',
+  },
+  {
+    initials: 'CN',
+    nameVi: 'Tổ Công nghệ',
+    nameEn: 'Tech Team',
+    nameJp: '技術チーム',
+    roleVi: 'Phát triển nền tảng',
+    roleEn: 'Platform Development',
+    roleJp: 'プラットフォーム開発',
+    noteVi: 'Vận hành cơ chế mở khoá học phần theo lộ trình.',
+    noteEn: 'Operating the lesson unlocking mechanism on the roadmap.',
+    noteJp: 'ロードマップ上のレッスンアンロックメカニズムを運用する。',
+  },
 ];
 
 export default function Team() {
-  let colorIndex = 0;
+  const { interfaceLang } = useSettings();
+
+  const getLocalizedText = (vi: string, en: string, jp: string) => {
+    if (interfaceLang === 'en') return en;
+    if (interfaceLang === 'jp') return jp;
+    return vi;
+  };
 
   return (
-    <div className="page-enter p-4 sm:p-6 max-w-4xl mx-auto space-y-10">
-      {/* Header */}
-      <div className="text-center">
-        <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-wit-gold-soft mb-4">
-          <Users className="h-7 w-7 text-wit-gold" />
-        </div>
-        <h1 className="text-3xl font-bold text-wit-text font-serif">Đội ngũ WiT</h1>
-        <p className="text-sm text-wit-text-secondary mt-2 max-w-md mx-auto">
-          Những con người tâm huyết đằng sau hành trình tri thức WiT
+    <div className="page-enter max-w-4xl mx-auto space-y-8">
+      {/* Page Header */}
+      <div>
+        <span className="text-xs font-bold uppercase tracking-[1.6px] text-wit-gold">
+          {getLocalizedText('Những người đứng sau giáo trình', 'People behind the curriculum', 'カリキュラムを支える人々')}
+        </span>
+        <h1 className="font-serif text-3xl font-bold text-wit-text mt-1">
+          {getLocalizedText('Team biên soạn', 'Editorial Team', '編集チーム')}
+        </h1>
+        <p className="text-[14.5px] text-wit-text-secondary mt-2 leading-relaxed">
+          {getLocalizedText(
+            'Tập thể biên soạn, dịch thuật và kiểm định nội dung cho giáo trình đa ngôn ngữ WiT.',
+            'The collective team compiling, translating, and verifying content for the WiT multilingual curriculum.',
+            'WiT多言語カリキュラムのコンテンツを編集、翻訳、および検証する合同チーム。'
+          )}
         </p>
       </div>
 
-      {/* Team sections */}
-      {TEAM_DATA.map((section) => (
-        <section key={section.title}>
-          <h2 className="text-lg font-semibold text-wit-text mb-4 flex items-center gap-2">
-            <span className="w-1 h-5 bg-wit-red rounded-full" />
-            {section.title}
-          </h2>
+      {/* Grid of Team Cards */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[18px]">
+        {TEAM_MEMBERS.map((member) => (
+          <div
+            key={member.nameVi}
+            className="wit-card p-6 bg-wit-surface border border-wit-line rounded-2xl shadow-sm text-center transition-all duration-200 hover:-translate-y-1 hover:shadow-card-hover"
+          >
+            {/* Avatar Circle */}
+            <div className="w-16 h-16 rounded-full mx-auto bg-gradient-to-br from-wit-red to-[#8E1B1B] text-white flex items-center justify-center font-serif font-bold text-[22px] shadow-sm">
+              {member.initials}
+            </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {section.members.map((member) => {
-              const avatarColor = AVATAR_COLORS[colorIndex % AVATAR_COLORS.length];
-              colorIndex++;
+            {/* Name */}
+            <h3 className="font-serif font-bold text-[17px] text-wit-text mt-4">
+              {getLocalizedText(member.nameVi, member.nameEn, member.nameJp)}
+            </h3>
 
-              return (
-                <div
-                  key={member.name}
-                  className="bg-wit-surface rounded-xl shadow-card border border-wit-line/50 p-5 hover:shadow-card-hover transition-shadow duration-200"
-                >
-                  {/* Avatar */}
-                  <div className="flex items-center gap-4 mb-3">
-                    <div
-                      className={`
-                        shrink-0 w-12 h-12 rounded-full flex items-center justify-center
-                        font-semibold text-sm ${avatarColor}
-                      `}
-                    >
-                      {getInitials(member.name)}
-                    </div>
-                    <div className="min-w-0">
-                      <h3 className="font-semibold text-wit-text truncate">{member.name}</h3>
-                      <p className="text-xs text-wit-red font-medium">{member.role}</p>
-                    </div>
-                  </div>
+            {/* Role */}
+            <div className="text-xs font-semibold text-wit-red mt-1">
+              {getLocalizedText(member.roleVi, member.roleEn, member.roleJp)}
+            </div>
 
-                  {/* Description */}
-                  <p className="text-sm text-wit-text-secondary leading-relaxed">
-                    {member.description}
-                  </p>
-                </div>
-              );
-            })}
+            {/* Note */}
+            <p className="text-[12.5px] text-wit-text-tertiary mt-2 leading-relaxed">
+              {getLocalizedText(member.noteVi, member.noteEn, member.noteJp)}
+            </p>
           </div>
-        </section>
-      ))}
+        ))}
+      </div>
 
       {/* Footer note */}
-      <div className="text-center pt-4 pb-8">
-        <p className="text-sm text-wit-text-tertiary flex items-center justify-center gap-1.5">
-          Xây dựng với
+      <div className="text-center pt-4">
+        <p className="text-xs text-wit-text-tertiary flex items-center justify-center gap-1.5">
+          {getLocalizedText('Xây dựng với', 'Built with', '構築元')}
           <Heart className="h-3.5 w-3.5 text-wit-red fill-wit-red" />
-          bởi đội ngũ WiT
+          {getLocalizedText('bởi đội ngũ WiT', 'by the WiT team', 'WiTチーム')}
         </p>
       </div>
     </div>

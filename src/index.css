@@ -11,18 +11,21 @@
 @theme {
   /* ---- Colors ---- */
   --color-wit-red: #C62128;
+  --color-wit-red-dark: #9F161D;
   --color-wit-red-hover: #A81B21;
   --color-wit-red-soft: #F7E9E4;
   --color-wit-red-soft-hover: #F0DAD2;
-  --color-wit-gold: #C99A3F;
+  --color-wit-gold: #B88934;
   --color-wit-gold-soft: #FDF6E9;
   --color-wit-paper: #FBF7F0;
   --color-wit-surface: #FFFFFF;
+  --color-wit-surface-2: #F5EEE3;
   --color-wit-surface-alt: #F5EEE3;
   --color-wit-line: #E8DFD2;
   --color-wit-text: #2B2622;
   --color-wit-text-secondary: #6B6258;
   --color-wit-text-tertiary: #9B9189;
+  --color-wit-muted: #8B8176;
   --color-wit-success: #2D8A56;
   --color-wit-success-soft: #E6F5EC;
   --color-wit-info: #3B7DD8;
@@ -34,11 +37,11 @@
   --font-jp: 'Noto Sans JP', 'Hiragino Sans', sans-serif;
 
   /* ---- Spacing (extras) ---- */
-  --spacing-sidebar: 260px;
+  --spacing-sidebar: 280px;
 
   /* ---- Border Radius ---- */
-  --radius-card: 12px;
-  --radius-button: 8px;
+  --radius-card: 16px;
+  --radius-button: 12px;
   --radius-badge: 6px;
   --radius-full: 9999px;
 
