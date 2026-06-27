@@ -5,6 +5,8 @@
 // ============================================================
 
 import type { Chapter, Lesson, DictionaryTerm } from './types';
+import lessonNhanQuaVi from '../content/lesson-nhan-thuc-ve-nhan-qua.vi.md?raw';
+import lessonNLASVi from '../content/lesson-nguyen-ly-anh-sang.vi.md?raw';
 
 export const SEED_CHAPTERS: Chapter[] = [
   {
@@ -108,9 +110,9 @@ export const SEED_LESSONS: Lesson[] = [
     titleEn: 'Understanding Cause and Effect',
     titleJp: '因果についての認識',
     summaryVi: '', summaryEn: '', summaryJp: '',
-    contentVi: 'Mọi điều xảy ra trong đời sống đều vận hành theo quy luật Nhân quả. Không có gì là ngẫu nhiên — khi ta gieo một Nhân thiện lành, ta sẽ thu về một Quả an vui tương ứng.\n\nSâu bên trong mỗi người là Tổng nghiệp — toàn bộ dấu ấn của hành động, lời nói và ý nghĩ, được lưu giữ và vận hành bởi Tâm thức. Hiểu được điều này, ta bắt đầu sống tỉnh thức và chủ động chuyển hoá đời mình.',
-    contentEn: 'Everything that happens in life operates by the law of Cause & Effect. Nothing is by chance — when we sow a A cause wholesome, we will reap a A fruit of peace and joy in return.\n\nDeep within each person lies Total Karma — the imprint of all action, speech and thought, stored and run by Mind-consciousness. Understanding this, we begin to live awake and actively transform our life.',
-    contentJp: '人生で起こる全ては因果という法則で動いている。偶然は無く、善き因果を蒔けば、安らぎの果を得る。\n\n各人の奥には総業がある。それは行動・言葉・思いの痕跡であり、心識によって働く。これを理解すれば、目覚めて主体的に人生を変え始める。',
+    contentVi: lessonNhanQuaVi,
+    contentEn: 'The full content for this lesson is currently available in Vietnamese. The English translation will be updated by the WiT editorial team.',
+    contentJp: 'このレッスンの全内容は現在ベトナム語でご利用いただけます。日本語翻訳はWiT編集チームにより更新されます。',
     status: 'published',
     createdAt: new Date(), updatedAt: new Date(),
   },
@@ -122,9 +124,9 @@ export const SEED_LESSONS: Lesson[] = [
     titleEn: 'Nguyên lý Ánh sáng trong nhân sinh',
     titleJp: 'Nguyên lý Ánh sáng trong nhân sinh',
     summaryVi: '', summaryEn: '', summaryJp: '',
-    contentVi: 'Đây là nội dung minh hoạ cho học phần “Nguyên lý Ánh sáng trong nhân sinh”. Nội dung chi tiết của học phần này sẽ được Team biên soạn WiT cập nhật.',
-    contentEn: 'This is illustrative content for the lesson “Nguyên lý Ánh sáng trong nhân sinh”. The full content of this lesson will be updated by the WiT editorial team.',
-    contentJp: 'これはレッスン「Nguyên lý Ánh sáng trong nhân sinh」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
+    contentVi: lessonNLASVi,
+    contentEn: 'The full content for this lesson is currently available in Vietnamese. The English translation will be updated by the WiT editorial team.',
+    contentJp: 'このレッスンの全内容は現在ベトナム語でご利用いただけます。日本語翻訳はWiT編集チームにより更新されます。',
     status: 'published',
     createdAt: new Date(), updatedAt: new Date(),
   },
