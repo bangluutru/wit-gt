@@ -1,0 +1,90 @@
+**CHUYÊN ĐỀ 35: CÔNG THỨC VƯỢT THOÁT MỌI VẤN NẠN**
+**PHẦN 1: THÔNG TIN CHUNG**
+**A. Mục tiêu chuyên đề**
+**Giá trị của chuyên đề:** Cung cấp cho học viên một công thức tuyệt quý, gồm 3 bước thực hành cốt lõi (Biết/Đón nhận - Bao dung - Trân trọng Biết ơn) dựa trên nền tảng của 3 hệ quy chiếu chuẩn, giúp con người không cần đi giải quyết vấn đề mà vấn nạn tự tan biến,,.
+**Ý nghĩa đối với người học:** Trang bị "tấm khiên" bảo vệ nội tâm vĩnh cửu. Khi thấu triệt công thức này, con người sẽ không còn sợ hãi trước những biến cố, nghịch cảnh hay sự bất như ý của nhân sinh, từ đó luôn làm chủ được trạng thái rung động điện từ nội tâm,.
+**Sự chuyển hóa mà chuyên đề mang lại:** Dịch chuyển triệt để thói quen "đi xử lý bóng tối" (lao đầu vào giải quyết hậu quả) sang tâm thế của một người đứng trên vấn nạn. Xóa bỏ sự oán trách, dằn vặt để kiến tạo cỗ máy công đức - phước đức cho bản thân và gia đình.
+**Người học sẽ hiểu gì, ngộ gì và ứng dụng gì sau khi học:**
+*Hiểu:* Nắm vững cấu trúc 3 bước của công thức và mối liên hệ mật thiết giữa các nguồn năng lượng Trí tuệ - Tâm thái đối với việc xử lý nghiệp quả.
+*Ngộ:* Ngộ ra chân lý: Con người không cần nghịch cảnh để trưởng thành, con người chỉ cần bài học để trưởng thành.
+*Ứng dụng:* Bất kỳ khi nào điều bất như ý xảy đến, lập tức ứng dụng công thức để chuyển hóa rủi ro thành bài học, biến nghịch cảnh thành bàn đạp tiến tới sự giàu toàn diện.
+**B. NỘI DUNG CHUYÊN SÂU: CÔNG THỨC VƯỢT THOÁT MỌI VẤN NẠN**
+**1. Dẫn nhập: Cạm bẫy của tư duy "giải quyết vấn đề" và Nghịch lý nhân sinh** Trong suốt chiều dài lịch sử, khi đối diện với những nghịch cảnh, trắc trở hay sự bất như ý, thiên hướng tự nhiên của con người luôn là dùng mọi nỗ lực để "giải quyết vấn đề". Chúng ta điên cuồng tìm kiếm nguyên nhân bên ngoài, oán trách hoàn cảnh, dằn vặt bản thân và dùng ý thức để chống trả lại những điều tồi tệ đang xảy ra.
+Thế nhưng, các cao nhân đã chỉ điểm cho chúng ta một sự thật nghiệt ngã: Năng lực giải quyết vấn nạn của bạn càng cao, thì vấn nạn khác càng lớn sẽ tiếp tục kéo đến. Việc đi giải quyết vấn nạn hoàn toàn giống như việc chúng ta nỗ lực "lấy bóng tối" ra khỏi một căn phòng. Giống như một ngôi nhà xây ở vùng trũng, mỗi năm lũ về ta lại phải đắp đất nâng nền nhà lên, năm sau lũ cao hơn ta lại tiếp tục đắp nền cao hơn nữa. Cứ như vậy, cả một đời người sầu quần trong sự đối phó, mệt mỏi và không bao giờ tìm thấy bến bờ của sự bình an.
+Để chấm dứt vĩnh viễn vòng lặp đau khổ này, chúng ta không thể tiếp tục đi giải quyết vấn đề bằng bóng tối, mà phải thắp lên những ngọn đèn của Trí tuệ, Tâm thái và Nhân cách. Từ đó, một di sản tuyệt quý được trao truyền để con người không cần giải quyết mà vấn nạn tự tan biến:          **Công thức vượt thoát mọi vấn nạn**. Đây thực chất là đỉnh cao của việc "thay nhân, đổi quả" trong nhân sinh.
+**2. Bước 1: Biết và Đón nhận (Khởi tạo An vui) - Nhát kiếm cắt đứt luân chuyển nghiệp Quả** Khi một sự việc bất như ý ập đến, bước đầu tiên và mang tính sống còn nhất không phải là phân tích đúng sai, mà là phải **Biết và Đón nhận** nó bằng sự An vui.
+Dưới góc nhìn của quy luật Nhân - Duyên - Quả, bản chất không có bất kỳ ai trong cuộc đời này nhận một cái Quả nào mà không có Nhân của nó từ trước. Có thể trong đời này chúng ta sống rất tốt, chưa từng phụ bạc hay lừa gạt ai, nhưng hạt mầm đó đã được chúng ta gieo từ hằng hà sa số đời trong quá khứ. Ngay khoảnh khắc nghịch cảnh xảy ra, đó chính là lúc "Quả đã trổ". Nếu chúng ta phản ứng lại bằng sự oán trách, sân hận hay đau khổ, chúng ta đang tiếp tục dùng điện từ Âm để tưới tẩm, gieo thêm những hạt mầm ác đức cho tương lai.
+Lối thoát duy nhất là tìm về **Sự chân thật** nơi chính mình: Chỉ "biết mình đang nghe, biết mình đang thấy" sự việc đó đang diễn ra mà không để lớp Tánh và lớp Tình (sự phân tích, phân biệt hay đối đãi) xen vào,. Nhờ trạng thái An vui này, đường dây luân chuyển của nghiệp quả tiêu cực ngay lập tức bị cắt đứt. Quả xấu đã trổ xong và tự rụng, không thể sinh sôi thêm được nữa.
+**3. Bước 2: Bao dung cho con người - Giải phóng người là cứu lấy chính mình** Sau khi đã chặn đứng sự luân chuyển của nghiệp quả, bước tiếp theo là đối diện với con người mang lại nghịch cảnh. Trọng điểm nhận thức ở đây là: Chúng ta bắt buộc phải **Bao dung cho con người**, bởi vì thực chất, không có cách nào khác tốt hơn.
+Dựa trên Công thức Cội nguồn cuộc sống, mọi kết quả đều bắt nguồn từ chính hạt mầm tâm trí của chúng ta. Con người xuất hiện mang theo sự bất như ý thực chất chỉ là một "người đưa thư", là cái Duyên bắt buộc phải đến để trổ ra cái Quả mà ta đã gieo. Nếu không phải là người này, thì tổng nghiệp cũng sẽ sắp xếp một người khác mang sự việc đó đến cho chúng ta.
+Khi thấu triệt điều này, ta tách biệt con người ra khỏi hành vi của họ. Con người không có vấn đề. Sự Bao dung xuất hiện không phải vì ta cao thượng bố thí sự tha thứ cho người khác, mà Bao dung cho người chính là cách đơn giản nhất để cứu lấy tương lai của chính mình.
+**4. Bước 3: Trân trọng Biết ơn Bài học - Đóng gói rác thải thành phân bón tương lai** Đây là bước cuối cùng, bước vi diệu nhất để vĩnh viễn xóa sổ vấn nạn ra khỏi cuộc đời: Tìm ra **Bài học, Tâm đắc, Ngộ ra** và khởi sinh nguồn năng lượng **Trân trọng - Biết ơn**,.
+Tuy nhiên, có một ranh giới sinh tử cần phải làm rõ: Rất nhiều người ngoài xã hội lầm tưởng và dạy nhau đi "cảm ơn nghịch cảnh, biết ơn nỗi đau, biết ơn người đã làm hại mình". Điều này cực kỳ nguy hiểm, bởi theo nguyên lý vận hành của tâm thức, khi ta trân trọng biết ơn cái gì, cái đó sẽ tụ về và nhân lớn lên. Nếu ta biết ơn nghịch cảnh, tiềm thức sẽ thu hút thêm vô vàn nghịch cảnh và những kẻ lừa gạt đến để ta tiếp tục được "trân trọng biết ơn".
+Triết lý nội tâm xác lập rất rõ ràng: Chúng ta **tuyệt đối không biết ơn nghịch cảnh, mà chỉ Trân trọng - Biết ơn BÀI HỌC** rút ra sau sự việc bất như ý đó,. Khi có bài học, sự oán trách sẽ biến mất. Sự trân trọng biết ơn bài học chính là ánh sáng xua tan đi màn đêm của đau khổ.
+**5. Đúc kết: Đại phẫu thuật nhận thức về sự trưởng thành** Thông qua công thức này, Thầy Toàn chính thức xác lập một nhận thức làm thay đổi toàn bộ hệ tư tưởng giáo dục và phát triển bản thân của nhân loại: **"Con người không cần nghịch cảnh để trưởng thành, con người chỉ cần BÀI HỌC để trưởng thành"**,.
+Bản chất của vấn nạn sinh ra là để ép con người phải nhận lấy một bài học nào đó. Nếu vấn nạn đến mà ta không có bài học, vấn nạn sẽ tiếp tục lặp lại với cường độ lớn hơn. Nhưng nếu ta chủ động rút ra bài học thì vấn nạn vĩnh viễn mất đi lý do để tồn tại. Vậy tại sao phải đợi đến khi mất mát, đổ vỡ, bệnh tật rồi mới chịu học? Chúng ta hoàn toàn có thể chủ động ứng dụng "Nguyên lý kích hoạt não" – kiên trì đúc kết Bài học, Tâm đắc, Ngộ ra mỗi ngày để đi trước nghịch cảnh.
+Khi một con người thấu suốt 3 bước: **An vui đón nhận sự việc – Bao dung cho con người – Trân trọng biết ơn bài học**, họ đã tự thắp lên ngọn đèn Tâm thái sáng rực rỡ. Họ không còn là nạn nhân của số phận, cũng không cần gồng mình đi giải quyết vấn đề. Họ đứng trên mọi vấn nạn phát sinh, thông đồng chuyển hóa mọi rủi ro thành bàn đạp, nhẹ nhàng tiến bước trên hành trình làm giàu toàn diện và làm chủ vận mệnh của chính mình.
+
+**PHẦN 2: NỘI DUNG CHI TIẾT (NỘI DUNG CỐT LÕI)**
+**2.1. Khái niệm (Khái niệm)**
+**Công thức vượt thoát mọi vấn nạn:** Là một tiến trình gồm 3 bước nhận thức nội tâm (Biết/Đón nhận -> Bao dung -> Trân trọng Biết ơn) giúp con người đứng trên mọi phát sinh bất như ý của cuộc sống mà không cần đi trực tiếp giải quyết sự việc,.
+**Biết - Đón nhận (An vui):** Trạng thái nhận thức nội tâm xuất phát từ sự chân thật, chỉ biết mình đang nghe, biết mình đang thấy về sự việc bất như ý mà không để tánh tham và tánh tưởng (lớp tánh, lớp tình) xen vào phán xét.
+**Bao dung (cho Con người):** Trạng thái nội tâm không dính mắc với bất kỳ điều gì ở hành vi của người khác. Nhận thức rõ con người mang lại vấn nạn chỉ là duyên khởi từ tổng nghiệp của chính mình.
+**Trân trọng - Biết ơn (Bài học):** Trạng thái cảm động nội tâm, ghi nhận và biết ơn những bài học, sự ngộ ra sau sự việc bất như ý để triệt tiêu vĩnh viễn sự oán trách.
+**2.2. Trọng điểm tri thức (Key Knowledge)**
+**Cấu trúc 3 bước của Công thức:**
+**Bước 1: Biết – Đón nhận (Trạng thái An Vui).** Đây là bước cắt đứt nghiệp quả. Khi nghịch cảnh đến, dùng sự chân thật để đón nhận. Sự việc bất như ý là quả đã trổ, việc phản kháng chỉ gieo thêm nhân xấu. An vui giúp quả này tự rụng mà không sinh thêm quả khác,,.
+**Bước 2: Bao dung (dành cho Con người).** Bao dung là tình yêu vĩnh cửu. Không dính mắc vào lỗi người. Thấu hiểu rằng cội nguồn cuộc sống xuất phát từ hạt mầm tâm trí của chính mình, con người kia chỉ đóng vai trò là duyên để quả trổ,.
+**Bước 3: Trân trọng – Biết ơn (dành cho Bài học).** Không trân trọng nghịch cảnh, tuyệt đối không biết ơn kẻ gây ra đau khổ (vì điều đó làm ác đức sinh trưởng), mà chỉ Trân trọng – Biết ơn **BÀI HỌC** rút ra sau sự việc đó. Có bài học thì vấn nạn chấm dứt,,.
+**Đồ hình kiến tạo:** [Bất như ý xảy ra] **Biết/Đón nhận (An Vui)** →→ **Bao dung (Con người)** **Trân trọng Biết ơn (Bài học)** Vượt thoát vấn nạn,→→.
+**2.3. Trọng điểm nhận thức (Deep Insights)** *(Được bóc tách qua Bộ 4 màng lọc nhận diện chuẩn)*
+**Nhận thức 1: Con người không cần nghịch cảnh để trưởng thành, con người chỉ cần BÀI HỌC để trưởng thành.**
+*Tín hiệu xác lập:* Thầy nhắc nhở mạnh mẽ việc thay đổi góc nhìn về rủi ro.
+*Sự dịch chuyển:* Phá vỡ lầm tưởng của nhân loại rằng "thất bại là mẹ thành công" hay "phải chịu khổ mới lớn khôn". Thực tế, nếu chủ động rút ra Bài học - Tâm đắc - Ngộ ra mỗi ngày (kích hoạt não), con người sẽ trưởng thành mà không cần phải trả giá bằng nghịch cảnh,.
+**Nhận thức 2: Không đi giải quyết vấn đề, nâng tầm nhận thức thì vấn đề tự tan biến.**
+*Nghịch lý nhân sinh:* Thói quen đi giải quyết sự việc cụ thể (trả nợ, cãi vã) là đang "lấy bóng tối".
+*Chuyển hóa tận gốc:* Ứng dụng công thức này chính là "thắp đèn". Khi ngọn đèn An vui, Bao dung, Trân trọng Biết ơn được thắp sáng, bóng tối của sự kiện tự động biến mất khỏi tâm trí, rào cản vật lý bên ngoài từ đó cũng tự hóa giải,.
+**Nhận thức 3: Bao dung cho người là cách đơn giản nhất để cứu lấy tương lai của chính mình.**
+*Tần suất lặp lại:* Được nhấn mạnh trong câu chuyện "Cô gái mang căn bệnh lạ và chiếc chìa khóa vàng".
+*Chuyển hóa:* Lỗi người 10 phần không nhập vào mình phần nào. Đừng để lỗi lầm của người khác trở thành bản án giam cầm nội tâm của chính mình.
+**Nhận thức 4: Không biết ơn nghịch cảnh, chỉ biết ơn bài học.**
+*Ranh giới sinh tử:* Rất nhiều người học phát triển bản thân bị nhầm lẫn, quay ra "cảm ơn nỗi đau", "cảm ơn người đã lừa gạt tôi". Hệ quả là tiềm thức sẽ thu hút thêm nhiều người đến lừa gạt để họ tiếp tục được "biết ơn". Triết lý giáo dục tận gốc xác lập: Chỉ trân trọng biết ơn BÀI HỌC.
+**2.4. Ví dụ liên hệ bản thân (Personal Application)** Một người bị mất một khoản tiền lớn do đầu tư sai lầm. Thay vì dằn vặt bản thân (tích ác đức, làm điện từ âm) hay đi oán trách thị trường. Họ áp dụng công thức: Bước 1, An vui đón nhận sự mất mát (cắt đứt luân chuyển quả xấu). Bước 2, Bao dung cho chính mình và người rủ rê đầu tư (Cội nguồn từ tôi nhưng không phải lỗi do tôi). Bước 3, Rút ra bài học quản trị tài chính sâu sắc và Trân trọng biết ơn bài học đó. Ngay tức khắc, trạng thái nội tâm từ Âm chuyển sang Cân bằng và Hướng Dương, mở đường cho những cơ hội tài chính mới xuất hiện.
+**2.5. Ví dụ liên hệ gia đình (Family Application)** Trong hôn nhân, khi người chồng/vợ có lời nói tổn thương. Thay vì cãi vã (giải quyết vấn đề bằng bóng tối), người kia lùi lại một nhịp, "Biết mình đang nghe" lời nói đó bằng sự Chân thật (An vui). Nhận thức được con người không có vấn đề, họ chỉ đang phản ứng theo tánh người của họ (Bao dung). Sau đó, tìm ra bài học về cách giao tiếp và biết ơn bài học đó. Mâu thuẫn tan biến ngay trước khi kịp bùng phát thành cuộc chiến.
+**2.6. Ví dụ liên hệ tổ chức (Organizational Application)** Một nhân sự làm hỏng dự án quan trọng của công ty. Lãnh đạo áp dụng công thức: Đón nhận sự việc (An vui để có trí tuệ sáng suốt xử lý khủng hoảng), không chỉ trích con người mà tách con người ra khỏi công việc (Bao dung), cùng nhân sự ngồi lại rút ra bài học quy trình và biết ơn sự cố đã làm bộc lộ lỗ hổng hệ thống. Nhân sự đó chuyển hóa sự áy náy thành động lực cống hiến tột cùng, trở thành nhân tài trung thành của tổ chức.
+**2.7. Ví dụ liên hệ xã hội (Social Impact)** Đứng trước những biến động lớn của xã hội (dịch bệnh, suy thoái kinh tế), thay vì cộng đồng cùng nhau oán trách, lo sợ (tạo ra khối điện từ cộng nghiệp Âm khổng lồ), nếu hàng triệu người thấu hiểu công thức này, cùng nhau đón nhận, bao dung và rút ra bài học phát triển mới. Ngay lập tức, "thế giới hòa bình", một khối cộng nghiệp Dương được kiến tạo, giúp xã hội vượt qua khủng hoảng một cách thông đồng và bứt phá vĩ đại.
+
+**PHẦN 3: CÂU HỎI TỰ LUẬN (THẢO LUẬN HÀNG TUẦN)**
+Hãy trình bày chi tiết 3 bước trong "Công thức vượt thoát mọi vấn nạn". Tại sao thứ tự của 3 bước này không thể đảo lộn?
+Tại sao trong Bước 1, trạng thái "An vui" (Biết và Đón nhận) lại có năng lực cắt đứt đường dây luân chuyển của nghiệp quả bất như ý?
+Phân biệt rõ sự khác nhau giữa việc "Đi giải quyết vấn đề" và việc "Ứng dụng công thức vượt thoát vấn nạn". Lấy ví dụ minh họa.
+
+**PHẦN 4: CÂU HỎI TRẮC NGHIỆM**
+**Câu 1:** Công thức vượt thoát mọi vấn nạn theo hệ quy chiếu Nội tâm bao gồm 3 bước nào theo đúng trình tự? A. Giải quyết vấn đề Bao dung Trân trọng biết ơn →→B. Biết/Đón nhận (An vui) Bo dung (Con người) →→ Trân trọng Biết ơn (Bài học) C. Oán trách Chấp nhận Tìm bài học →→D. Tìm nguyên nhân Phân tích lỗi sai Tha thứ *Đáp án đúng:* B., [→→,,
+**Câu 2:** Tác dụng lớn nhất của bước 1 "Biết và Đón nhận" bằng sự An vui khi sự việc bất như ý xảy ra là gì? A. Để tìm ra người có lỗi nhanh nhất. B. Để cắt đứt luân chuyển nghiệp quả, không cho quả xấu tiếp tục trổ sinh. C. Để chứng tỏ mình là người cao thượng. D. Để dồn nén cảm xúc chờ ngày bùng nổ. *Đáp án đúng:* B.
+**Câu 3:** Trong bước 3 của công thức, chúng ta khởi sinh nguồn năng lượng Trân trọng - Biết ơn đối với điều gì? A. Biết ơn kẻ thù đã làm hại mình. B. Biết ơn nghịch cảnh, đau khổ. C. Biết ơn hoàn cảnh xui xẻo. D. Trân trọng và Biết ơn BÀI HỌC rút ra sau sự việc bất như ý. *Đáp án đúng:* D..
+**Câu 4:** Sự nguy hiểm của việc "Trân trọng biết ơn nghịch cảnh/nỗi đau" thay vì biết ơn bài học là gì? A. Tiềm thức sẽ tiếp tục thu hút thêm nghịch cảnh đến để mình được biết ơn tiếp. B. Làm cho mình trở nên quá thánh thiện. C. Mất thời gian suy nghĩ. D. Người khác sẽ đánh giá mình giả tạo. *Đáp án đúng:* A.
+**Câu 5:** Thông điệp cốt lõi từ câu chuyện "Cô gái mang căn bệnh lạ và chiếc chìa khóa vàng" là gì? A. Phải có chìa khóa vàng mới mở được cửa. B. Bao dung cho người là cách đơn giản nhất để cứu lấy tương lai của chính mình. C. Không nên tin vào giấc mơ. D. Cần đi tìm danh y để chữa bệnh. *Đáp án đúng:* B..
+**Câu 6:** Nhận thức nào sau đây là ĐÚNG về sự trưởng thành của con người? A. Phải chịu nhiều đau khổ, nghịch cảnh mới trưởng thành. B. Thất bại là mẹ thành công, cứ thất bại nhiều sẽ giỏi. C. Con người không cần nghịch cảnh để trưởng thành, con người cần BÀI HỌC để trưởng thành. D. Thời gian sẽ tự làm con người trưởng thành. *Đáp án đúng:* C.,.
+**Câu 7:** Việc liên tục đi "giải quyết vấn nạn" thay vì ứng dụng công thức vượt thoát được ví như hành động nào sau đây? A. Nỗ lực đưa ánh sáng vào phòng. B. Nỗ lực lấy bóng tối ra khỏi căn phòng tối. C. Thắp lên 7 ngọn đèn. D. Chuyển hóa tận gốc rễ. *Đáp án đúng:* B.
+**Câu 8:** Để bao dung được cho con người trong Bước 2, chúng ta cần thấu triệt nhận thức nào sau đây? A. Người đó có địa vị cao hơn mình nên phải nhịn. B. Mình không đánh lại họ nên phải bao dung. C. Cội nguồn cuộc sống bắt nguồn từ chính tôi, họ chỉ là duyên mang quả đến. D. Thời gian sẽ làm mờ mọi chuyện. *Đáp án đúng:* C.,.
+**Câu 9:** Chuyên gia tư vấn huấn luyện nội tâm khi lắng nghe vấn nạn của người khác, việc ĐẦU TIÊN họ cần làm là gì? A. Cho ngay giải pháp xử lý. B. Biết mình đang nghe, biết mình đang thấy (An vui). C. Trách mắng học viên vì không chịu học bài. D. Kể vấn nạn của mình ra để đồng cảm. *Đáp án đúng:* B.,,.
+**Câu 10:** Khi một người thực hành thuần thục "Công thức vượt thoát mọi vấn nạn", họ sẽ trở thành cỗ máy gì cho gia đình và xã hội? A. Cỗ máy kiếm tiền. B. Cỗ máy phán xét. C. Cỗ máy công đức - phước đức. D. Cỗ máy giải quyết rắc rối. *Đáp án đúng:* C..
+
+**PHẦN 5: CHỦ ĐỀ VIẾT LUẬN (WRITING ASSIGNMENT)**
+**Chủ đề viết luận trọng điểm (1.000 - 3.000 từ):**
+"Nghịch lý của sự trưởng thành: Phân tích luận điểm 'Con người không cần nghịch cảnh, chỉ cần bài học để trưởng thành' ứng dụng trong giáo dục gia đình".
+"Từ Nạn nhân đến Nhà kiến tạo: Phân tích sự chuyển dịch nội tâm qua 3 bước Biết/Đón nhận, Bao dung và Trân trọng Biết ơn".
+"Bao dung cho người là cứu lấy tương lai chính mình: Bài học thức tỉnh từ câu chuyện Chiếc chìa khóa vàng".
+
+**PHẦN 6: LỜI KÊU GỌI HÀNH ĐỘNG & BÀI HỌC TÂM ĐẮC NGỘ RA**
+**"ĐỨNG TRÊN MỌI VẤN NẠN BẰNG NGUỒN NĂNG LƯỢNG ÁNH SÁNG!"**
+**Ngay hôm nay:** Khi một điều bất như ý nhỏ nhất xảy ra (kẹt xe, con làm đổ nước, đồng nghiệp khó chịu), hãy ngừng lại 3 giây. Đừng phản ứng bằng bóng tối của sự bực dọc. Hãy thực hành ngay công thức:
+**An Vui:** Biết mình đang thấy điều đó, đón nhận nó.
+**Bảo Dung:** Tách con người ra khỏi hành vi, mỉm cười tha thứ.
+**Trân Trọng Biết Ơn:** Rút ra ngay một bài học cho bản thân.
+Hãy biến công thức này thành hơi thở của bạn, để từ đó trở đi, cuộc đời bạn vĩnh viễn không còn khái niệm "vấn nạn", chỉ còn lại những nấc thang của sự trưởng thành!
+**CHIA SẺ BÀI HỌC - TÂM ĐẮC - NGỘ RA CỦA HỌC VIÊN** *(Học viên sử dụng không gian này để tự ghi chép lại ít nhất 03 Bài học - Tâm đắc - Ngộ ra. Sự huân tập này sẽ thắp sáng ngọn đèn trong tâm trí, kích hoạt tổng nghiệp tốt đẹp để kiến tạo một tương lai viên mãn).*
+Bài học (Những gì mới học được): ...................................................................
+Tâm đắc (Những gì ứng dụng được vào thực tế): .................................................
+Ngộ ra (Những trăn trở nay đã có lời giải): ........................................................

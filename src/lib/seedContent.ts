@@ -16,6 +16,36 @@ import lessonCTCNVGTVi from '../content/lesson-cau-truc-con-nguoi-ve-goi-ten.vi.
 import lessonCTCNTKVi from '../content/lesson-cau-truc-con-nguoi-tanh-khong.vi.md?raw';
 import lessonCTCNTNVi from '../content/lesson-cau-truc-con-nguoi-tanh-nguoi.vi.md?raw';
 import lessonCTCN3KDVi from '../content/lesson-cau-truc-con-nguoi-3-khoi-duc.vi.md?raw';
+// New imports (l13, l16-l19, l23-l30, l35-l36, l38-l50)
+import lessonCTCNVCKTVi from '../content/lesson-cau-truc-con-nguoi-vat-chat-kgian-tgian.vi.md?raw';
+import lessonGiauTriTueVi from '../content/lesson-giau-tri-tue.vi.md?raw';
+import lessonGiauTamThaiVi from '../content/lesson-giau-tam-thai.vi.md?raw';
+import lessonGiauNhanCachVi from '../content/lesson-giau-nhan-cach.vi.md?raw';
+import lessonGiauPhamChatVi from '../content/lesson-giau-pham-chat.vi.md?raw';
+import lesson7SGTDVi from '../content/lesson-7-su-giau-toan-dien.vi.md?raw';
+import lessonNhanTotVi from '../content/lesson-nhan-tot-trong-nhan-sinh.vi.md?raw';
+import lesson9DangNguoiVi from '../content/lesson-9-dang-nguoi.vi.md?raw';
+import lessonToChatNhanTaiVi from '../content/lesson-nhan-thuc-to-chat-nhan-tai.vi.md?raw';
+import lessonNhanThucDuDayVi from '../content/lesson-nhan-thuc-du-day-ve-con-nguoi.vi.md?raw';
+import lessonNangCapMQHVi from '../content/lesson-nhan-dang-nang-cap-moi-quan-he.vi.md?raw';
+import lesson7BoThiVi from '../content/lesson-7-bo-thi-quan-trong.vi.md?raw';
+import lessonDuyenLanhVi from '../content/lesson-duyen-lanh-trong-nhan-sinh.vi.md?raw';
+import lessonVuotThoatVi from '../content/lesson-cong-thuc-vuot-thoat-van-nan.vi.md?raw';
+import lessonLamGiauVCVi from '../content/lesson-cong-thuc-lam-giau-vat-chat.vi.md?raw';
+import lessonBinhThuongPhiThuongVi from '../content/lesson-cong-thuc-bien-binh-thuong-phi-thuong.vi.md?raw';
+import lessonTuVanHuanLuyenVi from '../content/lesson-cong-thuc-tu-van-huan-luyen.vi.md?raw';
+import lessonMongMuonYThucVi from '../content/lesson-cong-thuc-bien-mong-muon-y-thuc.vi.md?raw';
+import lessonKichHoatTongNghiepVi from '../content/lesson-cong-thuc-kich-hoat-tong-nghiep.vi.md?raw';
+import lessonTriTueUuTuVi from '../content/lesson-tri-tue-uu-tu.vi.md?raw';
+import lessonMatMa3773Vi from '../content/lesson-mat-ma-chuyen-gia-3773.vi.md?raw';
+import lessonQuanNiemChuanVi from '../content/lesson-quan-niem-chuan-dao-tao.vi.md?raw';
+import lessonTamThaiDungVi from '../content/lesson-tam-thai-dung-dao-tao.vi.md?raw';
+import lessonNangLucPhuHopVi from '../content/lesson-nang-luc-phu-hop-dao-tao.vi.md?raw';
+import lessonNguyenTacDaoTaoVi from '../content/lesson-nguyen-tac-dao-tao.vi.md?raw';
+import lessonThuDacGiaTocVi from '../content/lesson-phuong-phap-thu-dac-gia-toc-tu-chung.vi.md?raw';
+import lessonBonDoHinhVi from '../content/lesson-bon-do-hinh-nhan-sinh.vi.md?raw';
+import lessonQuyLuatThuHutVi from '../content/lesson-quy-luat-thu-hut-anh-huong-gia-tri.vi.md?raw';
+
 
 export const SEED_CHAPTERS: Chapter[] = [
   {
@@ -287,7 +317,7 @@ export const SEED_LESSONS: Lesson[] = [
     titleEn: 'Cấu trúc con người - vật chất - không gian - thời gian',
     titleJp: 'Cấu trúc con người - vật chất - không gian - thời gian',
     summaryVi: '', summaryEn: '', summaryJp: '',
-    contentVi: 'Đây là nội dung minh hoạ cho học phần “Cấu trúc con người - vật chất - không gian - thời gian”. Nội dung chi tiết của học phần này sẽ được Team biên soạn WiT cập nhật.',
+    contentVi: lessonCTCNVCKTVi,
     contentEn: 'This is illustrative content for the lesson “Cấu trúc con người - vật chất - không gian - thời gian”. The full content of this lesson will be updated by the WiT editorial team.',
     contentJp: 'これはレッスン「Cấu trúc con người - vật chất - không gian - thời gian」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',
@@ -329,7 +359,7 @@ export const SEED_LESSONS: Lesson[] = [
     titleEn: 'Giàu Trí tuệ',
     titleJp: 'Giàu Trí tuệ',
     summaryVi: '', summaryEn: '', summaryJp: '',
-    contentVi: 'Đây là nội dung minh hoạ cho học phần “Giàu Trí tuệ”. Nội dung chi tiết của học phần này sẽ được Team biên soạn WiT cập nhật.',
+    contentVi: lessonGiauTriTueVi,
     contentEn: 'This is illustrative content for the lesson “Giàu Trí tuệ”. The full content of this lesson will be updated by the WiT editorial team.',
     contentJp: 'これはレッスン「Giàu Trí tuệ」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',
@@ -343,7 +373,7 @@ export const SEED_LESSONS: Lesson[] = [
     titleEn: 'Giàu Tâm thái',
     titleJp: 'Giàu Tâm thái',
     summaryVi: '', summaryEn: '', summaryJp: '',
-    contentVi: 'Đây là nội dung minh hoạ cho học phần “Giàu Tâm thái”. Nội dung chi tiết của học phần này sẽ được Team biên soạn WiT cập nhật.',
+    contentVi: lessonGiauTamThaiVi,
     contentEn: 'This is illustrative content for the lesson “Giàu Tâm thái”. The full content of this lesson will be updated by the WiT editorial team.',
     contentJp: 'これはレッスン「Giàu Tâm thái」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',
@@ -357,7 +387,7 @@ export const SEED_LESSONS: Lesson[] = [
     titleEn: 'Giàu nhân cách',
     titleJp: 'Giàu nhân cách',
     summaryVi: '', summaryEn: '', summaryJp: '',
-    contentVi: 'Đây là nội dung minh hoạ cho học phần “Giàu nhân cách”. Nội dung chi tiết của học phần này sẽ được Team biên soạn WiT cập nhật.',
+    contentVi: lessonGiauNhanCachVi,
     contentEn: 'This is illustrative content for the lesson “Giàu nhân cách”. The full content of this lesson will be updated by the WiT editorial team.',
     contentJp: 'これはレッスン「Giàu nhân cách」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',
@@ -371,7 +401,7 @@ export const SEED_LESSONS: Lesson[] = [
     titleEn: 'Giàu phẩm chất',
     titleJp: 'Giàu phẩm chất',
     summaryVi: '', summaryEn: '', summaryJp: '',
-    contentVi: 'Đây là nội dung minh hoạ cho học phần “Giàu phẩm chất”. Nội dung chi tiết của học phần này sẽ được Team biên soạn WiT cập nhật.',
+    contentVi: lessonGiauPhamChatVi,
     contentEn: 'This is illustrative content for the lesson “Giàu phẩm chất”. The full content of this lesson will be updated by the WiT editorial team.',
     contentJp: 'これはレッスン「Giàu phẩm chất」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',
@@ -427,7 +457,7 @@ export const SEED_LESSONS: Lesson[] = [
     titleEn: '7 sự Giàu Toàn Diện',
     titleJp: '7 sự Giàu Toàn Diện',
     summaryVi: '', summaryEn: '', summaryJp: '',
-    contentVi: 'Đây là nội dung minh hoạ cho học phần “7 sự Giàu Toàn Diện”. Nội dung chi tiết của học phần này sẽ được Team biên soạn WiT cập nhật.',
+    contentVi: lesson7SGTDVi,
     contentEn: 'This is illustrative content for the lesson “7 sự Giàu Toàn Diện”. The full content of this lesson will be updated by the WiT editorial team.',
     contentJp: 'これはレッスン「7 sự Giàu Toàn Diện」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',
@@ -441,7 +471,7 @@ export const SEED_LESSONS: Lesson[] = [
     titleEn: 'Nhân tốt trong nhân sinh',
     titleJp: 'Nhân tốt trong nhân sinh',
     summaryVi: '', summaryEn: '', summaryJp: '',
-    contentVi: 'Đây là nội dung minh hoạ cho học phần “Nhân tốt trong nhân sinh”. Nội dung chi tiết của học phần này sẽ được Team biên soạn WiT cập nhật.',
+    contentVi: lessonNhanTotVi,
     contentEn: 'This is illustrative content for the lesson “Nhân tốt trong nhân sinh”. The full content of this lesson will be updated by the WiT editorial team.',
     contentJp: 'これはレッスン「Nhân tốt trong nhân sinh」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',
@@ -455,7 +485,7 @@ export const SEED_LESSONS: Lesson[] = [
     titleEn: '9 dạng người cần nhận dạng, đối đãi, thu hút và trở thành',
     titleJp: '9 dạng người cần nhận dạng, đối đãi, thu hút và trở thành',
     summaryVi: '', summaryEn: '', summaryJp: '',
-    contentVi: 'Đây là nội dung minh hoạ cho học phần “9 dạng người cần nhận dạng, đối đãi, thu hút và trở thành”. Nội dung chi tiết của học phần này sẽ được Team biên soạn WiT cập nhật.',
+    contentVi: lesson9DangNguoiVi,
     contentEn: 'This is illustrative content for the lesson “9 dạng người cần nhận dạng, đối đãi, thu hút và trở thành”. The full content of this lesson will be updated by the WiT editorial team.',
     contentJp: 'これはレッスン「9 dạng người cần nhận dạng, đối đãi, thu hút và trở thành」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',
@@ -469,7 +499,7 @@ export const SEED_LESSONS: Lesson[] = [
     titleEn: 'Nhận thức về tố chất Nhân tài',
     titleJp: 'Nhận thức về tố chất Nhân tài',
     summaryVi: '', summaryEn: '', summaryJp: '',
-    contentVi: 'Đây là nội dung minh hoạ cho học phần “Nhận thức về tố chất Nhân tài”. Nội dung chi tiết của học phần này sẽ được Team biên soạn WiT cập nhật.',
+    contentVi: lessonToChatNhanTaiVi,
     contentEn: 'This is illustrative content for the lesson “Nhận thức về tố chất Nhân tài”. The full content of this lesson will be updated by the WiT editorial team.',
     contentJp: 'これはレッスン「Nhận thức về tố chất Nhân tài」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',
@@ -483,7 +513,7 @@ export const SEED_LESSONS: Lesson[] = [
     titleEn: 'Nhận thức đủ đầy về Con người',
     titleJp: 'Nhận thức đủ đầy về Con người',
     summaryVi: '', summaryEn: '', summaryJp: '',
-    contentVi: 'Đây là nội dung minh hoạ cho học phần “Nhận thức đủ đầy về Con người”. Nội dung chi tiết của học phần này sẽ được Team biên soạn WiT cập nhật.',
+    contentVi: lessonNhanThucDuDayVi,
     contentEn: 'This is illustrative content for the lesson “Nhận thức đủ đầy về Con người”. The full content of this lesson will be updated by the WiT editorial team.',
     contentJp: 'これはレッスン「Nhận thức đủ đầy về Con người」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',
@@ -497,7 +527,7 @@ export const SEED_LESSONS: Lesson[] = [
     titleEn: 'Nhận dạng và nâng cấp mối quan hệ',
     titleJp: 'Nhận dạng và nâng cấp mối quan hệ',
     summaryVi: '', summaryEn: '', summaryJp: '',
-    contentVi: 'Đây là nội dung minh hoạ cho học phần “Nhận dạng và nâng cấp mối quan hệ”. Nội dung chi tiết của học phần này sẽ được Team biên soạn WiT cập nhật.',
+    contentVi: lessonNangCapMQHVi,
     contentEn: 'This is illustrative content for the lesson “Nhận dạng và nâng cấp mối quan hệ”. The full content of this lesson will be updated by the WiT editorial team.',
     contentJp: 'これはレッスン「Nhận dạng và nâng cấp mối quan hệ」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',
@@ -511,7 +541,7 @@ export const SEED_LESSONS: Lesson[] = [
     titleEn: '7 bố thí quan trọng đời người',
     titleJp: '7 bố thí quan trọng đời người',
     summaryVi: '', summaryEn: '', summaryJp: '',
-    contentVi: 'Đây là nội dung minh hoạ cho học phần “7 bố thí quan trọng đời người”. Nội dung chi tiết của học phần này sẽ được Team biên soạn WiT cập nhật.',
+    contentVi: lesson7BoThiVi,
     contentEn: 'This is illustrative content for the lesson “7 bố thí quan trọng đời người”. The full content of this lesson will be updated by the WiT editorial team.',
     contentJp: 'これはレッスン「7 bố thí quan trọng đời người」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',
@@ -525,7 +555,7 @@ export const SEED_LESSONS: Lesson[] = [
     titleEn: 'Duyên lành trong nhân sinh',
     titleJp: 'Duyên lành trong nhân sinh',
     summaryVi: '', summaryEn: '', summaryJp: '',
-    contentVi: 'Đây là nội dung minh hoạ cho học phần “Duyên lành trong nhân sinh”. Nội dung chi tiết của học phần này sẽ được Team biên soạn WiT cập nhật.',
+    contentVi: lessonDuyenLanhVi,
     contentEn: 'This is illustrative content for the lesson “Duyên lành trong nhân sinh”. The full content of this lesson will be updated by the WiT editorial team.',
     contentJp: 'これはレッスン「Duyên lành trong nhân sinh」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',
@@ -595,7 +625,7 @@ export const SEED_LESSONS: Lesson[] = [
     titleEn: 'Công thức vượt thoát mọi vấn nạn',
     titleJp: 'Công thức vượt thoát mọi vấn nạn',
     summaryVi: '', summaryEn: '', summaryJp: '',
-    contentVi: 'Đây là nội dung minh hoạ cho học phần “Công thức vượt thoát mọi vấn nạn”. Nội dung chi tiết của học phần này sẽ được Team biên soạn WiT cập nhật.',
+    contentVi: lessonVuotThoatVi,
     contentEn: 'This is illustrative content for the lesson “Công thức vượt thoát mọi vấn nạn”. The full content of this lesson will be updated by the WiT editorial team.',
     contentJp: 'これはレッスン「Công thức vượt thoát mọi vấn nạn」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',
@@ -609,7 +639,7 @@ export const SEED_LESSONS: Lesson[] = [
     titleEn: 'Công thức làm giàu vật chất',
     titleJp: 'Công thức làm giàu vật chất',
     summaryVi: '', summaryEn: '', summaryJp: '',
-    contentVi: 'Đây là nội dung minh hoạ cho học phần “Công thức làm giàu vật chất”. Nội dung chi tiết của học phần này sẽ được Team biên soạn WiT cập nhật.',
+    contentVi: lessonLamGiauVCVi,
     contentEn: 'This is illustrative content for the lesson “Công thức làm giàu vật chất”. The full content of this lesson will be updated by the WiT editorial team.',
     contentJp: 'これはレッスン「Công thức làm giàu vật chất」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',
@@ -637,7 +667,7 @@ export const SEED_LESSONS: Lesson[] = [
     titleEn: 'Công thức biến người bình thường trở nên phi thường',
     titleJp: 'Công thức biến người bình thường trở nên phi thường',
     summaryVi: '', summaryEn: '', summaryJp: '',
-    contentVi: 'Đây là nội dung minh hoạ cho học phần “Công thức biến người bình thường trở nên phi thường”. Nội dung chi tiết của học phần này sẽ được Team biên soạn WiT cập nhật.',
+    contentVi: lessonBinhThuongPhiThuongVi,
     contentEn: 'This is illustrative content for the lesson “Công thức biến người bình thường trở nên phi thường”. The full content of this lesson will be updated by the WiT editorial team.',
     contentJp: 'これはレッスン「Công thức biến người bình thường trở nên phi thường」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',
@@ -651,7 +681,7 @@ export const SEED_LESSONS: Lesson[] = [
     titleEn: 'Công thức tư vấn huấn luyện của Chuyên gia tư vấn huấn luyện nội tâm',
     titleJp: 'Công thức tư vấn huấn luyện của Chuyên gia tư vấn huấn luyện nội tâm',
     summaryVi: '', summaryEn: '', summaryJp: '',
-    contentVi: 'Đây là nội dung minh hoạ cho học phần “Công thức tư vấn huấn luyện của Chuyên gia tư vấn huấn luyện nội tâm”. Nội dung chi tiết của học phần này sẽ được Team biên soạn WiT cập nhật.',
+    contentVi: lessonTuVanHuanLuyenVi,
     contentEn: 'This is illustrative content for the lesson “Công thức tư vấn huấn luyện của Chuyên gia tư vấn huấn luyện nội tâm”. The full content of this lesson will be updated by the WiT editorial team.',
     contentJp: 'これはレッスン「Công thức tư vấn huấn luyện của Chuyên gia tư vấn huấn luyện nội tâm」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',
@@ -665,7 +695,7 @@ export const SEED_LESSONS: Lesson[] = [
     titleEn: 'Công thức biến mong muốn ý thức thành niềm tin bản thân',
     titleJp: 'Công thức biến mong muốn ý thức thành niềm tin bản thân',
     summaryVi: '', summaryEn: '', summaryJp: '',
-    contentVi: 'Đây là nội dung minh hoạ cho học phần “Công thức biến mong muốn ý thức thành niềm tin bản thân”. Nội dung chi tiết của học phần này sẽ được Team biên soạn WiT cập nhật.',
+    contentVi: lessonMongMuonYThucVi,
     contentEn: 'This is illustrative content for the lesson “Công thức biến mong muốn ý thức thành niềm tin bản thân”. The full content of this lesson will be updated by the WiT editorial team.',
     contentJp: 'これはレッスン「Công thức biến mong muốn ý thức thành niềm tin bản thân」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',
@@ -679,7 +709,7 @@ export const SEED_LESSONS: Lesson[] = [
     titleEn: 'Công thức kích hoạt tổng nghiệp như ý',
     titleJp: 'Công thức kích hoạt tổng nghiệp như ý',
     summaryVi: '', summaryEn: '', summaryJp: '',
-    contentVi: 'Đây là nội dung minh hoạ cho học phần “Công thức kích hoạt tổng nghiệp như ý”. Nội dung chi tiết của học phần này sẽ được Team biên soạn WiT cập nhật.',
+    contentVi: lessonKichHoatTongNghiepVi,
     contentEn: 'This is illustrative content for the lesson “Công thức kích hoạt tổng nghiệp như ý”. The full content of this lesson will be updated by the WiT editorial team.',
     contentJp: 'これはレッスン「Công thức kích hoạt tổng nghiệp như ý」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',
@@ -693,7 +723,7 @@ export const SEED_LESSONS: Lesson[] = [
     titleEn: 'Trí tuệ ưu tú (Thiết lập, tập hợp, điều hành và phát huy)',
     titleJp: 'Trí tuệ ưu tú (Thiết lập, tập hợp, điều hành và phát huy)',
     summaryVi: '', summaryEn: '', summaryJp: '',
-    contentVi: 'Đây là nội dung minh hoạ cho học phần “Trí tuệ ưu tú (Thiết lập, tập hợp, điều hành và phát huy)”. Nội dung chi tiết của học phần này sẽ được Team biên soạn WiT cập nhật.',
+    contentVi: lessonTriTueUuTuVi,
     contentEn: 'This is illustrative content for the lesson “Trí tuệ ưu tú (Thiết lập, tập hợp, điều hành và phát huy)”. The full content of this lesson will be updated by the WiT editorial team.',
     contentJp: 'これはレッスン「Trí tuệ ưu tú (Thiết lập, tập hợp, điều hành và phát huy)」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',
@@ -707,7 +737,7 @@ export const SEED_LESSONS: Lesson[] = [
     titleEn: 'Mật mã của Chuyên gia tư vấn huấn luyện nội tâm (3773)',
     titleJp: 'Mật mã của Chuyên gia tư vấn huấn luyện nội tâm (3773)',
     summaryVi: '', summaryEn: '', summaryJp: '',
-    contentVi: 'Đây là nội dung minh hoạ cho học phần “Mật mã của Chuyên gia tư vấn huấn luyện nội tâm (3773)”. Nội dung chi tiết của học phần này sẽ được Team biên soạn WiT cập nhật.',
+    contentVi: lessonMatMa3773Vi,
     contentEn: 'This is illustrative content for the lesson “Mật mã của Chuyên gia tư vấn huấn luyện nội tâm (3773)”. The full content of this lesson will be updated by the WiT editorial team.',
     contentJp: 'これはレッスン「Mật mã của Chuyên gia tư vấn huấn luyện nội tâm (3773)」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',
@@ -721,7 +751,7 @@ export const SEED_LESSONS: Lesson[] = [
     titleEn: 'Quan niệm chuẩn trong đào tạo',
     titleJp: 'Quan niệm chuẩn trong đào tạo',
     summaryVi: '', summaryEn: '', summaryJp: '',
-    contentVi: 'Đây là nội dung minh hoạ cho học phần “Quan niệm chuẩn trong đào tạo”. Nội dung chi tiết của học phần này sẽ được Team biên soạn WiT cập nhật.',
+    contentVi: lessonQuanNiemChuanVi,
     contentEn: 'This is illustrative content for the lesson “Quan niệm chuẩn trong đào tạo”. The full content of this lesson will be updated by the WiT editorial team.',
     contentJp: 'これはレッスン「Quan niệm chuẩn trong đào tạo」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',
@@ -735,7 +765,7 @@ export const SEED_LESSONS: Lesson[] = [
     titleEn: 'Tâm thái đúng trong đào tạo',
     titleJp: 'Tâm thái đúng trong đào tạo',
     summaryVi: '', summaryEn: '', summaryJp: '',
-    contentVi: 'Đây là nội dung minh hoạ cho học phần “Tâm thái đúng trong đào tạo”. Nội dung chi tiết của học phần này sẽ được Team biên soạn WiT cập nhật.',
+    contentVi: lessonTamThaiDungVi,
     contentEn: 'This is illustrative content for the lesson “Tâm thái đúng trong đào tạo”. The full content of this lesson will be updated by the WiT editorial team.',
     contentJp: 'これはレッスン「Tâm thái đúng trong đào tạo」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',
@@ -749,7 +779,7 @@ export const SEED_LESSONS: Lesson[] = [
     titleEn: 'Năng lực phù hợp trong đào tạo',
     titleJp: 'Năng lực phù hợp trong đào tạo',
     summaryVi: '', summaryEn: '', summaryJp: '',
-    contentVi: 'Đây là nội dung minh hoạ cho học phần “Năng lực phù hợp trong đào tạo”. Nội dung chi tiết của học phần này sẽ được Team biên soạn WiT cập nhật.',
+    contentVi: lessonNangLucPhuHopVi,
     contentEn: 'This is illustrative content for the lesson “Năng lực phù hợp trong đào tạo”. The full content of this lesson will be updated by the WiT editorial team.',
     contentJp: 'これはレッスン「Năng lực phù hợp trong đào tạo」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',
@@ -763,7 +793,7 @@ export const SEED_LESSONS: Lesson[] = [
     titleEn: 'Nguyên tắc trong đào tạo',
     titleJp: 'Nguyên tắc trong đào tạo',
     summaryVi: '', summaryEn: '', summaryJp: '',
-    contentVi: 'Đây là nội dung minh hoạ cho học phần “Nguyên tắc trong đào tạo”. Nội dung chi tiết của học phần này sẽ được Team biên soạn WiT cập nhật.',
+    contentVi: lessonNguyenTacDaoTaoVi,
     contentEn: 'This is illustrative content for the lesson “Nguyên tắc trong đào tạo”. The full content of this lesson will be updated by the WiT editorial team.',
     contentJp: 'これはレッスン「Nguyên tắc trong đào tạo」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',
@@ -777,7 +807,7 @@ export const SEED_LESSONS: Lesson[] = [
     titleEn: 'Phương pháp Thụ đắc - Gia tốc - Tụ chúng',
     titleJp: 'Phương pháp Thụ đắc - Gia tốc - Tụ chúng',
     summaryVi: '', summaryEn: '', summaryJp: '',
-    contentVi: 'Đây là nội dung minh hoạ cho học phần “Phương pháp Thụ đắc - Gia tốc - Tụ chúng”. Nội dung chi tiết của học phần này sẽ được Team biên soạn WiT cập nhật.',
+    contentVi: lessonThuDacGiaTocVi,
     contentEn: 'This is illustrative content for the lesson “Phương pháp Thụ đắc - Gia tốc - Tụ chúng”. The full content of this lesson will be updated by the WiT editorial team.',
     contentJp: 'これはレッスン「Phương pháp Thụ đắc - Gia tốc - Tụ chúng」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',
@@ -791,7 +821,7 @@ export const SEED_LESSONS: Lesson[] = [
     titleEn: 'Bốn đồ hình nhân sinh 1,2,3,4 và Ứng dụng',
     titleJp: 'Bốn đồ hình nhân sinh 1,2,3,4 và Ứng dụng',
     summaryVi: '', summaryEn: '', summaryJp: '',
-    contentVi: 'Đây là nội dung minh hoạ cho học phần “Bốn đồ hình nhân sinh 1,2,3,4 và Ứng dụng”. Nội dung chi tiết của học phần này sẽ được Team biên soạn WiT cập nhật.',
+    contentVi: lessonBonDoHinhVi,
     contentEn: 'This is illustrative content for the lesson “Bốn đồ hình nhân sinh 1,2,3,4 và Ứng dụng”. The full content of this lesson will be updated by the WiT editorial team.',
     contentJp: 'これはレッスン「Bốn đồ hình nhân sinh 1,2,3,4 và Ứng dụng」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',
@@ -805,7 +835,7 @@ export const SEED_LESSONS: Lesson[] = [
     titleEn: 'Quy luật Thu hút - Ảnh hưởng - Giá trị - Chuyển hóa',
     titleJp: 'Quy luật Thu hút - Ảnh hưởng - Giá trị - Chuyển hóa',
     summaryVi: '', summaryEn: '', summaryJp: '',
-    contentVi: 'Đây là nội dung minh hoạ cho học phần “Quy luật Thu hút - Ảnh hưởng - Giá trị - Chuyển hóa”. Nội dung chi tiết của học phần này sẽ được Team biên soạn WiT cập nhật.',
+    contentVi: lessonQuyLuatThuHutVi,
     contentEn: 'This is illustrative content for the lesson “Quy luật Thu hút - Ảnh hưởng - Giá trị - Chuyển hóa”. The full content of this lesson will be updated by the WiT editorial team.',
     contentJp: 'これはレッスン「Quy luật Thu hút - Ảnh hưởng - Giá trị - Chuyển hóa」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',
