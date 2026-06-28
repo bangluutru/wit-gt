@@ -40,7 +40,7 @@ export function CommunitySection({ lang }: Props) {
             <p>
               {L(
                 'Chính sự bền bỉ ấy đã tạo nên nền tảng để những giá trị của WiT tiếp tục được gìn giữ và phát triển.',
-                'It is precisely that perseverance that has created the foundation for WiT's values to continue to be preserved and developed.',
+                "It is precisely that perseverance that has created the foundation for WiT's values to continue to be preserved and developed.",
                 'まさにその粘り強さこそが、WiTの価値観が守られ、発展し続けるための礎を築いてきたのです。'
               )}
             </p>

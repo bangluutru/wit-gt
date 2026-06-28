@@ -1,3 +1,4 @@
+import React from 'react';
 import { Reveal } from './Reveal';
 import type { Language } from '../../lib/types';
 
@@ -28,7 +29,7 @@ const LINES_JP = [
 ];
 
 export function JourneySection({ lang }: Props) {
-  const L = (vi: string, en: string, jp: string) =>
+  const L = (vi: React.ReactNode, en: React.ReactNode, jp: React.ReactNode): React.ReactNode =>
     lang === 'en' ? en : lang === 'jp' ? jp : vi;
 
   const lines = lang === 'en' ? LINES_EN : lang === 'jp' ? LINES_JP : LINES_VI;

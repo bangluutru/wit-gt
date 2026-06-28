@@ -1,3 +1,4 @@
+import React from 'react';
 import { Sprout } from 'lucide-react';
 import { Reveal } from './Reveal';
 import type { Language } from '../../lib/types';
@@ -5,7 +6,7 @@ import type { Language } from '../../lib/types';
 interface Props { lang: Language }
 
 export function GratitudeHero({ lang }: Props) {
-  const L = (vi: string, en: string, jp: string) =>
+  const L = (vi: React.ReactNode, en: React.ReactNode, jp: React.ReactNode): React.ReactNode =>
     lang === 'en' ? en : lang === 'jp' ? jp : vi;
 
   return (
