@@ -8,7 +8,6 @@ import { useSettings } from '../contexts/SettingsContext';
 import { useWit365 } from '../hooks/useWit365';
 import { Wit365Hero } from '../components/wit365/Wit365Hero';
 import { DailySeedCard } from '../components/wit365/DailySeedCard';
-import { RandomQuoteButton } from '../components/wit365/RandomQuoteButton';
 import { QuoteList } from '../components/wit365/QuoteList';
 import type { Wit365Quote } from '../lib/types';
 
@@ -35,13 +34,25 @@ export default function Wit365() {
     if (random) {
       setActiveQuote(random);
       setAnimKey((k) => k + 1);
-      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   }, [getRandomQuote, displayedQuote]);
+
+  // Step prev/next through the ordered quotes (wraps around)
+  const handleStep = useCallback(
+    (dir: number) => {
+      if (!displayedQuote || quotes.length === 0) return;
+      const i = quotes.findIndex((q) => q.id === displayedQuote.id);
+      const next = (i + dir + quotes.length) % quotes.length;
+      setActiveQuote(quotes[next]);
+      setAnimKey((k) => k + 1);
+    },
+    [quotes, displayedQuote]
+  );
 
   const handleSelectQuote = useCallback((quote: Wit365Quote) => {
     setActiveQuote(quote);
     setAnimKey((k) => k + 1);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }, []);
 
   if (loading) {
@@ -53,35 +64,30 @@ export default function Wit365() {
   }
 
   return (
-    <div className="page-enter">
+    <div className="page-enter max-w-[720px] mx-auto pb-20">
       <Wit365Hero lang={interfaceLang} />
 
-      {/* Daily Seed Section */}
-      <section className="max-w-2xl mx-auto pb-20 space-y-8">
-        {displayedQuote && (
-          <DailySeedCard
-            quote={displayedQuote}
-            lang={interfaceLang}
-            isFavorite={isFavorite(displayedQuote.id)}
-            onToggleFavorite={() => toggleFavorite(displayedQuote.id)}
-            animationKey={animKey}
-          />
-        )}
-
-        {/* CTAs */}
-        <div className="flex flex-wrap items-center gap-3 justify-center">
-          <RandomQuoteButton lang={interfaceLang} onRandom={handleRandom} />
-        </div>
-
-        {/* Full list */}
-        <QuoteList
+      {displayedQuote && (
+        <DailySeedCard
+          quote={displayedQuote}
           lang={interfaceLang}
-          quotes={quotes}
-          searchQuotes={searchQuotes}
-          isFavorite={isFavorite}
-          onSelectQuote={handleSelectQuote}
+          isFavorite={isFavorite(displayedQuote.id)}
+          onToggleFavorite={() => toggleFavorite(displayedQuote.id)}
+          onPrev={() => handleStep(-1)}
+          onNext={() => handleStep(1)}
+          onRandom={handleRandom}
+          animationKey={animKey}
         />
-      </section>
+      )}
+
+      {/* Archive (collapsible) */}
+      <QuoteList
+        lang={interfaceLang}
+        quotes={quotes}
+        searchQuotes={searchQuotes}
+        isFavorite={isFavorite}
+        onSelectQuote={handleSelectQuote}
+      />
     </div>
   );
 }

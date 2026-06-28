@@ -39,10 +39,10 @@ export function ShareButton({ quoteText, quoteIndex, lang }: Props) {
       <button
         type="button"
         onClick={handleShare}
-        className="p-2.5 rounded-full text-wit-text-tertiary hover:text-wit-gold hover:bg-wit-gold-soft transition-all duration-200 cursor-pointer"
+        className="flex items-center justify-center w-[38px] h-[38px] rounded-button text-wit-text-tertiary hover:text-wit-text hover:bg-wit-surface-2 transition-all duration-200 cursor-pointer"
         title={L('Chia sẻ', 'Share', 'シェア')}
       >
-        <Share2 className="h-5 w-5" />
+        <Share2 className="h-[18px] w-[18px]" />
       </button>
 
       {/* Hidden canvas for image generation */}

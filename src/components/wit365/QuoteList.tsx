@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ChevronDown, ChevronUp, BookOpen } from 'lucide-react';
+import { ChevronDown, Library } from 'lucide-react';
 import { QuoteSearch } from './QuoteSearch';
 import { QuoteListItem } from './QuoteListItem';
 import type { Wit365Quote, Language } from '../../lib/types';
@@ -22,24 +22,24 @@ export function QuoteList({ lang, quotes, searchQuotes, isFavorite, onSelectQuot
   const filteredQuotes = searchValue ? searchQuotes(searchValue) : quotes;
 
   return (
-    <section className="mt-6">
-      <button
-        type="button"
-        onClick={() => setOpen(!open)}
-        className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-button border border-wit-line text-sm font-medium text-wit-text-secondary hover:bg-wit-surface-2 hover:text-wit-text transition-all duration-200 cursor-pointer"
-      >
-        <BookOpen className="h-4 w-4" />
-        {L(
-          `Xem toàn bộ ${quotes.length} hạt giống`,
-          `Browse all ${quotes.length} seeds`,
-          `全${quotes.length}の種を閲覧`
-        )}
-        {open ? (
-          <ChevronUp className="h-4 w-4 ml-1" />
-        ) : (
-          <ChevronDown className="h-4 w-4 ml-1" />
-        )}
-      </button>
+    <section className="mt-5">
+      <div className="text-center">
+        <button
+          type="button"
+          onClick={() => setOpen(!open)}
+          className="inline-flex items-center gap-2.5 px-[18px] py-[9px] rounded-button border border-wit-line text-[13.5px] font-medium text-wit-text-secondary hover:bg-wit-surface-2 hover:text-wit-text transition-all duration-200 cursor-pointer"
+        >
+          <Library className="h-4 w-4" />
+          {L(
+            `Xem toàn bộ ${quotes.length} hạt giống`,
+            `Browse all ${quotes.length} seeds`,
+            `全${quotes.length}の種を閲覧`
+          )}
+          <ChevronDown
+            className={`h-[15px] w-[15px] ml-0.5 transition-transform duration-200 ${open ? 'rotate-180' : ''}`}
+          />
+        </button>
+      </div>
 
       <div
         className={`overflow-hidden transition-all duration-400 ease-out ${

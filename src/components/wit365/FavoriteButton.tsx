@@ -10,15 +10,13 @@ export function FavoriteButton({ isFavorite, onToggle }: Props) {
     <button
       type="button"
       onClick={onToggle}
-      className={`p-2.5 rounded-full transition-all duration-200 cursor-pointer ${
-        isFavorite
-          ? 'text-wit-red bg-wit-red-soft hover:bg-wit-red-soft-hover'
-          : 'text-wit-text-tertiary hover:text-wit-red hover:bg-wit-red-soft/50'
+      className={`flex items-center justify-center w-[38px] h-[38px] rounded-button hover:bg-wit-surface-2 transition-all duration-200 cursor-pointer ${
+        isFavorite ? 'text-wit-red' : 'text-wit-text-tertiary hover:text-wit-text'
       }`}
       title={isFavorite ? 'Remove from favorites' : 'Add to favorites'}
     >
       <Heart
-        className={`h-5 w-5 transition-transform duration-200 ${isFavorite ? 'scale-110' : ''}`}
+        className={`h-[19px] w-[19px] transition-transform duration-200 ${isFavorite ? 'scale-110' : ''}`}
         fill={isFavorite ? 'currentColor' : 'none'}
       />
     </button>
