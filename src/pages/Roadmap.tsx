@@ -8,14 +8,18 @@ import { Check, Lock, Play, ChevronDown, ChevronRight, Sparkles } from 'lucide-r
 import { useLessons } from '../hooks/useLessons';
 import { useProgress } from '../hooks/useProgress';
 import { useSettings } from '../contexts/SettingsContext';
+import { useAuth } from '../contexts/AuthContext';
 import { getLocalized } from '../lib/types';
-import { getLessonStatus } from '../lib/utils';
+import { getLessonStatusForUser } from '../lib/utils';
+import { AdminPreviewBadge } from '../components/ui';
 import { CHAPTER_LESSON_RANGES, TOTAL_LESSONS } from '../lib/constants';
 
 export default function Roadmap() {
   const { lessons, chapters, loading: lessonsLoading } = useLessons();
   const { completedLessons, loading: progressLoading } = useProgress();
   const { interfaceLang } = useSettings();
+  const { profile } = useAuth();
+  const isAdmin = profile?.role === 'admin';
 
   const loading = lessonsLoading || progressLoading;
 
@@ -67,8 +71,8 @@ export default function Roadmap() {
       const total = chLessons.length;
       const completed = chLessons.filter((l) => completedLessons.has(l.lessonNo)).length;
 
-      const isFirstLessonInChAccessible = chLessons.length > 0 && 
-        getLessonStatus(chLessons[0].lessonNo, completedLessons) !== 'locked';
+      const isFirstLessonInChAccessible = chLessons.length > 0 &&
+        getLessonStatusForUser(chLessons[0].lessonNo, completedLessons, isAdmin) !== 'locked';
 
       let status: 'done' | 'current' | 'locked' = 'locked';
       if (completed === total && total > 0) {
@@ -93,7 +97,7 @@ export default function Roadmap() {
         showLine: idx < chapters.length - 1,
       };
     });
-  }, [chapters, lessons, completedLessons, interfaceLang]);
+  }, [chapters, lessons, completedLessons, interfaceLang, isAdmin]);
 
   if (loading) {
     return (
@@ -112,9 +116,12 @@ export default function Roadmap() {
     <div className="page-enter max-w-3xl mx-auto space-y-8">
       {/* Header */}
       <div>
-        <span className="text-xs font-bold uppercase tracking-[1.6px] text-wit-gold">
-          {getLocalizedText('Hành trình 76 học phần', '76-part journey', '76レッスンの旅')}
-        </span>
+        <div className="flex items-center gap-2">
+          <span className="text-xs font-bold uppercase tracking-[1.6px] text-wit-gold">
+            {getLocalizedText('Hành trình 76 học phần', '76-part journey', '76レッスンの旅')}
+          </span>
+          {isAdmin && <AdminPreviewBadge />}
+        </div>
         <h1 className="font-serif text-3xl font-bold text-wit-text mt-1">
           {getLocalizedText('Lộ trình học tập', 'Learning Roadmap', '学習ロードマップ')}
         </h1>
@@ -222,7 +229,7 @@ export default function Roadmap() {
                 {isExpanded && ch.lessons.length > 0 && (
                   <div className="mt-4 pt-4 border-t border-wit-line space-y-1 animate-scale-in">
                     {ch.lessons.map((lesson) => {
-                      const status = getLessonStatus(lesson.lessonNo, completedLessons);
+                      const status = getLessonStatusForUser(lesson.lessonNo, completedLessons, isAdmin);
                       const accessible = status !== 'locked';
 
                       let itemBg = 'bg-transparent';

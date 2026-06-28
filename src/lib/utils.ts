@@ -28,6 +28,44 @@ export function getLessonStatus(
 }
 
 /**
+ * Determine lesson status taking the admin role into account.
+ * Admins can access every lesson regardless of sequential progress;
+ * regular users keep the normal sequential-unlock behaviour.
+ */
+export function getLessonStatusForUser(
+  lessonNo: number,
+  completedLessons: Set<number>,
+  isAdmin: boolean
+): LessonStatus {
+  if (isAdmin) return completedLessons.has(lessonNo) ? 'completed' : 'accessible';
+  return getLessonStatus(lessonNo, completedLessons);
+}
+
+/**
+ * Default dictionary lookup direction.
+ * Vietnamese lessons look up the English term, English lessons look up
+ * Vietnamese. Other languages default to Vietnamese for now.
+ */
+export function getDefaultTargetLanguage(sourceLang: Language): Language {
+  if (sourceLang === 'vi') return 'en';
+  if (sourceLang === 'en') return 'vi';
+  return 'vi';
+}
+
+/**
+ * Lowercase + strip Vietnamese diacritics (and đ → d) so search/matching
+ * works regardless of accents.
+ */
+export function normalizeText(input: string): string {
+  return input
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/đ/g, 'd')
+    .trim();
+}
+
+/**
  * Get the current lesson number based on completed lessons
  */
 export function getCurrentLessonNo(completedLessons: Set<number>): number {

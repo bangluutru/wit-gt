@@ -11,7 +11,7 @@ import { useLessons } from '../../hooks/useLessons';
 import { useDictionary } from '../../hooks/useDictionary';
 import { useProgress } from '../../hooks/useProgress';
 import { getLocalized } from '../../lib/types';
-import { getLessonStatus } from '../../lib/utils';
+import { getLessonStatusForUser } from '../../lib/utils';
 
 interface HeaderProps {
   onMenuToggle?: () => void;
@@ -19,6 +19,7 @@ interface HeaderProps {
 
 export function Header({ onMenuToggle }: HeaderProps) {
   const { profile } = useAuth();
+  const isAdmin = profile?.role === 'admin';
   const { interfaceLang, theme, setTheme, setInterfaceLang } = useSettings();
   
   const toggleTheme = () => {
@@ -123,7 +124,7 @@ export function Header({ onMenuToggle }: HeaderProps) {
                 </div>
                 <div className="space-y-0.5 mt-1">
                   {matchedLessons.map((l) => {
-                    const status = getLessonStatus(l.lessonNo, completedLessons);
+                    const status = getLessonStatusForUser(l.lessonNo, completedLessons, isAdmin);
                     const accessible = status !== 'locked';
 
                     return (

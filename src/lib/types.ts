@@ -63,6 +63,28 @@ export interface LessonProgress {
   completedAt: Date;
 }
 
+export interface QuizQuestion {
+  id: string;
+  lessonId?: string;
+  lessonNo?: number;
+  chapterId?: string;
+  questionVi: string;
+  questionEn?: string;
+  questionJp?: string;
+  optionsVi: string[];
+  optionsEn?: string[];
+  optionsJp?: string[];
+  correctIndex: number;
+  explanationVi?: string;
+  explanationEn?: string;
+  explanationJp?: string;
+  difficulty?: 'easy' | 'medium' | 'hard';
+  tags?: string[];
+  status: 'published' | 'draft';
+  createdAt?: Date;
+  updatedAt?: Date;
+}
+
 export interface DictionaryTerm {
   id: string;
   category: string;

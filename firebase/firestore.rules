@@ -44,6 +44,14 @@ service cloud.firestore {
     }
 
     // ============================================================
+    // Quiz questions - Public readable content
+    // ============================================================
+    match /quiz_questions/{questionId} {
+      allow read: if isAuthenticated();
+      allow write: if isAdmin();
+    }
+
+    // ============================================================
     // User Profiles + Progress
     // ============================================================
     match /users/{userId} {

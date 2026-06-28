@@ -8,14 +8,17 @@ import { Check, Lock, Play, Search, AlertCircle } from 'lucide-react';
 import { useLessons } from '../hooks/useLessons';
 import { useProgress } from '../hooks/useProgress';
 import { useSettings } from '../contexts/SettingsContext';
+import { useAuth } from '../contexts/AuthContext';
 import { getLocalized } from '../lib/types';
-import { getLessonStatus } from '../lib/utils';
-import { TOTAL_LESSONS } from '../lib/constants';
+import { getLessonStatusForUser } from '../lib/utils';
+import { AdminPreviewBadge } from '../components/ui';
 
 export default function Curriculum() {
   const { lessons, chapters, loading: lessonsLoading } = useLessons();
   const { completedLessons, loading: progressLoading } = useProgress();
   const { interfaceLang } = useSettings();
+  const { profile } = useAuth();
+  const isAdmin = profile?.role === 'admin';
   const navigate = useNavigate();
 
   const loading = lessonsLoading || progressLoading;
@@ -34,7 +37,7 @@ export default function Curriculum() {
 
       // Determine accessibility
       const isFirstLessonInChAccessible = chLessons.length > 0 &&
-        getLessonStatus(chLessons[0].lessonNo, completedLessons) !== 'locked';
+        getLessonStatusForUser(chLessons[0].lessonNo, completedLessons, isAdmin) !== 'locked';
 
       let status: 'done' | 'current' | 'locked' = 'locked';
       if (completed === total && total > 0) {
@@ -48,7 +51,7 @@ export default function Curriculum() {
         : '';
 
       const parts = chLessons.map((l) => {
-        const itemStatus = getLessonStatus(l.lessonNo, completedLessons);
+        const itemStatus = getLessonStatusForUser(l.lessonNo, completedLessons, isAdmin);
         const accessible = itemStatus !== 'locked';
         return {
           ...l,
@@ -66,7 +69,7 @@ export default function Curriculum() {
         parts,
       };
     });
-  }, [chapters, lessons, completedLessons, interfaceLang]);
+  }, [chapters, lessons, completedLessons, interfaceLang, isAdmin]);
 
   if (loading) {
     return (
@@ -87,9 +90,12 @@ export default function Curriculum() {
     <div className="page-enter max-w-4xl mx-auto space-y-8">
       {/* Header */}
       <div>
-        <span className="text-xs font-bold uppercase tracking-[1.6px] text-wit-gold">
-          {getLocalizedText('76 học phần · 9 chương', '76 parts · 9 chapters', '76パート · 9章')}
-        </span>
+        <div className="flex items-center gap-2">
+          <span className="text-xs font-bold uppercase tracking-[1.6px] text-wit-gold">
+            {getLocalizedText('76 học phần · 9 chương', '76 parts · 9 chapters', '76パート · 9章')}
+          </span>
+          {isAdmin && <AdminPreviewBadge />}
+        </div>
         <h1 className="font-serif text-3xl font-bold text-wit-text mt-1">
           {getLocalizedText('Giáo trình', 'Curriculum', 'Giáo trình')}
         </h1>

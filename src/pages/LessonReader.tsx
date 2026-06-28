@@ -15,14 +15,15 @@ import { useLessons } from '../hooks/useLessons';
 import { useProgress } from '../hooks/useProgress';
 import { useDictionary } from '../hooks/useDictionary';
 import { useSettings } from '../contexts/SettingsContext';
-import { getLessonStatus, speakText } from '../lib/utils';
+import { useAuth } from '../contexts/AuthContext';
+import { getLessonStatusForUser, getDefaultTargetLanguage, speakText } from '../lib/utils';
 import { getLocalized } from '../lib/types';
 import type { Language, DictionaryTerm, LessonStatus } from '../lib/types';
 import { TermHighlighter } from '../components/reader/TermHighlighter';
 import { TermPopover } from '../components/reader/TermPopover';
 import { BottomSheet } from '../components/reader/BottomSheet';
 import { ReadingToolbar } from '../components/reader/ReadingToolbar';
-import { LoadingState } from '../components/ui';
+import { LoadingState, AdminPreviewBadge } from '../components/ui';
 
 const LANG_LABELS: Record<Language, string> = {
   vi: 'VI',
@@ -37,8 +38,10 @@ export default function LessonReader() {
   const { lessons, chapters, loading: lessonsLoading, getLessonById, getChapter } = useLessons();
   const { completedLessons, loading: progressLoading, completeLesson } = useProgress();
   const { terms } = useDictionary();
-  const { interfaceLang, preferredSourceLang, preferredTargetLang, displayMode, setDisplayMode } =
+  const { interfaceLang, preferredSourceLang, displayMode, setDisplayMode } =
     useSettings();
+  const { profile } = useAuth();
+  const isAdmin = profile?.role === 'admin';
 
   // Local state
   const [contentLang, setContentLang] = useState<Language>(preferredSourceLang);
@@ -67,7 +70,7 @@ export default function LessonReader() {
   const lesson = id ? getLessonById(id) : undefined;
   const chapter = lesson ? getChapter(lesson.chapterId) : undefined;
   const status: LessonStatus = lesson
-    ? getLessonStatus(lesson.lessonNo, completedLessons)
+    ? getLessonStatusForUser(lesson.lessonNo, completedLessons, isAdmin)
     : 'locked';
 
   // Find next lesson
@@ -131,8 +134,8 @@ export default function LessonReader() {
     );
   }
 
-  // Access check
-  if (status === 'locked') {
+  // Access check — admins bypass the sequential lock entirely.
+  if (status === 'locked' && !isAdmin) {
     return (
       <div className="page-enter text-center py-20">
         <Lock className="h-12 w-12 text-wit-text-tertiary mx-auto mb-4" />
@@ -147,6 +150,9 @@ export default function LessonReader() {
   const title = getLocalized(lesson, 'title', interfaceLang);
   const content = getLocalized(lesson, 'content', contentLang);
   const chapterTitle = chapter ? getLocalized(chapter, 'title', interfaceLang) : '';
+
+  // Dictionary lookup direction: vi lesson → en, en lesson → vi.
+  const dictionaryTargetLang = getDefaultTargetLanguage(contentLang);
 
   // Second language for dual mode
   const secondLang: Language =
@@ -176,6 +182,13 @@ export default function LessonReader() {
         <span className="inline-block px-3 py-1 text-xs font-medium rounded-full bg-wit-gold-soft text-wit-gold mb-3">
           {chapterTitle}
         </span>
+      )}
+
+      {/* Admin preview badge — shown when an admin opens a not-yet-unlocked lesson */}
+      {isAdmin && (
+        <div className="mb-3">
+          <AdminPreviewBadge />
+        </div>
       )}
 
       {/* Title */}
@@ -330,7 +343,7 @@ export default function LessonReader() {
         <TermPopover
           term={selectedTerm}
           sourceLang={contentLang}
-          targetLang={contentLang === preferredTargetLang ? preferredSourceLang : preferredTargetLang}
+          targetLang={dictionaryTargetLang}
           position={popoverPos}
           onClose={closePopover}
         />
@@ -342,7 +355,7 @@ export default function LessonReader() {
           <TermSheetContent
             term={selectedTerm}
             sourceLang={contentLang}
-            targetLang={contentLang === preferredTargetLang ? preferredSourceLang : preferredTargetLang}
+            targetLang={dictionaryTargetLang}
           />
         )}
       </BottomSheet>
@@ -377,6 +390,10 @@ function TermSheetContent({
   const sourcePos = getField('pos', sourceLang);
   const targetTerm = getField('term', targetLang);
   const targetDef = getField('def', targetLang);
+  const targetPos = getField('pos', targetLang);
+  const targetIpa = getField('ipa', targetLang);
+  const targetKana = targetLang === 'jp' ? getField('kana', targetLang) : '';
+  const hasTranslation = Boolean(targetTerm || targetDef);
 
   return (
     <div className="space-y-4">
@@ -417,25 +434,48 @@ function TermSheetContent({
         <p className="text-sm text-wit-text leading-relaxed">{sourceDef}</p>
       )}
 
-      {/* Translation */}
-      {(targetTerm || targetDef) && (
-        <>
-          <div className="border-t border-wit-line" />
-          <div>
-            <p className="text-xs text-wit-text-tertiary mb-1 uppercase tracking-wider">
-              {targetLang === 'vi' ? 'Tiếng Việt' : targetLang === 'en' ? 'English' : '日本語'}
+      {/* Translation — always shown, with a fallback when data is missing */}
+      <>
+        <div className="border-t border-wit-line" />
+        <div>
+          <p className="text-xs text-wit-text-tertiary mb-1 uppercase tracking-wider">
+            {targetLang === 'vi' ? 'Tiếng Việt' : targetLang === 'en' ? 'English' : '日本語'}
+          </p>
+          {hasTranslation ? (
+            <>
+              {targetTerm && (
+                <div className="flex items-center gap-2">
+                  <p className="text-sm font-semibold text-wit-text">{targetTerm}</p>
+                  <button
+                    onClick={() => speakText(targetTerm, targetLang)}
+                    className="text-wit-text-tertiary hover:text-wit-red transition-colors"
+                  >
+                    <Volume2 className="h-3.5 w-3.5" />
+                  </button>
+                </div>
+              )}
+              {(targetIpa || targetKana || targetPos) && (
+                <p className="text-xs text-wit-text-tertiary mt-0.5">
+                  {targetIpa && `/${targetIpa}/`}
+                  {targetIpa && (targetKana || targetPos) && ' · '}
+                  {targetKana}
+                  {targetKana && targetPos && ' · '}
+                  {targetPos}
+                </p>
+              )}
+              {targetDef && (
+                <p className="text-sm text-wit-text-secondary mt-1 leading-relaxed">
+                  {targetDef}
+                </p>
+              )}
+            </>
+          ) : (
+            <p className="text-sm text-wit-text-tertiary italic">
+              Chưa có dữ liệu dịch cho thuật ngữ này.
             </p>
-            {targetTerm && (
-              <p className="text-sm font-semibold text-wit-text">{targetTerm}</p>
-            )}
-            {targetDef && (
-              <p className="text-sm text-wit-text-secondary mt-0.5 leading-relaxed">
-                {targetDef}
-              </p>
-            )}
-          </div>
-        </>
-      )}
+          )}
+        </div>
+      </>
     </div>
   );
 }

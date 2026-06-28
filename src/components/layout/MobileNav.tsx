@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import { Home, Map, BookOpen, Languages, Settings, type LucideIcon } from 'lucide-react';
+import { Home, Map, BookOpen, Languages, Settings, ListChecks, type LucideIcon } from 'lucide-react';
 import { NAV_ITEMS } from '../../lib/constants';
 import { useSettings } from '../../contexts/SettingsContext';
 import { getLocalized } from '../../lib/types';
@@ -9,6 +9,7 @@ const ICON_MAP: Record<string, LucideIcon> = {
   Map,
   BookOpen,
   Languages,
+  ListChecks,
   Settings,
 };
 

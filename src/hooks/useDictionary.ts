@@ -3,6 +3,7 @@ import { collection, getDocs } from 'firebase/firestore';
 import { db } from '../lib/firebase';
 import type { DictionaryTerm, Language } from '../lib/types';
 import { SEED_TERMS } from '../lib/seedContent';
+import { normalizeText } from '../lib/utils';
 
 export function useDictionary() {
   const [terms, setTerms] = useState<DictionaryTerm[]>([]);
@@ -38,23 +39,27 @@ export function useDictionary() {
 
   const searchTerms = (
     searchQuery: string,
-    sourceLang: Language,
+    // Kept for backwards compatibility; search now spans every language.
+    _sourceLang: Language,
     category?: string
   ): DictionaryTerm[] => {
-    const q = searchQuery.toLowerCase().trim();
+    const q = normalizeText(searchQuery);
     return terms.filter((t) => {
       // Category filter
       if (category && t.category !== category) return false;
       if (!q) return true;
 
-      // Search in source language term + definition
-      const termField = sourceLang === 'vi' ? t.viTerm : sourceLang === 'en' ? t.enTerm : t.jpTerm;
-      const defField = sourceLang === 'vi' ? t.viDef : sourceLang === 'en' ? t.enDef : t.jpDef;
+      // Two-way search across all VI · EN · JP fields, diacritic-insensitive.
+      const haystack = [
+        t.viTerm, t.viDef, t.viPos, t.viIpa,
+        t.enTerm, t.enDef, t.enPos, t.enIpa,
+        t.jpTerm, t.jpDef, t.jpPos, t.jpKana,
+        t.category,
+      ]
+        .filter(Boolean)
+        .join(' ');
 
-      return (
-        termField?.toLowerCase().includes(q) ||
-        defField?.toLowerCase().includes(q)
-      );
+      return normalizeText(haystack).includes(q);
     });
   };
 

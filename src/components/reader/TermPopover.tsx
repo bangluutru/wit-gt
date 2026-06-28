@@ -54,6 +54,10 @@ export function TermPopover({
 
   const targetTerm = getField(term, 'term', targetLang);
   const targetDef = getField(term, 'def', targetLang);
+  const targetIpa = getField(term, 'ipa', targetLang);
+  const targetKana = targetLang === 'jp' ? getField(term, 'kana', targetLang) : '';
+  const targetPos = getField(term, 'pos', targetLang);
+  const hasTranslation = Boolean(targetTerm || targetDef);
 
   // Compute popover position — keep it on screen
   const popoverWidth = 320;
@@ -127,25 +131,47 @@ export function TermPopover({
           </p>
         )}
 
-        {/* Divider + Translation */}
-        {(targetTerm || targetDef) && (
-          <>
-            <div className="border-t border-wit-line my-3" />
-            <div>
-              <p className="text-xs text-wit-text-tertiary mb-1 uppercase tracking-wider">
-                {targetLang === 'vi' ? 'Tiếng Việt' : targetLang === 'en' ? 'English' : '日本語'}
-              </p>
+        {/* Divider + Translation — always shown, with a fallback when missing */}
+        <div className="border-t border-wit-line my-3" />
+        <div>
+          <p className="text-xs text-wit-text-tertiary mb-1 uppercase tracking-wider">
+            {targetLang === 'vi' ? 'Tiếng Việt' : targetLang === 'en' ? 'English' : '日本語'}
+          </p>
+          {hasTranslation ? (
+            <>
               {targetTerm && (
-                <p className="text-sm font-semibold text-wit-text">{targetTerm}</p>
+                <div className="flex items-center gap-2">
+                  <p className="text-sm font-semibold text-wit-text">{targetTerm}</p>
+                  <button
+                    onClick={() => speakText(targetTerm, targetLang)}
+                    className="text-wit-text-tertiary hover:text-wit-red transition-colors"
+                    title="Phát âm"
+                  >
+                    <Volume2 className="h-3.5 w-3.5" />
+                  </button>
+                </div>
+              )}
+              {(targetIpa || targetKana || targetPos) && (
+                <p className="text-xs text-wit-text-tertiary mt-0.5">
+                  {targetIpa && `/${targetIpa}/`}
+                  {targetIpa && (targetKana || targetPos) && ' · '}
+                  {targetKana}
+                  {targetKana && targetPos && ' · '}
+                  {targetPos}
+                </p>
               )}
               {targetDef && (
-                <p className="text-sm text-wit-text-secondary mt-0.5 leading-relaxed">
+                <p className="text-sm text-wit-text-secondary mt-1 leading-relaxed">
                   {targetDef}
                 </p>
               )}
-            </div>
-          </>
-        )}
+            </>
+          ) : (
+            <p className="text-sm text-wit-text-tertiary italic">
+              Chưa có dữ liệu dịch cho thuật ngữ này.
+            </p>
+          )}
+        </div>
       </div>
     </div>
   );

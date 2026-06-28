@@ -8,6 +8,7 @@ import {
   Map,
   BookOpen,
   Languages,
+  ListChecks,
   Settings,
   Users,
   ShieldCheck,
@@ -139,6 +140,19 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
           >
             <Languages className="h-[19px] w-[19px] shrink-0" />
             <span>{getLocalizedText('Từ điển', 'Dictionary', '辞書')}</span>
+          </NavLink>
+          <NavLink
+            to="/review"
+            className={({ isActive }) =>
+              `flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all duration-200 ${
+                isActive
+                  ? 'bg-wit-red-soft text-wit-red font-semibold'
+                  : 'text-wit-text-secondary hover:bg-wit-surface-2 hover:text-wit-text'
+              }`
+            }
+          >
+            <ListChecks className="h-[19px] w-[19px] shrink-0" />
+            <span>{getLocalizedText('Ôn tập', 'Review', '復習')}</span>
           </NavLink>
         </div>
 

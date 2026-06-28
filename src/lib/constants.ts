@@ -108,6 +108,7 @@ export const NAV_ITEMS = [
   { path: '/roadmap', labelVi: 'Lộ trình', labelEn: 'Roadmap', labelJp: 'ロードマップ', icon: 'Map' },
   { path: '/curriculum', labelVi: 'Giáo trình', labelEn: 'Curriculum', labelJp: 'カリキュラム', icon: 'BookOpen' },
   { path: '/dictionary', labelVi: 'Từ điển', labelEn: 'Dictionary', labelJp: '辞書', icon: 'Languages' },
+  { path: '/review', labelVi: 'Ôn tập', labelEn: 'Review', labelJp: '復習', icon: 'ListChecks' },
   { path: '/settings', labelVi: 'Cài đặt', labelEn: 'Settings', labelJp: '設定', icon: 'Settings' },
 ] as const;
 

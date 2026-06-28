@@ -4,3 +4,4 @@ export { Badge } from './Badge';
 export { Modal } from './Modal';
 export { LoadingState } from './LoadingState';
 export { EmptyState } from './EmptyState';
+export { AdminPreviewBadge } from './AdminPreviewBadge';
