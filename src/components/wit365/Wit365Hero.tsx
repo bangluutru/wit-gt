@@ -18,9 +18,9 @@ export function Wit365Hero({ lang }: Props) {
       </div>
 
       {/* Title */}
-      <h1 className="mt-3.5 mx-auto max-w-[520px] font-serif text-3xl sm:text-[34px] font-bold text-wit-text leading-[1.16] animate-slide-up">
+      <h1 className="mt-3.5 mx-auto max-w-[520px] font-serif text-4xl sm:text-[42px] font-bold text-wit-text leading-[1.16] text-balance animate-slide-up">
         {L(
-          'Mỗi ngày một hạt giống nhận thức',
+          'Mỗi ngày một hạt giống nhận thức',
           'A seed of awareness, every day',
           '毎日ひとつの気づきの種'
         )}
