@@ -1,4 +1,4 @@
-import { Book, FileText, Image, Layers } from 'lucide-react';
+import { Book, FileText, Image, Layers, Globe } from 'lucide-react';
 import type { DictionaryViewMode } from '../../lib/types';
 
 interface ViewModeTabsProps {
@@ -11,6 +11,7 @@ const TABS: { mode: DictionaryViewMode; icon: typeof Book; label: string }[] = [
   { mode: 'definition', icon: FileText, label: 'Định nghĩa' },
   { mode: 'visual', icon: Image, label: 'Hình ảnh' },
   { mode: 'flashcard', icon: Layers, label: 'Flashcard' },
+  { mode: 'multilingual', icon: Globe, label: 'Đa ngôn ngữ' },
 ];
 
 export default function ViewModeTabs({ value, onChange }: ViewModeTabsProps) {

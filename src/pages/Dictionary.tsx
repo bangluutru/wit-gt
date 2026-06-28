@@ -10,6 +10,8 @@ import type { DictionaryViewMode } from '../lib/types';
 import { LoadingState, EmptyState } from '../components/ui';
 import ViewModeTabs from '../components/dictionary/ViewModeTabs';
 import DictionaryCard from '../components/dictionary/DictionaryCard';
+import MultilingualLookup from '../components/dictionary/MultilingualLookup';
+import type { DefLang } from '../lib/multiDict';
 import LanguageSwitcher from '../components/dictionary/LanguageSwitcher';
 import FlashcardSession from '../components/dictionary/FlashcardSession';
 
@@ -27,6 +29,9 @@ export default function Dictionary() {
     if (interfaceLang === 'jp') return jp;
     return vi;
   };
+
+  // Default definition language for the multilingual tab follows the UI language.
+  const defaultDefLang: DefLang = interfaceLang === 'en' ? 'en' : interfaceLang === 'jp' ? '' : 'vi';
 
   const filteredTerms = useMemo(
     () => searchTerms(searchQuery, preferredSourceLang, selectedCategory || undefined),
@@ -83,6 +88,11 @@ export default function Dictionary() {
 
       {/* View mode tabs */}
       <ViewModeTabs value={viewMode} onChange={setViewMode} />
+
+      {viewMode === 'multilingual' ? (
+        <MultilingualLookup interfaceLang={interfaceLang} defaultDefLang={defaultDefLang} />
+      ) : (
+      <>
 
       {/* Search + Filter bar */}
       <div className="flex flex-col sm:flex-row gap-3">
@@ -213,6 +223,8 @@ export default function Dictionary() {
             />
           ))}
         </div>
+      )}
+      </>
       )}
     </div>
   );

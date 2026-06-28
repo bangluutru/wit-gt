@@ -116,7 +116,7 @@ export interface LessonWithStatus extends Lesson {
   chapter?: Chapter;
 }
 
-export type DictionaryViewMode = 'dictionary' | 'definition' | 'visual' | 'flashcard';
+export type DictionaryViewMode = 'dictionary' | 'definition' | 'visual' | 'flashcard' | 'multilingual';
 
 export interface FlashcardConfig {
   count: 10 | 20 | 30;
