@@ -27,6 +27,29 @@ function pickText(q: QuizQuestion, field: 'question' | 'explanation', lang: Lang
   return getLocalized(q, field, lang) || getLocalized(q, field, 'vi');
 }
 
+/**
+ * Randomize the order of a question's options so the correct answer is not
+ * always first. Reorders all language variants in parallel and remaps
+ * correctIndex to the new position of the correct option.
+ */
+function shuffleOptions(q: QuizQuestion): QuizQuestion {
+  const n = q.optionsVi.length;
+  const order = [...Array(n).keys()];
+  for (let i = n - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [order[i], order[j]] = [order[j], order[i]];
+  }
+  const reorder = (arr?: string[]) =>
+    arr && arr.length === n ? order.map((i) => arr[i]) : arr;
+  return {
+    ...q,
+    optionsVi: order.map((i) => q.optionsVi[i]),
+    optionsEn: reorder(q.optionsEn),
+    optionsJp: reorder(q.optionsJp),
+    correctIndex: order.indexOf(q.correctIndex),
+  };
+}
+
 export default function Review() {
   const { loading, getRandomQuestions } = useQuizQuestions();
   const { chapters } = useLessons();
@@ -50,7 +73,7 @@ export default function Review() {
 
   const startQuiz = () => {
     const filters = scope !== 'all' ? { chapterId: scope } : undefined;
-    const picked = getRandomQuestions(count, filters);
+    const picked = getRandomQuestions(count, filters).map(shuffleOptions);
     setQuiz(picked);
     setCurrent(0);
     setSelected(null);

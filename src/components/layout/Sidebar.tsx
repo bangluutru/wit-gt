@@ -14,6 +14,7 @@ import {
   ShieldCheck,
   Upload,
   UserCog,
+  HeartHandshake,
   LogOut,
 } from 'lucide-react';
 import { useAuth } from '../../contexts/AuthContext';
@@ -162,6 +163,19 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
           <div className="text-[10.5px] font-semibold uppercase tracking-[1.4px] text-wit-text-tertiary px-3 py-1.5">
             {getLocalizedText('Cộng đồng', 'Community', 'コミュニティ')}
           </div>
+          <NavLink
+            to="/acknowledgements"
+            className={({ isActive }) =>
+              `flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all duration-200 ${
+                isActive
+                  ? 'bg-wit-red-soft text-wit-red font-semibold'
+                  : 'text-wit-text-secondary hover:bg-wit-surface-2 hover:text-wit-text'
+              }`
+            }
+          >
+            <HeartHandshake className="h-[19px] w-[19px] shrink-0" />
+            <span>{getLocalizedText('Trân trọng biết ơn', 'Acknowledgements', '感謝')}</span>
+          </NavLink>
           <NavLink
             to="/team"
             className={({ isActive }) =>

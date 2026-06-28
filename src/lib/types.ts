@@ -157,3 +157,23 @@ export function getLocalized(
   const key = `${field}${langSuffix}`;
   return (obj[key] as string) || '';
 }
+
+// ============================================================
+// Editorial board (Team / Advisors) — admin-editable, multilingual
+// ============================================================
+
+export type EditorialSection = 'team' | 'advisors';
+
+export interface EditorialMember {
+  id: string;
+  initials: string;
+  nameVi: string;
+  nameEn: string;
+  nameJp: string;
+  roleVi: string;
+  roleEn: string;
+  roleJp: string;
+  noteVi: string;
+  noteEn: string;
+  noteJp: string;
+}

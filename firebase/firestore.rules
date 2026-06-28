@@ -52,6 +52,14 @@ service cloud.firestore {
     }
 
     // ============================================================
+    // Site content (editorial board: team & advisors)
+    // ============================================================
+    match /siteContent/{docId} {
+      allow read: if isAuthenticated();
+      allow write: if isAdmin();
+    }
+
+    // ============================================================
     // User Profiles + Progress
     // ============================================================
     match /users/{userId} {
