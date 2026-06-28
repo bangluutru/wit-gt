@@ -7,9 +7,10 @@ import {
   updateProfile,
   type User,
 } from 'firebase/auth';
-import { doc, getDoc, setDoc, serverTimestamp } from 'firebase/firestore';
+import { doc, getDoc, setDoc, serverTimestamp, updateDoc } from 'firebase/firestore';
 import { auth, db } from '../lib/firebase';
 import type { UserProfile } from '../lib/types';
+import { isAdminEmail } from '../lib/admin';
 
 interface AuthContextType {
   user: User | null;
@@ -30,10 +31,19 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   const fetchProfile = async (uid: string): Promise<UserProfile | null> => {
     const snap = await getDoc(doc(db, 'users', uid));
-    if (snap.exists()) {
-      return { id: snap.id, ...snap.data() } as UserProfile;
+    if (!snap.exists()) return null;
+    const profile = { id: snap.id, ...snap.data() } as UserProfile;
+
+    // Bootstrap: emails on the admin allowlist are auto-upgraded to admin.
+    if (profile.role !== 'admin' && isAdminEmail(profile.email)) {
+      try {
+        await updateDoc(doc(db, 'users', uid), { role: 'admin', updatedAt: serverTimestamp() });
+        profile.role = 'admin';
+      } catch (err) {
+        console.error('Failed to auto-grant admin role:', err);
+      }
     }
-    return null;
+    return profile;
   };
 
   const createProfile = async (uid: string, email: string, displayName: string) => {
@@ -46,7 +56,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       readerFontSize: 'medium',
       theme: 'light',
       displayMode: 'single',
-      role: 'user',
+      role: isAdminEmail(email) ? 'admin' : 'user',
       createdAt: new Date(),
       updatedAt: new Date(),
     };

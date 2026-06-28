@@ -8,6 +8,8 @@ interface TermHighlighterProps {
   terms: DictionaryTerm[];
   language: Language;
   onTermClick: (term: DictionaryTerm, rect: DOMRect) => void;
+  onTermHover?: (term: DictionaryTerm, rect: DOMRect) => void;
+  onTermLeave?: () => void;
 }
 
 interface MatchableTerm {
@@ -48,7 +50,9 @@ function highlightText(
   text: string,
   matchableTerms: MatchableTerm[],
   language: Language,
-  onTermClick: (term: DictionaryTerm, rect: DOMRect) => void
+  onTermClick: (term: DictionaryTerm, rect: DOMRect) => void,
+  onTermHover?: (term: DictionaryTerm, rect: DOMRect) => void,
+  onTermLeave?: () => void
 ): (string | ReactNode)[] {
   if (!text || matchableTerms.length === 0) return [text];
 
@@ -105,6 +109,12 @@ function highlightText(
           const rect = (e.target as HTMLElement).getBoundingClientRect();
           onTermClick(r.term, rect);
         }}
+        onMouseEnter={(e) => {
+          if (!onTermHover) return;
+          const rect = (e.target as HTMLElement).getBoundingClientRect();
+          onTermHover(r.term, rect);
+        }}
+        onMouseLeave={() => onTermLeave?.()}
       >
         {text.slice(r.start, r.end)}
       </span>
@@ -121,6 +131,8 @@ export function TermHighlighter({
   terms,
   language,
   onTermClick,
+  onTermHover,
+  onTermLeave,
 }: TermHighlighterProps) {
   const matchableTerms = getMatchableTerms(terms, language);
 
@@ -133,7 +145,7 @@ export function TermHighlighter({
       if (!children) return children;
 
       if (typeof children === 'string') {
-        const segments = highlightText(children, matchableTerms, language, onTermClick);
+        const segments = highlightText(children, matchableTerms, language, onTermClick, onTermHover, onTermLeave);
         return segments.length === 1 && typeof segments[0] === 'string'
           ? segments[0]
           : segments;
@@ -142,7 +154,7 @@ export function TermHighlighter({
       if (Array.isArray(children)) {
         return children.map((child, i) => {
           if (typeof child === 'string') {
-            const segments = highlightText(child, matchableTerms, language, onTermClick);
+            const segments = highlightText(child, matchableTerms, language, onTermClick, onTermHover, onTermLeave);
             return segments.length === 1 && typeof segments[0] === 'string' ? (
               segments[0]
             ) : (
@@ -156,7 +168,7 @@ export function TermHighlighter({
       // Non-string, non-array child — return as-is
       return children;
     },
-    [matchableTerms, language, onTermClick]
+    [matchableTerms, language, onTermClick, onTermHover, onTermLeave]
   );
 
   return (

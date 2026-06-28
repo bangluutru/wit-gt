@@ -57,8 +57,9 @@ service cloud.firestore {
     match /users/{userId} {
       // Users can read/write their own profile
       allow read, write: if isOwner(userId);
-      // Admins can read any user profile (for admin panel)
+      // Admins can read any user profile and update roles (user management)
       allow read: if isAdmin();
+      allow update: if isAdmin();
 
       // Progress subcollection
       match /progress/{lessonId} {

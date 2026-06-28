@@ -19,6 +19,7 @@ import Team from './pages/Team';
 import Advisors from './pages/Advisors';
 import Settings from './pages/Settings';
 import AdminImport from './pages/AdminImport';
+import AdminUsers from './pages/AdminUsers';
 
 export default function App() {
   return (
@@ -43,6 +44,7 @@ export default function App() {
                 <Route path="/advisors" element={<Advisors />} />
                 <Route path="/settings" element={<Settings />} />
                 <Route path="/admin/import" element={<AdminImport />} />
+                <Route path="/admin/users" element={<AdminUsers />} />
               </Route>
             </Route>
           </Routes>

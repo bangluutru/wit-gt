@@ -21,6 +21,7 @@ import { getLocalized } from '../lib/types';
 import type { Language, DictionaryTerm, LessonStatus } from '../lib/types';
 import { TermHighlighter } from '../components/reader/TermHighlighter';
 import { TermPopover } from '../components/reader/TermPopover';
+import { TermTooltip } from '../components/reader/TermTooltip';
 import { BottomSheet } from '../components/reader/BottomSheet';
 import { ReadingToolbar } from '../components/reader/ReadingToolbar';
 import { LoadingState, AdminPreviewBadge } from '../components/ui';
@@ -50,6 +51,9 @@ export default function LessonReader() {
   const [popoverPos, setPopoverPos] = useState<{ top: number; left: number } | null>(null);
   const [showBottomSheet, setShowBottomSheet] = useState(false);
   const [completing, setCompleting] = useState(false);
+  // Hover tooltip (desktop): quick meaning in the target language.
+  const [hoverTerm, setHoverTerm] = useState<DictionaryTerm | null>(null);
+  const [hoverPos, setHoverPos] = useState<{ top: number; left: number; bottom: number } | null>(null);
 
   // Determine if we're on mobile
   const [isMobile, setIsMobile] = useState(
@@ -78,18 +82,32 @@ export default function LessonReader() {
     ? lessons.find((l) => l.lessonNo === lesson.lessonNo + 1)
     : undefined;
 
-  // Handle term click — desktop: popover, mobile: bottom sheet
+  // Handle term click — desktop: popover, mobile: bottom sheet.
+  // The popover is position:fixed, so use viewport coordinates (no scrollY).
   const handleTermClick = useCallback(
     (term: DictionaryTerm, rect: DOMRect) => {
+      setHoverTerm(null);
       setSelectedTerm(term);
       if (isMobile) {
         setShowBottomSheet(true);
       } else {
-        setPopoverPos({ top: rect.bottom + window.scrollY, left: rect.left });
+        setPopoverPos({ top: rect.bottom, left: rect.left });
       }
     },
     [isMobile]
   );
+
+  // Hover (desktop only) — quick tooltip with the target-language meaning.
+  const handleTermHover = useCallback(
+    (term: DictionaryTerm, rect: DOMRect) => {
+      if (isMobile) return;
+      setHoverTerm(term);
+      setHoverPos({ top: rect.top, bottom: rect.bottom, left: rect.left + rect.width / 2 });
+    },
+    [isMobile]
+  );
+
+  const handleTermLeave = useCallback(() => setHoverTerm(null), []);
 
   const closePopover = useCallback(() => {
     setSelectedTerm(null);
@@ -265,6 +283,8 @@ export default function LessonReader() {
               terms={terms}
               language={contentLang}
               onTermClick={handleTermClick}
+              onTermHover={handleTermHover}
+              onTermLeave={handleTermLeave}
             />
           </div>
           <div>
@@ -284,6 +304,8 @@ export default function LessonReader() {
               terms={terms}
               language={secondLang}
               onTermClick={handleTermClick}
+              onTermHover={handleTermHover}
+              onTermLeave={handleTermLeave}
             />
           </div>
         </div>
@@ -294,6 +316,8 @@ export default function LessonReader() {
             terms={terms}
             language={contentLang}
             onTermClick={handleTermClick}
+            onTermHover={handleTermHover}
+            onTermLeave={handleTermLeave}
           />
         </div>
       )}
@@ -337,6 +361,16 @@ export default function LessonReader() {
           </Link>
         )}
       </div>
+
+      {/* Hover tooltip (desktop) — quick meaning in the target language.
+          Hidden while the full click-popover is open. */}
+      {hoverTerm && hoverPos && !isMobile && !selectedTerm && (
+        <TermTooltip
+          term={hoverTerm}
+          targetLang={dictionaryTargetLang}
+          position={hoverPos}
+        />
+      )}
 
       {/* Term popover (desktop) */}
       {selectedTerm && popoverPos && !isMobile && (
