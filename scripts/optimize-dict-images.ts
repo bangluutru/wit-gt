@@ -6,6 +6,12 @@
  *   public/dict-images/full/<slug>_<lang>.webp    (lightbox)
  * and a bundled manifest at src/data/dictImages.generated.ts.
  *
+ * NOTE: `sharp` is intentionally NOT a tracked dependency (its npm-11 lockfile
+ * pruning breaks Cloudflare's npm-10 `npm ci`). The generated WebP + manifest are
+ * committed, so the deploy never needs sharp. To REGENERATE images, install it
+ * ad-hoc first, then restore the lock so CI stays npm-10-compatible:
+ *   npm i -D sharp --no-save && npm run images:dict
+ *
  * Usage:
  *   npm run images:dict                       # default source dir
  *   DICT_IMG_SRC="/path/to/BIEUDO" npm run images:dict
