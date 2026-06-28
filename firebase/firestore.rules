@@ -60,6 +60,14 @@ service cloud.firestore {
     }
 
     // ============================================================
+    // WiT365 - Daily seed quotes
+    // ============================================================
+    match /wit365_quotes/{quoteId} {
+      allow read: if isAuthenticated();
+      allow write: if isAdmin();
+    }
+
+    // ============================================================
     // User Profiles + Progress
     // ============================================================
     match /users/{userId} {
