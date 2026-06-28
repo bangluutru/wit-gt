@@ -1,12 +1,22 @@
 import { Reveal } from './Reveal';
 import { CONTRIBUTORS, initialOf } from '../../lib/gratitudeData';
+import type { Language } from '../../lib/types';
 
-export function ContributorGrid() {
+interface Props { lang: Language }
+
+export function ContributorGrid({ lang }: Props) {
+  const L = (vi: string, en: string, jp: string) =>
+    lang === 'en' ? en : lang === 'jp' ? jp : vi;
+
   return (
     <section className="py-20 sm:py-24">
       <Reveal>
         <h2 className="font-serif text-3xl sm:text-4xl font-bold text-wit-text leading-tight max-w-2xl">
-          Những người đã góp phần xây dựng kho tri thức này
+          {L(
+            'Những người đã góp phần xây dựng kho tri thức này',
+            'Those who have contributed to building this knowledge base',
+            'この知識の宝庫を築くために貢献してくださった方々'
+          )}
         </h2>
       </Reveal>
 
@@ -19,7 +29,7 @@ export function ContributorGrid() {
               </div>
               <div className="font-semibold text-wit-text text-sm leading-snug">{name}</div>
               <span className="text-[10px] font-semibold uppercase tracking-wide px-2.5 py-1 rounded-full bg-wit-gold-soft text-wit-gold">
-                Biên soạn nội dung
+                {L('Biên soạn nội dung', 'Content Author', 'コンテンツ執筆者')}
               </span>
             </div>
           </Reveal>
@@ -29,15 +39,18 @@ export function ContributorGrid() {
       <Reveal delay={120}>
         <div className="mt-12 max-w-2xl text-[15px] text-wit-text-secondary leading-relaxed">
           <p className="font-serif text-lg text-wit-text">
-            Mỗi người mang đến một góc nhìn.
-            <br />
-            Một trải nghiệm.
-            <br />
-            Một sự thấu hiểu.
+            {L(
+              <>Mỗi người mang đến một góc nhìn.<br />Một trải nghiệm.<br />Một sự thấu hiểu.</>,
+              <>Each person brings a perspective.<br />An experience.<br />An understanding.</>,
+              <>それぞれの人が視点をもたらす。<br />ひとつの経験。<br />ひとつの理解。</>
+            )}
           </p>
           <p className="mt-4">
-            Chính sự cộng hưởng ấy đã góp phần làm nên chiều sâu của kho tri thức mà người học đang
-            tiếp cận hôm nay.
+            {L(
+              'Chính sự cộng hưởng ấy đã góp phần làm nên chiều sâu của kho tri thức mà người học đang tiếp cận hôm nay.',
+              'It is precisely that resonance that has contributed to the depth of the knowledge base that learners access today.',
+              'まさにその共鳴こそが、今日の学習者がアクセスする知識の宝庫の深さに貢献しているのです。'
+            )}
           </p>
         </div>
       </Reveal>
