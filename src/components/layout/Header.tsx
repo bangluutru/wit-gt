@@ -4,13 +4,17 @@
 
 import { useState, useRef, useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import { Search, Globe, Moon, Sun, Menu, BookOpen, Languages, Lock, Play } from 'lucide-react';
+import { Search, Globe, Moon, Sun, Sunset, Menu, BookOpen, Languages, Lock, Play } from 'lucide-react';
 import { useAuth } from '../../contexts/AuthContext';
 import { useSettings } from '../../contexts/SettingsContext';
 import { useLessons } from '../../hooks/useLessons';
 import { useDictionary } from '../../hooks/useDictionary';
 import { useProgress } from '../../hooks/useProgress';
-import { getLocalized } from '../../lib/types';
+import { getLocalized, type Theme } from '../../lib/types';
+
+const THEME_ORDER: Theme[] = ['light', 'warm', 'dark'];
+const THEME_ICONS: Record<Theme, typeof Sun> = { light: Sun, warm: Sunset, dark: Moon };
+const THEME_LABELS: Record<Theme, string> = { light: 'Sáng', warm: 'Ấm', dark: 'Tối' };
 import { getLessonStatusForUser } from '../../lib/utils';
 
 interface HeaderProps {
@@ -22,9 +26,11 @@ export function Header({ onMenuToggle }: HeaderProps) {
   const isAdmin = profile?.role === 'admin';
   const { interfaceLang, theme, setTheme, setInterfaceLang } = useSettings();
   
-  const toggleTheme = () => {
-    setTheme(theme === 'dark' ? 'light' : 'dark');
+  const cycleTheme = () => {
+    const i = THEME_ORDER.indexOf(theme);
+    setTheme(THEME_ORDER[(i + 1) % THEME_ORDER.length]);
   };
+  const ThemeIcon = THEME_ICONS[theme];
   const { lessons } = useLessons();
   const { terms } = useDictionary();
   const { completedLessons } = useProgress();
@@ -215,12 +221,14 @@ export function Header({ onMenuToggle }: HeaderProps) {
           <span>{interfaceLang.toUpperCase()}</span>
         </button>
 
-        {/* Theme Switcher */}
+        {/* Theme Switcher — cycles Sáng → Ấm → Tối */}
         <button
-          onClick={toggleTheme}
+          onClick={cycleTheme}
+          title={`${getLocalizedText('Giao diện', 'Theme', 'テーマ')}: ${THEME_LABELS[theme]}`}
+          aria-label={`${getLocalizedText('Giao diện', 'Theme', 'テーマ')}: ${THEME_LABELS[theme]}`}
           className="h-10 w-10 flex items-center justify-center rounded-button border border-wit-line bg-wit-surface text-wit-text hover:bg-wit-surface-2 transition-all cursor-pointer shadow-card"
         >
-          {theme === 'dark' ? <Sun className="h-4.5 w-4.5" /> : <Moon className="h-4.5 w-4.5" />}
+          <ThemeIcon className="h-4.5 w-4.5" />
         </button>
 
         {/* User Info Avatar */}

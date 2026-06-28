@@ -2,11 +2,17 @@
 // WiT Platform - Settings Page
 // ============================================================
 
-import { Palette, BookOpen, Languages, User, LogOut, Sun, Moon, Type, LayoutGrid } from 'lucide-react';
+import { Palette, BookOpen, Languages, User, LogOut, Sun, Moon, Sunset, Type, LayoutGrid } from 'lucide-react';
 import { useSettings } from '../contexts/SettingsContext';
 import { useAuth } from '../contexts/AuthContext';
 import type { Theme, FontSize, DisplayMode } from '../lib/types';
 import LanguageSwitcher from '../components/dictionary/LanguageSwitcher';
+
+const THEME_OPTIONS: { value: Theme; icon: typeof Sun; vi: string; en: string; jp: string }[] = [
+  { value: 'light', icon: Sun, vi: 'Sáng', en: 'Light', jp: 'ライト' },
+  { value: 'warm', icon: Sunset, vi: 'Ấm', en: 'Warm', jp: 'ウォーム' },
+  { value: 'dark', icon: Moon, vi: 'Tối', en: 'Dark', jp: 'ダーク' },
+];
 
 export default function Settings() {
   const {
@@ -52,33 +58,33 @@ export default function Settings() {
 
       {/* Settings Container Panel */}
       <div className="bg-wit-surface border border-wit-line rounded-card shadow-card overflow-hidden divide-y divide-wit-line">
-        {/* Toggle Theme / Dark Mode */}
-        <div className="p-5 flex items-center justify-between gap-6">
-          <div className="min-w-0">
+        {/* Theme selector — Sáng / Ấm / Tối */}
+        <div className="p-5 space-y-3">
+          <div>
             <h3 className="font-serif text-[15px] font-bold text-wit-text">
-              {getLocalizedText('Chế độ tối / sáng', 'Dark / Light Mode', 'ダーク/ライトモード')}
+              {getLocalizedText('Giao diện', 'Theme', '画面テーマ')}
             </h3>
             <p className="text-xs text-wit-text-secondary mt-1 leading-relaxed">
               {getLocalizedText(
-                'Nền ấm tối, dịu mắt khi đọc bài học vào ban đêm.',
-                'Warm dark background, easy on the eyes for night reading.',
-                '夜間の読書に適した、目に優しい温かみのあるダーク背景。'
+                'Sáng, Ấm (nền giấy ngả vàng) hoặc Tối — dịu mắt khi đọc ban đêm.',
+                'Light, Warm (cream paper tone) or Dark — easy on the eyes at night.',
+                'ライト、ウォーム（クリーム色の紙）、またはダーク — 夜間の読書に優しい。'
               )}
             </p>
           </div>
-          <button
-            onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-            className="relative w-14 h-8 rounded-full border-none cursor-pointer transition-colors duration-200"
-            style={{ backgroundColor: theme === 'dark' ? 'var(--color-wit-red)' : 'var(--color-wit-line)' }}
-            aria-label="Toggle theme"
-          >
-            <span
-              className="absolute top-1 left-1 w-6 h-6 rounded-full bg-white transition-all duration-200 shadow-card flex items-center justify-center text-wit-red-dark"
-              style={{ transform: theme === 'dark' ? 'translateX(24px)' : 'none' }}
-            >
-              {theme === 'dark' ? <Moon className="h-3.5 w-3.5" /> : <Sun className="h-3.5 w-3.5" />}
-            </span>
-          </button>
+          <div className="flex gap-2.5">
+            {THEME_OPTIONS.map(({ value, icon: Icon, vi, en, jp }) => (
+              <button
+                key={value}
+                onClick={() => setTheme(value)}
+                className={`${fontBtnClass(theme === value)} flex items-center justify-center gap-2`}
+                aria-pressed={theme === value}
+              >
+                <Icon className="h-4 w-4" />
+                {getLocalizedText(vi, en, jp)}
+              </button>
+            ))}
+          </div>
         </div>
 
         {/* Font Size Selection */}
