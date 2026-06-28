@@ -24,7 +24,7 @@ export function GratitudeHero() {
         </Reveal>
         <Reveal delay={120}>
           <h1 className="mt-5 font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-wit-text leading-[1.18]">
-            Mỗi tri thức được lưu giữ là một hạt giống của sự thấy hiểu.
+            Mỗi tri thức được lưu giữ là một hạt giống của sự thấu hiểu.
           </h1>
         </Reveal>
         <Reveal delay={240}>

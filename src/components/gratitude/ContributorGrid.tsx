@@ -33,7 +33,7 @@ export function ContributorGrid() {
             <br />
             Một trải nghiệm.
             <br />
-            Một sự thấy hiểu.
+            Một sự thấu hiểu.
           </p>
           <p className="mt-4">
             Chính sự cộng hưởng ấy đã góp phần làm nên chiều sâu của kho tri thức mà người học đang
