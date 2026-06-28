@@ -14,6 +14,7 @@ import MultilingualLookup from '../components/dictionary/MultilingualLookup';
 import type { DefLang } from '../lib/multiDict';
 import LanguageSwitcher from '../components/dictionary/LanguageSwitcher';
 import FlashcardSession from '../components/dictionary/FlashcardSession';
+import DiagramGallery from '../components/dictionary/DiagramGallery';
 
 export default function Dictionary() {
   const { terms, categories, loading, searchTerms } = useDictionary();
@@ -198,21 +199,26 @@ export default function Dictionary() {
         {selectedCategory && ` ${getLocalizedText('trong', 'in', '（カテゴリー：')} "${selectedCategory}"${getLocalizedText('', '', '）')}`}
       </p>
 
-      {/* Term grid */}
-      {filteredTerms.length === 0 ? (
+      {/* Visual tab → diagram gallery; other tabs → term grid */}
+      {viewMode === 'visual' ? (
+        <DiagramGallery
+          terms={terms}
+          sourceLang={preferredSourceLang}
+          searchQuery={searchQuery}
+          emptyLabel={getLocalizedText(
+            'Không tìm thấy đồ hình phù hợp.',
+            'No matching diagrams found.',
+            '一致する図が見つかりません。'
+          )}
+        />
+      ) : filteredTerms.length === 0 ? (
         <EmptyState
           icon={<Search className="h-12 w-12 text-wit-text-tertiary" />}
           title={getLocalizedText('Không tìm thấy thuật ngữ', 'No terms found', '用語が見つかりません')}
           description={getLocalizedText('Thử đổi từ khoá hoặc mở bộ từ điển đầy đủ WiT ở trên.', 'Try changing keywords or open the full WiT Dictionary above.', 'キーワードを変更するか、上記の完全なWiT辞書を開いてください。')}
         />
       ) : (
-        <div
-          className={
-            viewMode === 'visual'
-              ? 'grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4'
-              : 'grid grid-cols-1 sm:grid-cols-2 gap-5'
-          }
-        >
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           {filteredTerms.map((term) => (
             <DictionaryCard
               key={term.id}

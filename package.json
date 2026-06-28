@@ -9,7 +9,8 @@
     "lint": "oxlint",
     "preview": "vite preview",
     "import:dictionary": "tsx scripts/import-dictionary-from-xlsx.ts",
-    "import:wit365": "tsx scripts/import-wit365-from-xlsx.ts"
+    "import:wit365": "tsx scripts/import-wit365-from-xlsx.ts",
+    "images:dict": "tsx scripts/optimize-dict-images.ts"
   },
   "dependencies": {
     "dotenv": "^17.4.2",
@@ -31,6 +32,7 @@
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.2",
     "oxlint": "^1.69.0",
+    "sharp": "^0.35.2",
     "tailwindcss": "^4.3.1",
     "tsx": "^4.22.4",
     "typescript": "~6.0.2",

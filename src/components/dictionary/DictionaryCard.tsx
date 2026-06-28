@@ -2,9 +2,12 @@
 // WiT Platform - DictionaryCard Component
 // ============================================================
 
-import { Volume2 } from 'lucide-react';
+import { useState } from 'react';
+import { Volume2, Maximize2 } from 'lucide-react';
 import type { DictionaryTerm, Language, DictionaryViewMode } from '../../lib/types';
 import { speakText } from '../../lib/utils';
+import { resolveTermDiagram } from '../../lib/dictImages';
+import DiagramLightbox from './DiagramLightbox';
 
 interface DictionaryCardProps {
   term: DictionaryTerm;
@@ -49,7 +52,10 @@ export default function DictionaryCard({
   const sourcePhonetic = getPhoneticField(term, sourceLang);
   const sourcePos = getPosField(term, sourceLang);
   const sourceDef = getDefField(term, sourceLang);
-  const imgUrl = getImgField(term, sourceLang);
+  const legacyImgUrl = getImgField(term, sourceLang);
+  // Diagram resolved from the term name (no data migration needed).
+  const diagram = resolveTermDiagram(term.viTerm, sourceLang);
+  const [lightboxOpen, setLightboxOpen] = useState(false);
 
   // Translate to all other languages for cross-reference
   const otherLanguages: ('vi' | 'en' | 'jp')[] = ['vi', 'en', 'jp'];
@@ -66,8 +72,26 @@ export default function DictionaryCard({
     <div className="wit-card overflow-hidden bg-wit-surface-2 border border-dashed border-[#BFAF9D] rounded-card shadow-card transition-all duration-200 hover:-translate-y-1 hover:shadow-card-hover flex flex-col h-full">
       {/* Illustration Area */}
       <div className="relative aspect-[16/10] bg-wit-line/40 border-b border-wit-line flex items-center justify-center overflow-hidden shrink-0">
-        {imgUrl ? (
-          <img src={imgUrl} alt={sourceTerm} className="w-full h-full object-cover" />
+        {diagram ? (
+          <button
+            type="button"
+            onClick={() => setLightboxOpen(true)}
+            className="group/diagram absolute inset-0 w-full h-full cursor-zoom-in"
+            aria-label={`Xem đồ hình: ${sourceTerm}`}
+          >
+            <img
+              src={diagram.thumb}
+              alt={sourceTerm}
+              loading="lazy"
+              decoding="async"
+              className="w-full h-full object-cover object-top group-hover/diagram:scale-[1.03] transition-transform duration-200"
+            />
+            <span className="absolute bottom-2 right-2 w-7 h-7 flex items-center justify-center rounded-button bg-[#2B2622]/70 text-white backdrop-blur-sm opacity-0 group-hover/diagram:opacity-100 transition-opacity">
+              <Maximize2 className="h-3.5 w-3.5" />
+            </span>
+          </button>
+        ) : legacyImgUrl ? (
+          <img src={legacyImgUrl} alt={sourceTerm} loading="lazy" decoding="async" className="w-full h-full object-cover" />
         ) : (
           <div className="flex flex-col items-center justify-center text-wit-text-tertiary">
             <span className="text-4xl font-serif font-bold text-wit-text-tertiary opacity-30">
@@ -77,11 +101,20 @@ export default function DictionaryCard({
         )}
         {/* Category tag absolute on top left */}
         {term.category && (
-          <span className="absolute top-3 left-3 px-3 py-1 rounded-full bg-[#2B2622]/70 text-white font-semibold text-[11px] backdrop-blur-sm">
+          <span className="absolute top-3 left-3 px-3 py-1 rounded-full bg-[#2B2622]/70 text-white font-semibold text-[11px] backdrop-blur-sm pointer-events-none">
             {term.category}
           </span>
         )}
       </div>
+
+      {diagram && lightboxOpen && (
+        <DiagramLightbox
+          slug={diagram.slug}
+          preferLang={diagram.lang}
+          title={sourceTerm}
+          onClose={() => setLightboxOpen(false)}
+        />
+      )}
 
       {/* Body Area */}
       <div className="p-5 flex flex-col flex-grow">
