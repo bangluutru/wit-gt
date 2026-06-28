@@ -9,7 +9,7 @@ interface ViewModeTabsProps {
 const TABS: { mode: DictionaryViewMode; icon: typeof Book; label: string }[] = [
   { mode: 'dictionary', icon: Book, label: 'Từ điển' },
   { mode: 'definition', icon: FileText, label: 'Định nghĩa' },
-  { mode: 'visual', icon: Image, label: 'Hình ảnh' },
+  { mode: 'visual', icon: Image, label: 'Đồ hình' },
   { mode: 'flashcard', icon: Layers, label: 'Flashcard' },
   { mode: 'multilingual', icon: Globe, label: 'Đa ngôn ngữ' },
 ];

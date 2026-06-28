@@ -68,6 +68,14 @@ service cloud.firestore {
     }
 
     // ============================================================
+    // Diagram title overrides (admin-editable custom display names)
+    // ============================================================
+    match /diagramOverrides/{slug} {
+      allow read: if isAuthenticated();
+      allow write: if isAdmin();
+    }
+
+    // ============================================================
     // User Profiles + Progress
     // ============================================================
     match /users/{userId} {
