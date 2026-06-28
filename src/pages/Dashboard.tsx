@@ -72,7 +72,7 @@ export default function Dashboard() {
     <div className="space-y-8 max-w-4xl mx-auto">
       {/* Greeting Quote Section */}
       <section className="space-y-1.5">
-        <h1 className="text-2xl font-bold text-wit-text">
+        <h1 className="font-serif text-2xl font-bold text-wit-text">
           {getLocalizedText('Chào', 'Welcome,', 'こんにちは、')} {profile?.displayName || getLocalizedText('bạn', 'student', '学習者')},
         </h1>
         <p className="font-serif italic text-wit-text-secondary text-[15px] leading-relaxed">
@@ -81,7 +81,7 @@ export default function Dashboard() {
       </section>
 
       {/* Hero Section */}
-      <div className="relative rounded-3xl overflow-hidden p-8 sm:p-10 bg-gradient-to-br from-wit-red-dark via-wit-red to-[#A6201F] text-[#FDF3EC] shadow-lg">
+      <div className="relative rounded-card overflow-hidden p-8 sm:p-10 bg-gradient-to-br from-wit-red-dark to-wit-red text-wit-cream shadow-card-hover">
         {/* Decorative background circle */}
         <div className="absolute right-[-40px] top-[-40px] w-[300px] h-[300px] rounded-full border-[30px] border-white/5 opacity-10 pointer-events-none" />
         
@@ -107,7 +107,7 @@ export default function Dashboard() {
             {!allCompleted && nextLesson ? (
               <button
                 onClick={() => navigate(`/lessons/${nextLesson.id}`)}
-                className="flex items-center gap-2 px-5 py-3 rounded-xl bg-[#FDF3EC] text-wit-red-dark font-bold text-sm hover:opacity-90 transition-opacity cursor-pointer shadow-md"
+                className="flex items-center gap-2 px-5 py-3 rounded-button bg-wit-cream text-wit-red-dark font-bold text-sm hover:opacity-90 transition-opacity cursor-pointer shadow-card"
               >
                 <Play className="h-4 w-4 fill-current stroke-none" />
                 <span>
@@ -121,7 +121,7 @@ export default function Dashboard() {
             ) : (
               <button
                 onClick={() => navigate('/curriculum')}
-                className="flex items-center gap-2 px-5 py-3 rounded-xl bg-[#FDF3EC] text-wit-red-dark font-bold text-sm hover:opacity-90 transition-opacity cursor-pointer shadow-md"
+                className="flex items-center gap-2 px-5 py-3 rounded-button bg-wit-cream text-wit-red-dark font-bold text-sm hover:opacity-90 transition-opacity cursor-pointer shadow-card"
               >
                 <BookOpen className="h-4 w-4" />
                 <span>{getLocalizedText('Xem giáo trình', 'View Curriculum', 'カリキュラムを見る')}</span>
@@ -129,7 +129,7 @@ export default function Dashboard() {
             )}
             <Link
               to="/roadmap"
-              className="px-5 py-3 rounded-xl border border-white/40 bg-white/10 hover:bg-white/20 transition-all font-semibold text-sm"
+              className="px-5 py-3 rounded-button border border-white/40 bg-white/10 hover:bg-white/20 transition-all font-semibold text-sm"
             >
               {getLocalizedText('Xem lộ trình', 'View Roadmap', 'ロードマップを見る')}
             </Link>
@@ -139,13 +139,13 @@ export default function Dashboard() {
 
       {/* Stats Cards Row */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-        <div className="p-5 rounded-2xl bg-wit-surface border border-wit-line shadow-sm">
+        <div className="p-5 rounded-card bg-wit-surface border border-wit-line shadow-card">
           <div className="font-serif text-3xl font-bold text-wit-red">{completedCount}</div>
           <div className="text-[13px] text-wit-text-secondary mt-1">
             {getLocalizedText('Đã hoàn thành', 'Completed', '完了済み')}
           </div>
         </div>
-        <div className="p-5 rounded-2xl bg-wit-surface border border-wit-line shadow-sm">
+        <div className="p-5 rounded-card bg-wit-surface border border-wit-line shadow-card">
           <div className="font-serif text-3xl font-bold text-wit-gold">
             {allCompleted ? '0' : '1'}
           </div>
@@ -153,13 +153,13 @@ export default function Dashboard() {
             {getLocalizedText('Đang học', 'Learning', '学習中')}
           </div>
         </div>
-        <div className="p-5 rounded-2xl bg-wit-surface border border-wit-line shadow-sm">
+        <div className="p-5 rounded-card bg-wit-surface border border-wit-line shadow-card">
           <div className="font-serif text-3xl font-bold text-wit-text">{TOTAL_LESSONS}</div>
           <div className="text-[13px] text-wit-text-secondary mt-1">
             {getLocalizedText('Tổng học phần', 'Total parts', '全パート')}
           </div>
         </div>
-        <div className="p-5 rounded-2xl bg-wit-surface border border-wit-line shadow-sm">
+        <div className="p-5 rounded-card bg-wit-surface border border-wit-line shadow-card">
           <div className="font-serif text-3xl font-bold text-wit-red">5</div>
           <div className="text-[13px] text-wit-text-secondary mt-1">
             {getLocalizedText('Ngày liên tục', 'Day streak', '継続日数')}
@@ -178,9 +178,9 @@ export default function Dashboard() {
           {!allCompleted && nextLesson ? (
             <div
               onClick={() => navigate(`/lessons/${nextLesson.id}`)}
-              className="wit-card group cursor-pointer p-5 rounded-2xl bg-wit-surface border border-wit-line shadow-sm hover:shadow-card-hover transition-all flex gap-4 items-center"
+              className="wit-card group cursor-pointer p-5 rounded-card bg-wit-surface border border-wit-line shadow-card hover:shadow-card-hover transition-all flex gap-4 items-center"
             >
-              <div className="shrink-0 w-14 h-14 rounded-xl bg-gradient-to-br from-wit-red to-wit-red-dark text-white flex items-center justify-center font-serif text-2xl font-bold shadow-md">
+              <div className="shrink-0 w-14 h-14 rounded-card bg-gradient-to-br from-wit-red to-wit-red-dark text-white flex items-center justify-center font-serif text-2xl font-bold shadow-card">
                 {nextLesson.lessonNo}
               </div>
               <div className="flex-1 min-w-0">
@@ -199,7 +199,7 @@ export default function Dashboard() {
               <ArrowRight className="h-5 w-5 text-wit-red shrink-0 transition-transform group-hover:translate-x-1" />
             </div>
           ) : allCompleted ? (
-            <div className="p-6 rounded-2xl bg-wit-surface border border-wit-line text-center space-y-3">
+            <div className="p-6 rounded-card bg-wit-surface border border-wit-line text-center space-y-3">
               <div className="inline-flex p-3 rounded-full bg-wit-success-soft">
                 <GraduationCap className="h-8 w-8 text-wit-success" />
               </div>
@@ -215,9 +215,9 @@ export default function Dashboard() {
               </p>
             </div>
           ) : (
-            <div className="p-6 rounded-2xl bg-wit-surface border border-wit-line text-center py-8">
+            <div className="p-6 rounded-card bg-wit-surface border border-wit-line text-center py-8">
               <BookOpen className="h-8 w-8 text-wit-text-tertiary mx-auto mb-2" />
-              <h3 className="font-semibold text-wit-text">
+              <h3 className="font-serif font-semibold text-wit-text">
                 {getLocalizedText('Chưa có bài học nào', 'No lessons loaded', 'レッスンがありません')}
               </h3>
               <p className="text-xs text-wit-text-secondary mt-1.5 max-w-xs mx-auto">
@@ -234,9 +234,9 @@ export default function Dashboard() {
         {/* Right Column: Quick Dictionary & Quote */}
         <div className="space-y-6">
           {/* Quick Dictionary Panel */}
-          <div className="p-5 rounded-2xl bg-gradient-to-b from-wit-red-soft to-wit-surface border border-wit-line shadow-sm space-y-4">
+          <div className="p-5 rounded-card bg-gradient-to-b from-wit-red-soft to-wit-surface border border-wit-line shadow-card space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-[38px] h-[38px] rounded-xl bg-wit-red text-white flex items-center justify-center font-serif font-bold text-lg">
+              <div className="w-[38px] h-[38px] rounded-button bg-wit-red text-white flex items-center justify-center font-serif font-bold text-lg">
                 辞
               </div>
               <div>
@@ -257,14 +257,14 @@ export default function Dashboard() {
             </p>
             <button
               onClick={() => navigate('/dictionary')}
-              className="w-full py-2.5 rounded-xl bg-wit-red text-white text-sm font-semibold hover:bg-wit-red-dark transition-colors cursor-pointer"
+              className="w-full py-2.5 rounded-button bg-wit-red text-white text-sm font-semibold hover:bg-wit-red-dark transition-colors cursor-pointer"
             >
               {getLocalizedText('Mở từ điển nhân sinh', 'Open Dictionary', '辞書を開く')}
             </button>
           </div>
 
           {/* Motivation Quote Card */}
-          <div className="p-5 rounded-2xl bg-wit-surface border border-wit-line shadow-sm">
+          <div className="p-5 rounded-card bg-wit-surface border border-wit-line shadow-card">
             <div className="font-serif text-3xl text-wit-gold leading-none">“</div>
             <p className="font-serif text-sm italic text-wit-text leading-relaxed mt-1">
               {getLocalizedText(
@@ -284,39 +284,39 @@ export default function Dashboard() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-4">
         <Link
           to="/roadmap"
-          className="bg-wit-surface rounded-2xl border border-wit-line p-5 hover:shadow-card-hover transition-all group flex items-start gap-4"
+          className="bg-wit-surface rounded-card border border-wit-line p-5 hover:shadow-card-hover transition-all group flex items-start gap-4"
         >
-          <div className="w-10 h-10 rounded-xl bg-wit-surface-2 flex items-center justify-center shrink-0">
+          <div className="w-10 h-10 rounded-button bg-wit-surface-2 flex items-center justify-center shrink-0">
             <Map className="w-5 h-5 text-wit-gold" />
           </div>
           <div className="flex-1 min-w-0">
-            <h3 className="font-bold text-wit-text text-sm">{getLocalizedText('Lộ trình học tập', 'Learning Roadmap', '学習ロードマップ')}</h3>
+            <h3 className="font-serif font-bold text-wit-text text-sm">{getLocalizedText('Lộ trình học tập', 'Learning Roadmap', '学習ロードマップ')}</h3>
             <p className="text-xs text-wit-text-tertiary mt-1 truncate">{getLocalizedText('Xem tiến trình theo từng chương', 'Track progress by chapters', '章ごとの進捗追跡')}</p>
           </div>
           <ArrowRight className="w-4 h-4 text-wit-text-tertiary mt-1 transition-transform group-hover:translate-x-1 shrink-0" />
         </Link>
         <Link
           to="/curriculum"
-          className="bg-wit-surface rounded-2xl border border-wit-line p-5 hover:shadow-card-hover transition-all group flex items-start gap-4"
+          className="bg-wit-surface rounded-card border border-wit-line p-5 hover:shadow-card-hover transition-all group flex items-start gap-4"
         >
-          <div className="w-10 h-10 rounded-xl bg-wit-surface-2 flex items-center justify-center shrink-0">
+          <div className="w-10 h-10 rounded-button bg-wit-surface-2 flex items-center justify-center shrink-0">
             <BookOpen className="w-5 h-5 text-wit-red" />
           </div>
           <div className="flex-1 min-w-0">
-            <h3 className="font-bold text-wit-text text-sm">{getLocalizedText('Giáo trình', 'Curriculum', 'カリキュラム')}</h3>
+            <h3 className="font-serif font-bold text-wit-text text-sm">{getLocalizedText('Giáo trình', 'Curriculum', 'カリキュラム')}</h3>
             <p className="text-xs text-wit-text-tertiary mt-1 truncate">{getLocalizedText('Danh sách tất cả bài học', 'List of all parts', '全レッスンのリスト')}</p>
           </div>
           <ArrowRight className="w-4 h-4 text-wit-text-tertiary mt-1 transition-transform group-hover:translate-x-1 shrink-0" />
         </Link>
         <Link
           to="/dictionary"
-          className="bg-wit-surface rounded-2xl border border-wit-line p-5 hover:shadow-card-hover transition-all group flex items-start gap-4"
+          className="bg-wit-surface rounded-card border border-wit-line p-5 hover:shadow-card-hover transition-all group flex items-start gap-4"
         >
-          <div className="w-10 h-10 rounded-xl bg-wit-surface-2 flex items-center justify-center shrink-0">
+          <div className="w-10 h-10 rounded-button bg-wit-surface-2 flex items-center justify-center shrink-0">
             <Languages className="w-5 h-5 text-wit-info" />
           </div>
           <div className="flex-1 min-w-0">
-            <h3 className="font-bold text-wit-text text-sm">{getLocalizedText('Từ điển thuật ngữ', 'Dictionary', '用語辞書')}</h3>
+            <h3 className="font-serif font-bold text-wit-text text-sm">{getLocalizedText('Từ điển thuật ngữ', 'Dictionary', '用語辞書')}</h3>
             <p className="text-xs text-wit-text-tertiary mt-1 truncate">{getLocalizedText('Tra cứu thuật ngữ đa ngôn ngữ', 'Look up multilingual terms', '多言語の用語検索')}</p>
           </div>
           <ArrowRight className="w-4 h-4 text-wit-text-tertiary mt-1 transition-transform group-hover:translate-x-1 shrink-0" />

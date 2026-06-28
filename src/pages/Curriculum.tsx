@@ -136,13 +136,13 @@ export default function Curriculum() {
             return (
               <div
                 key={ch.id}
-                className="rounded-2xl bg-wit-surface border border-wit-line overflow-hidden shadow-sm"
+                className="rounded-card bg-wit-surface border border-wit-line overflow-hidden shadow-card"
               >
                 {/* Chapter header */}
                 <div className="flex items-center gap-4.5 p-4 sm:p-5 border-b border-wit-line bg-wit-surface-2">
                   <div
                     className={`
-                      w-10 h-10 rounded-xl flex items-center justify-center font-serif font-bold text-base shrink-0
+                      w-10 h-10 rounded-button flex items-center justify-center font-serif font-bold text-base shrink-0
                       ${chipBg}
                     `}
                   >
@@ -196,7 +196,7 @@ export default function Curriculum() {
                         {/* Icon status */}
                         <div
                           className={`
-                            w-7 h-7 rounded-lg flex items-center justify-center shrink-0
+                            w-7 h-7 rounded-button flex items-center justify-center shrink-0
                             ${iconBg}
                           `}
                         >
@@ -242,7 +242,7 @@ export default function Curriculum() {
         </div>
       ) : (
         /* Empty State with Seed instructions */
-        <div className="bg-wit-surface rounded-2xl border border-wit-line p-8 text-center space-y-4 shadow-sm py-16">
+        <div className="bg-wit-surface rounded-card border border-wit-line p-8 text-center space-y-4 shadow-card py-16">
           <div className="inline-flex p-4 bg-wit-gold-soft rounded-full">
             <AlertCircle className="h-10 w-10 text-wit-gold" />
           </div>
@@ -260,7 +260,7 @@ export default function Curriculum() {
           </div>
           <button
             onClick={() => navigate('/admin/import')}
-            className="px-6 py-2.5 rounded-xl bg-wit-red text-white text-sm font-semibold hover:bg-wit-red-dark transition-colors shadow-sm"
+            className="px-6 py-2.5 rounded-button bg-wit-red text-white text-sm font-semibold hover:bg-wit-red-dark transition-colors shadow-card"
           >
             {getLocalizedText('Đến trang Admin Import', 'Go to Admin Import', '管理者インポートページへ')}
           </button>

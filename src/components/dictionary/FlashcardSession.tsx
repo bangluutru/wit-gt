@@ -104,7 +104,7 @@ export default function FlashcardSession({ terms, onExit }: FlashcardSessionProp
           Quay lại từ điển
         </button>
 
-        <div className="bg-wit-surface rounded-xl shadow-card border border-wit-line/50 p-6 space-y-6">
+        <div className="bg-wit-surface rounded-button shadow-card border border-wit-line/50 p-6 space-y-6">
           <h2 className="text-xl font-semibold text-wit-text font-serif">
             Cấu hình Flashcard
           </h2>
@@ -121,11 +121,11 @@ export default function FlashcardSession({ terms, onExit }: FlashcardSessionProp
                   type="button"
                   onClick={() => setConfig((c) => ({ ...c, count }))}
                   className={`
-                    px-5 py-2.5 rounded-lg text-sm font-semibold transition-all duration-200 cursor-pointer
+                    px-5 py-2.5 rounded-button text-sm font-semibold transition-all duration-200 cursor-pointer
                     ${
                       config.count === count
-                        ? 'bg-wit-red text-white shadow-sm'
-                        : 'bg-wit-surface-alt text-wit-text-secondary hover:bg-wit-line'
+                        ? 'bg-wit-red text-white shadow-card'
+                        : 'bg-wit-surface-2 text-wit-text-secondary hover:bg-wit-line'
                     }
                   `}
                 >
@@ -162,7 +162,7 @@ export default function FlashcardSession({ terms, onExit }: FlashcardSessionProp
             type="button"
             onClick={startSession}
             disabled={terms.length === 0}
-            className="w-full py-3 rounded-lg bg-wit-red text-white font-semibold hover:bg-wit-red-hover transition-colors disabled:opacity-50 cursor-pointer"
+            className="w-full py-3 rounded-button bg-wit-red text-white font-semibold hover:bg-wit-red-hover transition-colors disabled:opacity-50 cursor-pointer"
           >
             Bắt đầu ({Math.min(config.count, terms.length)} thẻ)
           </button>
@@ -180,7 +180,7 @@ export default function FlashcardSession({ terms, onExit }: FlashcardSessionProp
 
     return (
       <div className="page-enter max-w-md mx-auto">
-        <div className="bg-wit-surface rounded-xl shadow-card border border-wit-line/50 p-8 text-center space-y-6">
+        <div className="bg-wit-surface rounded-button shadow-card border border-wit-line/50 p-8 text-center space-y-6">
           <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-wit-gold-soft">
             <Trophy className="h-8 w-8 text-wit-gold" />
           </div>
@@ -215,7 +215,7 @@ export default function FlashcardSession({ terms, onExit }: FlashcardSessionProp
                 setPhase('config');
                 setCurrentIndex(0);
               }}
-              className="flex-1 py-2.5 rounded-lg bg-wit-surface-alt text-wit-text font-medium hover:bg-wit-line transition-colors cursor-pointer flex items-center justify-center gap-2"
+              className="flex-1 py-2.5 rounded-button bg-wit-surface-2 text-wit-text font-medium hover:bg-wit-line transition-colors cursor-pointer flex items-center justify-center gap-2"
             >
               <RotateCcw className="h-4 w-4" />
               Học lại
@@ -223,7 +223,7 @@ export default function FlashcardSession({ terms, onExit }: FlashcardSessionProp
             <button
               type="button"
               onClick={onExit}
-              className="flex-1 py-2.5 rounded-lg bg-wit-red text-white font-medium hover:bg-wit-red-hover transition-colors cursor-pointer"
+              className="flex-1 py-2.5 rounded-button bg-wit-red text-white font-medium hover:bg-wit-red-hover transition-colors cursor-pointer"
             >
               Thoát
             </button>
@@ -258,7 +258,7 @@ export default function FlashcardSession({ terms, onExit }: FlashcardSessionProp
       </div>
 
       {/* Progress bar */}
-      <div className="w-full h-1.5 bg-wit-surface-alt rounded-full mb-8 overflow-hidden">
+      <div className="w-full h-1.5 bg-wit-surface-2 rounded-full mb-8 overflow-hidden">
         <div
           className="h-full bg-wit-red rounded-full transition-all duration-300"
           style={{ width: `${((currentIndex + 1) / cards.length) * 100}%` }}
@@ -317,7 +317,7 @@ export default function FlashcardSession({ terms, onExit }: FlashcardSessionProp
           type="button"
           onClick={() => goTo('prev')}
           disabled={currentIndex === 0}
-          className="p-2.5 rounded-lg bg-wit-surface-alt text-wit-text-secondary hover:bg-wit-line disabled:opacity-30 transition-colors cursor-pointer disabled:cursor-not-allowed"
+          className="p-2.5 rounded-button bg-wit-surface-2 text-wit-text-secondary hover:bg-wit-line disabled:opacity-30 transition-colors cursor-pointer disabled:cursor-not-allowed"
         >
           <ChevronLeft className="h-5 w-5" />
         </button>
@@ -326,7 +326,7 @@ export default function FlashcardSession({ terms, onExit }: FlashcardSessionProp
           <button
             type="button"
             onClick={() => markCard(false)}
-            className="flex items-center gap-2 px-5 py-2.5 rounded-lg bg-wit-surface border border-wit-line text-wit-red font-medium hover:bg-wit-red-soft transition-colors cursor-pointer"
+            className="flex items-center gap-2 px-5 py-2.5 rounded-button bg-wit-surface border border-wit-line text-wit-red font-medium hover:bg-wit-red-soft transition-colors cursor-pointer"
           >
             <X className="h-4 w-4" />
             Chưa biết
@@ -334,7 +334,7 @@ export default function FlashcardSession({ terms, onExit }: FlashcardSessionProp
           <button
             type="button"
             onClick={() => markCard(true)}
-            className="flex items-center gap-2 px-5 py-2.5 rounded-lg bg-wit-success text-white font-medium hover:opacity-90 transition-colors cursor-pointer"
+            className="flex items-center gap-2 px-5 py-2.5 rounded-button bg-wit-success text-white font-medium hover:opacity-90 transition-colors cursor-pointer"
           >
             <Check className="h-4 w-4" />
             Đã biết
@@ -345,7 +345,7 @@ export default function FlashcardSession({ terms, onExit }: FlashcardSessionProp
           type="button"
           onClick={() => goTo('next')}
           disabled={currentIndex === cards.length - 1}
-          className="p-2.5 rounded-lg bg-wit-surface-alt text-wit-text-secondary hover:bg-wit-line disabled:opacity-30 transition-colors cursor-pointer disabled:cursor-not-allowed"
+          className="p-2.5 rounded-button bg-wit-surface-2 text-wit-text-secondary hover:bg-wit-line disabled:opacity-30 transition-colors cursor-pointer disabled:cursor-not-allowed"
         >
           <ChevronRight className="h-5 w-5" />
         </button>

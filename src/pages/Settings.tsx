@@ -32,7 +32,7 @@ export default function Settings() {
   };
 
   const fontBtnClass = (active: boolean) =>
-    `flex-1 py-2.5 rounded-xl border text-sm font-semibold transition-all cursor-pointer ${
+    `flex-1 py-2.5 rounded-button border text-sm font-semibold transition-all cursor-pointer ${
       active
         ? 'border-wit-red bg-wit-red-soft text-wit-red'
         : 'border-wit-line bg-wit-surface text-wit-text-secondary hover:bg-wit-surface-2'
@@ -51,11 +51,11 @@ export default function Settings() {
       </div>
 
       {/* Settings Container Panel */}
-      <div className="bg-wit-surface border border-wit-line rounded-2xl shadow-sm overflow-hidden divide-y divide-wit-line">
+      <div className="bg-wit-surface border border-wit-line rounded-card shadow-card overflow-hidden divide-y divide-wit-line">
         {/* Toggle Theme / Dark Mode */}
         <div className="p-5 flex items-center justify-between gap-6">
           <div className="min-w-0">
-            <h3 className="text-[15px] font-bold text-wit-text">
+            <h3 className="font-serif text-[15px] font-bold text-wit-text">
               {getLocalizedText('Chế độ tối / sáng', 'Dark / Light Mode', 'ダーク/ライトモード')}
             </h3>
             <p className="text-xs text-wit-text-secondary mt-1 leading-relaxed">
@@ -73,7 +73,7 @@ export default function Settings() {
             aria-label="Toggle theme"
           >
             <span
-              className="absolute top-1 left-1 w-6 h-6 rounded-full bg-white transition-all duration-200 shadow-md flex items-center justify-center text-wit-red-dark"
+              className="absolute top-1 left-1 w-6 h-6 rounded-full bg-white transition-all duration-200 shadow-card flex items-center justify-center text-wit-red-dark"
               style={{ transform: theme === 'dark' ? 'translateX(24px)' : 'none' }}
             >
               {theme === 'dark' ? <Moon className="h-3.5 w-3.5" /> : <Sun className="h-3.5 w-3.5" />}
@@ -84,7 +84,7 @@ export default function Settings() {
         {/* Font Size Selection */}
         <div className="p-5 space-y-3">
           <div>
-            <h3 className="text-[15px] font-bold text-wit-text">
+            <h3 className="font-serif text-[15px] font-bold text-wit-text">
               {getLocalizedText('Cỡ chữ bài học', 'Lesson Font Size', 'レッスンのフォントサイズ')}
             </h3>
             <p className="text-xs text-wit-text-secondary mt-1">
@@ -116,7 +116,7 @@ export default function Settings() {
         {/* Reading display mode */}
         <div className="p-5 space-y-3">
           <div>
-            <h3 className="text-[15px] font-bold text-wit-text">
+            <h3 className="font-serif text-[15px] font-bold text-wit-text">
               {getLocalizedText('Chế độ hiển thị', 'Display Mode', '表示モード')}
             </h3>
             <p className="text-xs text-wit-text-secondary mt-1">
@@ -142,7 +142,7 @@ export default function Settings() {
         {/* Dictionary Language Preferences */}
         <div className="p-5 space-y-4">
           <div>
-            <h3 className="text-[15px] font-bold text-wit-text">
+            <h3 className="font-serif text-[15px] font-bold text-wit-text">
               {getLocalizedText('Ngôn ngữ tra cứu mặc định', 'Default Lookup Language', 'デフォルトの検索言語')}
             </h3>
             <p className="text-xs text-wit-text-secondary mt-1">
@@ -165,7 +165,7 @@ export default function Settings() {
 
         {/* Account Details */}
         <div className="p-5 space-y-3.5">
-          <h3 className="text-[15px] font-bold text-wit-text flex items-center gap-2">
+          <h3 className="font-serif text-[15px] font-bold text-wit-text flex items-center gap-2">
             <User className="h-4.5 w-4.5 text-wit-red" />
             <span>{getLocalizedText('Tài khoản học viên', 'Student Account', '受講生アカウント')}</span>
           </h3>
@@ -176,7 +176,7 @@ export default function Settings() {
             <span className="text-wit-text font-semibold">{profile?.displayName || '—'}</span>
             <span className="text-wit-text-tertiary">{getLocalizedText('Vai trò:', 'Role:', '役割:')}</span>
             <span className="text-wit-text">
-              <span className={`inline-block px-2.5 py-0.5 rounded-lg text-xs font-bold ${
+              <span className={`inline-block px-2.5 py-0.5 rounded-button text-xs font-bold ${
                 profile?.role === 'admin'
                   ? 'bg-wit-red-soft text-wit-red'
                   : 'bg-wit-surface-2 text-wit-text-secondary'
@@ -191,7 +191,7 @@ export default function Settings() {
           <div className="pt-3 border-t border-wit-line">
             <button
               onClick={signOut}
-              className="flex items-center gap-2 px-4 py-2.5 rounded-xl border border-wit-line hover:bg-red-50 hover:border-red-200 hover:text-red-600 transition-all font-semibold text-sm text-wit-text-secondary cursor-pointer"
+              className="flex items-center gap-2 px-4 py-2.5 rounded-button border border-wit-line hover:bg-wit-red-soft hover:border-wit-red/30 hover:text-wit-red transition-all font-semibold text-sm text-wit-text-secondary cursor-pointer"
             >
               <LogOut className="h-4 w-4" />
               <span>{getLocalizedText('Đăng xuất tài khoản', 'Log out account', 'アカウントからログアウト')}</span>
@@ -201,7 +201,7 @@ export default function Settings() {
       </div>
 
       {/* Note under Panel */}
-      <div className="p-4 rounded-xl bg-wit-surface-2 border border-wit-line text-sm text-wit-text-secondary leading-relaxed">
+      <div className="p-4 rounded-button bg-wit-surface-2 border border-wit-line text-sm text-wit-text-secondary leading-relaxed">
         {getLocalizedText(
           'Giao diện hỗ trợ mở rộng thêm ngôn ngữ trong tương lai (Trung, Hàn…). Cấu trúc dữ liệu giữ đơn giản: hệ thống chỉ ghi nhận học phần đã hoàn thành để tự mở khoá phần kế tiếp.',
           'The interface supports expanding more languages in the future (Chinese, Korean...). The data structure is kept simple: the system only records completed parts to automatically unlock the next one.',

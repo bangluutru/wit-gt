@@ -15,13 +15,13 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 const variantClasses: Record<ButtonVariant, string> = {
   primary:
-    'bg-wit-red text-white hover:bg-wit-red-hover active:scale-[0.98] shadow-sm',
+    'bg-wit-red text-white hover:bg-wit-red-hover active:scale-[0.98] shadow-card',
   secondary:
-    'bg-wit-surface border border-wit-line text-wit-text hover:bg-wit-surface-alt active:scale-[0.98]',
+    'bg-wit-surface border border-wit-line text-wit-text hover:bg-wit-surface-2 active:scale-[0.98]',
   ghost:
-    'bg-transparent text-wit-text-secondary hover:bg-wit-surface-alt hover:text-wit-text',
+    'bg-transparent text-wit-text-secondary hover:bg-wit-surface-2 hover:text-wit-text',
   danger:
-    'bg-red-600 text-white hover:bg-red-700 active:scale-[0.98] shadow-sm',
+    'bg-wit-red-dark text-white hover:bg-wit-red active:scale-[0.98] shadow-card',
 };
 
 const sizeClasses: Record<ButtonSize, string> = {
@@ -46,7 +46,7 @@ export function Button({
       disabled={disabled || loading}
       className={`
         inline-flex items-center justify-center font-medium
-        rounded-lg transition-all duration-200
+        rounded-button transition-all duration-200
         disabled:opacity-50 disabled:cursor-not-allowed disabled:active:scale-100
         cursor-pointer select-none
         ${variantClasses[variant]}

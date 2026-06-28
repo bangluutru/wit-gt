@@ -64,9 +64,9 @@ export default function AdminUsers() {
   if (profile?.role !== 'admin') {
     return (
       <div className="page-enter p-4 sm:p-6 max-w-2xl mx-auto">
-        <div className="bg-wit-surface rounded-xl shadow-card border border-wit-line/50 p-8 text-center">
+        <div className="bg-wit-surface rounded-card shadow-card border border-wit-line/50 p-8 text-center">
           <AlertTriangle className="h-12 w-12 text-wit-gold mx-auto mb-4" />
-          <h2 className="text-xl font-semibold text-wit-text mb-2">Không có quyền truy cập</h2>
+          <h2 className="font-serif text-xl font-semibold text-wit-text mb-2">Không có quyền truy cập</h2>
           <p className="text-sm text-wit-text-secondary">
             Trang này chỉ dành cho quản trị viên. Vai trò hiện tại:{' '}
             <span className="font-medium">{profile?.role || 'unknown'}</span>
@@ -90,7 +90,7 @@ export default function AdminUsers() {
         </div>
         <button
           onClick={loadUsers}
-          className="shrink-0 flex items-center gap-2 px-3.5 py-2 rounded-xl border border-wit-line bg-wit-surface text-sm font-semibold text-wit-text-secondary hover:bg-wit-surface-2 transition-colors cursor-pointer"
+          className="shrink-0 flex items-center gap-2 px-3.5 py-2 rounded-button border border-wit-line bg-wit-surface text-sm font-semibold text-wit-text-secondary hover:bg-wit-surface-2 transition-colors cursor-pointer"
         >
           <RefreshCw className="h-4 w-4" />
           Tải lại
@@ -98,7 +98,7 @@ export default function AdminUsers() {
       </div>
 
       {error && (
-        <div className="bg-wit-red-soft border border-wit-red/30 rounded-xl p-4 text-sm text-wit-red">
+        <div className="bg-wit-red-soft border border-wit-red/30 rounded-button p-4 text-sm text-wit-red">
           {error}
         </div>
       )}
@@ -109,7 +109,7 @@ export default function AdminUsers() {
           Đang tải...
         </div>
       ) : (
-        <div className="bg-wit-surface rounded-2xl border border-wit-line overflow-hidden shadow-sm divide-y divide-wit-line">
+        <div className="bg-wit-surface rounded-card border border-wit-line overflow-hidden shadow-card divide-y divide-wit-line">
           {users.length === 0 && (
             <div className="p-8 text-center text-sm text-wit-text-secondary">
               Chưa có người dùng nào.
@@ -158,7 +158,7 @@ export default function AdminUsers() {
                   onClick={() => setRole(u, isAdmin ? 'user' : 'admin')}
                   disabled={savingId === u.id || (isAdmin && isSelf)}
                   title={isAdmin && isSelf ? 'Không thể tự hạ quyền chính mình' : undefined}
-                  className={`shrink-0 flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-sm font-semibold transition-colors cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed ${
+                  className={`shrink-0 flex items-center gap-1.5 px-3.5 py-2 rounded-button text-sm font-semibold transition-colors cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed ${
                     isAdmin
                       ? 'border border-wit-line bg-wit-surface text-wit-text-secondary hover:bg-wit-surface-2'
                       : 'bg-wit-red text-white hover:bg-wit-red-dark'

@@ -18,7 +18,7 @@ export function Card({
     <div
       onClick={onClick}
       className={`
-        bg-wit-surface rounded-xl shadow-card border border-wit-line/50
+        bg-wit-surface rounded-card shadow-card border border-wit-line/50
         ${padding ? 'p-6' : ''}
         ${hoverable ? 'hover:shadow-card-hover transition-shadow duration-200' : ''}
         ${onClick ? 'cursor-pointer' : ''}

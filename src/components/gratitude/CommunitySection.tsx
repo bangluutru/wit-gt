@@ -12,7 +12,7 @@ export function CommunitySection({ lang }: Props) {
     <section className="-mx-4 sm:-mx-6 px-4 sm:px-6 bg-wit-red-soft">
       <div className="py-20 sm:py-24 max-w-3xl mx-auto text-center">
         <Reveal>
-          <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-wit-red text-white shadow-md">
+          <div className="inline-flex items-center justify-center w-16 h-16 rounded-card bg-wit-red text-white shadow-card">
             <Users className="h-8 w-8" />
           </div>
         </Reveal>

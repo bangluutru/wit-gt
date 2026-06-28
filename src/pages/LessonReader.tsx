@@ -217,7 +217,7 @@ export default function LessonReader() {
       {/* Controls row */}
       <div className="flex items-center justify-between gap-4 mb-8 flex-wrap">
         {/* Language switcher */}
-        <div className="flex items-center gap-1 bg-wit-surface-alt rounded-full p-1">
+        <div className="flex items-center gap-1 bg-wit-surface-2 rounded-full p-1">
           {(['vi', 'en', 'jp'] as Language[]).map((lang) => (
             <button
               key={lang}
@@ -226,7 +226,7 @@ export default function LessonReader() {
                 px-4 py-1.5 text-xs font-bold rounded-full transition-all duration-200
                 ${
                   contentLang === lang
-                    ? 'bg-wit-red text-white shadow-sm'
+                    ? 'bg-wit-red text-white shadow-card'
                     : 'text-wit-text-secondary hover:text-wit-text hover:bg-wit-surface'
                 }
               `}
@@ -240,7 +240,7 @@ export default function LessonReader() {
         <button
           onClick={toggleDualMode}
           className={`
-            desktop-only flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium
+            desktop-only flex items-center gap-2 px-4 py-2 rounded-button text-sm font-medium
             transition-all duration-200 border
             ${
               dualMode
@@ -334,11 +334,11 @@ export default function LessonReader() {
             onClick={handleComplete}
             disabled={completing}
             className="
-              flex items-center gap-2 px-6 py-3 rounded-xl
+              flex items-center gap-2 px-6 py-3 rounded-button
               bg-wit-red text-white font-medium text-sm
               hover:bg-wit-red-hover transition-colors duration-200
               disabled:opacity-60 disabled:cursor-not-allowed
-              shadow-sm hover:shadow-md
+              shadow-card hover:shadow-card-hover
             "
           >
             <CheckCircle2 className="h-4 w-4" />
@@ -350,7 +350,7 @@ export default function LessonReader() {
           <Link
             to={`/lessons/${nextLesson.id}`}
             className="
-              flex items-center gap-2 px-6 py-3 rounded-xl
+              flex items-center gap-2 px-6 py-3 rounded-button
               bg-wit-surface border border-wit-line text-wit-text
               font-medium text-sm hover:border-wit-red/30 hover:text-wit-red
               transition-all duration-200
@@ -458,7 +458,7 @@ function TermSheetContent({
           </span>
         )}
         {sourcePos && (
-          <span className="px-2 py-0.5 text-[10px] font-medium rounded-full bg-wit-surface-alt text-wit-text-secondary">
+          <span className="px-2 py-0.5 text-[10px] font-medium rounded-full bg-wit-surface-2 text-wit-text-secondary">
             {sourcePos}
           </span>
         )}

@@ -95,7 +95,7 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
             to="/"
             end
             className={({ isActive }) =>
-              `flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all duration-200 ${
+              `flex items-center gap-3 px-3 py-2.5 rounded-button text-sm font-medium transition-all duration-200 ${
                 isActive
                   ? 'bg-wit-red-soft text-wit-red font-semibold'
                   : 'text-wit-text-secondary hover:bg-wit-surface-2 hover:text-wit-text'
@@ -108,7 +108,7 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
           <NavLink
             to="/wit365"
             className={({ isActive }) =>
-              `flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all duration-200 ${
+              `flex items-center gap-3 px-3 py-2.5 rounded-button text-sm font-medium transition-all duration-200 ${
                 isActive
                   ? 'bg-wit-red-soft text-wit-red font-semibold'
                   : 'text-wit-text-secondary hover:bg-wit-surface-2 hover:text-wit-text'
@@ -121,7 +121,7 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
           <NavLink
             to="/roadmap"
             className={({ isActive }) =>
-              `flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all duration-200 ${
+              `flex items-center gap-3 px-3 py-2.5 rounded-button text-sm font-medium transition-all duration-200 ${
                 isActive
                   ? 'bg-wit-red-soft text-wit-red font-semibold'
                   : 'text-wit-text-secondary hover:bg-wit-surface-2 hover:text-wit-text'
@@ -134,7 +134,7 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
           <NavLink
             to="/curriculum"
             className={({ isActive }) =>
-              `flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all duration-200 ${
+              `flex items-center gap-3 px-3 py-2.5 rounded-button text-sm font-medium transition-all duration-200 ${
                 isActive
                   ? 'bg-wit-red-soft text-wit-red font-semibold'
                   : 'text-wit-text-secondary hover:bg-wit-surface-2 hover:text-wit-text'
@@ -147,7 +147,7 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
           <NavLink
             to="/dictionary"
             className={({ isActive }) =>
-              `flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all duration-200 ${
+              `flex items-center gap-3 px-3 py-2.5 rounded-button text-sm font-medium transition-all duration-200 ${
                 isActive
                   ? 'bg-wit-red-soft text-wit-red font-semibold'
                   : 'text-wit-text-secondary hover:bg-wit-surface-2 hover:text-wit-text'
@@ -160,7 +160,7 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
           <NavLink
             to="/review"
             className={({ isActive }) =>
-              `flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all duration-200 ${
+              `flex items-center gap-3 px-3 py-2.5 rounded-button text-sm font-medium transition-all duration-200 ${
                 isActive
                   ? 'bg-wit-red-soft text-wit-red font-semibold'
                   : 'text-wit-text-secondary hover:bg-wit-surface-2 hover:text-wit-text'
@@ -180,7 +180,7 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
           <NavLink
             to="/acknowledgements"
             className={({ isActive }) =>
-              `flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all duration-200 ${
+              `flex items-center gap-3 px-3 py-2.5 rounded-button text-sm font-medium transition-all duration-200 ${
                 isActive
                   ? 'bg-wit-red-soft text-wit-red font-semibold'
                   : 'text-wit-text-secondary hover:bg-wit-surface-2 hover:text-wit-text'
@@ -193,7 +193,7 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
           <NavLink
             to="/team"
             className={({ isActive }) =>
-              `flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all duration-200 ${
+              `flex items-center gap-3 px-3 py-2.5 rounded-button text-sm font-medium transition-all duration-200 ${
                 isActive
                   ? 'bg-wit-red-soft text-wit-red font-semibold'
                   : 'text-wit-text-secondary hover:bg-wit-surface-2 hover:text-wit-text'
@@ -206,7 +206,7 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
           <NavLink
             to="/advisors"
             className={({ isActive }) =>
-              `flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all duration-200 ${
+              `flex items-center gap-3 px-3 py-2.5 rounded-button text-sm font-medium transition-all duration-200 ${
                 isActive
                   ? 'bg-wit-red-soft text-wit-red font-semibold'
                   : 'text-wit-text-secondary hover:bg-wit-surface-2 hover:text-wit-text'
@@ -219,7 +219,7 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
           <NavLink
             to="/settings"
             className={({ isActive }) =>
-              `flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all duration-200 ${
+              `flex items-center gap-3 px-3 py-2.5 rounded-button text-sm font-medium transition-all duration-200 ${
                 isActive
                   ? 'bg-wit-red-soft text-wit-red font-semibold'
                   : 'text-wit-text-secondary hover:bg-wit-surface-2 hover:text-wit-text'
@@ -240,7 +240,7 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
             <NavLink
               to="/admin/import"
               className={({ isActive }) =>
-                `flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all duration-200 ${
+                `flex items-center gap-3 px-3 py-2.5 rounded-button text-sm font-medium transition-all duration-200 ${
                   isActive
                     ? 'bg-wit-red-soft text-wit-red font-semibold'
                     : 'text-wit-text-secondary hover:bg-wit-surface-2 hover:text-wit-text'
@@ -253,7 +253,7 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
             <NavLink
               to="/admin/users"
               className={({ isActive }) =>
-                `flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all duration-200 ${
+                `flex items-center gap-3 px-3 py-2.5 rounded-button text-sm font-medium transition-all duration-200 ${
                   isActive
                     ? 'bg-wit-red-soft text-wit-red font-semibold'
                     : 'text-wit-text-secondary hover:bg-wit-surface-2 hover:text-wit-text'
@@ -268,7 +268,7 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
       </nav>
 
       {/* Progress Card Footer */}
-      <div className="mx-4 my-4 p-3.5 rounded-2xl bg-wit-surface-2 border border-wit-line">
+      <div className="mx-4 my-4 p-3.5 rounded-card bg-wit-surface-2 border border-wit-line">
         <div className="flex justify-between items-baseline mb-2">
           <span className="text-xs font-semibold text-wit-text-secondary">
             {getLocalizedText('Tiến độ giáo trình', 'Curriculum Progress', '進行状況')}
@@ -277,7 +277,7 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
         </div>
         <div className="h-[7px] rounded-full bg-wit-line overflow-hidden">
           <div
-            className="h-full bg-gradient-to-r from-wit-red to-[#E0524F] rounded-full transition-all duration-300"
+            className="h-full bg-gradient-to-r from-wit-red to-wit-red-light rounded-full transition-all duration-300"
             style={{ width: `${progressPercent}%` }}
           />
         </div>
@@ -296,7 +296,7 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
         )}
         <button
           onClick={handleLogout}
-          className="flex items-center gap-3 w-full px-3 py-2.5 rounded-xl text-sm font-medium text-wit-text-secondary hover:bg-red-50 hover:text-red-600 transition-all duration-200 cursor-pointer"
+          className="flex items-center gap-3 w-full px-3 py-2.5 rounded-button text-sm font-medium text-wit-text-secondary hover:bg-wit-red-soft hover:text-wit-red transition-all duration-200 cursor-pointer"
         >
           <LogOut className="h-[19px] w-[19px] shrink-0" />
           <span>{getLocalizedText('Đăng xuất', 'Log out', 'ログアウト')}</span>

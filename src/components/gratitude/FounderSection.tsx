@@ -13,8 +13,8 @@ export function FounderSection({ lang }: Props) {
       <div className="grid grid-cols-1 md:grid-cols-[0.85fr_1.15fr] gap-10 md:gap-14 items-center">
         {/* Portrait placeholder */}
         <Reveal>
-          <div className="relative mx-auto md:mx-0 w-full max-w-xs aspect-[4/5] rounded-3xl overflow-hidden bg-gradient-to-br from-wit-red-soft to-wit-surface-2 border border-wit-line shadow-card flex flex-col items-center justify-center">
-            <div className="w-28 h-28 rounded-full bg-gradient-to-br from-wit-red to-wit-red-dark text-white flex items-center justify-center font-serif font-bold text-4xl shadow-md">
+          <div className="relative mx-auto md:mx-0 w-full max-w-xs aspect-[4/5] rounded-card overflow-hidden bg-gradient-to-br from-wit-red-soft to-wit-surface-2 border border-wit-line shadow-card flex flex-col items-center justify-center">
+            <div className="w-28 h-28 rounded-full bg-gradient-to-br from-wit-red to-wit-red-dark text-white flex items-center justify-center font-serif font-bold text-4xl shadow-card">
               TT
             </div>
             <p className="mt-5 font-serif font-bold text-wit-text text-lg">Thầy Trần Thanh Toàn</p>

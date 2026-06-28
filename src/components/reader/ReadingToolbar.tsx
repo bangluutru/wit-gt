@@ -49,7 +49,7 @@ export function ReadingToolbar() {
         disabled={fontSizeIndex === 0}
         className="
           w-9 h-9 rounded-full flex items-center justify-center
-          text-wit-text-secondary hover:text-wit-text hover:bg-wit-surface-alt
+          text-wit-text-secondary hover:text-wit-text hover:bg-wit-surface-2
           disabled:opacity-40 disabled:cursor-not-allowed
           transition-colors duration-200
         "
@@ -68,7 +68,7 @@ export function ReadingToolbar() {
         disabled={fontSizeIndex === FONT_SIZES.length - 1}
         className="
           w-9 h-9 rounded-full flex items-center justify-center
-          text-wit-text-secondary hover:text-wit-text hover:bg-wit-surface-alt
+          text-wit-text-secondary hover:text-wit-text hover:bg-wit-surface-2
           disabled:opacity-40 disabled:cursor-not-allowed
           transition-colors duration-200
         "
@@ -89,7 +89,7 @@ export function ReadingToolbar() {
           ${
             focusMode
               ? 'bg-wit-red text-white'
-              : 'text-wit-text-secondary hover:text-wit-text hover:bg-wit-surface-alt'
+              : 'text-wit-text-secondary hover:text-wit-text hover:bg-wit-surface-2'
           }
         `}
         title="Chế độ tập trung"
@@ -102,7 +102,7 @@ export function ReadingToolbar() {
         onClick={cycleTheme}
         className="
           w-9 h-9 rounded-full flex items-center justify-center
-          text-wit-text-secondary hover:text-wit-text hover:bg-wit-surface-alt
+          text-wit-text-secondary hover:text-wit-text hover:bg-wit-surface-2
           transition-colors duration-200
         "
         title={`Theme: ${theme}`}

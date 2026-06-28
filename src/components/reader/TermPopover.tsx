@@ -76,7 +76,7 @@ export function TermPopover({
       className="fixed z-40 animate-scale-in"
       style={{ top: `${top}px`, left: `${left}px` }}
     >
-      <div className="bg-wit-surface rounded-xl shadow-popover p-4 w-[320px] border border-wit-line/50">
+      <div className="bg-wit-surface rounded-card shadow-popover p-4 w-[320px] border border-wit-line/50">
         {/* Header */}
         <div className="flex items-start justify-between mb-3">
           <div className="flex-1 min-w-0">
@@ -102,7 +102,7 @@ export function TermPopover({
             onClick={onClose}
             className="
               w-7 h-7 rounded-full flex items-center justify-center
-              text-wit-text-tertiary hover:text-wit-text hover:bg-wit-surface-alt
+              text-wit-text-tertiary hover:text-wit-text hover:bg-wit-surface-2
               transition-colors flex-shrink-0
             "
           >
@@ -118,7 +118,7 @@ export function TermPopover({
             </span>
           )}
           {sourcePos && (
-            <span className="px-2 py-0.5 text-[10px] font-medium rounded-full bg-wit-surface-alt text-wit-text-secondary">
+            <span className="px-2 py-0.5 text-[10px] font-medium rounded-full bg-wit-surface-2 text-wit-text-secondary">
               {sourcePos}
             </span>
           )}

@@ -58,7 +58,7 @@ export function EditorialBoard({ section, variant, eyebrow, title, subtitle, foo
         {isAdmin && (
           <button
             onClick={openAdd}
-            className="shrink-0 flex items-center gap-2 px-3.5 py-2 rounded-xl bg-wit-red text-white text-sm font-semibold hover:bg-wit-red-dark transition-colors cursor-pointer"
+            className="shrink-0 flex items-center gap-2 px-3.5 py-2 rounded-button bg-wit-red text-white text-sm font-semibold hover:bg-wit-red-dark transition-colors cursor-pointer"
           >
             <Plus className="h-4 w-4" />
             {L('Thêm', 'Add', '追加')}
@@ -78,8 +78,8 @@ export function EditorialBoard({ section, variant, eyebrow, title, subtitle, foo
               key={m.id}
               className={
                 isTeam
-                  ? 'relative wit-card p-6 bg-wit-surface border border-wit-line rounded-2xl shadow-sm text-center transition-all duration-200 hover:-translate-y-1 hover:shadow-card-hover'
-                  : 'relative bg-wit-surface rounded-2xl border border-wit-line shadow-sm flex flex-col sm:flex-row items-center sm:items-start gap-5 p-5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-card-hover'
+                  ? 'relative wit-card p-6 bg-wit-surface border border-wit-line rounded-card shadow-card text-center transition-all duration-200 hover:-translate-y-1 hover:shadow-card-hover'
+                  : 'relative bg-wit-surface rounded-card border border-wit-line shadow-card flex flex-col sm:flex-row items-center sm:items-start gap-5 p-5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-card-hover'
               }
             >
               {/* Admin controls */}
@@ -87,14 +87,14 @@ export function EditorialBoard({ section, variant, eyebrow, title, subtitle, foo
                 <div className="absolute top-2.5 right-2.5 flex gap-1">
                   <button
                     onClick={() => setEditing(m)}
-                    className="p-1.5 rounded-lg text-wit-text-tertiary hover:bg-wit-surface-2 hover:text-wit-text transition-colors cursor-pointer"
+                    className="p-1.5 rounded-button text-wit-text-tertiary hover:bg-wit-surface-2 hover:text-wit-text transition-colors cursor-pointer"
                     title={L('Sửa', 'Edit', '編集')}
                   >
                     <Pencil className="h-3.5 w-3.5" />
                   </button>
                   <button
                     onClick={() => setConfirmDelete(m)}
-                    className="p-1.5 rounded-lg text-wit-text-tertiary hover:bg-red-50 hover:text-red-600 transition-colors cursor-pointer"
+                    className="p-1.5 rounded-button text-wit-text-tertiary hover:bg-wit-red-soft hover:text-wit-red transition-colors cursor-pointer"
                     title={L('Xoá', 'Delete', '削除')}
                   >
                     <Trash2 className="h-3.5 w-3.5" />
@@ -106,8 +106,8 @@ export function EditorialBoard({ section, variant, eyebrow, title, subtitle, foo
               <div
                 className={
                   isTeam
-                    ? 'w-16 h-16 rounded-full mx-auto bg-gradient-to-br from-wit-red to-[#8E1B1B] text-white flex items-center justify-center font-serif font-bold text-[22px] shadow-sm'
-                    : 'shrink-0 w-[58px] h-[58px] rounded-2xl bg-gradient-to-br from-wit-gold to-wit-red text-white flex items-center justify-center font-serif font-bold text-lg shadow-sm'
+                    ? 'w-16 h-16 rounded-full mx-auto bg-gradient-to-br from-wit-red to-[#8E1B1B] text-white flex items-center justify-center font-serif font-bold text-[22px] shadow-card'
+                    : 'shrink-0 w-[58px] h-[58px] rounded-card bg-gradient-to-br from-wit-gold to-wit-red text-white flex items-center justify-center font-serif font-bold text-lg shadow-card'
                 }
               >
                 {m.initials}
@@ -161,7 +161,7 @@ export function EditorialBoard({ section, variant, eyebrow, title, subtitle, foo
         <div className="flex justify-end gap-2 mt-5">
           <button
             onClick={() => setConfirmDelete(null)}
-            className="px-4 py-2 rounded-xl border border-wit-line text-sm font-semibold text-wit-text-secondary hover:bg-wit-surface-2 cursor-pointer"
+            className="px-4 py-2 rounded-button border border-wit-line text-sm font-semibold text-wit-text-secondary hover:bg-wit-surface-2 cursor-pointer"
           >
             {L('Huỷ', 'Cancel', 'キャンセル')}
           </button>
@@ -171,7 +171,7 @@ export function EditorialBoard({ section, variant, eyebrow, title, subtitle, foo
               setConfirmDelete(null);
             }}
             disabled={saving}
-            className="px-4 py-2 rounded-xl bg-red-600 text-white text-sm font-semibold hover:bg-red-700 disabled:opacity-60 cursor-pointer flex items-center gap-2"
+            className="px-4 py-2 rounded-button bg-wit-red-dark text-white text-sm font-semibold hover:bg-wit-red disabled:opacity-60 cursor-pointer flex items-center gap-2"
           >
             {saving && <Loader2 className="h-3.5 w-3.5 animate-spin" />}
             {L('Xoá', 'Delete', '削除')}
@@ -208,14 +208,14 @@ function MemberFormModal({
         onChange={(e) => set(key, e.target.value)}
         placeholder={placeholder}
         rows={2}
-        className="w-full px-3 py-2 rounded-lg border border-wit-line bg-wit-surface text-sm text-wit-text placeholder:text-wit-text-tertiary focus:outline-none focus:ring-2 focus:ring-wit-red/20 focus:border-wit-red resize-none"
+        className="w-full px-3 py-2 rounded-button border border-wit-line bg-wit-surface text-sm text-wit-text placeholder:text-wit-text-tertiary focus:outline-none focus:ring-2 focus:ring-wit-red/20 focus:border-wit-red resize-none"
       />
     ) : (
       <input
         value={form[key]}
         onChange={(e) => set(key, e.target.value)}
         placeholder={placeholder}
-        className="w-full px-3 py-2 rounded-lg border border-wit-line bg-wit-surface text-sm text-wit-text placeholder:text-wit-text-tertiary focus:outline-none focus:ring-2 focus:ring-wit-red/20 focus:border-wit-red"
+        className="w-full px-3 py-2 rounded-button border border-wit-line bg-wit-surface text-sm text-wit-text placeholder:text-wit-text-tertiary focus:outline-none focus:ring-2 focus:ring-wit-red/20 focus:border-wit-red"
       />
     );
 
@@ -239,7 +239,7 @@ function MemberFormModal({
             value={form.initials}
             onChange={(e) => set('initials', e.target.value.slice(0, 3))}
             placeholder="VD: CB"
-            className="w-24 px-3 py-2 rounded-lg border border-wit-line bg-wit-surface text-sm text-wit-text focus:outline-none focus:ring-2 focus:ring-wit-red/20 focus:border-wit-red"
+            className="w-24 px-3 py-2 rounded-button border border-wit-line bg-wit-surface text-sm text-wit-text focus:outline-none focus:ring-2 focus:ring-wit-red/20 focus:border-wit-red"
           />
         </div>
         {group(L('Tên', 'Name', '名前'), 'nameVi', 'nameEn', 'nameJp')}
@@ -249,14 +249,14 @@ function MemberFormModal({
       <div className="flex justify-end gap-2 mt-5">
         <button
           onClick={onClose}
-          className="px-4 py-2 rounded-xl border border-wit-line text-sm font-semibold text-wit-text-secondary hover:bg-wit-surface-2 cursor-pointer"
+          className="px-4 py-2 rounded-button border border-wit-line text-sm font-semibold text-wit-text-secondary hover:bg-wit-surface-2 cursor-pointer"
         >
           {L('Huỷ', 'Cancel', 'キャンセル')}
         </button>
         <button
           onClick={() => onSave(form)}
           disabled={saving || !form.initials.trim() || !form.nameVi.trim()}
-          className="px-4 py-2 rounded-xl bg-wit-red text-white text-sm font-semibold hover:bg-wit-red-dark disabled:opacity-60 disabled:cursor-not-allowed cursor-pointer flex items-center gap-2"
+          className="px-4 py-2 rounded-button bg-wit-red text-white text-sm font-semibold hover:bg-wit-red-dark disabled:opacity-60 disabled:cursor-not-allowed cursor-pointer flex items-center gap-2"
         >
           {saving && <Loader2 className="h-3.5 w-3.5 animate-spin" />}
           {L('Lưu', 'Save', '保存')}

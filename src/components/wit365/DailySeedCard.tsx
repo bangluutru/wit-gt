@@ -41,7 +41,7 @@ export function DailySeedCard({
 
   return (
     <div
-      className={`relative bg-wit-surface rounded-3xl border border-wit-line shadow-card transition-all duration-300 ${
+      className={`relative bg-wit-surface rounded-card border border-wit-line shadow-card transition-all duration-300 ${
         visible ? 'opacity-100 scale-100' : 'opacity-0 scale-[0.97]'
       }`}
     >

@@ -23,8 +23,8 @@ export function EditorGrid({ lang }: Props) {
       <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 gap-4">
         {EDITORS.map((name, i) => (
           <Reveal key={name} delay={Math.min(i, 6) * 60}>
-            <div className="h-full flex items-center gap-4 p-5 rounded-2xl bg-wit-surface border border-wit-line shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-card-hover">
-              <div className="shrink-0 w-12 h-12 rounded-2xl bg-gradient-to-br from-wit-gold to-wit-red text-white flex items-center justify-center font-serif font-bold text-lg shadow-sm">
+            <div className="h-full flex items-center gap-4 p-5 rounded-card bg-wit-surface border border-wit-line shadow-card transition-all duration-200 hover:-translate-y-0.5 hover:shadow-card-hover">
+              <div className="shrink-0 w-12 h-12 rounded-card bg-gradient-to-br from-wit-gold to-wit-red text-white flex items-center justify-center font-serif font-bold text-lg shadow-card">
                 {initialOf(name)}
               </div>
               <div className="min-w-0">

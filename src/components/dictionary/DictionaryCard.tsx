@@ -63,7 +63,7 @@ export default function DictionaryCard({
     }));
 
   return (
-    <div className="wit-card overflow-hidden bg-wit-surface-2 border border-dashed border-[#BFAF9D] rounded-[20px] shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-card-hover flex flex-col h-full">
+    <div className="wit-card overflow-hidden bg-wit-surface-2 border border-dashed border-[#BFAF9D] rounded-card shadow-card transition-all duration-200 hover:-translate-y-1 hover:shadow-card-hover flex flex-col h-full">
       {/* Illustration Area */}
       <div className="relative aspect-[16/10] bg-wit-line/40 border-b border-wit-line flex items-center justify-center overflow-hidden shrink-0">
         {imgUrl ? (
@@ -144,7 +144,7 @@ export default function DictionaryCard({
               <button
                 type="button"
                 onClick={() => speakText(oth.term, oth.lang)}
-                className="w-7 h-7 rounded-lg border border-wit-line bg-wit-surface flex items-center justify-center text-wit-red hover:bg-wit-red-soft transition-colors cursor-pointer"
+                className="w-7 h-7 rounded-button border border-wit-line bg-wit-surface flex items-center justify-center text-wit-red hover:bg-wit-red-soft transition-colors cursor-pointer"
                 title="Speak translation"
               >
                 <Volume2 className="h-3.5 w-3.5" />

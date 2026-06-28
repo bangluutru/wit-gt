@@ -87,7 +87,7 @@ export function Header({ onMenuToggle }: HeaderProps) {
       <div className="flex items-center gap-3 lg:hidden">
         <button
           onClick={onMenuToggle}
-          className="p-2 rounded-xl text-wit-text-secondary hover:bg-wit-surface-2 transition-colors cursor-pointer"
+          className="p-2 rounded-button text-wit-text-secondary hover:bg-wit-surface-2 transition-colors cursor-pointer"
         >
           <Menu className="h-5 w-5" />
         </button>
@@ -110,13 +110,13 @@ export function Header({ onMenuToggle }: HeaderProps) {
               'Search lessons, terms...',
               'レッスン、用語を検索...'
             )}
-            className="w-full pl-11 pr-4 py-2.5 rounded-xl border border-wit-line bg-wit-surface-2 text-sm text-wit-text placeholder:text-wit-text-tertiary focus:outline-none focus:ring-2 focus:ring-wit-red/20 focus:border-wit-red transition-all"
+            className="w-full pl-11 pr-4 py-2.5 rounded-button border border-wit-line bg-wit-surface-2 text-sm text-wit-text placeholder:text-wit-text-tertiary focus:outline-none focus:ring-2 focus:ring-wit-red/20 focus:border-wit-red transition-all"
           />
         </div>
 
         {/* Dropdown Results */}
         {showDropdown && (
-          <div className="absolute top-[52px] left-0 right-0 bg-wit-surface border border-wit-line rounded-2xl shadow-popover p-2 max-h-[380px] overflow-y-auto animate-scale-in z-50">
+          <div className="absolute top-[52px] left-0 right-0 bg-wit-surface border border-wit-line rounded-card shadow-popover p-2 max-h-[380px] overflow-y-auto animate-scale-in z-50">
             {matchedLessons.length > 0 && (
               <div className="mb-2">
                 <div className="text-[10px] font-bold tracking-wider uppercase text-wit-text-tertiary px-3 py-1.5 border-b border-wit-line/50">
@@ -138,7 +138,7 @@ export function Header({ onMenuToggle }: HeaderProps) {
                           }
                         }}
                         disabled={!accessible}
-                        className={`w-full flex items-center gap-3 px-3 py-2 rounded-xl text-left text-sm transition-colors ${
+                        className={`w-full flex items-center gap-3 px-3 py-2 rounded-button text-left text-sm transition-colors ${
                           accessible
                             ? 'hover:bg-wit-surface-2 cursor-pointer text-wit-text'
                             : 'opacity-50 cursor-not-allowed text-wit-text-tertiary'
@@ -178,9 +178,9 @@ export function Header({ onMenuToggle }: HeaderProps) {
                         setQuery('');
                         setSearchFocus(false);
                       }}
-                      className="w-full flex items-center gap-3 px-3 py-2 rounded-xl text-left text-sm hover:bg-wit-surface-2 cursor-pointer text-wit-text"
+                      className="w-full flex items-center gap-3 px-3 py-2 rounded-button text-left text-sm hover:bg-wit-surface-2 cursor-pointer text-wit-text"
                     >
-                      <span className="flex items-center justify-center w-7 h-7 rounded-lg bg-wit-red-soft text-wit-red font-serif font-bold text-xs shrink-0">
+                      <span className="flex items-center justify-center w-7 h-7 rounded-button bg-wit-red-soft text-wit-red font-serif font-bold text-xs shrink-0">
                         辞
                       </span>
                       <span className="flex-1 truncate font-medium">
@@ -209,7 +209,7 @@ export function Header({ onMenuToggle }: HeaderProps) {
         {/* Globe Language Picker */}
         <button
           onClick={cycleLang}
-          className="flex items-center gap-1.5 px-3 py-2 rounded-xl border border-wit-line bg-wit-surface text-sm font-semibold text-wit-text hover:bg-wit-surface-2 transition-all cursor-pointer shadow-sm"
+          className="flex items-center gap-1.5 px-3 py-2 rounded-button border border-wit-line bg-wit-surface text-sm font-semibold text-wit-text hover:bg-wit-surface-2 transition-all cursor-pointer shadow-card"
         >
           <Globe className="h-4 w-4 text-wit-text-secondary" />
           <span>{interfaceLang.toUpperCase()}</span>
@@ -218,14 +218,14 @@ export function Header({ onMenuToggle }: HeaderProps) {
         {/* Theme Switcher */}
         <button
           onClick={toggleTheme}
-          className="h-10 w-10 flex items-center justify-center rounded-xl border border-wit-line bg-wit-surface text-wit-text hover:bg-wit-surface-2 transition-all cursor-pointer shadow-sm"
+          className="h-10 w-10 flex items-center justify-center rounded-button border border-wit-line bg-wit-surface text-wit-text hover:bg-wit-surface-2 transition-all cursor-pointer shadow-card"
         >
           {theme === 'dark' ? <Sun className="h-4.5 w-4.5" /> : <Moon className="h-4.5 w-4.5" />}
         </button>
 
         {/* User Info Avatar */}
         <div className="flex items-center gap-2.5 pl-2 border-l border-wit-line/80">
-          <div className="w-9 h-9 rounded-full bg-gradient-to-br from-wit-red to-wit-red-dark text-white flex items-center justify-center font-serif font-bold text-sm shadow-sm">
+          <div className="w-9 h-9 rounded-full bg-gradient-to-br from-wit-red to-wit-red-dark text-white flex items-center justify-center font-serif font-bold text-sm shadow-card">
             {profile?.displayName ? profile.displayName[0].toUpperCase() : 'H'}
           </div>
           <div className="hidden sm:block leading-tight">

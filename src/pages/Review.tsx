@@ -130,7 +130,7 @@ export default function Review() {
         </div>
 
         {/* Question count */}
-        <div className="bg-wit-surface rounded-2xl border border-wit-line p-5 shadow-sm space-y-3">
+        <div className="bg-wit-surface rounded-card border border-wit-line p-5 shadow-card space-y-3">
           <h2 className="text-sm font-semibold text-wit-text-secondary">
             {getLocalizedText('Số câu muốn ôn', 'Number of questions', '問題数')}
           </h2>
@@ -139,9 +139,9 @@ export default function Review() {
               <button
                 key={c}
                 onClick={() => setCount(c)}
-                className={`px-5 py-2.5 rounded-xl text-sm font-bold border transition-all cursor-pointer ${
+                className={`px-5 py-2.5 rounded-button text-sm font-bold border transition-all cursor-pointer ${
                   count === c
-                    ? 'bg-wit-red text-white border-wit-red shadow-sm'
+                    ? 'bg-wit-red text-white border-wit-red shadow-card'
                     : 'bg-wit-surface text-wit-text-secondary border-wit-line hover:border-wit-red/40'
                 }`}
               >
@@ -152,16 +152,16 @@ export default function Review() {
         </div>
 
         {/* Scope */}
-        <div className="bg-wit-surface rounded-2xl border border-wit-line p-5 shadow-sm space-y-3">
+        <div className="bg-wit-surface rounded-card border border-wit-line p-5 shadow-card space-y-3">
           <h2 className="text-sm font-semibold text-wit-text-secondary">
             {getLocalizedText('Phạm vi ôn tập', 'Scope', '範囲')}
           </h2>
           <div className="flex flex-wrap gap-2.5">
             <button
               onClick={() => setScope('all')}
-              className={`px-4 py-2 rounded-xl text-sm font-semibold border transition-all cursor-pointer ${
+              className={`px-4 py-2 rounded-button text-sm font-semibold border transition-all cursor-pointer ${
                 scope === 'all'
-                  ? 'bg-wit-red text-white border-wit-red shadow-sm'
+                  ? 'bg-wit-red text-white border-wit-red shadow-card'
                   : 'bg-wit-surface text-wit-text-secondary border-wit-line hover:border-wit-red/40'
               }`}
             >
@@ -171,9 +171,9 @@ export default function Review() {
               <button
                 key={ch.id}
                 onClick={() => setScope(ch.id)}
-                className={`px-4 py-2 rounded-xl text-sm font-semibold border transition-all cursor-pointer ${
+                className={`px-4 py-2 rounded-button text-sm font-semibold border transition-all cursor-pointer ${
                   scope === ch.id
-                    ? 'bg-wit-red text-white border-wit-red shadow-sm'
+                    ? 'bg-wit-red text-white border-wit-red shadow-card'
                     : 'bg-wit-surface text-wit-text-secondary border-wit-line hover:border-wit-red/40'
                 }`}
               >
@@ -185,7 +185,7 @@ export default function Review() {
 
         <button
           onClick={startQuiz}
-          className="w-full py-3.5 rounded-xl bg-wit-red text-white text-sm font-bold hover:bg-wit-red-dark transition-colors shadow-sm cursor-pointer"
+          className="w-full py-3.5 rounded-button bg-wit-red text-white text-sm font-bold hover:bg-wit-red-dark transition-colors shadow-card cursor-pointer"
         >
           {getLocalizedText('Bắt đầu ôn tập', 'Start review', '復習を始める')}
         </button>
@@ -231,14 +231,14 @@ export default function Review() {
           </div>
           <div className="h-1.5 rounded-full bg-wit-line overflow-hidden">
             <div
-              className="h-full bg-gradient-to-r from-wit-red to-[#E0524F] rounded-full transition-all duration-300"
+              className="h-full bg-gradient-to-r from-wit-red to-wit-red-light rounded-full transition-all duration-300"
               style={{ width: `${progressPct}%` }}
             />
           </div>
         </div>
 
         {/* Question */}
-        <div className="bg-wit-surface rounded-2xl border border-wit-line p-6 shadow-sm">
+        <div className="bg-wit-surface rounded-card border border-wit-line p-6 shadow-card">
           <h2 className="font-serif text-lg font-bold text-wit-text leading-snug">
             {pickText(q, 'question', interfaceLang)}
           </h2>
@@ -260,7 +260,7 @@ export default function Review() {
                   key={idx}
                   onClick={() => handleSelect(idx)}
                   disabled={answered}
-                  className={`w-full flex items-center gap-3 text-left px-4 py-3 rounded-xl border text-sm transition-all ${cls} ${
+                  className={`w-full flex items-center gap-3 text-left px-4 py-3 rounded-button border text-sm transition-all ${cls} ${
                     answered ? 'cursor-default' : 'cursor-pointer'
                   }`}
                 >
@@ -287,7 +287,7 @@ export default function Review() {
               )}
               <button
                 onClick={handleNext}
-                className="mt-4 flex items-center gap-2 px-5 py-2.5 rounded-xl bg-wit-red text-white text-sm font-bold hover:bg-wit-red-dark transition-colors cursor-pointer"
+                className="mt-4 flex items-center gap-2 px-5 py-2.5 rounded-button bg-wit-red text-white text-sm font-bold hover:bg-wit-red-dark transition-colors cursor-pointer"
               >
                 {current + 1 >= quiz.length
                   ? getLocalizedText('Xem kết quả', 'See results', '結果を見る')
@@ -319,11 +319,11 @@ export default function Review() {
         </p>
       </div>
 
-      <div className="bg-wit-surface rounded-2xl border border-wit-line p-6 shadow-sm">
+      <div className="bg-wit-surface rounded-card border border-wit-line p-6 shadow-card">
         <div className="font-serif text-5xl font-bold text-wit-red">{pct}%</div>
         <div className="h-2 rounded-full bg-wit-line overflow-hidden mt-4">
           <div
-            className="h-full bg-gradient-to-r from-wit-red to-[#E0524F] rounded-full"
+            className="h-full bg-gradient-to-r from-wit-red to-wit-red-light rounded-full"
             style={{ width: `${pct}%` }}
           />
         </div>
@@ -332,14 +332,14 @@ export default function Review() {
       <div className="flex flex-col sm:flex-row gap-3 justify-center">
         <button
           onClick={restart}
-          className="flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-wit-red text-white text-sm font-bold hover:bg-wit-red-dark transition-colors cursor-pointer"
+          className="flex items-center justify-center gap-2 px-6 py-3 rounded-button bg-wit-red text-white text-sm font-bold hover:bg-wit-red-dark transition-colors cursor-pointer"
         >
           <RotateCcw className="h-4 w-4" />
           {getLocalizedText('Làm lại', 'Try again', 'もう一度')}
         </button>
         <button
           onClick={() => navigate('/curriculum')}
-          className="flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-wit-surface border border-wit-line text-wit-text text-sm font-semibold hover:border-wit-red/30 hover:text-wit-red transition-all cursor-pointer"
+          className="flex items-center justify-center gap-2 px-6 py-3 rounded-button bg-wit-surface border border-wit-line text-wit-text text-sm font-semibold hover:border-wit-red/30 hover:text-wit-red transition-all cursor-pointer"
         >
           <BookOpen className="h-4 w-4" />
           {getLocalizedText('Quay lại giáo trình', 'Back to curriculum', 'カリキュラムへ')}

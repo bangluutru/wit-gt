@@ -9,10 +9,10 @@ interface BadgeProps {
 }
 
 const variantClasses: Record<BadgeVariant, string> = {
-  default: 'bg-wit-surface-alt text-wit-text-secondary',
+  default: 'bg-wit-surface-2 text-wit-text-secondary',
   success: 'bg-wit-success-soft text-wit-success',
   warning: 'bg-wit-gold-soft text-wit-gold',
-  danger: 'bg-red-50 text-red-600',
+  danger: 'bg-wit-red-soft text-wit-red',
   info: 'bg-wit-info-soft text-wit-info',
 };
 

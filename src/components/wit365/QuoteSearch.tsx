@@ -23,7 +23,7 @@ export function QuoteSearch({ lang, value, onChange }: Props) {
           'Search across 365 seeds...',
           '365の種を検索...'
         )}
-        className="w-full pl-10 pr-10 py-3 rounded-xl bg-wit-surface border border-wit-line text-sm text-wit-text placeholder:text-wit-text-tertiary focus:outline-none focus:ring-2 focus:ring-wit-red/20 focus:border-wit-red/40 transition-all"
+        className="w-full pl-10 pr-10 py-3 rounded-button bg-wit-surface border border-wit-line text-sm text-wit-text placeholder:text-wit-text-tertiary focus:outline-none focus:ring-2 focus:ring-wit-red/20 focus:border-wit-red/40 transition-all"
       />
       {value && (
         <button

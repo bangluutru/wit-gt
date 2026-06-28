@@ -158,7 +158,7 @@ export default function Roadmap() {
               <div className="flex flex-col items-center shrink-0 w-14">
                 <div
                   className={`
-                    w-12 h-12 rounded-2xl flex items-center justify-center font-bold text-lg transition-all duration-300
+                    w-12 h-12 rounded-card flex items-center justify-center font-bold text-lg transition-all duration-300
                     ${nodeBg}
                   `}
                 >
@@ -170,7 +170,7 @@ export default function Roadmap() {
               {/* Chapter Card Panel */}
               <div
                 className={`
-                  flex-1 mb-5 p-5 bg-wit-surface border rounded-2xl shadow-sm transition-all duration-200 cursor-pointer
+                  flex-1 mb-5 p-5 bg-wit-surface border rounded-card shadow-card transition-all duration-200 cursor-pointer
                   ${cardBorder} ${cardOpacity} hover:shadow-card-hover
                 `}
                 onClick={() => !isLocked && toggleChapter(ch.id)}
@@ -214,7 +214,7 @@ export default function Roadmap() {
                   <div className="mt-4 pt-3 border-t border-wit-line/60">
                     <div className="h-1.5 rounded-full bg-wit-line overflow-hidden">
                       <div
-                        className="h-full bg-gradient-to-r from-wit-red to-[#E0524F] rounded-full"
+                        className="h-full bg-gradient-to-r from-wit-red to-wit-red-light rounded-full"
                         style={{ width: `${ch.pct}%` }}
                       />
                     </div>
@@ -252,7 +252,7 @@ export default function Roadmap() {
                           to={accessible ? `/lessons/${lesson.id}` : '#'}
                           onClick={(e) => !accessible && e.preventDefault()}
                           className={`
-                            flex items-center gap-3.5 p-3 rounded-xl text-sm transition-all duration-200
+                            flex items-center gap-3.5 p-3 rounded-button text-sm transition-all duration-200
                             ${itemBg} ${!accessible ? 'cursor-not-allowed opacity-50' : 'cursor-pointer'}
                           `}
                         >

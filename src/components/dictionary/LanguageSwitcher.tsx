@@ -18,7 +18,7 @@ export default function LanguageSwitcher({ value, onChange, label }: LanguageSwi
       {label && (
         <span className="text-sm font-medium text-wit-text-secondary">{label}</span>
       )}
-      <div className="inline-flex rounded-lg bg-wit-surface-alt p-1 gap-0.5">
+      <div className="inline-flex rounded-button bg-wit-surface-2 p-1 gap-0.5">
         {LANGUAGES.map(({ code, label: langLabel }) => (
           <button
             key={code}
@@ -29,7 +29,7 @@ export default function LanguageSwitcher({ value, onChange, label }: LanguageSwi
               transition-all duration-200 cursor-pointer select-none
               ${
                 value === code
-                  ? 'bg-wit-red text-white shadow-sm'
+                  ? 'bg-wit-red text-white shadow-card'
                   : 'bg-transparent text-wit-text-secondary hover:text-wit-text hover:bg-wit-surface'
               }
             `}

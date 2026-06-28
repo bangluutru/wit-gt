@@ -24,8 +24,8 @@ export function ContributorGrid({ lang }: Props) {
       <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
         {CONTRIBUTORS.map((name, i) => (
           <Reveal key={name} delay={Math.min(i, 8) * 50}>
-            <div className="h-full flex flex-col items-center text-center gap-3 p-5 rounded-2xl bg-wit-surface border border-wit-line shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-card-hover">
-              <div className="w-14 h-14 rounded-full bg-gradient-to-br from-wit-red to-wit-red-dark text-white flex items-center justify-center font-serif font-bold text-xl shadow-sm">
+            <div className="h-full flex flex-col items-center text-center gap-3 p-5 rounded-card bg-wit-surface border border-wit-line shadow-card transition-all duration-200 hover:-translate-y-1 hover:shadow-card-hover">
+              <div className="w-14 h-14 rounded-full bg-gradient-to-br from-wit-red to-wit-red-dark text-white flex items-center justify-center font-serif font-bold text-xl shadow-card">
                 {initialOf(name)}
               </div>
               <div className="font-semibold text-wit-text text-sm leading-snug">{name}</div>

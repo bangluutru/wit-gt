@@ -45,7 +45,7 @@ export function TermTooltip({ term, targetLang, position }: TermTooltipProps) {
       className="fixed z-[60] pointer-events-none animate-scale-in"
       style={{ ...style, width }}
     >
-      <div className="rounded-xl px-3.5 py-3 shadow-popover border border-[rgba(216,176,98,0.25)] bg-[#2A211D] text-[#F0E9DF]">
+      <div className="rounded-card px-3.5 py-3 shadow-popover border border-[rgba(216,176,98,0.25)] bg-[#2A211D] text-[#F0E9DF]">
         <div className="text-[10px] font-bold uppercase tracking-wider text-[#D8B062]">
           {LANG_LABEL[targetLang]}
         </div>

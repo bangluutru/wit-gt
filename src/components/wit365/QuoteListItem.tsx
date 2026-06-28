@@ -15,9 +15,9 @@ export function QuoteListItem({ quote, lang, isFavorite, onClick }: Props) {
     <button
       type="button"
       onClick={onClick}
-      className="w-full text-left flex items-start gap-3.5 px-4 py-3.5 rounded-xl hover:bg-wit-surface-2 transition-all duration-200 cursor-pointer group"
+      className="w-full text-left flex items-start gap-3.5 px-4 py-3.5 rounded-button hover:bg-wit-surface-2 transition-all duration-200 cursor-pointer group"
     >
-      <span className="shrink-0 w-10 h-10 rounded-lg bg-wit-gold-soft text-wit-gold flex items-center justify-center text-xs font-bold tabular-nums">
+      <span className="shrink-0 w-10 h-10 rounded-button bg-wit-gold-soft text-wit-gold flex items-center justify-center text-xs font-bold tabular-nums">
         {String(quote.index).padStart(3, '0')}
       </span>
       <div className="flex-1 min-w-0">

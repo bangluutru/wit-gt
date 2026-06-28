@@ -26,7 +26,7 @@ export function QuoteList({ lang, quotes, searchQuotes, isFavorite, onSelectQuot
       <button
         type="button"
         onClick={() => setOpen(!open)}
-        className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-xl border border-wit-line text-sm font-medium text-wit-text-secondary hover:bg-wit-surface-2 hover:text-wit-text transition-all duration-200 cursor-pointer"
+        className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-button border border-wit-line text-sm font-medium text-wit-text-secondary hover:bg-wit-surface-2 hover:text-wit-text transition-all duration-200 cursor-pointer"
       >
         <BookOpen className="h-4 w-4" />
         {L(
@@ -46,7 +46,7 @@ export function QuoteList({ lang, quotes, searchQuotes, isFavorite, onSelectQuot
           open ? 'max-h-[4000px] opacity-100 mt-6' : 'max-h-0 opacity-0'
         }`}
       >
-        <div className="bg-wit-surface rounded-2xl border border-wit-line shadow-card p-5 space-y-4">
+        <div className="bg-wit-surface rounded-card border border-wit-line shadow-card p-5 space-y-4">
           <QuoteSearch lang={lang} value={searchValue} onChange={setSearchValue} />
 
           {searchValue && (

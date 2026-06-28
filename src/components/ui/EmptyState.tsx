@@ -19,7 +19,7 @@ export function EmptyState({
   return (
     <div className="flex flex-col items-center justify-center py-16 px-6 text-center animate-fade-in">
       {icon && <div className="mb-4 text-wit-text-tertiary">{icon}</div>}
-      <h3 className="text-lg font-semibold text-wit-text mb-1">{title}</h3>
+      <h3 className="font-serif text-lg font-semibold text-wit-text mb-1">{title}</h3>
       {description && (
         <p className="text-sm text-wit-text-secondary max-w-sm mb-5">
           {description}

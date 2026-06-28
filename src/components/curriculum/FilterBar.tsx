@@ -34,7 +34,7 @@ export function FilterBar({
         value={selectedChapter}
         onChange={(e) => onChapterChange(e.target.value)}
         className="
-          h-10 px-3 rounded-lg border border-wit-line bg-wit-surface
+          h-10 px-3 rounded-button border border-wit-line bg-wit-surface
           text-sm text-wit-text focus:outline-none focus:ring-2
           focus:ring-wit-red/20 focus:border-wit-red
           transition-colors duration-200
@@ -49,7 +49,7 @@ export function FilterBar({
       </select>
 
       {/* Status pills */}
-      <div className="flex items-center gap-1 bg-wit-surface-alt rounded-full p-1">
+      <div className="flex items-center gap-1 bg-wit-surface-2 rounded-full p-1">
         {STATUS_OPTIONS.map((opt) => (
           <button
             key={opt.value}
@@ -58,7 +58,7 @@ export function FilterBar({
               px-3 py-1.5 text-xs font-medium rounded-full transition-all duration-200
               ${
                 selectedStatus === opt.value
-                  ? 'bg-wit-red text-white shadow-sm'
+                  ? 'bg-wit-red text-white shadow-card'
                   : 'text-wit-text-secondary hover:text-wit-text hover:bg-wit-surface'
               }
             `}
@@ -77,7 +77,7 @@ export function FilterBar({
           value={searchQuery}
           onChange={(e) => onSearchChange(e.target.value)}
           className="
-            w-full h-10 pl-9 pr-4 rounded-lg border border-wit-line
+            w-full h-10 pl-9 pr-4 rounded-button border border-wit-line
             bg-wit-surface text-sm text-wit-text placeholder:text-wit-text-tertiary
             focus:outline-none focus:ring-2 focus:ring-wit-red/20 focus:border-wit-red
             transition-colors duration-200

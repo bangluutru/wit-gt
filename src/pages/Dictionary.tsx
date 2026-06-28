@@ -79,7 +79,7 @@ export default function Dictionary() {
           href="https://witdictmulti.pages.dev/"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-wit-red text-white text-sm font-semibold hover:bg-wit-red-dark transition-colors shadow-sm"
+          className="inline-flex items-center gap-2 px-4 py-2.5 rounded-button bg-wit-red text-white text-sm font-semibold hover:bg-wit-red-dark transition-colors shadow-card"
         >
           <ExternalLink className="h-4 w-4" />
           <span>{getLocalizedText('Mở từ điển đầy đủ WiT', 'Open full WiT Dictionary', '完全なWiT辞書を開く')}</span>
@@ -104,7 +104,7 @@ export default function Dictionary() {
             placeholder={getLocalizedText('Nhập thuật ngữ cần tra…', 'Enter term to look up...', '検索する用語を入力してください...')}
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full h-14 pl-12 pr-10 rounded-2xl border border-wit-line bg-wit-surface text-base text-wit-text placeholder:text-wit-text-tertiary focus:outline-none focus:ring-2 focus:ring-wit-red/20 focus:border-wit-red transition-all"
+            className="w-full h-14 pl-12 pr-10 rounded-button border border-wit-line bg-wit-surface text-base text-wit-text placeholder:text-wit-text-tertiary focus:outline-none focus:ring-2 focus:ring-wit-red/20 focus:border-wit-red transition-all"
           />
           {searchQuery && (
             <button
@@ -122,7 +122,7 @@ export default function Dictionary() {
           type="button"
           onClick={() => setShowFilters(!showFilters)}
           className={`
-            flex items-center justify-center gap-2 h-14 px-5 rounded-2xl border text-sm font-semibold transition-all cursor-pointer shrink-0
+            flex items-center justify-center gap-2 h-14 px-5 rounded-button border text-sm font-semibold transition-all cursor-pointer shrink-0
             ${
               showFilters || selectedCategory
                 ? 'border-wit-red bg-wit-red-soft text-wit-red'
@@ -140,7 +140,7 @@ export default function Dictionary() {
 
       {/* Filters panel */}
       {showFilters && (
-        <div className="bg-wit-surface rounded-2xl border border-wit-line p-5 animate-scale-in space-y-4 shadow-sm">
+        <div className="bg-wit-surface rounded-card border border-wit-line p-5 animate-scale-in space-y-4 shadow-card">
           {/* Language selectors */}
           <div className="flex flex-wrap gap-6">
             <LanguageSwitcher
@@ -164,7 +164,7 @@ export default function Dictionary() {
               <button
                 type="button"
                 onClick={() => setSelectedCategory('')}
-                className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-colors cursor-pointer ${
+                className={`px-3 py-1.5 rounded-button text-xs font-semibold transition-colors cursor-pointer ${
                   !selectedCategory
                     ? 'bg-wit-red text-white'
                     : 'bg-wit-surface-2 text-wit-text-secondary hover:bg-wit-line'
@@ -177,7 +177,7 @@ export default function Dictionary() {
                   key={cat}
                   type="button"
                   onClick={() => setSelectedCategory(cat === selectedCategory ? '' : cat)}
-                  className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-colors cursor-pointer ${
+                  className={`px-3 py-1.5 rounded-button text-xs font-semibold transition-colors cursor-pointer ${
                     selectedCategory === cat
                       ? 'bg-wit-red text-white'
                       : 'bg-wit-surface-2 text-wit-text-secondary hover:bg-wit-line'

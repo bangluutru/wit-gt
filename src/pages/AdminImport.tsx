@@ -60,9 +60,9 @@ export default function AdminImport() {
   if (profile?.role !== 'admin') {
     return (
       <div className="page-enter p-4 sm:p-6 max-w-2xl mx-auto">
-        <div className="bg-wit-surface rounded-xl shadow-card border border-wit-line/50 p-8 text-center">
+        <div className="bg-wit-surface rounded-card shadow-card border border-wit-line/50 p-8 text-center">
           <AlertTriangle className="h-12 w-12 text-wit-gold mx-auto mb-4" />
-          <h2 className="text-xl font-semibold text-wit-text mb-2">Không có quyền truy cập</h2>
+          <h2 className="font-serif text-xl font-semibold text-wit-text mb-2">Không có quyền truy cập</h2>
           <p className="text-sm text-wit-text-secondary">
             Trang này chỉ dành cho quản trị viên. Vai trò hiện tại:{' '}
             <span className="font-medium">{profile?.role || 'unknown'}</span>
@@ -242,7 +242,7 @@ export default function AdminImport() {
       </div>
 
       {/* Required fields info */}
-      <div className="bg-wit-info-soft rounded-lg p-4">
+      <div className="bg-wit-info-soft rounded-button p-4">
         <p className="text-sm font-medium text-wit-text mb-1">
           <FileSpreadsheet className="h-4 w-4 inline mr-1.5" />
           Cột bắt buộc trong CSV:
@@ -253,9 +253,9 @@ export default function AdminImport() {
       </div>
 
       {/* Upload area */}
-      <div className="bg-wit-surface rounded-xl shadow-card border border-wit-line/50 p-6">
+      <div className="bg-wit-surface rounded-card shadow-card border border-wit-line/50 p-6">
         {!state.file ? (
-          <label className="flex flex-col items-center justify-center py-12 border-2 border-dashed border-wit-line rounded-xl hover:border-wit-red/50 hover:bg-wit-red-soft/30 transition-all cursor-pointer">
+          <label className="flex flex-col items-center justify-center py-12 border-2 border-dashed border-wit-line rounded-card hover:border-wit-red/50 hover:bg-wit-red-soft/30 transition-all cursor-pointer">
             <Upload className="h-10 w-10 text-wit-text-tertiary mb-3" />
             <p className="text-sm font-medium text-wit-text">Chọn file CSV để upload</p>
             <p className="text-xs text-wit-text-tertiary mt-1">
@@ -272,7 +272,7 @@ export default function AdminImport() {
         ) : (
           <div className="space-y-4">
             {/* File info */}
-            <div className="flex items-center justify-between bg-wit-surface-alt rounded-lg p-3">
+            <div className="flex items-center justify-between bg-wit-surface-2 rounded-button p-3">
               <div className="flex items-center gap-3">
                 <FileSpreadsheet className="h-5 w-5 text-wit-red" />
                 <div>
@@ -285,7 +285,7 @@ export default function AdminImport() {
               <button
                 type="button"
                 onClick={clearFile}
-                className="p-2 rounded-lg text-wit-text-tertiary hover:text-wit-red hover:bg-wit-red-soft transition-colors cursor-pointer"
+                className="p-2 rounded-button text-wit-text-tertiary hover:text-wit-red hover:bg-wit-red-soft transition-colors cursor-pointer"
               >
                 <Trash2 className="h-4 w-4" />
               </button>
@@ -298,10 +298,10 @@ export default function AdminImport() {
                   <Eye className="h-4 w-4" />
                   Xem trước (5 dòng đầu)
                 </h3>
-                <div className="overflow-x-auto rounded-lg border border-wit-line">
+                <div className="overflow-x-auto rounded-button border border-wit-line">
                   <table className="w-full text-xs">
                     <thead>
-                      <tr className="bg-wit-surface-alt">
+                      <tr className="bg-wit-surface-2">
                         {Object.keys(state.preview[0]).map((header) => (
                           <th
                             key={header}
@@ -317,7 +317,7 @@ export default function AdminImport() {
                     </thead>
                     <tbody>
                       {state.preview.slice(0, 5).map((row, i) => (
-                        <tr key={i} className="border-t border-wit-line/50 hover:bg-wit-surface-alt/50">
+                        <tr key={i} className="border-t border-wit-line/50 hover:bg-wit-surface-2/50">
                           {Object.values(row).map((val, j) => (
                             <td key={j} className="px-3 py-2 text-wit-text max-w-[200px] truncate">
                               {val || <span className="text-wit-text-tertiary italic">trống</span>}
@@ -336,7 +336,7 @@ export default function AdminImport() {
               type="button"
               onClick={handleImport}
               disabled={state.importing || state.preview.length === 0}
-              className="w-full py-3 rounded-lg bg-wit-red text-white font-semibold hover:bg-wit-red-hover transition-colors disabled:opacity-50 cursor-pointer flex items-center justify-center gap-2"
+              className="w-full py-3 rounded-button bg-wit-red text-white font-semibold hover:bg-wit-red-hover transition-colors disabled:opacity-50 cursor-pointer flex items-center justify-center gap-2"
             >
               {state.importing ? (
                 <>
@@ -357,13 +357,13 @@ export default function AdminImport() {
         {state.result && (
           <div className="mt-4 space-y-2 animate-scale-in">
             {state.result.success > 0 && (
-              <div className="flex items-center gap-2 p-3 rounded-lg bg-wit-success-soft text-wit-success text-sm">
+              <div className="flex items-center gap-2 p-3 rounded-button bg-wit-success-soft text-wit-success text-sm">
                 <CheckCircle2 className="h-4 w-4 shrink-0" />
                 Đã import thành công {state.result.success} dòng.
               </div>
             )}
             {state.result.errors.length > 0 && (
-              <div className="p-3 rounded-lg bg-wit-red-soft text-wit-red text-sm space-y-1">
+              <div className="p-3 rounded-button bg-wit-red-soft text-wit-red text-sm space-y-1">
                 <div className="flex items-center gap-2 font-medium">
                   <AlertTriangle className="h-4 w-4 shrink-0" />
                   {state.result.errors.length} lỗi:

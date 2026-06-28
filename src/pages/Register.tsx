@@ -77,11 +77,11 @@ export default function Register() {
         </div>
 
         {/* Form Card */}
-        <div className="bg-wit-surface border border-wit-line rounded-2xl shadow-sm p-6 sm:p-8">
+        <div className="bg-wit-surface border border-wit-line rounded-card shadow-card p-6 sm:p-8">
           <form onSubmit={handleSubmit} className="space-y-5">
             {/* Error Message */}
             {error && (
-              <div className="p-3.5 rounded-xl bg-wit-red-soft text-wit-red text-sm font-medium animate-scale-in">
+              <div className="p-3.5 rounded-button bg-wit-red-soft text-wit-red text-sm font-medium animate-scale-in">
                 {error}
               </div>
             )}
@@ -101,7 +101,7 @@ export default function Register() {
                   value={displayName}
                   onChange={(e) => setDisplayName(e.target.value)}
                   placeholder="Nguyễn Văn A"
-                  className="w-full pl-11 pr-4 py-3 rounded-xl border border-wit-line bg-wit-surface-2 text-sm text-wit-text placeholder:text-wit-text-tertiary focus:outline-none focus:ring-2 focus:ring-wit-red/20 focus:border-wit-red transition-all"
+                  className="w-full pl-11 pr-4 py-3 rounded-button border border-wit-line bg-wit-surface-2 text-sm text-wit-text placeholder:text-wit-text-tertiary focus:outline-none focus:ring-2 focus:ring-wit-red/20 focus:border-wit-red transition-all"
                 />
               </div>
             </div>
@@ -121,7 +121,7 @@ export default function Register() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="you@example.com"
-                  className="w-full pl-11 pr-4 py-3 rounded-xl border border-wit-line bg-wit-surface-2 text-sm text-wit-text placeholder:text-wit-text-tertiary focus:outline-none focus:ring-2 focus:ring-wit-red/20 focus:border-wit-red transition-all"
+                  className="w-full pl-11 pr-4 py-3 rounded-button border border-wit-line bg-wit-surface-2 text-sm text-wit-text placeholder:text-wit-text-tertiary focus:outline-none focus:ring-2 focus:ring-wit-red/20 focus:border-wit-red transition-all"
                 />
               </div>
             </div>
@@ -141,7 +141,7 @@ export default function Register() {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   placeholder="Mật khẩu ít nhất 6 ký tự"
-                  className="w-full pl-11 pr-12 py-3 rounded-xl border border-wit-line bg-wit-surface-2 text-sm text-wit-text placeholder:text-wit-text-tertiary focus:outline-none focus:ring-2 focus:ring-wit-red/20 focus:border-wit-red transition-all"
+                  className="w-full pl-11 pr-12 py-3 rounded-button border border-wit-line bg-wit-surface-2 text-sm text-wit-text placeholder:text-wit-text-tertiary focus:outline-none focus:ring-2 focus:ring-wit-red/20 focus:border-wit-red transition-all"
                 />
                 <button
                   type="button"
@@ -157,7 +157,7 @@ export default function Register() {
             <button
               type="submit"
               disabled={submitting}
-              className="w-full py-3 rounded-xl bg-wit-red text-white font-semibold hover:bg-wit-red-dark transition-colors disabled:opacity-50 cursor-pointer flex items-center justify-center gap-2 text-[15px] shadow-sm mt-2"
+              className="w-full py-3 rounded-button bg-wit-red text-white font-semibold hover:bg-wit-red-dark transition-colors disabled:opacity-50 cursor-pointer flex items-center justify-center gap-2 text-[15px] shadow-card mt-2"
             >
               {submitting ? (
                 <span className="h-4 w-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />

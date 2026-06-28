@@ -50,7 +50,7 @@ export function LessonCard({ lesson, status, chapter, lang }: LessonCardProps) {
   const card = (
     <div
       className={cn(
-        'group bg-wit-surface rounded-xl shadow-card border border-wit-line/50 p-5',
+        'group bg-wit-surface rounded-card shadow-card border border-wit-line/50 p-5',
         'transition-all duration-200',
         !isLocked && 'hover:shadow-card-hover hover:-translate-y-0.5',
         isLocked && 'opacity-60 cursor-not-allowed'

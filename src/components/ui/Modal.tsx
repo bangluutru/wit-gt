@@ -49,7 +49,7 @@ export function Modal({
       <div
         className={`
           relative ${maxWidth} w-full
-          bg-wit-surface rounded-xl shadow-popover border border-wit-line/50
+          bg-wit-surface rounded-card shadow-popover border border-wit-line/50
           animate-scale-in
         `}
         role="dialog"
@@ -59,10 +59,10 @@ export function Modal({
         {/* Header */}
         {title && (
           <div className="flex items-center justify-between px-6 pt-5 pb-0">
-            <h2 className="text-lg font-semibold text-wit-text">{title}</h2>
+            <h2 className="font-serif text-lg font-semibold text-wit-text">{title}</h2>
             <button
               onClick={onClose}
-              className="p-1.5 rounded-lg text-wit-text-tertiary hover:bg-wit-surface-alt hover:text-wit-text transition-colors cursor-pointer"
+              className="p-1.5 rounded-button text-wit-text-tertiary hover:bg-wit-surface-2 hover:text-wit-text transition-colors cursor-pointer"
               aria-label="Close"
             >
               <X className="h-5 w-5" />

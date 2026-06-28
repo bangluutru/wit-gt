@@ -126,7 +126,7 @@ export default function MultilingualLookup({ interfaceLang, defaultDefLang }: Pr
               }}
               onFocus={() => setShowSuggest(true)}
               placeholder={t('Tra từ bất kỳ (Việt, Anh, Trung, Nhật…)', 'Look up any word (VI, EN, ZH, JA…)', '任意の単語を検索（越・英・中・日…）')}
-              className="w-full h-14 pl-12 pr-10 rounded-2xl border border-wit-line bg-wit-surface text-base text-wit-text placeholder:text-wit-text-tertiary focus:outline-none focus:ring-2 focus:ring-wit-red/20 focus:border-wit-red transition-all"
+              className="w-full h-14 pl-12 pr-10 rounded-button border border-wit-line bg-wit-surface text-base text-wit-text placeholder:text-wit-text-tertiary focus:outline-none focus:ring-2 focus:ring-wit-red/20 focus:border-wit-red transition-all"
             />
             {query && (
               <button
@@ -145,7 +145,7 @@ export default function MultilingualLookup({ interfaceLang, defaultDefLang }: Pr
 
         {/* Suggestions dropdown */}
         {showSuggest && suggestions.length > 0 && (
-          <div className="absolute z-30 top-[60px] left-0 right-0 bg-wit-surface border border-wit-line rounded-2xl shadow-popover p-1.5 animate-scale-in">
+          <div className="absolute z-30 top-[60px] left-0 right-0 bg-wit-surface border border-wit-line rounded-card shadow-popover p-1.5 animate-scale-in">
             {suggestions.map((s) => (
               <button
                 key={s}
@@ -154,7 +154,7 @@ export default function MultilingualLookup({ interfaceLang, defaultDefLang }: Pr
                   setQuery(s);
                   runLookup(s, defLang);
                 }}
-                className="w-full text-left px-3.5 py-2.5 rounded-xl text-sm text-wit-text hover:bg-wit-surface-2 cursor-pointer flex items-center gap-2.5"
+                className="w-full text-left px-3.5 py-2.5 rounded-button text-sm text-wit-text hover:bg-wit-surface-2 cursor-pointer flex items-center gap-2.5"
               >
                 <Search className="h-3.5 w-3.5 text-wit-text-tertiary shrink-0" />
                 {s}
@@ -177,7 +177,7 @@ export default function MultilingualLookup({ interfaceLang, defaultDefLang }: Pr
               setDefLang(o.value);
               if (searched) runLookup(searched, o.value);
             }}
-            className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-colors cursor-pointer ${
+            className={`px-3 py-1.5 rounded-button text-xs font-semibold transition-colors cursor-pointer ${
               defLang === o.value
                 ? 'bg-wit-red text-white'
                 : 'bg-wit-surface-2 text-wit-text-secondary hover:bg-wit-line'
@@ -197,7 +197,7 @@ export default function MultilingualLookup({ interfaceLang, defaultDefLang }: Pr
       )}
 
       {!loading && error && (
-        <div className="bg-wit-red-soft border border-wit-red/30 rounded-2xl p-5 flex items-start gap-3">
+        <div className="bg-wit-red-soft border border-wit-red/30 rounded-card p-5 flex items-start gap-3">
           <AlertTriangle className="h-5 w-5 text-wit-red shrink-0 mt-0.5" />
           <div className="text-sm text-wit-text">
             {t(
@@ -219,7 +219,7 @@ export default function MultilingualLookup({ interfaceLang, defaultDefLang }: Pr
       {!loading && !error && result?.exists && result.results && (
         <div className="space-y-5">
           {result.results.map((r, ri) => (
-            <div key={ri} className="bg-wit-surface rounded-2xl border border-wit-line shadow-sm p-5 space-y-4">
+            <div key={ri} className="bg-wit-surface rounded-card border border-wit-line shadow-card p-5 space-y-4">
               {/* Headword */}
               <div className="flex items-center gap-2.5 flex-wrap">
                 <h3 className="font-serif text-2xl font-bold text-wit-text">{result.word}</h3>
@@ -285,7 +285,7 @@ export default function MultilingualLookup({ interfaceLang, defaultDefLang }: Pr
                     {r.translations.map((tr, i) => (
                       <span
                         key={i}
-                        className="px-2.5 py-1 rounded-lg bg-wit-surface-2 text-xs text-wit-text"
+                        className="px-2.5 py-1 rounded-button bg-wit-surface-2 text-xs text-wit-text"
                         title={tr.lang_name}
                       >
                         <span className="text-wit-text-tertiary uppercase mr-1">{tr.lang_code}</span>
@@ -307,7 +307,7 @@ export default function MultilingualLookup({ interfaceLang, defaultDefLang }: Pr
                         setQuery(rel.related_word);
                         runLookup(rel.related_word, defLang);
                       }}
-                      className="px-2.5 py-1 rounded-lg border border-wit-line text-xs text-wit-text-secondary hover:border-wit-red/40 hover:text-wit-red transition-colors cursor-pointer"
+                      className="px-2.5 py-1 rounded-button border border-wit-line text-xs text-wit-text-secondary hover:border-wit-red/40 hover:text-wit-red transition-colors cursor-pointer"
                       title={rel.relation_type}
                     >
                       {rel.related_word}
