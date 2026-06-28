@@ -8,12 +8,14 @@
     "build": "tsc -b && vite build",
     "lint": "oxlint",
     "preview": "vite preview",
-    "import:dictionary": "tsx scripts/import-dictionary-from-xlsx.ts"
+    "import:dictionary": "tsx scripts/import-dictionary-from-xlsx.ts",
+    "import:wit365": "tsx scripts/import-wit365-from-xlsx.ts"
   },
   "dependencies": {
     "dotenv": "^17.4.2",
     "firebase": "^11.10.0",
     "firebase-admin": "^14.1.0",
+    "html-to-image": "^1.11.13",
     "lucide-react": "^1.21.0",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",

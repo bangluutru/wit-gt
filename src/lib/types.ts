@@ -107,6 +107,16 @@ export interface DictionaryTerm {
   updatedAt?: Date;
 }
 
+export interface Wit365Quote {
+  id: string;
+  index: number;
+  viText: string;
+  enLiteral: string;
+  enNatural: string;
+  createdAt?: Date;
+  updatedAt?: Date;
+}
+
 // ============================================================
 // UI / Component Types
 // ============================================================

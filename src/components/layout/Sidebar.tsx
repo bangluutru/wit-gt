@@ -16,6 +16,7 @@ import {
   UserCog,
   HeartHandshake,
   LogOut,
+  Sparkles,
 } from 'lucide-react';
 import { useAuth } from '../../contexts/AuthContext';
 import { useSettings } from '../../contexts/SettingsContext';
@@ -103,6 +104,19 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
           >
             <Home className="h-[19px] w-[19px] shrink-0" />
             <span>{getLocalizedText('Trang chủ', 'Home', 'ホーム')}</span>
+          </NavLink>
+          <NavLink
+            to="/wit365"
+            className={({ isActive }) =>
+              `flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all duration-200 ${
+                isActive
+                  ? 'bg-wit-red-soft text-wit-red font-semibold'
+                  : 'text-wit-text-secondary hover:bg-wit-surface-2 hover:text-wit-text'
+              }`
+            }
+          >
+            <Sparkles className="h-[19px] w-[19px] shrink-0" />
+            <span>{getLocalizedText('WiT365', 'WiT365', 'WiT365')}</span>
           </NavLink>
           <NavLink
             to="/roadmap"

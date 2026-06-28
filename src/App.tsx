@@ -8,6 +8,7 @@ import { ProtectedRoute } from './components/auth/ProtectedRoute';
 
 // Pages
 import Dashboard from './pages/Dashboard';
+import Wit365 from './pages/Wit365';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Roadmap from './pages/Roadmap';
@@ -36,6 +37,7 @@ export default function App() {
             <Route element={<ProtectedRoute />}>
               <Route element={<AppShell />}>
                 <Route path="/" element={<Dashboard />} />
+                <Route path="/wit365" element={<Wit365 />} />
                 <Route path="/roadmap" element={<Roadmap />} />
                 <Route path="/curriculum" element={<Curriculum />} />
                 <Route path="/lessons/:id" element={<LessonReader />} />

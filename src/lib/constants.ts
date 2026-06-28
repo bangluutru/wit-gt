@@ -105,6 +105,7 @@ export const CHAPTER_LESSON_RANGES: Record<number, [number, number]> = {
 /** Navigation items for sidebar/bottom nav */
 export const NAV_ITEMS = [
   { path: '/', labelVi: 'Trang chủ', labelEn: 'Home', labelJp: 'ホーム', icon: 'Home' },
+  { path: '/wit365', labelVi: 'WiT365', labelEn: 'WiT365', labelJp: 'WiT365', icon: 'Sparkles' },
   { path: '/roadmap', labelVi: 'Lộ trình', labelEn: 'Roadmap', labelJp: 'ロードマップ', icon: 'Map' },
   { path: '/curriculum', labelVi: 'Giáo trình', labelEn: 'Curriculum', labelJp: 'カリキュラム', icon: 'BookOpen' },
   { path: '/dictionary', labelVi: 'Từ điển', labelEn: 'Dictionary', labelJp: '辞書', icon: 'Languages' },
