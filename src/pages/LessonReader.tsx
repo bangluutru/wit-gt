@@ -10,8 +10,11 @@ import {
   Columns2,
   AlignLeft,
   Volume2,
+  Pencil,
+  Save,
+  X,
 } from 'lucide-react';
-import { useLessons } from '../hooks/useLessons';
+import { useLessons, type LessonEditableField } from '../hooks/useLessons';
 import { useProgress } from '../hooks/useProgress';
 import { useDictionary } from '../hooks/useDictionary';
 import { useSettings } from '../contexts/SettingsContext';
@@ -36,7 +39,7 @@ export default function LessonReader() {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
 
-  const { lessons, chapters, loading: lessonsLoading, getLessonById, getChapter } = useLessons();
+  const { lessons, chapters, loading: lessonsLoading, getLessonById, getChapter, updateLesson } = useLessons();
   const { completedLessons, loading: progressLoading, completeLesson } = useProgress();
   const { terms } = useDictionary();
   const { interfaceLang, preferredSourceLang, displayMode, setDisplayMode } =
@@ -51,6 +54,12 @@ export default function LessonReader() {
   const [popoverPos, setPopoverPos] = useState<{ top: number; left: number } | null>(null);
   const [showBottomSheet, setShowBottomSheet] = useState(false);
   const [completing, setCompleting] = useState(false);
+  // Admin in-place editing
+  const [editing, setEditing] = useState(false);
+  const [editTitle, setEditTitle] = useState('');
+  const [editContent, setEditContent] = useState('');
+  const [saving, setSaving] = useState(false);
+  const [saveError, setSaveError] = useState<string | null>(null);
   // Hover tooltip (desktop): quick meaning in the target language.
   const [hoverTerm, setHoverTerm] = useState<DictionaryTerm | null>(null);
   const [hoverPos, setHoverPos] = useState<{ top: number; left: number; bottom: number } | null>(null);
@@ -135,6 +144,40 @@ export default function LessonReader() {
     setDisplayMode(next);
   };
 
+  // ── Admin in-place editing ──
+  const cap = contentLang === 'vi' ? 'Vi' : contentLang === 'en' ? 'En' : 'Jp';
+  const titleField = `title${cap}` as LessonEditableField;
+  const contentField = `content${cap}` as LessonEditableField;
+
+  const startEditing = () => {
+    if (!lesson) return;
+    setEditTitle((lesson[titleField] as string) || '');
+    setEditContent((lesson[contentField] as string) || '');
+    setSaveError(null);
+    setEditing(true);
+  };
+
+  const cancelEditing = () => {
+    setEditing(false);
+    setSaveError(null);
+  };
+
+  const saveEditing = async () => {
+    if (!lesson || saving) return;
+    setSaving(true);
+    setSaveError(null);
+    const ok = await updateLesson(lesson.id, {
+      [titleField]: editTitle,
+      [contentField]: editContent,
+    });
+    setSaving(false);
+    if (ok) {
+      setEditing(false);
+    } else {
+      setSaveError('Lưu thất bại — kiểm tra quyền admin hoặc kết nối mạng.');
+    }
+  };
+
   // Loading
   if (lessonsLoading || progressLoading) {
     return <LoadingState message="Đang tải bài học..." />;
@@ -217,7 +260,7 @@ export default function LessonReader() {
       {/* Controls row */}
       <div className="flex items-center justify-between gap-4 mb-8 flex-wrap">
         {/* Language switcher */}
-        <div className="flex items-center gap-1 bg-wit-surface-2 rounded-full p-1">
+        <div className={`flex items-center gap-1 bg-wit-surface-2 rounded-full p-1 ${editing ? 'opacity-40 pointer-events-none' : ''}`}>
           {(['vi', 'en', 'jp'] as Language[]).map((lang) => (
             <button
               key={lang}
@@ -236,35 +279,102 @@ export default function LessonReader() {
           ))}
         </div>
 
-        {/* Dual mode toggle (desktop only) */}
-        <button
-          onClick={toggleDualMode}
-          className={`
-            desktop-only flex items-center gap-2 px-4 py-2 rounded-button text-sm font-medium
-            transition-all duration-200 border
-            ${
-              dualMode
-                ? 'bg-wit-red-soft border-wit-red/30 text-wit-red'
-                : 'bg-wit-surface border-wit-line text-wit-text-secondary hover:border-wit-red/30 hover:text-wit-red'
-            }
-          `}
-        >
-          {dualMode ? (
-            <>
-              <Columns2 className="h-4 w-4" />
-              Song ngữ
-            </>
-          ) : (
-            <>
-              <AlignLeft className="h-4 w-4" />
-              Đơn ngữ
-            </>
+        {/* Right controls: dual mode + admin edit */}
+        <div className="flex items-center gap-2">
+          {/* Dual mode toggle (desktop only) */}
+          {!editing && (
+            <button
+              onClick={toggleDualMode}
+              className={`
+                desktop-only flex items-center gap-2 px-4 py-2 rounded-button text-sm font-medium
+                transition-all duration-200 border
+                ${
+                  dualMode
+                    ? 'bg-wit-red-soft border-wit-red/30 text-wit-red'
+                    : 'bg-wit-surface border-wit-line text-wit-text-secondary hover:border-wit-red/30 hover:text-wit-red'
+                }
+              `}
+            >
+              {dualMode ? (
+                <>
+                  <Columns2 className="h-4 w-4" />
+                  Song ngữ
+                </>
+              ) : (
+                <>
+                  <AlignLeft className="h-4 w-4" />
+                  Đơn ngữ
+                </>
+              )}
+            </button>
           )}
-        </button>
+
+          {/* Admin: edit lesson content in place */}
+          {isAdmin && !editing && (
+            <button
+              onClick={startEditing}
+              className="flex items-center gap-2 px-4 py-2 rounded-button text-sm font-medium border border-wit-line bg-wit-surface text-wit-text-secondary hover:border-wit-red/30 hover:text-wit-red transition-all duration-200"
+            >
+              <Pencil className="h-4 w-4" />
+              Sửa nội dung
+            </button>
+          )}
+        </div>
       </div>
 
       {/* Content area */}
-      {dualMode && !isMobile ? (
+      {editing ? (
+        /* ── Admin editor ── */
+        <div className="mb-12 space-y-3">
+          <div className="flex items-center justify-between gap-3 flex-wrap">
+            <div className="flex items-center gap-2 text-sm font-semibold text-wit-text">
+              <Pencil className="h-4 w-4 text-wit-red" />
+              Đang sửa · {LANG_LABELS[contentLang]}
+            </div>
+            <div className="flex items-center gap-2">
+              <button
+                onClick={cancelEditing}
+                disabled={saving}
+                className="flex items-center gap-1.5 px-4 py-2 rounded-button text-sm font-medium border border-wit-line bg-wit-surface text-wit-text-secondary hover:bg-wit-surface-2 hover:text-wit-text transition-all duration-200 disabled:opacity-50"
+              >
+                <X className="h-4 w-4" />
+                Huỷ
+              </button>
+              <button
+                onClick={saveEditing}
+                disabled={saving}
+                className="flex items-center gap-1.5 px-5 py-2 rounded-button text-sm font-semibold bg-wit-red text-white hover:bg-wit-red-hover shadow-card transition-all duration-200 disabled:opacity-60 disabled:cursor-not-allowed"
+              >
+                <Save className="h-4 w-4" />
+                {saving ? 'Đang lưu...' : 'Lưu thay đổi'}
+              </button>
+            </div>
+          </div>
+
+          <input
+            type="text"
+            value={editTitle}
+            onChange={(e) => setEditTitle(e.target.value)}
+            placeholder="Tiêu đề học phần"
+            className="w-full px-4 py-2.5 rounded-button border border-wit-line bg-wit-surface font-serif text-lg font-bold text-wit-text focus:outline-none focus:ring-2 focus:ring-wit-red/20 focus:border-wit-red transition-all"
+          />
+
+          <textarea
+            value={editContent}
+            onChange={(e) => setEditContent(e.target.value)}
+            spellCheck={false}
+            className="w-full min-h-[60vh] px-4 py-3 rounded-button border border-wit-line bg-wit-surface font-mono text-[13px] leading-relaxed text-wit-text focus:outline-none focus:ring-2 focus:ring-wit-red/20 focus:border-wit-red transition-all resize-y"
+          />
+
+          {saveError && (
+            <p className="text-sm text-wit-red font-medium">{saveError}</p>
+          )}
+          <p className="text-xs text-wit-text-tertiary leading-relaxed">
+            Nội dung dùng định dạng Markdown: <code>#</code> tiêu đề, <code>**đậm**</code>,{' '}
+            <code>-</code> danh sách, <code>&gt;</code> trích dẫn. Thay đổi lưu trực tiếp vào học phần cho ngôn ngữ <b>{LANG_LABELS[contentLang]}</b>.
+          </p>
+        </div>
+      ) : dualMode && !isMobile ? (
         <div className="grid grid-cols-2 gap-8 mb-12">
           <div className="border-r border-wit-line pr-8">
             <div className="flex items-center gap-2 mb-4">

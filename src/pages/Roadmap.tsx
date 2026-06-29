@@ -153,12 +153,12 @@ export default function Roadmap() {
           const cardOpacity = isLocked ? 'opacity-60' : 'opacity-100';
 
           return (
-            <div key={ch.id} className="flex gap-5 relative">
+            <div key={ch.id} className="flex gap-3 sm:gap-5 relative">
               {/* Timeline Node Column */}
-              <div className="flex flex-col items-center shrink-0 w-14">
+              <div className="flex flex-col items-center shrink-0 w-11 sm:w-14">
                 <div
                   className={`
-                    w-12 h-12 rounded-card flex items-center justify-center font-bold text-lg transition-all duration-300
+                    w-11 h-11 sm:w-12 sm:h-12 rounded-card flex items-center justify-center font-bold text-lg transition-all duration-300
                     ${nodeBg}
                   `}
                 >
@@ -170,7 +170,7 @@ export default function Roadmap() {
               {/* Chapter Card Panel */}
               <div
                 className={`
-                  flex-1 mb-5 p-5 bg-wit-surface border rounded-card shadow-card transition-all duration-200 cursor-pointer
+                  flex-1 min-w-0 mb-5 p-4 sm:p-5 bg-wit-surface border rounded-card shadow-card transition-all duration-200 cursor-pointer
                   ${cardBorder} ${cardOpacity} hover:shadow-card-hover
                 `}
                 onClick={() => !isLocked && toggleChapter(ch.id)}
@@ -279,7 +279,7 @@ export default function Roadmap() {
 
                           {/* CTA indicator */}
                           {accessible && (
-                            <span className="text-[11.5px] text-wit-red font-semibold">
+                            <span className="shrink-0 text-[11.5px] text-wit-red font-semibold">
                               {status === 'completed'
                                 ? getLocalizedText('Xem lại', 'Review', '復習')
                                 : getLocalizedText('Tiếp tục →', 'Continue →', '続ける →')}
