@@ -10,6 +10,7 @@
     "preview": "vite preview",
     "import:dictionary": "tsx scripts/import-dictionary-from-xlsx.ts",
     "import:wit365": "tsx scripts/import-wit365-from-xlsx.ts",
+    "import:lessons": "tsx scripts/import-lesson-content.ts",
     "images:dict": "tsx scripts/optimize-dict-images.ts"
   },
   "dependencies": {

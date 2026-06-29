@@ -6,7 +6,9 @@
 
 import type { Chapter, Lesson, DictionaryTerm } from './types';
 import lessonNhanQuaVi from '../content/lesson-nhan-thuc-ve-nhan-qua.vi.md?raw';
+import lessonNhanQuaEn from '../content/lesson-nhan-thuc-ve-nhan-qua.en.md?raw';
 import lessonNLASVi from '../content/lesson-nguyen-ly-anh-sang.vi.md?raw';
+import lessonNLASEn from '../content/lesson-nguyen-ly-anh-sang.en.md?raw';
 import lessonNLKHNVi from '../content/lesson-nguyen-ly-kich-hoat-nao.vi.md?raw';
 import lessonNLNVVi from '../content/lesson-nguyen-ly-nghi-van.vi.md?raw';
 import lessonNLVTTVi from '../content/lesson-nguyen-ly-vong-tri-thuc.vi.md?raw';
@@ -194,11 +196,11 @@ export const SEED_LESSONS: Lesson[] = [
     lessonNo: 1,
     chapterId: 'ch1',
     titleVi: 'Nhận thức về Nhân quả',
-    titleEn: 'Understanding Cause and Effect',
+    titleEn: 'Awareness of Cause and Effect',
     titleJp: '因果についての認識',
     summaryVi: '', summaryEn: '', summaryJp: '',
     contentVi: lessonNhanQuaVi,
-    contentEn: 'The full content for this lesson is currently available in Vietnamese. The English translation will be updated by the WiT editorial team.',
+    contentEn: lessonNhanQuaEn,
     contentJp: 'このレッスンの全内容は現在ベトナム語でご利用いただけます。日本語翻訳はWiT編集チームにより更新されます。',
     status: 'published',
     createdAt: new Date(), updatedAt: new Date(),
@@ -208,11 +210,11 @@ export const SEED_LESSONS: Lesson[] = [
     lessonNo: 2,
     chapterId: 'ch1',
     titleVi: 'Nguyên lý Ánh sáng trong nhân sinh',
-    titleEn: 'Nguyên lý Ánh sáng trong nhân sinh',
+    titleEn: 'The Principle of Light in Human Life',
     titleJp: 'Nguyên lý Ánh sáng trong nhân sinh',
     summaryVi: '', summaryEn: '', summaryJp: '',
     contentVi: lessonNLASVi,
-    contentEn: 'The full content for this lesson is currently available in Vietnamese. The English translation will be updated by the WiT editorial team.',
+    contentEn: lessonNLASEn,
     contentJp: 'このレッスンの全内容は現在ベトナム語でご利用いただけます。日本語翻訳はWiT編集チームにより更新されます。',
     status: 'published',
     createdAt: new Date(), updatedAt: new Date(),
