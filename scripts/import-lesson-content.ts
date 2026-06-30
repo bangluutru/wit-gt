@@ -227,6 +227,41 @@ const LESSON_UPDATES: Array<{ lessonNo: number; titleEn: string; enFile: string 
     titleEn: 'Formula for Activating Desirable Total Karma',
     enFile: 'lesson-cong-thuc-kich-hoat-tong-nghiep.en.md',
   },
+  {
+    lessonNo: 42,
+    titleEn: 'Mastermind Group (Establishment, Assembling, Operation, and Maximization)',
+    enFile: 'lesson-tri-tue-uu-tu.en.md',
+  },
+  {
+    lessonNo: 43,
+    titleEn: 'The Expert’s Code of the Inner Coach (3773)',
+    enFile: 'lesson-mat-ma-chuyen-gia-3773.en.md',
+  },
+  {
+    lessonNo: 44,
+    titleEn: 'Standard Concepts in Training of the Inner Coach',
+    enFile: 'lesson-quan-niem-chuan-dao-tao.en.md',
+  },
+  {
+    lessonNo: 45,
+    titleEn: 'Right Mental State in Training of the Inner Coach',
+    enFile: 'lesson-tam-thai-dung-dao-tao.en.md',
+  },
+  {
+    lessonNo: 46,
+    titleEn: 'Suitable Capacity in Training of the Inner Coach',
+    enFile: 'lesson-nang-luc-phu-hop-dao-tao.en.md',
+  },
+  {
+    lessonNo: 47,
+    titleEn: 'Principles in Training of the Inner Coach',
+    enFile: 'lesson-nguyen-tac-dao-tao.en.md',
+  },
+  {
+    lessonNo: 48,
+    titleEn: 'Acquisition - Acceleration - People Gathering Method',
+    enFile: 'lesson-phuong-phap-thu-dac-gia-toc-tu-chung.en.md',
+  },
 ];
 
 // ── Firebase init (ADC, with env service-account fallback) ───

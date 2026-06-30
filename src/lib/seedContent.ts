@@ -87,6 +87,14 @@ import lessonBinhThuongPhiThuongEn from '../content/lesson-cong-thuc-bien-binh-t
 import lessonTuVanHuanLuyenEn from '../content/lesson-cong-thuc-tu-van-huan-luyen.en.md?raw';
 import lessonMongMuonYThucEn from '../content/lesson-cong-thuc-bien-mong-muon-y-thuc.en.md?raw';
 import lessonKichHoatTongNghiepEn from '../content/lesson-cong-thuc-kich-hoat-tong-nghiep.en.md?raw';
+// Phase 6 EN translations imports
+import lessonTriTueUuTuEn from '../content/lesson-tri-tue-uu-tu.en.md?raw';
+import lessonMatMa3773En from '../content/lesson-mat-ma-chuyen-gia-3773.en.md?raw';
+import lessonQuanNiemChuanEn from '../content/lesson-quan-niem-chuan-dao-tao.en.md?raw';
+import lessonTamThaiDungEn from '../content/lesson-tam-thai-dung-dao-tao.en.md?raw';
+import lessonNangLucPhuHopEn from '../content/lesson-nang-luc-phu-hop-dao-tao.en.md?raw';
+import lessonNguyenTacDaoTaoEn from '../content/lesson-nguyen-tac-dao-tao.en.md?raw';
+import lessonThuDacGiaTocEn from '../content/lesson-phuong-phap-thu-dac-gia-toc-tu-chung.en.md?raw';
 // v3 imports (l32-l34, l51, l52, l56-l58)
 import lessonLTBMNTNUMVi from '../content/lesson-lo-trinh-bien-nghe-thanh-nghe-uoc-mo.vi.md?raw';
 import lessonLTCPLLDTVi from '../content/lesson-lo-trinh-chinh-phuc-luc-loc-dai-thuan.vi.md?raw';
@@ -848,11 +856,11 @@ export const SEED_LESSONS: Lesson[] = [
     lessonNo: 42,
     chapterId: 'ch6',
     titleVi: 'Trí tuệ ưu tú (Thiết lập, tập hợp, điều hành và phát huy)',
-    titleEn: 'Trí tuệ ưu tú (Thiết lập, tập hợp, điều hành và phát huy)',
+    titleEn: 'Mastermind Group (Establishment, Assembling, Operation, and Maximization)',
     titleJp: 'Trí tuệ ưu tú (Thiết lập, tập hợp, điều hành và phát huy)',
     summaryVi: '', summaryEn: '', summaryJp: '',
     contentVi: lessonTriTueUuTuVi,
-    contentEn: 'This is illustrative content for the lesson “Trí tuệ ưu tú (Thiết lập, tập hợp, điều hành và phát huy)”. The full content of this lesson will be updated by the WiT editorial team.',
+    contentEn: lessonTriTueUuTuEn,
     contentJp: 'これはレッスン「Trí tuệ ưu tú (Thiết lập, tập hợp, điều hành và phát huy)」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',
     createdAt: new Date(), updatedAt: new Date(),
@@ -862,11 +870,11 @@ export const SEED_LESSONS: Lesson[] = [
     lessonNo: 43,
     chapterId: 'ch6',
     titleVi: 'Mật mã của Chuyên gia tư vấn huấn luyện nội tâm (3773)',
-    titleEn: 'Mật mã của Chuyên gia tư vấn huấn luyện nội tâm (3773)',
+    titleEn: 'The Expert’s Code of the Inner Coach (3773)',
     titleJp: 'Mật mã của Chuyên gia tư vấn huấn luyện nội tâm (3773)',
     summaryVi: '', summaryEn: '', summaryJp: '',
     contentVi: lessonMatMa3773Vi,
-    contentEn: 'This is illustrative content for the lesson “Mật mã của Chuyên gia tư vấn huấn luyện nội tâm (3773)”. The full content of this lesson will be updated by the WiT editorial team.',
+    contentEn: lessonMatMa3773En,
     contentJp: 'これはレッスン「Mật mã của Chuyên gia tư vấn huấn luyện nội tâm (3773)」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',
     createdAt: new Date(), updatedAt: new Date(),
@@ -876,11 +884,11 @@ export const SEED_LESSONS: Lesson[] = [
     lessonNo: 44,
     chapterId: 'ch6',
     titleVi: 'Quan niệm chuẩn trong đào tạo',
-    titleEn: 'Quan niệm chuẩn trong đào tạo',
+    titleEn: 'Standard Concepts in Training of the Inner Coach',
     titleJp: 'Quan niệm chuẩn trong đào tạo',
     summaryVi: '', summaryEn: '', summaryJp: '',
     contentVi: lessonQuanNiemChuanVi,
-    contentEn: 'This is illustrative content for the lesson “Quan niệm chuẩn trong đào tạo”. The full content of this lesson will be updated by the WiT editorial team.',
+    contentEn: lessonQuanNiemChuanEn,
     contentJp: 'これはレッスン「Quan niệm chuẩn trong đào tạo」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',
     createdAt: new Date(), updatedAt: new Date(),
@@ -890,11 +898,11 @@ export const SEED_LESSONS: Lesson[] = [
     lessonNo: 45,
     chapterId: 'ch6',
     titleVi: 'Tâm thái đúng trong đào tạo',
-    titleEn: 'Tâm thái đúng trong đào tạo',
+    titleEn: 'Right Mental State in Training of the Inner Coach',
     titleJp: 'Tâm thái đúng trong đào tạo',
     summaryVi: '', summaryEn: '', summaryJp: '',
     contentVi: lessonTamThaiDungVi,
-    contentEn: 'This is illustrative content for the lesson “Tâm thái đúng trong đào tạo”. The full content of this lesson will be updated by the WiT editorial team.',
+    contentEn: lessonTamThaiDungEn,
     contentJp: 'これはレッスン「Tâm thái đúng trong đào tạo」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',
     createdAt: new Date(), updatedAt: new Date(),
@@ -904,11 +912,11 @@ export const SEED_LESSONS: Lesson[] = [
     lessonNo: 46,
     chapterId: 'ch6',
     titleVi: 'Năng lực phù hợp trong đào tạo',
-    titleEn: 'Năng lực phù hợp trong đào tạo',
+    titleEn: 'Suitable Capacity in Training of the Inner Coach',
     titleJp: 'Năng lực phù hợp trong đào tạo',
     summaryVi: '', summaryEn: '', summaryJp: '',
     contentVi: lessonNangLucPhuHopVi,
-    contentEn: 'This is illustrative content for the lesson “Năng lực phù hợp trong đào tạo”. The full content of this lesson will be updated by the WiT editorial team.',
+    contentEn: lessonNangLucPhuHopEn,
     contentJp: 'これはレッスン「Năng lực phù hợp trong đào tạo」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',
     createdAt: new Date(), updatedAt: new Date(),
@@ -918,11 +926,11 @@ export const SEED_LESSONS: Lesson[] = [
     lessonNo: 47,
     chapterId: 'ch6',
     titleVi: 'Nguyên tắc trong đào tạo',
-    titleEn: 'Nguyên tắc trong đào tạo',
+    titleEn: 'Principles in Training of the Inner Coach',
     titleJp: 'Nguyên tắc trong đào tạo',
     summaryVi: '', summaryEn: '', summaryJp: '',
     contentVi: lessonNguyenTacDaoTaoVi,
-    contentEn: 'This is illustrative content for the lesson “Nguyên tắc trong đào tạo”. The full content of this lesson will be updated by the WiT editorial team.',
+    contentEn: lessonNguyenTacDaoTaoEn,
     contentJp: 'これはレッスン「Nguyên tắc trong đào tạo」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',
     createdAt: new Date(), updatedAt: new Date(),
@@ -932,11 +940,11 @@ export const SEED_LESSONS: Lesson[] = [
     lessonNo: 48,
     chapterId: 'ch6',
     titleVi: 'Phương pháp Thụ đắc - Gia tốc - Tụ chúng',
-    titleEn: 'Phương pháp Thụ đắc - Gia tốc - Tụ chúng',
+    titleEn: 'Acquisition - Acceleration - People Gathering Method',
     titleJp: 'Phương pháp Thụ đắc - Gia tốc - Tụ chúng',
     summaryVi: '', summaryEn: '', summaryJp: '',
     contentVi: lessonThuDacGiaTocVi,
-    contentEn: 'This is illustrative content for the lesson “Phương pháp Thụ đắc - Gia tốc - Tụ chúng”. The full content of this lesson will be updated by the WiT editorial team.',
+    contentEn: lessonThuDacGiaTocEn,
     contentJp: 'これはレッスン「Phương pháp Thụ đắc - Gia tốc - Tụ chúng」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',
     createdAt: new Date(), updatedAt: new Date(),
