@@ -138,6 +138,11 @@ import lessonTLGDTGVi from '../content/lesson-triet-ly-giao-duc-tan-goc.vi.md?ra
 import lessonToChucTTVi from '../content/lesson-to-chuc-truong-ton.vi.md?raw';
 import lessonSNGiaoDucVi from '../content/lesson-su-nghiep-giao-duc-triet-ly-cho-nhan-sinh.vi.md?raw';
 
+import lessonGDNhanThucEn from '../content/lesson-giao-duc-nhan-thuc-giao-duc-tan-goc.en.md?raw';
+import lessonTLGDTGEn from '../content/lesson-triet-ly-giao-duc-tan-goc.en.md?raw';
+import lessonToChucTTEn from '../content/lesson-to-chuc-truong-ton.en.md?raw';
+import lessonSNGiaoDucEn from '../content/lesson-su-nghiep-giao-duc-triet-ly-cho-nhan-sinh.en.md?raw';
+
 // Phase 7 EN translations imports
 import lessonBonDoHinhEn from '../content/lesson-bon-do-hinh-nhan-sinh.en.md?raw';
 import lessonQuyLuatThuHutEn from '../content/lesson-quy-luat-thu-hut-anh-huong-gia-tri.en.md?raw';
@@ -1312,11 +1317,11 @@ export const SEED_LESSONS: Lesson[] = [
     lessonNo: 73,
     chapterId: 'ch9',
     titleVi: 'Giáo dục nhận thức - Giáo dục tận gốc',
-    titleEn: 'Giáo dục nhận thức - Giáo dục tận gốc',
+    titleEn: 'Cognitive Education - Education at the Root',
     titleJp: 'Giáo dục nhận thức - Giáo dục tận gốc',
     summaryVi: '', summaryEn: '', summaryJp: '',
     contentVi: lessonGDNhanThucVi,
-    contentEn: 'This is illustrative content for the lesson “Giáo dục nhận thức - Giáo dục tận gốc”. The full content of this lesson will be updated by the WiT editorial team.',
+    contentEn: lessonGDNhanThucEn,
     contentJp: 'これはレッスン「Giáo dục nhận thức - Giáo dục tận gốc」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',
     createdAt: new Date(), updatedAt: new Date(),
@@ -1326,11 +1331,11 @@ export const SEED_LESSONS: Lesson[] = [
     lessonNo: 74,
     chapterId: 'ch9',
     titleVi: 'Triết lý giáo dục tận gốc',
-    titleEn: 'Triết lý giáo dục tận gốc',
+    titleEn: 'Philosophy of Education at the Root',
     titleJp: 'Triết lý giáo dục tận gốc',
     summaryVi: '', summaryEn: '', summaryJp: '',
     contentVi: lessonTLGDTGVi,
-    contentEn: 'This is illustrative content for the lesson “Triết lý giáo dục tận gốc”. The full content of this lesson will be updated by the WiT editorial team.',
+    contentEn: lessonTLGDTGEn,
     contentJp: 'これはレッスン「Triết lý giáo dục tận gốc」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',
     createdAt: new Date(), updatedAt: new Date(),
@@ -1340,11 +1345,11 @@ export const SEED_LESSONS: Lesson[] = [
     lessonNo: 75,
     chapterId: 'ch9',
     titleVi: 'Tổ chức trường tồn',
-    titleEn: 'Tổ chức trường tồn',
+    titleEn: 'Eternal Organization',
     titleJp: 'Tổ chức trường tồn',
     summaryVi: '', summaryEn: '', summaryJp: '',
     contentVi: lessonToChucTTVi,
-    contentEn: 'This is illustrative content for the lesson “Tổ chức trường tồn”. The full content of this lesson will be updated by the WiT editorial team.',
+    contentEn: lessonToChucTTEn,
     contentJp: 'これはレッスン「Tổ chức trường tồn」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',
     createdAt: new Date(), updatedAt: new Date(),
@@ -1354,11 +1359,11 @@ export const SEED_LESSONS: Lesson[] = [
     lessonNo: 76,
     chapterId: 'ch9',
     titleVi: 'Sự nghiệp giáo dục triết lý cho nhân sinh',
-    titleEn: 'Sự nghiệp giáo dục triết lý cho nhân sinh',
+    titleEn: 'Career of Philosophical Education for Human Life',
     titleJp: 'Sự nghiệp giáo dục triết lý cho nhân sinh',
     summaryVi: '', summaryEn: '', summaryJp: '',
     contentVi: lessonSNGiaoDucVi,
-    contentEn: 'This is illustrative content for the lesson “Sự nghiệp giáo dục triết lý cho nhân sinh”. The full content of this lesson will be updated by the WiT editorial team.',
+    contentEn: lessonSNGiaoDucEn,
     contentJp: 'これはレッスン「Sự nghiệp giáo dục triết lý cho nhân sinh」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',
     createdAt: new Date(), updatedAt: new Date(),

@@ -377,6 +377,26 @@ const LESSON_UPDATES: Array<{ lessonNo: number; titleEn: string; enFile: string 
     titleEn: 'Legacy for Future Generations',
     enFile: 'lesson-di-san-cho-the-he-sau.en.md',
   },
+  {
+    lessonNo: 73,
+    titleEn: 'Cognitive Education - Education at the Root',
+    enFile: 'lesson-giao-duc-nhan-thuc-giao-duc-tan-goc.en.md',
+  },
+  {
+    lessonNo: 74,
+    titleEn: 'Philosophy of Education at the Root',
+    enFile: 'lesson-triet-ly-giao-duc-tan-goc.en.md',
+  },
+  {
+    lessonNo: 75,
+    titleEn: 'Eternal Organization',
+    enFile: 'lesson-to-chuc-truong-ton.en.md',
+  },
+  {
+    lessonNo: 76,
+    titleEn: 'Career of Philosophical Education for Human Life',
+    enFile: 'lesson-su-nghiep-giao-duc-triet-ly-cho-nhan-sinh.en.md',
+  },
 ];
 
 // ── Firebase init (ADC, with env service-account fallback) ───
