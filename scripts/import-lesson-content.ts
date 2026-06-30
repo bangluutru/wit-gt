@@ -87,6 +87,61 @@ const LESSON_UPDATES: Array<{ lessonNo: number; titleEn: string; enFile: string 
     titleEn: 'Human Structure - Total Karma & Operating Principle of the Subconscious',
     enFile: 'lesson-cau-truc-con-nguoi-tong-nghiep-tiem-thuc.en.md',
   },
+  {
+    lessonNo: 13,
+    titleEn: 'Human Structure - Matter, Space, Time',
+    enFile: 'lesson-cau-truc-con-nguoi-vat-chat-kgian-tgian.en.md',
+  },
+  {
+    lessonNo: 14,
+    titleEn: 'Human Structure - Operating Principle of the Mind',
+    enFile: 'lesson-cau-truc-con-nguoi-tam-thuc.en.md',
+  },
+  {
+    lessonNo: 15,
+    titleEn: 'The Reality Triangle',
+    enFile: 'lesson-tam-giac-hien-thuc.en.md',
+  },
+  {
+    lessonNo: 16,
+    titleEn: 'Wealth of Wisdom',
+    enFile: 'lesson-giau-tri-tue.en.md',
+  },
+  {
+    lessonNo: 17,
+    titleEn: 'Wealth of Mental State',
+    enFile: 'lesson-giau-tam-thai.en.md',
+  },
+  {
+    lessonNo: 18,
+    titleEn: 'Wealth of Personality',
+    enFile: 'lesson-giau-nhan-cach.en.md',
+  },
+  {
+    lessonNo: 19,
+    titleEn: 'Wealth of Qualities',
+    enFile: 'lesson-giau-pham-chat.en.md',
+  },
+  {
+    lessonNo: 20,
+    titleEn: 'Wealth of Capacity',
+    enFile: 'lesson-giau-nang-luc.en.md',
+  },
+  {
+    lessonNo: 21,
+    titleEn: 'Wealth of Physical Body',
+    enFile: 'lesson-giau-the-chat.en.md',
+  },
+  {
+    lessonNo: 22,
+    titleEn: 'Wealth of Material Assets',
+    enFile: 'lesson-giau-vat-chat.en.md',
+  },
+  {
+    lessonNo: 23,
+    titleEn: '7 Dimensions of Holistic Wealth',
+    enFile: 'lesson-7-su-giau-toan-dien.en.md',
+  },
 ];
 
 // ── Firebase init (ADC, with env service-account fallback) ───

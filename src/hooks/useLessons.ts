@@ -43,8 +43,21 @@ export function useLessons() {
           ...d.data(),
         })) as Chapter[];
 
-        // Fall back to bundled seed content when Firestore is empty.
-        setLessons(fetchedLessons.length > 0 ? fetchedLessons : SEED_LESSONS);
+        // Fall back to bundled seed content when Firestore is empty, or merge local seed translations
+        // for lessons that have not yet been successfully seeded into Firestore.
+        const mergedLessons = fetchedLessons.map((fetched) => {
+          const seed = SEED_LESSONS.find((s) => s.id === fetched.id || s.lessonNo === fetched.lessonNo);
+          if (!seed) return fetched;
+          const hasTranslation = fetched.contentEn && fetched.contentEn.length > 0 && !fetched.contentEn.includes('This is illustrative content');
+          return {
+            ...fetched,
+            titleEn: hasTranslation ? fetched.titleEn : seed.titleEn,
+            summaryEn: hasTranslation ? fetched.summaryEn : seed.summaryEn,
+            contentEn: hasTranslation ? fetched.contentEn : seed.contentEn,
+          };
+        });
+
+        setLessons(mergedLessons.length > 0 ? mergedLessons : SEED_LESSONS);
         setChapters(fetchedChapters.length > 0 ? fetchedChapters : SEED_CHAPTERS);
       } catch (err) {
         console.error('Failed to fetch lessons/chapters:', err);
