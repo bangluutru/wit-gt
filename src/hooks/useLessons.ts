@@ -48,7 +48,9 @@ export function useLessons() {
         const mergedLessons = fetchedLessons.map((fetched) => {
           const seed = SEED_LESSONS.find((s) => s.id === fetched.id || s.lessonNo === fetched.lessonNo);
           if (!seed) return fetched;
-          const hasTranslation = fetched.contentEn && fetched.contentEn.length > 0 && !fetched.contentEn.includes('This is illustrative content');
+          const hasTranslation = fetched.contentEn && fetched.contentEn.length > 0 &&
+            !fetched.contentEn.includes('This is illustrative content') &&
+            !fetched.contentEn.includes('The full content for this lesson is currently available in Vietnamese');
           return {
             ...fetched,
             titleEn: hasTranslation ? fetched.titleEn : seed.titleEn,

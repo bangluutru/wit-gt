@@ -142,6 +142,46 @@ const LESSON_UPDATES: Array<{ lessonNo: number; titleEn: string; enFile: string 
     titleEn: '7 Dimensions of Holistic Wealth',
     enFile: 'lesson-7-su-giau-toan-dien.en.md',
   },
+  {
+    lessonNo: 24,
+    titleEn: 'Good Cause in Human Life',
+    enFile: 'lesson-nhan-tot-trong-nhan-sinh.en.md',
+  },
+  {
+    lessonNo: 25,
+    titleEn: '9 Types of People',
+    enFile: 'lesson-9-dang-nguoi.en.md',
+  },
+  {
+    lessonNo: 26,
+    titleEn: 'Qualities of a Talent',
+    enFile: 'lesson-nhan-thuc-to-chat-nhan-tai.en.md',
+  },
+  {
+    lessonNo: 27,
+    titleEn: 'Full Awareness of Human Beings',
+    enFile: 'lesson-nhan-thuc-du-day-ve-con-nguoi.en.md',
+  },
+  {
+    lessonNo: 28,
+    titleEn: 'Identifying and Upgrading Relationships',
+    enFile: 'lesson-nhan-dang-nang-cap-moi-quan-he.en.md',
+  },
+  {
+    lessonNo: 29,
+    titleEn: '7 Important Offerings',
+    enFile: 'lesson-7-bo-thi-quan-trong.en.md',
+  },
+  {
+    lessonNo: 30,
+    titleEn: 'Good Connection in Human Life',
+    enFile: 'lesson-duyen-lanh-trong-nhan-sinh.en.md',
+  },
+  {
+    lessonNo: 31,
+    titleEn: 'Desirable Outcome in Human Life',
+    enFile: 'lesson-qua-nhu-y-trong-nhan-sinh.en.md',
+  },
 ];
 
 // ── Firebase init (ADC, with env service-account fallback) ───
