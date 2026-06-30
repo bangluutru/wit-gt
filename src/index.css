@@ -71,6 +71,11 @@
   to { opacity: 1; transform: translateX(0); }
 }
 
+@keyframes hp-ring {
+  0%, 100% { opacity: 0.35; }
+  50% { opacity: 0.9; }
+}
+
 @keyframes fade-in {
   from { opacity: 0; }
   to { opacity: 1; }

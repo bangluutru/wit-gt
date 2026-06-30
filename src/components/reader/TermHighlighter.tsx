@@ -12,7 +12,7 @@ interface TermHighlighterProps {
   onTermLeave?: () => void;
 }
 
-interface MatchableTerm {
+export interface MatchableTerm {
   lower: string;
   term: DictionaryTerm;
 }
@@ -30,7 +30,7 @@ function getTermText(term: DictionaryTerm, lang: Language): string {
  * case-insensitive but diacritic-SENSITIVE: in Vietnamese, accents are
  * meaningful (e.g. "Nhân"/cause ≠ "Nhận"/perceive), so we must not fold them.
  */
-function getMatchableTerms(terms: DictionaryTerm[], lang: Language): MatchableTerm[] {
+export function getMatchableTerms(terms: DictionaryTerm[], lang: Language): MatchableTerm[] {
   return terms
     .map((t) => ({ lower: getTermText(t, lang).toLowerCase(), term: t }))
     .filter((m) => m.lower.trim().length >= 2)
@@ -46,7 +46,7 @@ const WORD_CHAR = /[a-z0-9]/i;
  * we don't highlight a term inside a longer word. Returns string / ReactNode
  * segments.
  */
-function highlightText(
+export function highlightText(
   text: string,
   matchableTerms: MatchableTerm[],
   language: Language,
