@@ -182,6 +182,51 @@ const LESSON_UPDATES: Array<{ lessonNo: number; titleEn: string; enFile: string 
     titleEn: 'Desirable Outcome in Human Life',
     enFile: 'lesson-qua-nhu-y-trong-nhan-sinh.en.md',
   },
+  {
+    lessonNo: 32,
+    titleEn: 'Roadmap to Turn Any Job into a Dream Career',
+    enFile: 'lesson-lo-trinh-bien-nghe-thanh-nghe-uoc-mo.en.md',
+  },
+  {
+    lessonNo: 33,
+    titleEn: 'Roadmap to Conquer Sixfold Life Fulfillment',
+    enFile: 'lesson-lo-trinh-chinh-phuc-luc-loc-dai-thuan.en.md',
+  },
+  {
+    lessonNo: 34,
+    titleEn: 'Roadmap to Elevate the Realm of Life',
+    enFile: 'lesson-lo-trinh-nang-cao-canh-gioi-cuoc-song.en.md',
+  },
+  {
+    lessonNo: 35,
+    titleEn: 'Formula for Rising Above All Adversities',
+    enFile: 'lesson-cong-thuc-vuot-thoat-van-nan.en.md',
+  },
+  {
+    lessonNo: 36,
+    titleEn: 'Formula for Material Wealth',
+    enFile: 'lesson-cong-thuc-lam-giau-vat-chat.en.md',
+  },
+  {
+    lessonNo: 38,
+    titleEn: 'Formula for Shifting Ordinary to Extraordinary',
+    enFile: 'lesson-cong-thuc-bien-binh-thuong-phi-thuong.en.md',
+  },
+  {
+    lessonNo: 39,
+    titleEn: 'Coaching and Consultation Formulas of Inner Coaches',
+    enFile: 'lesson-cong-thuc-tu-van-huan-luyen.en.md',
+  },
+  {
+    lessonNo: 40,
+    titleEn: 'Formula for Shifting Conscious Desires to Inner Belief',
+    enFile: 'lesson-cong-thuc-bien-mong-muon-y-thuc.en.md',
+  },
+  {
+    lessonNo: 41,
+    titleEn: 'Formula for Activating Desirable Total Karma',
+    enFile: 'lesson-cong-thuc-kich-hoat-tong-nghiep.en.md',
+  },
 ];
 
 // ── Firebase init (ADC, with env service-account fallback) ───
