@@ -37,6 +37,56 @@ const LESSON_UPDATES: Array<{ lessonNo: number; titleEn: string; enFile: string 
     titleEn: 'The Principle of Light in Human Life',
     enFile: 'lesson-nguyen-ly-anh-sang.en.md',
   },
+  {
+    lessonNo: 3,
+    titleEn: 'The Brain Activation Principle',
+    enFile: 'lesson-nguyen-ly-kich-hoat-nao.en.md',
+  },
+  {
+    lessonNo: 4,
+    titleEn: 'The Principle of Inquiry in Line with Desires',
+    enFile: 'lesson-nguyen-ly-nghi-van.en.md',
+  },
+  {
+    lessonNo: 5,
+    titleEn: 'The Circle of Knowledge Principle',
+    enFile: 'lesson-nguyen-ly-vong-tri-thuc.en.md',
+  },
+  {
+    lessonNo: 6,
+    titleEn: 'The Formula for the Root Cause of Life',
+    enFile: 'lesson-cong-thuc-coi-nguon.en.md',
+  },
+  {
+    lessonNo: 7,
+    titleEn: 'Human Structure - Truth',
+    enFile: 'lesson-cau-truc-con-nguoi-chan-that.en.md',
+  },
+  {
+    lessonNo: 8,
+    titleEn: 'Human Structure - Drawing and Labelling',
+    enFile: 'lesson-cau-truc-con-nguoi-ve-goi-ten.en.md',
+  },
+  {
+    lessonNo: 9,
+    titleEn: 'Human Structure - Emptiness of Nature',
+    enFile: 'lesson-cau-truc-con-nguoi-tanh-khong.en.md',
+  },
+  {
+    lessonNo: 10,
+    titleEn: 'Human Structure - 16 Human Natures',
+    enFile: 'lesson-cau-truc-con-nguoi-tanh-nguoi.en.md',
+  },
+  {
+    lessonNo: 11,
+    titleEn: 'Human Structure - 3 Blocks of Merit',
+    enFile: 'lesson-cau-truc-con-nguoi-3-khoi-duc.en.md',
+  },
+  {
+    lessonNo: 12,
+    titleEn: 'Human Structure - Total Karma & Operating Principle of the Subconscious',
+    enFile: 'lesson-cau-truc-con-nguoi-tong-nghiep-tiem-thuc.en.md',
+  },
 ];
 
 // ── Firebase init (ADC, with env service-account fallback) ───

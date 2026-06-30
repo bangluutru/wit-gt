@@ -10,8 +10,9 @@ import lessonNhanQuaEn from '../content/lesson-nhan-thuc-ve-nhan-qua.en.md?raw';
 import lessonNLASVi from '../content/lesson-nguyen-ly-anh-sang.vi.md?raw';
 import lessonNLASEn from '../content/lesson-nguyen-ly-anh-sang.en.md?raw';
 import lessonNLKHNVi from '../content/lesson-nguyen-ly-kich-hoat-nao.vi.md?raw';
+import lessonNLKHNEn from '../content/lesson-nguyen-ly-kich-hoat-nao.en.md?raw';
 import lessonNLNVVi from '../content/lesson-nguyen-ly-nghi-van.vi.md?raw';
-import lessonNLVTTVi from '../content/lesson-nguyen-ly-vong-tri-thuc.vi.md?raw';
+import lessonNLNVEn from '../content/lesson-nguyen-ly-nghi-van.en.md?raw';
 import lessonCTCNVi from '../content/lesson-cong-thuc-coi-nguon.vi.md?raw';
 import lessonCTCNCTVi from '../content/lesson-cau-truc-con-nguoi-chan-that.vi.md?raw';
 import lessonCTCNVGTVi from '../content/lesson-cau-truc-con-nguoi-ve-goi-ten.vi.md?raw';
@@ -49,6 +50,7 @@ import lessonBonDoHinhVi from '../content/lesson-bon-do-hinh-nhan-sinh.vi.md?raw
 import lessonQuyLuatThuHutVi from '../content/lesson-quy-luat-thu-hut-anh-huong-gia-tri.vi.md?raw';
 // v2 imports (l12, l14, l15, l20-l22)
 import lessonCTCNTNTPVi from '../content/lesson-cau-truc-con-nguoi-tong-nghiep-tiem-thuc.vi.md?raw';
+import lessonCTCNTNTPEn from '../content/lesson-cau-truc-con-nguoi-tong-nghiep-tiem-thuc.en.md?raw';
 import lessonCTCNTTVi from '../content/lesson-cau-truc-con-nguoi-tam-thuc.vi.md?raw';
 import lessonTGHTVi from '../content/lesson-tam-giac-hien-thuc.vi.md?raw';
 import lessonGiauNangLucVi from '../content/lesson-giau-nang-luc.vi.md?raw';
@@ -88,12 +90,19 @@ import lessonSNGiaoDucVi from '../content/lesson-su-nghiep-giao-duc-triet-ly-cho
 
 
 import lessonVongTriThucVi from '../content/lesson-nguyen-ly-vong-tri-thuc.vi.md?raw';
+import lessonVongTriThucEn from '../content/lesson-nguyen-ly-vong-tri-thuc.en.md?raw';
 import lessonCoiNguonVi from '../content/lesson-cong-thuc-coi-nguon.vi.md?raw';
+import lessonCoiNguonEn from '../content/lesson-cong-thuc-coi-nguon.en.md?raw';
 import lessonChanThatVi from '../content/lesson-cau-truc-con-nguoi-chan-that.vi.md?raw';
+import lessonChanThatEn from '../content/lesson-cau-truc-con-nguoi-chan-that.en.md?raw';
 import lessonVeGoiTenVi from '../content/lesson-cau-truc-con-nguoi-ve-goi-ten.vi.md?raw';
+import lessonVeGoiTenEn from '../content/lesson-cau-truc-con-nguoi-ve-goi-ten.en.md?raw';
 import lessonTanhKhongCtVi from '../content/lesson-cau-truc-con-nguoi-tanh-khong.vi.md?raw';
+import lessonTanhKhongCtEn from '../content/lesson-cau-truc-con-nguoi-tanh-khong.en.md?raw';
 import lessonTanhNguoiVi from '../content/lesson-cau-truc-con-nguoi-tanh-nguoi.vi.md?raw';
+import lessonTanhNguoiEn from '../content/lesson-cau-truc-con-nguoi-tanh-nguoi.en.md?raw';
 import lesson3KhoiDucVi from '../content/lesson-cau-truc-con-nguoi-3-khoi-duc.vi.md?raw';
+import lesson3KhoiDucEn from '../content/lesson-cau-truc-con-nguoi-3-khoi-duc.en.md?raw';
 import lessonQuaNhuYVi from '../content/lesson-qua-nhu-y-trong-nhan-sinh.vi.md?raw';
 import lessonBuDapVi from '../content/lesson-quy-luat-bu-dap.vi.md?raw';
 import lessonThanhTruHoaiDietVi from '../content/lesson-quy-luat-thanh-tru-hoai-diet.vi.md?raw';
@@ -102,90 +111,90 @@ export const SEED_CHAPTERS: Chapter[] = [
     id: 'ch1',
     orderIndex: 1,
     titleVi: 'Nguyên lý Nền tảng',
-    titleEn: 'Nguyên lý Nền tảng',
+    titleEn: 'Foundational Principles',
     titleJp: 'Nguyên lý Nền tảng',
     descriptionVi: 'Nhận thức gốc rễ vận hành cuộc sống.',
-    descriptionEn: 'Nhận thức gốc rễ vận hành cuộc sống.',
+    descriptionEn: 'Root awareness operating life.',
     descriptionJp: 'Nhận thức gốc rễ vận hành cuộc sống.',
   },
   {
     id: 'ch2',
     orderIndex: 2,
     titleVi: 'Cấu trúc Con người',
-    titleEn: 'Cấu trúc Con người',
+    titleEn: 'Human Structure',
     titleJp: 'Cấu trúc Con người',
     descriptionVi: 'Hiểu trọn vẹn về con người bên trong.',
-    descriptionEn: 'Hiểu trọn vẹn về con người bên trong.',
+    descriptionEn: 'Fully understand the inner human.',
     descriptionJp: 'Hiểu trọn vẹn về con người bên trong.',
   },
   {
     id: 'ch3',
     orderIndex: 3,
     titleVi: '7 Sự Giàu Toàn Diện',
-    titleEn: '7 Sự Giàu Toàn Diện',
+    titleEn: '7 Dimensions of Holistic Wealth',
     titleJp: '7 Sự Giàu Toàn Diện',
     descriptionVi: 'Bảy chiều giàu có của một đời người.',
-    descriptionEn: 'Bảy chiều giàu có của một đời người.',
+    descriptionEn: 'The seven dimensions of wealth in a person\'s life.',
     descriptionJp: 'Bảy chiều giàu có của một đời người.',
   },
   {
     id: 'ch4',
     orderIndex: 4,
     titleVi: 'Nhân tốt & Mối quan hệ',
-    titleEn: 'Nhân tốt & Mối quan hệ',
+    titleEn: 'Good Cause & Relationships',
     titleJp: 'Nhân tốt & Mối quan hệ',
     descriptionVi: 'Nhận dạng, thu hút và trở thành người tốt.',
-    descriptionEn: 'Nhận dạng, thu hút và trở thành người tốt.',
+    descriptionEn: 'Identify, attract, and become a good person.',
     descriptionJp: 'Nhận dạng, thu hút và trở thành người tốt.',
   },
   {
     id: 'ch5',
     orderIndex: 5,
     titleVi: 'Lộ trình & Công thức',
-    titleEn: 'Lộ trình & Công thức',
+    titleEn: 'Roadmap & Formulas',
     titleJp: 'Lộ trình & Công thức',
     descriptionVi: 'Những công thức chuyển hoá cuộc sống.',
-    descriptionEn: 'Những công thức chuyển hoá cuộc sống.',
+    descriptionEn: 'Formulas for life transformation.',
     descriptionJp: 'Những công thức chuyển hoá cuộc sống.',
   },
   {
     id: 'ch6',
     orderIndex: 6,
     titleVi: 'Chuyên gia Tư vấn Nội tâm',
-    titleEn: 'Chuyên gia Tư vấn Nội tâm',
+    titleEn: 'Inner Consultation Experts',
     titleJp: 'Chuyên gia Tư vấn Nội tâm',
     descriptionVi: 'Đào tạo bậc chuyên gia huấn luyện nội tâm.',
-    descriptionEn: 'Đào tạo bậc chuyên gia huấn luyện nội tâm.',
+    descriptionEn: 'Training at the level of inner coaching experts.',
     descriptionJp: 'Đào tạo bậc chuyên gia huấn luyện nội tâm.',
   },
   {
     id: 'ch7',
     orderIndex: 7,
     titleVi: 'Đồ hình & Quy luật Nhân sinh',
-    titleEn: 'Đồ hình & Quy luật Nhân sinh',
+    titleEn: 'Diagrams & Laws of Human Life',
     titleJp: 'Đồ hình & Quy luật Nhân sinh',
     descriptionVi: 'Các quy luật vận hành của vũ trụ nhân sinh.',
-    descriptionEn: 'Các quy luật vận hành của vũ trụ nhân sinh.',
+    descriptionEn: 'The operating laws of the human universe.',
     descriptionJp: 'Các quy luật vận hành của vũ trụ nhân sinh.',
   },
   {
     id: 'ch8',
     orderIndex: 8,
     titleVi: 'Lãnh đạo & Di sản',
-    titleEn: 'Lãnh đạo & Di sản',
+    titleEn: 'Leadership & Legacy',
     titleJp: 'Lãnh đạo & Di sản',
     descriptionVi: 'Từ chìa khoá nội tâm đến di sản trường tồn.',
-    descriptionEn: 'Từ chìa khoá nội tâm đến di sản trường tồn.',
+    descriptionEn: 'From inner keys to eternal legacy.',
     descriptionJp: 'Từ chìa khoá nội tâm đến di sản trường tồn.',
   },
   {
     id: 'ch9',
     orderIndex: 9,
     titleVi: 'Giáo dục Tận gốc',
-    titleEn: 'Giáo dục Tận gốc',
+    titleEn: 'Education at the Root',
     titleJp: 'Giáo dục Tận gốc',
     descriptionVi: 'Sự nghiệp giáo dục triết lý cho nhân sinh.',
-    descriptionEn: 'Sự nghiệp giáo dục triết lý cho nhân sinh.',
+    descriptionEn: 'The educational career of philosophy for human life.',
     descriptionJp: 'Sự nghiệp giáo dục triết lý cho nhân sinh.',
   },
 ];
@@ -224,11 +233,11 @@ export const SEED_LESSONS: Lesson[] = [
     lessonNo: 3,
     chapterId: 'ch1',
     titleVi: 'Nguyên lý Kích hoạt não',
-    titleEn: 'Nguyên lý Kích hoạt não',
+    titleEn: 'The Brain Activation Principle',
     titleJp: 'Nguyên lý Kích hoạt não',
     summaryVi: '', summaryEn: '', summaryJp: '',
     contentVi: lessonNLKHNVi,
-    contentEn: 'The full content for this lesson is currently available in Vietnamese. The English translation will be updated by the WiT editorial team.',
+    contentEn: lessonNLKHNEn,
     contentJp: 'このレッスンの全内容は現在ベトナム語でご利用いただけます。日本語翻訳はWiT編集チームにより更新されます。',
     status: 'published',
     createdAt: new Date(), updatedAt: new Date(),
@@ -238,11 +247,11 @@ export const SEED_LESSONS: Lesson[] = [
     lessonNo: 4,
     chapterId: 'ch1',
     titleVi: 'Nguyên lý Nghi vấn thuận chiều mong muốn',
-    titleEn: 'Nguyên lý Nghi vấn thuận chiều mong muốn',
+    titleEn: 'The Principle of Inquiry in Line with Desires',
     titleJp: 'Nguyên lý Nghi vấn thuận chiều mong muốn',
     summaryVi: '', summaryEn: '', summaryJp: '',
     contentVi: lessonNLNVVi,
-    contentEn: 'The full content for this lesson is currently available in Vietnamese. The English translation will be updated by the WiT editorial team.',
+    contentEn: lessonNLNVEn,
     contentJp: 'このレッスンの全内容は現在ベトナム語でご利用いただけます。日本語翻訳はWiT編集チームにより更新されます。',
     status: 'published',
     createdAt: new Date(), updatedAt: new Date(),
@@ -252,11 +261,11 @@ export const SEED_LESSONS: Lesson[] = [
     lessonNo: 5,
     chapterId: 'ch1',
     titleVi: 'Nguyên lý Vòng tri thức',
-    titleEn: 'Nguyên lý Vòng tri thức',
+    titleEn: 'The Circle of Knowledge Principle',
     titleJp: 'Nguyên lý Vòng tri thức',
     summaryVi: '', summaryEn: '', summaryJp: '',
     contentVi: lessonVongTriThucVi,
-    contentEn: 'The full content for this lesson is currently available in Vietnamese. The English translation will be updated by the WiT editorial team.',
+    contentEn: lessonVongTriThucEn,
     contentJp: 'このレッスンの全内容は現在ベトナム語でご利用いただけます。日本語翻訳はWiT編集チームにより更新されます。',
     status: 'published',
     createdAt: new Date(), updatedAt: new Date(),
@@ -266,11 +275,11 @@ export const SEED_LESSONS: Lesson[] = [
     lessonNo: 6,
     chapterId: 'ch1',
     titleVi: 'Công thức cội nguồn cuộc sống',
-    titleEn: 'Công thức cội nguồn cuộc sống',
+    titleEn: 'The Formula for the Root Cause of Life',
     titleJp: 'Công thức cội nguồn cuộc sống',
     summaryVi: '', summaryEn: '', summaryJp: '',
     contentVi: lessonCoiNguonVi,
-    contentEn: 'The full content for this lesson is currently available in Vietnamese. The English translation will be updated by the WiT editorial team.',
+    contentEn: lessonCoiNguonEn,
     contentJp: 'このレッスンの全内容は現在ベトナム語でご利用いただけます。日本語翻訳はWiT編集チームにより更新されます。',
     status: 'published',
     createdAt: new Date(), updatedAt: new Date(),
@@ -280,11 +289,11 @@ export const SEED_LESSONS: Lesson[] = [
     lessonNo: 7,
     chapterId: 'ch2',
     titleVi: 'Cấu trúc con người - Chân thật',
-    titleEn: 'Cấu trúc con người - Chân thật',
+    titleEn: 'Human Structure - Truth',
     titleJp: 'Cấu trúc con người - Chân thật',
-    summaryVi: '', summaryEn: '', summaryJp: '',
+    summaryVi: '', summaryEn: 'Borrowing the religious perspective to decode the deepest truth within human beings.', summaryJp: '',
     contentVi: lessonChanThatVi,
-    contentEn: 'The full content for this lesson is currently available in Vietnamese. The English translation will be updated by the WiT editorial team.',
+    contentEn: lessonChanThatEn,
     contentJp: 'このレッスンの全内容は現在ベトナム語でご利用いただけます。日本語翻訳はWiT編集チームにより更新されます。',
     status: 'published',
     createdAt: new Date(), updatedAt: new Date(),
@@ -294,11 +303,11 @@ export const SEED_LESSONS: Lesson[] = [
     lessonNo: 8,
     chapterId: 'ch2',
     titleVi: 'Cấu trúc con người - Vẽ, gọi tên',
-    titleEn: 'Cấu trúc con người - Vẽ, gọi tên',
+    titleEn: 'Human Structure - Drawing and Labelling',
     titleJp: 'Cấu trúc con người - Vẽ, gọi tên',
-    summaryVi: '', summaryEn: '', summaryJp: '',
+    summaryVi: '', summaryEn: 'Engraving the four layers (Mind - Nature - Emotion - Body) of human beings in the subconscious through drawing.', summaryJp: '',
     contentVi: lessonVeGoiTenVi,
-    contentEn: 'The full content for this lesson is currently available in Vietnamese. The English translation will be updated by the WiT editorial team.',
+    contentEn: lessonVeGoiTenEn,
     contentJp: 'このレッスンの全内容は現在ベトナム語でご利用いただけます。日本語翻訳はWiT編集チームにより更新されます。',
     status: 'published',
     createdAt: new Date(), updatedAt: new Date(),
@@ -308,11 +317,11 @@ export const SEED_LESSONS: Lesson[] = [
     lessonNo: 9,
     chapterId: 'ch2',
     titleVi: 'Cấu trúc con người - Tánh không',
-    titleEn: 'Cấu trúc con người - Tánh không',
+    titleEn: 'Human Structure - Emptiness of Nature',
     titleJp: 'Cấu trúc con người - Tánh không',
-    summaryVi: '', summaryEn: '', summaryJp: '',
+    summaryVi: '', summaryEn: 'Reaching inner peace and standing above all adversities through the state of Emptiness of Nature.', summaryJp: '',
     contentVi: lessonTanhKhongCtVi,
-    contentEn: 'The full content for this lesson is currently available in Vietnamese. The English translation will be updated by the WiT editorial team.',
+    contentEn: lessonTanhKhongCtEn,
     contentJp: 'このレッスンの全内容は現在ベトナム語でご利用いただけます。日本語翻訳はWiT編集チームにより更新されます。',
     status: 'published',
     createdAt: new Date(), updatedAt: new Date(),
@@ -322,11 +331,11 @@ export const SEED_LESSONS: Lesson[] = [
     lessonNo: 10,
     chapterId: 'ch2',
     titleVi: 'Cấu trúc con người - Tánh người',
-    titleEn: 'Cấu trúc con người - Tánh người',
+    titleEn: 'Human Structure - 16 Human Natures',
     titleJp: 'Cấu trúc con người - Tánh người',
-    summaryVi: '', summaryEn: '', summaryJp: '',
+    summaryVi: '', summaryEn: 'Comprehending the engine of Want and Imagination and the polar electromagnetic amplitude of character.', summaryJp: '',
     contentVi: lessonTanhNguoiVi,
-    contentEn: 'The full content for this lesson is currently available in Vietnamese. The English translation will be updated by the WiT editorial team.',
+    contentEn: lessonTanhNguoiEn,
     contentJp: 'このレッスンの全内容は現在ベトナム語でご利用いただけます。日本語翻訳はWiT編集チームにより更新されます。',
     status: 'published',
     createdAt: new Date(), updatedAt: new Date(),
@@ -336,12 +345,12 @@ export const SEED_LESSONS: Lesson[] = [
     lessonNo: 11,
     chapterId: 'ch2',
     titleVi: 'Cấu trúc con người - 3 khối đức',
-    titleEn: 'Cấu trúc con người - 3 khối đức',
+    titleEn: 'Human Structure - 3 Blocks of Merit',
     titleJp: 'Cấu trúc con người - 3 khối đức',
-    summaryVi: '', summaryEn: '', summaryJp: '',
+    summaryVi: '', summaryEn: 'Managing cause and effect, protecting good merit, and viewing humans as merit-accumulating machines.', summaryJp: '',
     contentVi: lesson3KhoiDucVi,
-    contentEn: 'The full content for this lesson is currently available in Vietnamese. The English translation will be updated by the WiT editorial team.',
-    contentJp: 'このレッスンの全内容は現在ベトナム語でご利用いただけます。日本語翻訳はWiT編集チームにより更新されます。',
+    contentEn: lesson3KhoiDucEn,
+    contentJp: 'このレッスンの全内容は現在ベトナム語でご利用いただけます。日本語翻訳 là WiT編集チームにより更新されます。',
     status: 'published',
     createdAt: new Date(), updatedAt: new Date(),
   },
@@ -350,11 +359,11 @@ export const SEED_LESSONS: Lesson[] = [
     lessonNo: 12,
     chapterId: 'ch2',
     titleVi: 'Cấu trúc con người - Tổng nghiệp - Nguyên lý vận hành của tiềm thức',
-    titleEn: 'Cấu trúc con người - Tổng nghiệp - Nguyên lý vận hành của tiềm thức',
+    titleEn: 'Human Structure - Total Karma & Operating Principle of the Subconscious',
     titleJp: 'Cấu trúc con người - Tổng nghiệp - Nguyên lý vận hành của tiềm thức',
-    summaryVi: '', summaryEn: '', summaryJp: '',
+    summaryVi: '', summaryEn: 'Accessing untaught knowledge and budding desirable fruits by managing your inner vibration state.', summaryJp: '',
     contentVi: lessonCTCNTNTPVi,
-    contentEn: 'This is illustrative content for the lesson “Cấu trúc con người - Tổng nghiệp - Nguyên lý vận hành của tiềm thức”. The full content of this lesson will be updated by the WiT editorial team.',
+    contentEn: lessonCTCNTNTPEn,
     contentJp: 'これはレッスン「Cấu trúc con người - Tổng nghiệp - Nguyên lý vận hành của tiềm thức」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
     status: 'published',
     createdAt: new Date(), updatedAt: new Date(),
