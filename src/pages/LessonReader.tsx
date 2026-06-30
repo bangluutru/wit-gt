@@ -22,6 +22,7 @@ import {
   Moon,
   Minus,
   Plus,
+  LayoutGrid,
 } from 'lucide-react';
 import { useLessons, type LessonEditableField } from '../hooks/useLessons';
 import { useProgress } from '../hooks/useProgress';
@@ -35,6 +36,7 @@ import { TermHighlighter } from '../components/reader/TermHighlighter';
 import { TermPopover } from '../components/reader/TermPopover';
 import { TermTooltip } from '../components/reader/TermTooltip';
 import { BottomSheet } from '../components/reader/BottomSheet';
+import { LessonNavDrawer } from '../components/reader/LessonNavDrawer';
 import { LoadingState, AdminPreviewBadge } from '../components/ui';
 
 const LANG_LABELS: Record<Language, string> = { vi: 'VI', en: 'EN', jp: 'JP' };
@@ -67,6 +69,7 @@ export default function LessonReader() {
   const [readerStyle, setReaderStyle] = useState<ReaderStyle>('A');
   const [tocHidden, setTocHidden] = useState(false);
   const [panelOpen, setPanelOpen] = useState(false);
+  const [navOpen, setNavOpen] = useState(false);
 
   // Reading shell: table of contents (from headings), scroll progress, active section
   const [toc, setToc] = useState<{ id: string; text: string }[]>([]);
@@ -302,16 +305,24 @@ export default function LessonReader() {
       )}
 
       <div className="max-w-[1180px] mx-auto">
-        {/* Breadcrumb */}
-        <nav className="flex items-center gap-1.5 text-sm text-wit-text-tertiary mb-5 flex-wrap">
-          <Link to="/" className="hover:text-wit-text transition-colors flex items-center gap-1">
-            <Home className="h-3.5 w-3.5" /> Trang chủ
-          </Link>
-          <ChevronRight className="h-3.5 w-3.5 opacity-60" />
-          <Link to="/curriculum" className="hover:text-wit-text transition-colors">Giáo trình</Link>
-          <ChevronRight className="h-3.5 w-3.5 opacity-60" />
-          <span className="text-wit-text font-medium">Học phần {String(lesson.lessonNo).padStart(2, '0')}</span>
-        </nav>
+        {/* Top bar: breadcrumb + lesson navigator */}
+        <div className="flex items-center justify-between gap-3 flex-wrap mb-5">
+          <nav className="flex items-center gap-1.5 text-sm text-wit-text-tertiary flex-wrap min-w-0">
+            <Link to="/" className="hover:text-wit-text transition-colors flex items-center gap-1">
+              <Home className="h-3.5 w-3.5" /> Trang chủ
+            </Link>
+            <ChevronRight className="h-3.5 w-3.5 opacity-60" />
+            <Link to="/curriculum" className="hover:text-wit-text transition-colors">Giáo trình</Link>
+            <ChevronRight className="h-3.5 w-3.5 opacity-60" />
+            <span className="text-wit-text font-medium">Học phần {String(lesson.lessonNo).padStart(2, '0')}</span>
+          </nav>
+          <button
+            onClick={() => setNavOpen(true)}
+            className="shrink-0 inline-flex items-center gap-2 px-3.5 py-2 rounded-button border border-wit-line bg-wit-surface text-sm font-semibold text-wit-text hover:bg-wit-surface-2 transition-colors"
+          >
+            <LayoutGrid className="h-4 w-4" /> 76 học phần
+          </button>
+        </div>
 
         {/* Hero header */}
         <header>
@@ -667,6 +678,18 @@ export default function LessonReader() {
           <TermSheetContent term={selectedTerm} sourceLang={contentLang} targetLang={dictionaryTargetLang} />
         )}
       </BottomSheet>
+
+      {/* Lesson navigator drawer ("76 học phần") */}
+      <LessonNavDrawer
+        isOpen={navOpen}
+        onClose={() => setNavOpen(false)}
+        chapters={chapters}
+        lessons={lessons}
+        currentLessonId={lesson.id}
+        completedLessons={completedLessons}
+        isAdmin={isAdmin}
+        lang={interfaceLang}
+      />
     </div>
   );
 }

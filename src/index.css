@@ -61,8 +61,14 @@
   --animate-fade-in: fade-in 0.3s var(--ease-smooth);
   --animate-slide-up: slide-up 0.3s var(--ease-smooth);
   --animate-slide-in-right: slide-in-right 0.3s var(--ease-smooth);
+  --animate-slide-in-left: slide-in-left 0.28s var(--ease-smooth);
   --animate-scale-in: scale-in 0.2s var(--ease-smooth);
   --animate-flip: flip 0.5s var(--ease-smooth);
+}
+
+@keyframes slide-in-left {
+  from { opacity: 0; transform: translateX(-100%); }
+  to { opacity: 1; transform: translateX(0); }
 }
 
 @keyframes fade-in {
