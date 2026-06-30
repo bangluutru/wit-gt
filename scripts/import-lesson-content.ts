@@ -317,6 +317,66 @@ const LESSON_UPDATES: Array<{ lessonNo: number; titleEn: string; enFile: string 
     titleEn: 'Operating Principle of the Subconscious',
     enFile: 'lesson-nguyen-ly-van-hanh-cua-tiem-thuc.en.md',
   },
+  {
+    lessonNo: 61,
+    titleEn: 'Key (Recognition - Gratitude & Appretell)',
+    enFile: 'lesson-chia-khoa-ghi-nhan-biet-on-quang-ba.en.md',
+  },
+  {
+    lessonNo: 62,
+    titleEn: 'Time Optimization in Human Life',
+    enFile: 'lesson-toi-uu-hoa-thoi-gian-trong-nhan-sinh.en.md',
+  },
+  {
+    lessonNo: 63,
+    titleEn: 'The True Desires of a Human Being',
+    enFile: 'lesson-mong-muon-that-su-cua-mot-con-nguoi.en.md',
+  },
+  {
+    lessonNo: 64,
+    titleEn: 'Success Process of an Extraordinary Leader',
+    enFile: 'lesson-quy-trinh-thanh-cong-cua-nha-lanh-dao-sieu-pham.en.md',
+  },
+  {
+    lessonNo: 65,
+    titleEn: 'Roadmap to Becoming an Omnipotent Leader - Cultural Entrepreneur',
+    enFile: 'lesson-lo-trinh-tro-thanh-nha-lanh-dao-toan-nang-doanh-nhan-van-hoa.en.md',
+  },
+  {
+    lessonNo: 66,
+    titleEn: 'Building an Omnipotent Leadership Environment',
+    enFile: 'lesson-xay-dung-moi-truong-lanh-dao-toan-nang.en.md',
+  },
+  {
+    lessonNo: 67,
+    titleEn: 'Self-Anchoring Cycle',
+    enFile: 'lesson-chu-trinh-dinh-than.en.md',
+  },
+  {
+    lessonNo: 68,
+    titleEn: 'Portrait of WiT Master Mentor',
+    enFile: 'lesson-chan-dung-master-mentor-wit.en.md',
+  },
+  {
+    lessonNo: 69,
+    titleEn: 'Wise Solutions for 11 Challenging Questions',
+    enFile: 'lesson-loi-giai-khon-ngoan-cho-11-cau-hoi-nan-giai.en.md',
+  },
+  {
+    lessonNo: 70,
+    titleEn: 'Three Treasured Methods: Appretell - Coordination - Lead',
+    enFile: 'lesson-tam-dai-phap-bao-quang-ba-phoi-hop-dan-dat.en.md',
+  },
+  {
+    lessonNo: 71,
+    titleEn: 'Code of the Appreteller',
+    enFile: 'lesson-mat-ma-nha-quang-ba.en.md',
+  },
+  {
+    lessonNo: 72,
+    titleEn: 'Legacy for Future Generations',
+    enFile: 'lesson-di-san-cho-the-he-sau.en.md',
+  },
 ];
 
 // ── Firebase init (ADC, with env service-account fallback) ───
