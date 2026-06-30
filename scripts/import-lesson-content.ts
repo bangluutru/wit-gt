@@ -262,6 +262,61 @@ const LESSON_UPDATES: Array<{ lessonNo: number; titleEn: string; enFile: string 
     titleEn: 'Acquisition - Acceleration - People Gathering Method',
     enFile: 'lesson-phuong-phap-thu-dac-gia-toc-tu-chung.en.md',
   },
+  {
+    lessonNo: 49,
+    titleEn: 'Four Diagrams of Human Life 1, 2, 3, 4 and Applications',
+    enFile: 'lesson-bon-do-hinh-nhan-sinh.en.md',
+  },
+  {
+    lessonNo: 50,
+    titleEn: 'Law of Attraction - Influence - Value - Transformation',
+    enFile: 'lesson-quy-luat-thu-hut-anh-huong-gia-tri.en.md',
+  },
+  {
+    lessonNo: 51,
+    titleEn: 'Law of Symbiosis in Human Life',
+    enFile: 'lesson-quy-luat-cong-sinh-trong-nhan-sinh.en.md',
+  },
+  {
+    lessonNo: 52,
+    titleEn: 'Law of Paying the Price',
+    enFile: 'lesson-quy-luat-tra-gia.en.md',
+  },
+  {
+    lessonNo: 53,
+    titleEn: 'Law of Compensation',
+    enFile: 'lesson-quy-luat-bu-dap.en.md',
+  },
+  {
+    lessonNo: 54,
+    titleEn: 'Law of Arising - Staying - Changing - Vanishing',
+    enFile: 'lesson-quy-luat-thanh-tru-hoai-diet.en.md',
+  },
+  {
+    lessonNo: 56,
+    titleEn: 'Law of Cycle - Rhythm Principle',
+    enFile: 'lesson-quy-luat-chu-ky-nguyen-ly-nhip-dieu.en.md',
+  },
+  {
+    lessonNo: 57,
+    titleEn: 'Law of Supply and Demand',
+    enFile: 'lesson-quy-luat-cung-cau.en.md',
+  },
+  {
+    lessonNo: 58,
+    titleEn: 'Law of Consciousness',
+    enFile: 'lesson-quy-luat-tam-thuc.en.md',
+  },
+  {
+    lessonNo: 59,
+    titleEn: 'Grape Bunch Principle - Butterfly Gathering Principle',
+    enFile: 'lesson-nguyen-ly-chum-nho-nguyen-ly-buom-tu.en.md',
+  },
+  {
+    lessonNo: 60,
+    titleEn: 'Operating Principle of the Subconscious',
+    enFile: 'lesson-nguyen-ly-van-hanh-cua-tiem-thuc.en.md',
+  },
 ];
 
 // ── Firebase init (ADC, with env service-account fallback) ───
