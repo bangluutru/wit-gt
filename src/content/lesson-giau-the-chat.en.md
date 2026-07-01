@@ -1,127 +1,83 @@
-# CURRICULUM: UNDERSTANDING INNER BEING – CREATING INNER PEACE
+**CURRICULUM: UNDERSTANDING THE INNER BEING – BUILDING INNER PEACE**
+**TOPIC: WEALTH OF PHYSICAL BODY (SUFFICIENT AWARENESS OF HEALTH AND MOVEMENT)**
 
-## TOPIC: WEALTH OF PHYSICAL BODY (FULL AWARENESS OF HEALTH & MOVEMENT)
+**PART 1: GENERAL INFORMATION**
 
----
+**A. Topic Objectives - Value of the topic**
+Provides a standard frame of reference and correct awareness about Health and the Physical Body. Breaks self-limitation, helping learners no longer be limited by age or illness.
+**Significance for learners:** Shifts consciousness from "fearing illness" and "going to treat illness" to proactively "building health" and lighting the lamp of Wealth of Physical Body.
+**Brought transformation:** Learners thoroughly understand how to smoothly coordinate their inner being (mind), relationships (social), and movement (physical body) to have a body full of vitality, able to meet every intensity of work and contribution.
+**What learners will understand, realize, and apply:** Realize that physical strength originates from "Mental Image" and "Beneficial Source Concepts." Immediately apply methods of movement that follow natural principles (hip rotation while holding the axis, squats, swimming, running) to head toward a "Model's physique, an ironman's health."
 
-## PART 1: GENERAL INFORMATION
+**B. In-depth Content (Refined Version)**
+In the outlook on human life, people usually spend the majority of their lives pursuing finance, but forget that the "Physical Body" is precisely the vehicle carrying us throughout that journey. The majority of humanity is falling into the trap of "handling darkness" — meaning waiting until the body cries out for help through illness before rushing to find doctors and medicine for treatment. We strive to remove darkness from the room of health while forgetting the Principle of Light.
 
-### A. Topic Objectives
+The masters have pointed out, lighting the lamp of
+**Wealth of Physical Body** is not merely a matter of forced exercise. True health is a solid tripod comprising three elements:
+**Mental Health,**
+**Social Health,**
+**Physical Health.**
+If one focuses only on muscles while the inner being is full of resentment and anger, or relationships are broken, then that body also gnaws at itself and becomes ill. Conversely, when the inner being is nourished by the energy source of **Inner Peace, Tolerance, Honoring-Gratitude**, the cells in the body will automatically be healed and regenerated.
 
-- **Value of the topic:** Provides a standard reference system and correct awareness regarding Health and the Physical Body. It breaks self-limitations, helping learners release constraints of age or illness.
-- **Significance for learners:** Shifts consciousness from "fearing illness" and "treating symptoms" to proactively "constructing health" and lighting the lamp of Wealth of Physical Body.
-- **Brought transformation:** Helps learners thoroughly understand how to coordinate their inner state (mental), social relationships (social), and movement (physical) to maintain a body full of energy, supporting intense work and dedication.
-- **Outcomes:** Learners realise that physical strength originates from "mental images" and "beneficial source concepts." They apply natural movement methods (hip rotation holding the axis, squats, swimming, running) to achieve "Model body shape, iron man health."
+The key point of enriching the physical body lies in changing the "Mental Image" at the root. We do not train in order to be free of illness; we train because we already hold the image of **"A model's physique, an ironman's health."** Once the image is clear and the source concept is understood, movement becomes extremely simple. Through foundational disciplines such as swimming, running, squats, or especially **"hip rotation while holding the axis,"** people not only reshape the skeletal frame and circulate blood and energy but also train the 5 core elements of the physical body: **Strength, Endurance, Flexibility, Balance, and Speed.**
 
-### B. In-depth Content
+The journey of Wealth of Physical Body is precisely the journey of bringing a person beyond their threshold, breaking through every physical limit in order to leisurely conquer new heights, ready to contribute and carry great missions for family, organization, and nation.
 
-In human life, people spend most of their time chasing finance, but forget that the "Physical Body" is the vehicle carrying us throughout that journey. Most of humanity falls into the trap of "dealing with darkness"—waiting for the body to cry out in illness before rushing to find doctors and medicine. We strain to remove darkness from the room of health while forgetting the Principle of Light.
+**PART 2: DETAILED CONTENT (CORE CONTENT)**
 
-Sages have pointed out that lighting the lamp of **Wealth of Physical Body** is not merely forced exercise. True health is a stable tripod containing three elements: **Mental Health, Social Health, and Physical Health**.
-If we only focus on muscles while holding resentment in our inner being or having broken relationships, our body will gnaw at itself and fall ill. Conversely, when the inner being is nurtured with the energy of **Inner Peace, Tolerance, and Honouring & Gratitude**, cells in the body automatically heal and regenerate.
+**2.1. Concepts (Concepts)** **Health:** A state of complete comfort in mind, physical body, and society, not merely the condition of having no disease or injury.
+**Wealth of Physical Body:** The individual's possession and comprehensive development of 5 elements: **Strength,**
+**Endurance,**
+**Flexibility,**
+**Balance, and**
+**Speed.**
+**Mental Health:** The capacity to consistently move through the inner state of Inner Peace at the level of Mind, Tolerance at the level of Nature, Honoring-Gratitude at the level of Emotion.
 
-The key to enriching the physical body lies in shifting the root "mental images." We do not train to get rid of illness; we train because we already hold the mental image of **"Model body shape, iron man health."** Once the image is clear and source concepts are understood, movement becomes simple. Through foundational activities like swimming, running, squats, and especially **"hip rotation holding the axis (xoay hông giữ trục),"** we not only realign the bone structure and improve blood circulation but also train the 5 core physical elements: **Strength, Endurance, Flexibility, Balance, and Speed**.
+**2.2. Key Knowledge (Key Knowledge)**
+**Awareness in movement:**
+It is not movement that generates health, but awareness about movement that generates health. When moving with an irritated mental state, the body will generate toxins. When moving with a mental state of inner peace and honoring-gratitude toward the body, cells will absorb energy.
+**The foundational disciplines of the Physical Body:**
+*Hip rotation while holding the axis:* Helps replace tendons and reshape bones, standardize body form, define the skeletal frame, circulate blood and energy, and maintain internal organs. This is a discipline that can be practiced regularly, maintaining the physical state of one's twenties.
+*Squats (standing up and sitting down):* Cultivates strength and endurance in the lower body, the foundation for all movement.
+*Swimming (2km - 10km) & Running (21km - 42km):* Breaks self-limitation, expanding physical capacity and endurance.
+**The secret of Endurance:** Endurance does not come only from muscles, but from the awareness of "not exerting effort" when doing something, using breath instead of force, and finding a "moment of rest" within the movement or conversation itself.
 
-The journey of Wealth of Physical Body is a journey of exceeding limits, breaking physical boundaries to thong dong conquer new heights, ready to dedicate and carry major missions for family, organization, and nation.
+**2.3. Key Awareness (Key Awareness)**
+**Changing the Image - Changing Life in Health:** Stop complaining and talking about illness. You must erase the image of "an old, weak, sickly person" and replace it with the image of "a model's physique, an ironman's health."
+**Eating energy (Inner food):** Physical food only nourishes the Body. The energy source of **Inner Peace, Tolerance, Honoring-Gratitude** is precisely the non-material food that nourishes Life and the Physical Body.
+**The Physical Body is a tool for creating value:** Only with a healthy body does one have enough strength to contribute, carry the load, go and consult/train to help people, and repay society by passing it forward.
 
----
+**2.4. Personal Application (Personal Application)**
+Instead of complaining about shoulder and neck pain or joint stiffness from sitting to work a lot, the individual immediately applies the disciplines of **Hip rotation while holding the axis** and **Squats** every day. With a mental state of inner peace, the body automatically adjusts its skeletal axis, tendons and muscles become toned, body temperature balances, and blood and energy circulate. Applying the awareness of "finding a moment of rest while moving/speaking" helps oneself work, teach, or share knowledge continuously from morning to night without becoming exhausted.
 
-## PART 2: DETAILED CONTENT (CORE CONTENT)
+**2.5. Social Impact (Social Impact)**
+**Government Project 641:** Awareness of the physical body is not just for the individual but is a mission to raise the stature and physical strength of the Vietnamese people. Becoming "Physical Body Masters" carrying the knowledge of swimming, running, and movement to spread to every district and school. Creating a community and organization where everyone is an "Athlete," breaking through every barrier to complete an Ironman or Pickleball competition, spreading the inspiration of healthy living to the whole of society.
 
-### 2.1. Concepts
+**PART 3: LESSON - IMPRESSION - REALISATION**
+*(Learners use this space to record for themselves the inner transformations, new lessons, impressions that can be applied, and realizations that resolve their own concerns after studying this topic).*
 
-- **Health (Sức khỏe):** A state of complete physical, mental, and social well-being, and not merely the absence of disease or infirmity.
-- **Wealth of Physical Body (Giàu Thể chất):** Proactively possessing and developing the 5 elements: **Strength, Endurance, Flexibility, Balance, and Speed**.
-- **Mental Health (Sức khỏe Tinh thần):** The capacity to consistently shift the inner states of Inner Peace at Mind, Tolerance at Nature, and Honouring & Gratitude at Emotion.
+**PART 4: WEEKLY DISCUSSION**
 
-### 2.2. Core Knowledge
+*Stay close to the 4 aspects: Inner Being, Health, Relationships, Finance.* **(Health & Awareness)** Present the comprehensive definition of Health (Mental, Physical, Social) and analyze why focusing only on muscles while ignoring the inner being does not bring true health?
+**(Physical Body & Expertise)** What are the 5 core elements to evaluate a person as meeting the standard of "Wealth of Physical Body"? Analyze the importance of each element.
+**(Inner Being & Health)** Why is the energy source of Inner Peace, Tolerance, and Honoring-Gratitude regarded as a premium "food" for healing and nourishing the cells of the body?
+**(Relationships & Health)** What role does sincere interaction, connection, and consensus with the people around you play in building "Social Health"?
+**(Inner Being & Health)** Analyze the power of the "Changing the Image - Changing Life" Principle. What mental images will you cultivate and clarify to achieve "a model's physique, an ironman's health"?
+**(Finance & Physical Body)** Argue why the lamp of the Physical Body is the most solid foundation for a person to be able to leisurely hold on to their value-creation tool and master their Finances?
+**(Movement & Action)** Analyze the outstanding benefits of the foundational discipline "Hip rotation while holding the axis" for the skeletal and joint system, blood and energy, and the maintenance of the body's internal organs.
+**(Inner Being & Action)** What is the secret of "Endurance" while speaking or working at high intensity? How can one find a "moment of rest" during movement so as not to become exhausted?
+**(Relationships & Family)** How can parents use "Living Example (Thân giáo)" in physical training to inspire and orient comprehensive health for their children?
+**(Society & Spreading)** Evaluate the importance of embedding the knowledge of "Wealth of Physical Body" into the community. How does spreading movements such as swimming 2km, running 21km, and doing 10,000 squats contribute to the Project for raising the stature of the Vietnamese people?
 
-- **Consciousness in Movement:** Movement itself does not generate health; awareness of movement generates health. When moving with a frustrated mental state, the body produces toxins. When moving with inner peace and gratitude for the body, cells absorb energy.
-- **Foundational Physical Activities:**
-  - *Hip Rotation Holding the Axis (Xoay hông giữ trục):* Standardizes body form, realigns bone structure, improves blood circulation, and maintains internal organs. This is a regular training method to maintain the physical state of youth.
-  - *Squats:* Cultivates strength and endurance of the lower body, the foundation for all movement.
-  - *Swimming (2km - 10km) & Running (21km - 42km):* Breaks self-limits, expanding physical capacity and endurance.
-- **The Secret of Endurance:** Endurance does not come merely from muscles; it comes from the awareness of "not using force," using breath instead of raw force, and finding "micro-rests" during movement or speaking.
+**PART 5: WRITING ASSIGNMENT**
 
-### 2.3. Key Awareness
+*(Choose 1 of 3 topics. Length: 1,000 – 3,000 words).*
 
-- **Shift Images - Shift Life in Health:** Stop complaining and talking about illness. Erase the image of "weakness and sickness" and replace it with "Model body shape, iron man health."
-- **Nourishing Energy (Inner Food):** Physical food only feeds the body. The energy of **Inner Peace, Tolerance, and Honouring & Gratitude** is the non-material food that nourishes Life and the Physical Body.
-- **Physical Body is a Tool for Value Creation:** A healthy body is required to dedicate, carry responsibilities, coach others, and pay forward to society.
+**TOPIC 1: "The shift in consciousness: From surface-level 'illness treatment' to comprehensive 'health building' from the root"** *Reflection prompt:* In the past, how much time and money have you spent merely chasing the "Effect" (treating symptoms of illness) while forgetting to plant the "Cause" (a good mental image, a balanced inner state)? Apply the Principle of Light and the Triangle of Health (Mental - Social - Physical) to sketch out a roadmap to rebuild abundant vitality for yourself.
+**TOPIC 2: "Changing the Image - Changing Life: Breaking through physical limits with the power of Mental Images and Beneficial Source Concepts."** *Reflection prompt:* Most people limit themselves with thoughts such as "I'm old already, I'm too weak, I can't do it." Through understanding how the subconscious operates, analyze how you can erase that prejudice to install the image of "a model's physique, an ironman's health." Share the reality of when you applied the energy of Inner Peace and Honoring-Gratitude to your training process (hip rotation, squats, running, swimming) and the wondrous results your body achieved.
 
-### 2.4. Personal Application
+**TOPIC 3: "Physical Health: The solid tripod to hold on to your value-creation tool and build an everlasting career."** *Reflection prompt:* There is a saying, "A person with health has a thousand dreams; a person without health has only one dream — health." From the perspective of cause, condition, and effect, argue why "Wealth of Physical Body" is the prerequisite condition for you to contribute, carry the load, serve the community, and attract "good connections" (finance, opportunities). What value do you intend to use your physical body to spread to society in the future?
 
-Instead of complaining about shoulder pain or bone stiffness from desk work, I apply **hip rotation holding the axis** and **squats** daily. With inner peace, the body adjusts its alignment, muscles tone up, and blood circulates smoothly. Applying the awareness of "finding micro-rests while moving or speaking" allows me to work, teach, or share knowledge continuously without feeling exhausted.
+**PART 6: CALL TO ACTION**
 
-### 2.5. Social Impact
-
-- **Government Project 641:** Raising physical stature is a mission to lift the physical stature of the nation. Becoming "Physical Mentors" spreads swimming, running, and physical movements to schools and communities.
-- **Healthy Communities:** Creating organizations where everyone is an "Athlete," breaking barriers to complete Ironman or Pickleball, inspiring healthy living across society.
-
----
-
-## PART 3: WEEKLY DISCUSSION
-
-1. Present the comprehensive definition of Health (Mental, Physical, Social) and analyze why focusing only on muscles while ignoring the inner state fails to bring true health.
-2. What are the 5 core elements of the Wealth of Physical Body? Analyze the importance of each.
-3. Why is the energy of Inner Peace, Tolerance, and Honouring & Gratitude considered "premium food" to heal and nourish cells?
-4. How do parents use "Model Living (Thân giáo)" in physical training to inspire and direct their children's health?
-
----
-
-## PART 4: MULTIPLE-CHOICE QUESTIONS
-
-**Question 1:** Under the inner being reference system, how is "Health" defined?
-- A. The absence of disease or infirmity.
-- B. A state of complete physical, mental, and social well-being.
-- C. Having muscular strength and running fast.
-- D. Eating organic food daily.
-
-> Correct Answer: **B**
-
-**Question 2:** What are the 5 elements that form the Wealth of Physical Body?
-- A. Health, Strength, Flexibility, Endurance, Speed.
-- B. Strength, Endurance, Flexibility, Balance, and Speed.
-- C. Height, Weight, Muscle mass, Heart rate, Blood pressure.
-- D. Bone alignment, Breathing, Sleep, Diet, Rest.
-
-> Correct Answer: **B**
-
-**Question 3:** What represents the Mental Health corner?
-- A. Having no stress.
-- B. Consistent presence of Inner Peace at Mind, Tolerance at Nature, Honouring & Gratitude at Emotion.
-- C. Thinking positively in all situations.
-- D. Sleeping 8 hours a day.
-
-> Correct Answer: **B**
-
-**Question 4:** What is the secret of physical endurance in high-intensity activities?
-- A. Pushing through pain with willpower.
-- B. Using raw force in muscles.
-- C. Finding "micro-rests" and using breath instead of force.
-- D. Drinking energy supplements.
-
-> Correct Answer: **C**
-
-**Question 5:** What is the foundational activity to realign bone structure and improve blood circulation?
-- A. Running marathon.
-- B. Hip rotation holding the axis (Xoay hông giữ trục).
-- C. High-intensity interval training.
-- D. Heavy weightlifting.
-
-> Correct Answer: **B**
-
----
-
-## PART 5: WRITING ASSIGNMENT
-
-**Choose one topic to write an essay (1,000 - 3,000 words):**
-- "Shifting consciousness: From superficial symptom treating to holistic health construction."
-- "Shift Images - Shift Life: Breaking physical limits using the mental image of Model Body Shape, Iron Man Health."
-- "The physical body as the vehicle: How physical health protects your capacity to carry out a lifetime mission."
-
----
-
-## PART 6: LESSON - IMPRESSION - REALISATION OF LEARNERS
-
-*(Leave empty for learners to record their reflections).*
+**The health you have today is precisely the merit crystallized from choices made in the past!** Do not wait for the darkness of illness to appear before frantically searching for light. Starting today, clearly establish the image of **"a model's physique, an ironman's health"** in your mind. Begin acting every day by practicing *Hip rotation while holding the axis* and *Squats* with the energy source of Inner Peace and Honoring-Gratitude for your own body. A healthy body, a peaceful mind, a bright intellect — that is precisely the all-purpose key for you to conquer every peak of human life!

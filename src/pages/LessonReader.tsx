@@ -121,7 +121,7 @@ export default function LessonReader() {
   const sections = useMemo(() => {
     if (parsed.sections.length > 0) return parsed.sections;
     if (!content.trim()) return [];
-    const lines = content.split(/\r?\n/).filter((l) => !/^#\s+/.test(l) && !/CHUYÊN ĐỀ/i.test(l));
+    const lines = content.split(/\r?\n/).filter((l) => !/^#\s+/.test(l) && !/CHUYÊN ĐỀ|^#*\s*TOPIC\s*:/i.test(l));
     return [{ num: '1', rawLabel: 'Nội dung', type: 'other' as const, blocks: parseBlocks(lines), quiz: [] }];
   }, [parsed, content]);
 
@@ -472,7 +472,7 @@ export default function LessonReader() {
                   {img ? (
                     <div className="text-center"><img src={img} alt={title} className="max-w-full h-auto inline-block rounded-card border border-wit-line" /></div>
                   ) : isStruct ? (
-                    <StructureDiagram />
+                    <StructureDiagram lang={contentLang} />
                   ) : (
                     isAdmin && (
                       <div className="text-center py-7 px-4 rounded-card border border-dashed border-wit-line text-wit-text-tertiary">

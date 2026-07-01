@@ -1,125 +1,131 @@
-# CURRICULUM: UNDERSTANDING INNER BEING – CREATING INNER PEACE
+**CURRICULUM: ELEVATING INNER CONSCIOUSNESS AWARENESS**
+**TOPIC: GOOD CAUSE IN HUMAN LIFE**
 
-## TOPIC: GOOD CAUSE IN HUMAN LIFE
+**PART 1: GENERAL INFORMATION (GENERAL INFORMATION)**
+**A. Topic Objectives**
+**Value of the topic:** Provides the most precise and comprehensive definition of "Good Cause" deep within a human being, based on 3 Standard Frames of Reference. The topic is a map that helps learners know exactly which seeds they need to sow in order to build an outstanding destiny.
+**Significance for learners:** Helps learners stop chasing after or resenting the outcomes (Effects) that have already ripened in the present, so as to return to the root and personally cultivate the garden of their own subconscious.
+**Brought transformation:** A powerful shift in awareness from "sentient beings arguing about the effect" to "Bodhisattvas arguing about the cause." Learners thoroughly grasp the philosophy: Simply by focusing all one's strength on the Good Cause, life will automatically turn around.
+**Output result:** Learners possess the ability to build their own Good Cause by diligently clarifying a beautiful mental image, accumulating a block of Merits - Virtues, developing a beneficial source concept, and upgrading the Good Cause through the 7 kinds of comprehensive wealth.
+**B. In-depth content: Good Cause in human life**
+The human-life journey, from ancient times to today, has always been laden with countless worries, impasses, and exhausting efforts in the pursuit of happiness. Humanity's greatest tragedy is that we frequently fall into the trap of "Sentient beings arguing about the effect." That is, people constantly chase after desired outcomes, worry about the future, or drown in resentment over the bitter fruits that have already ripened in the present, forgetting that every outcome was already determined by a seed of cause in the past. Faced with this harsh truth, the great masters have pointed to an awakening philosophy of enormous significance: "Bodhisattvas argue about the cause." The truly wise never panic or despair in the face of an outcome, but instead pour their entire vital energy, diligence, and mind into planting and protecting the cause. To rise above every problem that arises and officially take hold of the sceptre of mastery over our own destiny, we must thoroughly grasp and smoothly operate the supreme law of the universe: Good Cause plus Good Affinity will surely ripen into a Desired Effect. Among these, building a "Good Cause" is precisely the essential foundation, the first step of life-or-death importance that determines the entire picture of a person's future.
+So, what exactly is the "Good Cause" hidden deep within a person's destiny? The path of elevating inner awareness does not offer vague speculation or empty theory, but uses the lens of Three Standard Frames of Reference (Science, Religion - Faith, Moral Principle) to dissect and shape a complete, most perfect seed of Good Cause.
+First, viewed through the lens of Moral Principle via the Triangle of Reality, a person's Good Cause is precisely the possession of, and the constant cultivation of, beneficial Source Concepts. Our outer material world (wealth, health, harmony in marriage) is in essence merely the manifestation of information hidden deep within the mind. Whenever any aspect of life encounters trouble, the root cause is that inside us we are holding a distorted, unfavorable system of source concepts, full of erroneous prejudices. A person cannot obtain a sufficiently full financial outcome if their mind is full of resentment toward money or aversion to wealth. Therefore, the first step in sowing a Good Cause is to proactively go and absorb, diligently clarify, and reinforce beneficial source concepts along with a standard frame of reference. When the information within changes, awareness changes, energy will automatically circulate, and outer material things will inevitably converge.
+Second, if there is only theory and concept, can the seed have enough strength to rise up in harsh reality? The lens of Religion - Faith, via the Structure of a Human Being, adds a further foundation of invisible strength: the Good Cause must necessarily be nourished and protected by the Block of Merits - Virtues. Human life is not arranged by fate but is governed by Karmic Destiny, and the key that determines whether a desired or undesired seed is called forth from the storehouse of Total Karma is precisely the state of the inner electromagnetic vibration. A person may have a very good system of source concepts, but if they lack blessings, carrying within them a heavy block of evil deeds from causing others suffering, then their inner electromagnetic vibration frequency will always be in a Negative state. In that case, no matter how hard they try, the undesired effect will still ripen. Therefore, sowing a Good Cause means constantly operating the machine of accumulating blessings through the 7 important forms of giving in life, bringing joy, hope, belief, and wisdom to humanity. More important still is knowing how to protect that fragile block of blessings with an attitude that flexibly circulates between Peace and Joy, Tolerance, and Appreciation-gratitude. Blessings are precisely the fertile soil, the cool, fresh water that allows the seed of concept to grow into a towering tree.
+Third, viewed through the lens of Science via the Formula for the Root of Life, the final piece to complete the Good Cause is precisely building and maintaining a beautiful Mental Image. The deep root that shapes all of a person's beliefs and choices originates from the seeds of image cultivated through Hearing - Seeing - Speaking - Knowing from time immemorial to the present. The paradox is, people frequently hold dark, broken images about the future yet still hope for a fulfilling outcome. According to the principle "Changing the Image is Changing your Life," sowing a Good Cause requires us to have the ability to tightly control what we Hear and See, and to proactively change what we Say and Know in the direction of light. When your mind has fixed a beautiful, clear image full of light about success or a harmonious family, that image becomes a great steering wheel, guiding the entire system of belief, thought, and action to arrive at exactly the destination you have set.
+The marvel and unrivalled power of the path of understanding the inner being lies in the fact that it does not require a person to fix themselves piecemeal, but integrates all three frames of reference into one unified symphony. A person who truly possesses a "Good Cause" as solid as bedrock is one who simultaneously builds three legs of a tripod: possessing a system of beneficial Source Concepts, accumulating a deep block of Merits - Virtues, and holding firm to a beautiful Mental Image of the future. Lacking any one of these three factors, the Good Cause becomes deficient and is very easily broken by the storms of circumstance.
+Besides this, the Master has established a groundbreaking and ultimately liberating awareness: "The root of life originates from myself." This awareness does not exist so that we torment or blame ourselves for past mistakes. The past has already ripened its effect, but the present is precisely the seed for the future. When we courageously accept the root as coming from ourselves, we officially strip circumstance of its power, decisively break the habit of blaming other people, and reclaim the supreme power to personally re-cultivate the garden of our own subconscious right in this present moment.
+Conclusion: Building a "Good Cause" is not a one-off, surface-level task, but a great revolution in awareness and a persistent journey of cultivation. For that seed to grow toward permanence, we must continue to deepen it along the path of lighting 7 lamps of Comprehensive Wealth (Wisdom, Mental State, Character, Quality, Capability, Physical Body, Material Wealth). When a person has equipped themselves with a full "Good Cause," they no longer need to worry, panic, or force an outcome. Because, in accordance with the eternal law of the universe, once the Cause is sufficiently full and good, attracting Good Affinity and blossoming into a Desired Effect becomes merely self-evident, a natural and inevitable matter of course. That is precisely ease, freedom, and the true realm of liberation of a life that has thoroughly realized human life.
 
----
+**PART 2: DETAILED CONTENT (CORE CONTENT)**
+**2.1. Concepts**
+**The Law of Cause and Effect in Human Life:** Operates according to the supreme formula: **Good Cause + Good Affinity = Desired Effect**. *(Note: The factors of Good Affinity and Desired Effect will be explored in depth and clarified in the topics: Good Affinity in Human Life and Desired Effect in Human Life.)*
+**Good Cause:** The deep root factors within the inner being that determine all of a person's external outcomes. Good Cause includes: a Beautiful Mental Image, the Block of Merits - Virtues, and a Beneficial Source Concept.
+**Sentient beings argue about the effect, Bodhisattvas argue about the cause:** A saying that expresses the difference in thinking. Ordinary people (sentient beings) usually focus on, worry about, or chase after the outcome (the effect). People of wisdom (Bodhisattvas) focus all their strength on planting and protecting the cause.
+**2.2. Key Knowledge** To have a solid "Good Cause," we need to build simultaneously from 3 perspectives of the 3 Standard Frames of Reference:
+**Building Good Cause from the Scientific perspective (The Formula for the Root of Life):** Good Cause is precisely possessing a **beautiful Mental Image** of the future and of the people around us. To have this cause, a person must proactively control what they Hear - See and change what they Say - Know in the direction of light.
+**Building Good Cause from the Religious/Faith perspective (The Structure of a Human Being):** Good Cause is precisely accumulating and protecting the **Block of Merits - Virtues**. It determines the state of inner electromagnetic vibration in the direction of Balance and Positive-facing, thereby activating the desired seeds within Total Karma.
+**Building Good Cause from the Moral Principle perspective (The Triangle of Reality):** Good Cause is precisely developing and cultivating **beneficial Source Concepts**. Whatever aspect of life (health, finance, marriage), if the inside holds a beneficial system of information, the outside will automatically manifest a good outcome.
+**Deepening Good Cause through the 7 Kinds of Comprehensive Wealth:** Once the 3 core causes above are in place, in order for Good Cause to become as solid as bedrock, a person needs to continue developing the vertical dimension of their destiny: Enriching Wisdom, Mental State, Character, Quality, Capability, Physical Body, and Material Wealth.
+**2.3. Key Awareness**
+**Establishing awareness 1 - Shifting the pursuit:** Do not rush to seek Good Affinity or chase after the Desired Effect when the Good Cause has not yet formed. Effort at the tip (the Effect) is meaningless if the root (the Cause) is rotting.
+**Establishing awareness 2 - The root comes from me:** Every current undesired outcome is due to a Cause in the past. Do not torment yourself over the past; simply focus on rebuilding the Good Cause in the present, and the future will automatically change.
+**Establishing awareness 3 - The completeness of Cause:** Having only a beneficial Source Concept is not enough; one must also have Blessings and a Mental Image. Missing any one of the three factors, the Good Cause will not be complete and will easily be broken by circumstance.
+**2.4. Practical Application**
+**In Health:** A person who wants a healthy "Effect" cannot only focus on treating illness (arguing about the effect). They must sow a "Good Cause" by: cultivating beneficial source concepts about health (Moral Principle), clarifying a mental image of themselves being healthy (Science), and creating blessings by helping others become healthy (Religion).
+**In Finance:** Instead of worrying day and night about earning money (the Effect), return to cultivating "Good Cause": Change distorted source concepts about money, build an image of a dream life, and accumulate merits and virtues by holding fast to a tool for creating value that brings benefit to society.
 
-## PART 1: GENERAL INFORMATION
+**PART 3: WEEKLY DISCUSSION (WEEKLY DISCUSSION)**
+Why is it said "Sentient beings argue about the effect, Bodhisattvas argue about the cause"? Analyze the difference between these two ways of thinking in setting life goals.
+Based on the 3 Standard Frames of Reference, describe in detail what factors make up a complete "Good Cause" for a person.
+If a person only focuses on developing a "beneficial Source Concept" but lacks the "Block of Merits - Virtues," in your view, is that person's Good Cause strong enough to ripen into a Desired Effect? Why?
+Present how to apply the Scientific perspective to cultivate a "beautiful Mental Image" for the area of family relationships.
+What role does lighting the "7 kinds of comprehensive wealth" play in making a person's Good Cause become lasting?
+Analyze the principle: The present cause is the Effect of the past, but it is also precisely the Cause of the future. How does this awareness help us escape torment over the past?
+Among the 4 aspects: Inner Being, Health, Relationships, and Finance, in which aspect do you feel you are lacking "Good Cause" the most? What is your plan for rebuilding it?
+Why is it said that trying to change other people (the Effect) goes against the law of building Good Cause?
+Give a real-life example of "Changing the Image - Changing your Life" when you rebuilt a Good Cause from the Scientific perspective.
+How has the awareness "Good Cause + Good Affinity = Desired Effect" changed your life philosophy and the way you treat others day to day?
 
-### A. Topic Objectives
-
-- **Value of the topic:** Provides the most accurate and comprehensive definition of the "Good Cause" deep inside human beings based on the 3 Standard Reference Systems. This topic serves as a map helping learners know exactly which seeds to plant to construct an outstanding life.
-- **Significance for learners:** Helps learners stop chasing or complaining about current outcomes (Fruits) that have already ripened, returning to the root to cultivate the garden of their own subconscious.
-- **Brought transformation:** Shifts awareness from "Sentient beings concern themselves with outcomes" to "Bodhisattvas focus on causes." Learners realize that by focusing on the Good Cause, their life automatically changes.
-- **Outcomes:** Learners acquire the capacity to construct Good Causes by diligently clarifying positive mental images, accumulating merits and virtues, developing beneficial source concepts, and elevating their Good Causes through the 7 dimensions of holistic wealth.
-
-### B. In-depth Content
-
-Human life from ancient times has contained obstacles, blockages, and exhaustive efforts in chasing happiness. The greatest tragedy is falling into the trap of "Sentient beings concern themselves with outcomes"—chasing outcomes, worrying about the future, or complaining about sour fruits that have already ripened, forgetting that every outcome was determined by a seed in the past.
-
-Sages have pointed out a great awakening: **"Bodhisattvas focus on causes."** True wise people never panic before outcomes, but direct their energy, diligence, and mind into planting and protecting causes. To stand above problems and master destiny, we must understand and operate the ultimate law of the universe: **Good Cause + Good Connection = Desirable Outcome**. In this, constructing the "Good Cause" is the foundation, the first step determining the future.
-
-What is the "Good Cause" inside us? The inner being curriculum uses the lens of the **Three Standard Reference Systems (Moral Ethics, Religion/Belief, Science)** to decode it:
-1. **Moral Ethics lens via the Reality Triangle:** The Good Cause is possessing and accumulating **Beneficial Source Concepts**. Our physical world (wealth, health, marriage harmony) is the manifestation of information deep inside our minds. Problems arise because we carry distorted, adverse source concepts. We cannot possess financial wealth if our mind is full of resentment about money. Thus, the first step is to actively receive, clarify, and reinforce beneficial source concepts under standard reference systems. When information changes, awareness shifts, energy flows, and material wealth gathers.
-2. **Religion/Belief lens via the Human Structure:** The Good Cause must be nurtured and protected by **Merits and Virtues (Công đức - Phước đức)**. Life is governed by karma, and the key to retrieving desirable seeds from the Total Karma warehouse is the electromagnetic vibration state of the inner being. A person with good concepts but lacking phước báu, carrying negative karma from hurting others, holds a negative frequency. They struggle but bad fruits continue to ripen. Thus, gieo Good Causes is operating the engine of accumulating phước báu through the 7 important offerings, bringing joy, hope, belief, and wisdom to others. We protect this phước báu by shifting mental states between Inner Peace, Tolerance, and Honouring & Gratitude. Phước báu is the fertile soil for the concept seeds to grow.
-3. **Science lens via the Formula for the Root Cause of Life:** The final piece is holding **Positive Mental Images**. The roots shaping our belief and choices are images accumulated through Hearing - Seeing - Speaking - Knowing. Under the principle **"Shift Images - Shift Life,"** gieo Good Causes requires controlling what we Hear and See, and shifting what we Speak and Know toward the light. A clear, positive mental image of success or a happy family acts as a rudder guiding our beliefs, thoughts, and actions.
-
-The power of the inner being curriculum lies in integrating all three reference systems. A person possessing a solid "Good Cause" builds a tripod: **Beneficial Source Concepts, deep Merits and Virtues, and Positive Mental Images**. Lacking one, the Good Cause is incomplete.
-
-Furthermore, sages establish: **"The root cause of life originates from myself."** This awareness does not blame us for past errors. The past has ripened, but the present is the seed for the future. By taking responsibility, we remove the power of external conditions, stop blaming, and reclaim the power to cultivate our subconscious.
-
----
-
-## PART 2: DETAILED CONTENT (CORE CONTENT)
-
-### 2.1. Concepts
-
-- **Law of Cause and Effect in Human Life:** Operates under the formula: **Good Cause + Good Connection = Desirable Outcome**.
-- **Good Cause (Nhân Tốt):** The root elements deep inside the inner being that determine all external outcomes. It consists of: **Positive Mental Images, Merits and Virtues, and Beneficial Source Concepts**.
-- **Sentient beings concern themselves with outcomes, Bodhisattvas focus on causes (Chúng sinh luận quả, Bồ tát luận nhân):** Regular people worry about outcomes; wise people focus on planting and protecting causes.
-
-### 2.2. Core Knowledge
-
-To construct a solid "Good Cause," we build it across the 3 Standard Reference Systems:
-- **Science (Formula for the Root Cause of Life):** The Good Cause is possessing **Positive Mental Images** of the future and people. To achieve this, control Hearing - Seeing and shift Speaking - Knowing toward the light.
-- **Religion/Belief (Human Structure):** The Good Cause is accumulating and protecting **Merits and Virtues**. This maintains a balanced, positive inner vibration state, activating desirable seeds in Total Karma.
-- **Moral Ethics (Reality Triangle):** The Good Cause is cultivating **Beneficial Source Concepts**. Holding beneficial information internally manifests as good outcomes externally.
-- **Elevating Good Causes through 7 Dimensions of Holistic Wealth:** To make the Good Cause stable like a rock, cultivate: Wisdom, Mental State, Personality, Qualities, Capacity, Physical Body, and Material Assets.
-
-### 2.3. Key Awareness
-
-- **Shift Focus:** Do not rush to seek Good Connections or Desirable Outcomes when the Good Cause is not formed. Striving at the fruit level is useless if the root is decayed.
-- **Origin is Self:** Current unpleasant outcomes are from past causes. Do not regret the past; focus on constructing Good Causes in the present to change the future.
-- **Wholeness of Cause:** Having only source concepts is not enough; you need phước báu and positive images.
-
-### 2.4. Personal Application
-
-- **In Health:** To have a healthy body (fruit), do not just treat symptoms (outcome). Gieo Good Causes by: learning beneficial health concepts (Moral Ethics), holding images of yourself being healthy (Science), and accumulating phước báu by helping others be healthy (Religion).
-- **In Finance:** Instead of worrying about money, return to Good Causes: shift adverse money concepts, hold images of your dream life, and accumulate merits and virtues through value-creating tools.
-
----
-
-## PART 3: WEEKLY DISCUSSION
-
-1. Why is it said: "Sentient beings concern themselves with outcomes, while Bodhisattvas focus on causes"? How does this shift your life planning?
-2. Based on the 3 Standard Reference Systems, describe the components of a complete "Good Cause."
-3. If a person only has "Beneficial Source Concepts" but lacks "Merits and Virtues," can their Good Cause ripen into desirable outcomes? Why?
-4. How does "Shift Images - Shift Life" apply to family relationships?
-
----
-
-## PART 4: MULTIPLE-CHOICE QUESTIONS
-
-**Question 1:** What is the formula governing life transformation in human relationships?
-- A. Effort + Time = Success.
-- B. Good Cause + Good Connection = Desirable Outcome.
-- C. Knowledge + Connections = Money.
-- D. Desire + Action = Dream.
-
+**PART 4: MULTIPLE-CHOICE QUESTIONS**
+**Question 1:** What is the supreme formula governing the transformation of a person's life in human life?
+A. Effort + Time = Success.
+B. Good Cause + Good Affinity = Desired Effect.
+C. Knowledge + Relationships = Wealth.
+D. Ambition + Action = Dream.
 > Correct Answer: **B**
 
-**Question 2:** What is the core meaning of "Sentient beings concern themselves with outcomes, Bodhisattvas focus on causes"?
-- A. Humans should reject material assets.
-- B. Stop chasing outcomes; focus on cultivating root causes.
-- C. Bodhisattvas only need causes, not outcomes.
-- D. Outcomes are always more important than causes.
-
+**Question 2:** What is the core meaning of the saying "Sentient beings argue about the effect, Bodhisattvas argue about the cause"?
+A. People should abandon all material outcomes.
+B. Stop chasing after the outcome; focus on cultivating the root cause instead.
+C. Bodhisattvas don't need the Effect, only the Cause.
+D. The outcome is always more important than the cause.
 > Correct Answer: **B**
 
-**Question 3:** Under the Reality Triangle (Moral Ethics), what is the Good Cause?
-- A. Positive mental images.
-- B. Merits and Virtues.
-- C. Beneficial source concepts.
-- D. Outstanding capacity.
-
+**Question 3:** According to the Triangle of Reality (the Moral Principle perspective), what is a person's Good Cause?
+A. A beautiful mental image.
+B. The block of Merits - Virtues.
+C. A beneficial source concept.
+D. Outstanding capability.
 > Correct Answer: **C**
 
-**Question 4:** Under the Human Structure (Religion/Belief), what represents the Good Cause?
-- A. Positive mental images.
-- B. Merits and Virtues (balanced, positive electromagnetic state).
-- C. Logical intelligence.
-- D. Beneficial source concepts.
-
+**Question 4:** According to the Structure of a Human Being (the Religious/Faith perspective), what factor represents Good Cause?
+A. A beautiful mental image.
+B. The block of Merits - Virtues (a balanced, positive-facing inner state).
+C. Logical intelligence.
+D. A beneficial source concept.
 > Correct Answer: **B**
 
-**Question 5:** Under the Formula for the Root Cause of Life (Science), what is the root of the Good Cause?
-- A. Destiny.
-- B. Personality.
-- C. Positive mental images.
-- D. Family conditions.
-
+**Question 5:** According to the Formula for the Root of Life (the Scientific perspective), where does Good Cause originate from?
+A. Predetermined fate.
+B. Innate personality.
+C. A beautiful mental image.
+D. Family circumstances.
 > Correct Answer: **C**
 
----
+**Question 6:** What effect does enriching Wisdom, Mental State, Character, Quality, Capability, Physical Body, and Material Wealth have on Good Cause?
+A. It makes the Good Cause deeper and as solid as bedrock.
+B. It completely replaces the 3 Standard Frames of Reference.
+C. It only helps enrich outward material things.
+D. It has no relation to Good Cause.
+> Correct Answer: **A**
 
-## PART 5: WRITING ASSIGNMENT
+**Question 7:** A person continuously takes business courses but keeps failing because they always resent their business partners. According to the 3 Frames of Reference, which perspective is this person's Good Cause lacking?
+A. The Moral Principle perspective (lacking concepts).
+B. The Scientific perspective (lacking method).
+C. The Religious/Faith perspective (lacking Merits - Virtues, negative electromagnetic energy).
+D. Lacking nothing, just not yet lucky.
+> Correct Answer: **C**
 
-**Choose one topic to write an essay (1,000 - 3,000 words):**
-- "From Sentient Beings to Bodhisattvas: Shifting focus from outcomes to causes to construct life."
-- "The tripod of Good Cause: Synchronizing source concepts, phước báu, and mental images."
+**Question 8:** To build Good Cause regarding the Mental Image (Science), what must a person practice every day?
+A. Fanciful thinking about the future.
+B. Controlling Hearing - Seeing, changing Speaking - Knowing in the direction of light.
+C. Reading a great deal of negative news to guard against it.
+D. Completely rejecting the past.
+> Correct Answer: **B**
 
----
+**Question 9:** How does the awareness "The root of life originates from myself" help a person in sowing a Cause?
+A. Blame oneself and fall into depression.
+B. Decisively stop resenting others and reclaim proactive mastery over building the Good Cause.
+C. Not care about anything or anyone.
+D. Refuse all help (Good Affinity).
+> Correct Answer: **B**
 
-## PART 6: LESSON - IMPRESSION - REALISATION OF LEARNERS
+**Question 10:** Once one already possesses "Good Cause," what is the next factor needed to ripen a "Desired Effect"?
+A. Good Affinity.
+B. A miracle.
+C. Power.
+D. Intelligence.
+> Correct Answer: **A**
 
-*(Leave empty for learners to record their reflections).*
+**PART 5: WRITING ASSIGNMENT (WRITING ASSIGNMENT)**
+**Topic 1:** *"From Sentient Beings Arguing about the Effect to Bodhisattvas Arguing about the Cause: A revolution in the thinking behind building a life."* Based on this philosophy, analyze the exhaustion people feel when they only chase after outcomes while forgetting to sow the seed. From there, draw up a detailed plan to build "Good Cause" for yourself (through the 3 Standard Frames of Reference) in one aspect that you are most troubled by (Inner Being, Health, Relationships, or Finance).
+**Topic 2:** *"The synchronized power of the 3 Standard Frames of Reference in establishing Good Cause."* Using real-life experience, explain why merely possessing a "beneficial Source Concept" is not enough if lacking a "beautiful Mental Image" and the "Block of Merits - Virtues." How has combining all 3 factors helped you rise above the problems that have arisen?
+*(Suggested length: 1,000 – 3,000 words.)*
+
+**PART 6: LESSON - IMPRESSION - REALISATION OF LEARNERS (LEFT BLANK)**
+*(This section is left entirely blank in order to create the space for learners to reflect for themselves, recording their own understanding and the process of inner transformation after the topic Good Cause in Human Life.)*
+**Lesson (New knowledge received about how to sow a Good Cause):** .................................................................................................................................................................... ....................................................................................................................................................................
+**Impression (Actions for building Good Cause that can be applied immediately in the present):** .................................................................................................................................................................... ....................................................................................................................................................................
+**Realisation (Answers to the mistaken "arguing about the effect" thinking of before):** .................................................................................................................................................................... ....................................................................................................................................................................
+**Transformative action (The commitment to cultivating Image, Blessings, and Source Concepts):** .................................................................................................................................................................... ....................................................................................................................................................................

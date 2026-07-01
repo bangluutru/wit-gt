@@ -1,53 +1,182 @@
-# CURRICULUM: UNDERSTANDING INNER BEING – CREATING INNER PEACE
+# CURRICULUM: ELEVATING INNER-BEING AWARENESS
 
-## TOPIC: THE PRINCIPLE OF LIGHT IN HUMAN LIFE
+## TOPIC 02: THE PRINCIPLE OF LIGHT IN HUMAN LIFE
 
----
+### PART 1: GENERAL INFORMATION
 
-## PART 1: GENERAL INFORMATION
+#### A. Topic Objectives
 
-### A. Topic Objectives
+- **Value of the topic:** The Principle of Light is the first and most important foundational principle for beginning the roadmap of Elevating Inner-Being Awareness. This topic helps learners recognize humanity's mistaken habit of always striving to solve problems, and from there provides a nature-aligned solution to light up one's life.
+- **Significance for learners:** It removes the exhaustion and stagnation of having to constantly cope with difficulties. It provides a clear roadmap for rising above every problem that arises through holistic enrichment.
+- **Brought transformation:** Learners will completely shift their awareness from "the mindset of processing darkness" (solving problems) to "the mindset of bringing in light" (lighting up the 7 lamps in the house of human life).
+- **Output results:** Learners realize that it is enough to cultivate Wisdom, Mental State, Personality, Character, Capacity, Physical Body, and Material Wealth, while also knowing how to apply the Principle of Brain Activation to maintain everlasting light in the mind.
 
-- **Value of the topic:** Provides the first and most crucial foundational principle to begin the pathway of comprehending the inner being. The topic helps learners recognize the "human life paradox" — when people are constantly absorbed in solving adversities — thereby providing an aligned-with-nature solution to stand above emerging adversities.
-- **Significance for learners:** Ends the days of deadlock and suffering caused by the effort to "remove darkness from the room". Learners are equipped with the mindset and a clear pathway to proactively light up their lives.
-- **Brought transformation:** Completely shifts awareness from focusing on "solving adversities" to "enriching holistic wealth".
-- **Outcomes:** Learners understand how to bring light into the 4 majors of life (Inner Being, Health, Relationships, Finances) through lighting the 7 lamps of holistic wealth.
+#### B. In-Depth Content (Refined Edition)
 
-### B. Detailed Content
+The journey of understanding one's inner being is, in essence, a roadmap to help a person rise above every problem that arises and master their own life. Since ancient times, people have often struggled in suffering and stagnation because they live against natural law. To unlock transformation at its root, the first key we need to thoroughly comprehend is precisely the Principle of Light.
 
-#### The Principle of Light & The Pathway to Light Up the Human Life House
+To understand this principle, let us borrow the image of a room sunk in darkness. Based on the universe's law of duality, light and darkness are two opposites that cannot exist side by side. To make the room bright, in theory we have two options: first, to strive to remove all the darkness; second, to bring in light. In reality, striving to remove darkness is an impossible and hopeless action. The most natural and simplest way — one that even a child knows how to do — is to "flip the light switch" to bring in light, at which point the darkness will vanish on its own. The Masters have pointed out: no matter where has been dark for millions of years, it only takes lighting a single lamp for it to become bright.
 
-The journey of comprehending the inner being is, in essence, a great pathway aimed at helping people rise above emerging adversities and officially master their lives. Since ancient times, humanity has often struggled in suffering, deadlock, and the loop of hardships due to unintentionally living against the laws of nature. To awaken root transformation and walk at ease in human life, the first and most foundational key that we need to comprehend is the Principle of Light. This is not merely a physical principle, but a philosophical lens to reset the entire mindset of a person.
+However, when facing life, people often foolishly choose to "remove the darkness." When a marriage is troubled, we go looking for faults to fix; when the body falls ill, we pour all our strength into treating the disease; when finances run short, we rush off to earn money to pay off debt. Going to solve problems is just like removing darkness — as soon as one problem ends, another rushes in. The only thorough method is to "light up the house of human life" with 7 lamps: Wisdom, Mental State, Personality, Character, Capacity, Physical Body, and Material Wealth. In particular, we must light all 7 lamps at the same time so they cross-illuminate one another, because there is always darkness at the base of each lamp.
 
-The journey of guiding awareness begins with an extremely familiar and relatable image: a room submerged in darkness. Our ultimate desire is to light up this room. Based on the universe's law of duality, light and darkness are two opposing sides; the appearance of one element equates to the disappearance of the other, and they absolutely cannot co-exist in the same space. Theoretically, to light up the room, we have two solutions: one is making the effort to remove all the darkness; the other is bringing light in. However, facing reality, the effort to carry darkness out of the room is an impossible, hopeless, and futile action. The most aligned-with-nature, intelligent, and simple way — that even a three-year-old child has the awareness to do — is to find the switch to turn on the lamp, proactively bringing light in. When light appears, darkness will naturally dissipate without us having to put in the effort to chase it away. Here, an eternal truth is established: wherever there is darkness, even for millions of years, it only takes one lit lamp to immediately brighten it up. However, when applying this extremely simple principle to life, we realize a deeply sorrowful paradox of humanity. The wise have pointed out and visualized a person's life as a "Human Life House". This house is built upon the four majors of life: the most solid foundation is Inner Being, the two supporting pillars on the sides are Health and Relationships, and the sheltering roof on top is Finances. No matter how vast, great, or complex human life may be, ultimately, all emerging adversities solely revolve around these four core aspects. Adversities are precisely the representation of "darkness" in one's life. The great paradox lies in the fact that for a physical room, even a child knows how to turn on the light to bring light in; but for their own human life house, people dedicate their entire youth and the rest of their lives being absorbed in "solving adversities". Our strenuous efforts to handle inner being issues, intervene in the breakdown of relationships, or struggle to patch up finances are, in essence, equivalent to the desperate action of "removing darkness from the room". Human deadlock stems from the fact that the four aspects in the human life house always cross-interact and profoundly influence one another. An insecure inner being foundation will cause the two pillars of health and relationships to shake, thereby leading to the collapse of the financial roof. When we put all our effort into solving an adversity — which means trying to carry a patch of darkness out — immediately, the harsh law of nature will cause another patch of darkness from another aspect to flood in and fill that void. Humans have a tendency to go against the principle but feel very proud, because every time they finish solving an incident, they mistakenly believe they are more capable and mature. But in reality, solving isolated incidents only causes human life to be forever submerged in a loop of endless deadlock. At this moment, a life-and-death milestone awareness needs to be established: we must immediately stop the effort of solving adversities, cease the habit of removing darkness, and instead focus all our mind and vitality on bringing light into our own human life house.
+In the way we treat other people, the Principle of Light is applied through the secret of: "Magnify the good points of others." If we live close to one another without proactively magnifying the other person's strengths, then their flaws (darkness) will automatically emerge and engulf our minds. At the same time, to maintain everlasting light, we need to borrow the strength of the "Principle of Brain Activation," internalizing the Lesson - Impression - Realisation every day so that the light of knowledge continuously fills the brain, leaving darkness no room to survive.
 
-The greatest light to light up in the human life house is precisely the 7 dimensions of holistic wealth. Instead of solving adversities, people need to shift their mindset towards enriching holistic wealth by lighting up the seven lamps: Wealth of Wisdom, Wealth of Mentality, Wealth of Character, Wealth of Virtue, Wealth of Competency, Wealth of Physical Health, and Material Wealth. A profoundly deep philosophical principle is posed here: why are we required to light all seven lamps simultaneously and cannot just light one or two? The eternal principle lies in the fact that for any lamp, no matter how high its capacity and how brilliantly it shines, right at its base, patches of darkness always exist. If a person is only absorbed in lighting the lamp of Finances or Competency, the "darkness" of loneliness, inner being insecurity, or physical illness will still surround the base of the lamp. Lighting all seven lamps simultaneously will create the principle of cross-illumination. Wisdom will illuminate mentality, character will illuminate virtue, and competency will illuminate material wealth. This intertwining of light helps completely eliminate all hidden corners, leaving no subtle space for darkness to survive. The journey of comprehending the inner being emphasizes that the two most urgent lamps that must be prioritized to be lit first to build a solid foundation are the lamp of Wisdom and the lamp of Mentality.
+### PART 2: DETAILED CONTENT (CORE CONTENT)
 
-The ultimate miracle of the Principle of Light lies in the fact that, when light is truly present, all adversities automatically dissipate without humans having to expend any effort to destroy them. Human suffering, even if it lasts for tens of thousands of years, immediately ends when the lamp of Inner Peace is lit. Anger and resentment, even if accumulated across countless lifetimes, will naturally dissipate the moment the light of Tolerance appears. And when we nurture the lamp of Honouring - Gratitude, the darkness of resentment will permanently never have a chance to reappear. Applying this more deeply to the practicalities of family or organizational life, the principle of light points out that if we live near each other without proactively maximizing the good points of the opposite person, then flaws and dark things will naturally emerge and overshadow the relationship. The best way to protect relational connections is to always use words of light, focusing solely on maximizing the light within people. Bringing light into the room is a great initial step, but to keep that light existing eternally — leaving no chance for darkness to return — we need a powerful accompanying tool: the principle of brain activation. This is precisely how we bring light into the brain every day through the acquiring of Lesson, Impression, and Realisation. A Lesson is the new knowledge we receive; an Impression is what we can apply to our lives; and a Realisation is the moment we find the answer to our deep inner concerns. A person who proactively acquires Lesson - Impression - Realisation after every hardship or incident is someone who is lighting up their wisdom, turning adversities into stepping stones of maturity. When the mind is always filled with the light of deep understanding, human life adversities will permanently lose their space to survive; and if the incident unintentionally repeats, it is no longer an adversity. The ultimate of maturity is not having the inner strength to solve however many storms in life, but knowing how to keep your inner house always filled with light. When choosing the way to stand above all emerging adversities by lighting up the 7 dimensions of holistic wealth, we have officially grasped the right to master our lives, living in alignment with nature to create a life of inner peace, lightness, and complete fulfillment.
+#### 2.1. Concepts
 
----
+- **The Principle of Light:** Based on the law of duality, light and darkness are opposites and cannot co-exist. The simplest, most nature-aligned way to dispel darkness (adversities) is to proactively bring in light, instead of making the hopeless effort to remove darkness.
+- **7 Forms of Holistic Wealth:** Seven lamps that must be lit in the house of human life, divided into two groups:
+  - *The Non-material group:* Wisdom, Mental State, Personality, Character.
+  - *The Material group:* Capacity, Physical Body, Material Wealth.
 
-## PART 2: DETAILED CONTENT (CORE CONTENT)
+#### 2.2. Key Knowledge
 
-### 2.1. Concepts
+- **The darkness of human life:** A person's life, taken as a whole, has countless problems, but they all stem from 4 roots: Inner Being, Health, Relationships, and Finance.
+- **Cross-illumination:** You cannot light only one lamp (for example, only worrying about earning money), because there is always darkness at the base of a lamp. It is mandatory to light all 7 lamps at the same time so they illuminate one another (Wisdom illuminates Mental State, Mental State illuminates Personality...).
 
-- **The Principle of Light:** Based on the law of duality, light and darkness are opposing and cannot co-exist. The simplest and most aligned-with-nature way to dispel darkness (adversities) is to proactively bring light in, instead of making the hopeless effort to remove darkness.
-- **Human life house:** Human life is miniaturized into a house with 4 majors of life: Inner Being is the foundation, Health is the left pillar, Relationships is the right pillar, and Finances is the roof.
-- **7 dimensions of holistic wealth:** Seven lamps of light needed to be lit up in the human life house to dispel adversities across all 4 aspects — including the Non-material group (Wisdom, Mentality, Character, Virtue) and the Material group (Competency, Physical Health, Material Wealth).
+#### 2.3. Key Awareness
 
-### 2.2. Key Knowledge
+- **Stop going to solve problems:** Shift your mindset from "treating illness, repaying debt, fixing a marriage" to "building health, building financial wealth, and building a harmonious family."
+- **Magnify the good points:** In relationships, do not strive to remove darkness (finding others' faults), but instead bring in light by proactively acknowledging and magnifying their strengths.
+- **Bring light into the brain:** Applying Lesson - Impression - Realisation every day is precisely the way to continuously light up the house of your inner being, extinguishing all resentment and suffering.
 
-- **The similarity between the Dark room and Human life adversities:** Adversities in life (Inner Being, Health, Relationships, Finances) are precisely "darkness". People often have a tendency to solve adversities, equivalent to the effort to "remove darkness". This is an action going against natural principles.
-- **The principle of cross-illumination:** We cannot light just one lamp because "at the base of the lamp, darkness always exists". Seven lamps (7 dimensions of holistic wealth) must be lit up simultaneously to illuminate one another, helping completely eliminate the hidden corners of adversities.
-- **Protecting the light with deep understanding:** Bringing light in is what needs to be done, but keeping that light eternally so that darkness does not return is even more important. The energy to dispel darkness is honouring - gratitude (erasing resentment), tolerance (erasing anger), and inner peace (erasing suffering).
+#### 2.4. Personal Application
 
-### 2.3. Key Awareness
+- Instead of complaining about illness (focusing on darkness), one shifts to internalizing mental images of ironman-strong health, taking up swimming and running to light up the lamp of the Physical Body.
+- When a spouse behaves in an undesirable way, instead of nagging and criticizing, immediately bring in light by seeking out one of their good points from the past to magnify, maintaining a state of Cherishing Gratitude.
 
-- **Establishing awareness 1 — Stop solving adversities:** Instead of focusing on solving adversities, let us shift our goal to enriching holistic wealth (lighting up 7 lamps).
-- **Establishing awareness 2 — The law of light manifestation:** Wherever there is darkness for millions of years, it only takes one lit lamp to brighten it up. Human suffering, even if it lasts for tens of thousands of years, immediately ends when receiving inner peace or tolerance.
-- **Establishing awareness 3 — Maximizing the light:** In human life, especially in relationships, if we live near each other without proactively maximizing the good points of the opposite person (bringing light in), then the bad points (darkness) will immediately emerge.
+#### 2.5. Social Impact
 
-### 2.4. Practical Application
+- **In business leadership:** Instead of holding meetings all day to punish employees for mistakes (processing darkness), a leader applies the Principle of Light by cultivating the 7 forms of holistic wealth in their people. When the lamps of Wisdom and Mental State of the organization light up, internal conflicts and problems of low performance disappear on their own.
+- **Educating the younger generation:** Do not focus on fixing children's bad habits. Instead, light them up by helping them enrich their personality and cultivate their character. When light fills them, negative behaviors fall away on their own.
 
-- **In Self (Mastering the inner being):** When facing deadlock, suffering, or anger (darkness), instead of tormenting oneself to find the cause, bring in the energy source of Honouring - Gratitude, Tolerance, and Inner Peace. When this energy light appears, all adversities automatically dissipate.
-- **In Family (Education and Marriage):** Every day, always recognize and maximize the good points of the wife/husband/children. Do not focus on analyzing mistakes or finding ways to "fix" others (removing darkness), but instead use words of light, praise, and encouragement (bringing light in).
+### PART 3: LESSON - IMPRESSION - REALISATION OF LEARNERS
+
+*(Learners use this space to record for themselves the inner transformations, new lessons, impressions that can be applied, and realizations that resolve their own concerns after studying this topic).*
+
+### PART 4: WEEKLY DISCUSSION & MULTIPLE-CHOICE QUESTIONS
+
+#### 4.1. Weekly Discussion
+
+1. Based on the law of duality and the image of the "dark room," explain why focusing on finding and solving the problems of human life keeps a person forever stuck in stagnation.
+2. Unpack the structure of the 4 aspects of the "House of Human Life" (Inner Being, Health, Relationships, Finance). Why is it said that striving to build the "roof" (Finance) before the "foundation" (Inner Being) is solid goes against the principle?
+3. Explain the principle of "cross-illumination." Why must we light all 7 lamps (the 7 forms of holistic wealth) at the same time, rather than lighting only 1 or 2 lamps?
+4. Based on the Principle of Light, the Teacher advises us to "magnify the good points of others." Have you ever suffered in a relationship simply because you were focused on the other person's "darkness"? How?
+5. What is the connection between the Principle of Light and the Principle of Brain Activation? How does writing the "Lesson - Impression - Realisation" every day help maintain everlasting light?
+6. Why is it said that striving to repay debt is a form of "removing darkness," while focusing on creating new cash flow is "bringing in light"?
+7. In raising children, give a real-life example of parents using the mindset of "removing darkness" and how to shift it to "bringing in light."
+8. How can we apply the energy sources of Peaceful Joy, Tolerance, and Cherishing Gratitude as "lamps" to dispel anger and resentment?
+9. When facing an illness (darkness), how does your awareness need to shift in order to light up the lamp of "Physical Body"?
+
+#### 4.2. Multiple-Choice Questions
+
+**Question 1:** According to the law of duality mentioned in the Principle of Light, what is the core characteristic of light and darkness?
+
+- A. They exist side by side and support each other.
+- B. They are opposites and cannot co-exist.
+- C. One can transform into the other.
+- D. Light only appears when darkness is present.
+
+> Correct Answer: **B**
+
+**Question 2:** Which of the following options best represents the application of the Principle of Light in life?
+
+- A. Striving to find the cause of suffering in order to eliminate it.
+- B. Proactively bringing good values into life so that problems disappear on their own.
+- C. Punishing those who do wrong so that society improves.
+- D. Fixing one's own flaws every day.
+
+> Correct Answer: **B**
+
+**Question 3:** According to the Teacher, wherever has been dark for millions of years, what must be done to light it up?
+
+- A. It takes millions of years to gradually remove the darkness.
+- B. It only takes lighting a single lamp for it to become bright.
+- C. The entire room must be demolished and rebuilt.
+- D. It requires the help of a great many people.
+
+> Correct Answer: **B**
+
+**Question 4:** How many lamps must we light in order for the house of human life to be lit up completely?
+
+- A. 3 (Inner Being, Health, Finance).
+- B. 4 (Wisdom, Mental State, Capacity, Material Wealth).
+- C. 7 (Wisdom, Mental State, Personality, Character, Capacity, Physical Body, Material Wealth).
+- D. 9 (the 9 types of people that need to be identified and treated appropriately).
+
+> Correct Answer: **C**
+
+**Question 5:** Why is it not possible to light just one lamp in the house of human life?
+
+- A. Because one lamp is not bright enough.
+- B. Because there is always darkness at the base of a lamp, so other lamps are needed to cross-illuminate it.
+- C. Because each person has different preferences.
+- D. Because lighting one lamp is very costly.
+
+> Correct Answer: **B**
+
+**Question 6:** In relationships, if we do not proactively magnify the other person's strengths (bringing in light), what will happen?
+
+- A. The relationship will automatically improve over time.
+- B. The other person's flaws (darkness) will inevitably emerge and engulf the mind.
+- C. That person will realize their own mistakes and correct them on their own.
+- D. Nothing will happen.
+
+> Correct Answer: **B**
+
+**Question 7:** Going to treat an illness, going to resolve debt, going to fix a marital conflict — in the Principle of Light, these are likened to which action?
+
+- A. Bringing light into the room.
+- B. Lighting the lamp of Wisdom.
+- C. Striving to remove darkness from the room.
+- D. Cross-illuminating the base of a lamp.
+
+> Correct Answer: **C**
+
+**Question 8:** To maintain everlasting light in the brain, which principle does the Teacher advise us to apply alongside it?
+
+- A. The Principle of the Knowledge Cycle.
+- B. The Principle of Brain Activation (Lesson - Impression - Realisation).
+- C. The Principle of Aligning with One's Desires.
+- D. The Principle of How the Subconscious Operates.
+
+> Correct Answer: **B**
+
+**Question 9:** Which of the following groups of lamps belongs to the Non-material element within the 7 forms of holistic wealth?
+
+- A. Capacity, Physical Body, Material Wealth.
+- B. Wisdom, Health, Finance.
+- C. Wisdom, Mental State, Personality, Character.
+- D. Career, Success, Happiness.
+
+> Correct Answer: **C**
+
+**Question 10:** What is the most core awareness that the Teacher establishes in the topic of the Principle of Light?
+
+- A. Stop striving to solve problems; devote your entire mind to lighting up the 7 forms of holistic wealth.
+- B. Find the fastest possible method to remove darkness.
+- C. Try to analyze the cause of every past suffering.
+- D. Only lighting the lamp of Finance is enough to make everything bright.
+
+> Correct Answer: **A**
+
+### PART 5: WRITING ASSIGNMENT
+
+**General rule:** Learners choose 1 of the 3 topics below to write an essay. Required length: 1,000 – 3,000 words.
+
+#### TOPIC 1: "The Paradox of Removing Darkness and the Great Shift in Awareness"
+
+*Reflection prompt:* Based on the image of the dark room, analyze the stagnation of modern people who spend their entire youth "solving problems" (Inner Being, Health, Relationships, Finance) instead of "bringing in light." Relate this to yourself: before learning this knowledge, in which aspect had you struggled to "remove darkness"? How has establishing the awareness of "stopping the solving of problems" changed the course of your life?
+
+#### TOPIC 2: "The Power of Cross-Illumination: Why Must We Cultivate Holistic Wealth?"
+
+*Reflection prompt:* Explain the philosophical reason why all 7 lamps (the 7 forms of holistic wealth) must be lit simultaneously in order to eliminate every hidden corner of darkness "at the base of the lamp." Analyze the danger of focusing only on lighting the lamps of Capacity and Material Wealth while neglecting the Non-material foundation (Wisdom, Mental State, Personality, Character).
+
+#### TOPIC 3: "Magnifying the Light in Human Relationships"
+
+*Reflection prompt:* Apply the Principle of Light to family life or the workplace. Analyze the consequences of the habit of "fault-finding" (looking at darkness) and the constructive power of the art of "magnifying the good points" (bringing in light). Share a real story of when you successfully applied the energy of Peaceful Joy, Tolerance, and Cherishing Gratitude to dissolve a conflict with someone who once caused you suffering.
+
+### PART 6: CALL TO ACTION
+
+Do not spend the rest of your life struggling to chase away darkness! Every effort to solve problems will only exhaust you and sink you deeper into the cycle of suffering. From this very moment, officially "flip the switch" on your own life! Devote your entire mind to lighting the 7 lamps of Holistic Wealth. Use Lesson - Impression - Realisation every day to nourish the light of your wisdom. Only when you are filled inside with the light of Peaceful Joy, Tolerance, and Cherishing Gratitude will every darkness of human life dissolve forever, as though it had never existed!
