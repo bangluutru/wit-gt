@@ -262,21 +262,21 @@ export default function Dashboard() {
               {getLocalizedText('Mở từ điển nhân sinh', 'Open Dictionary', '辞書を開く')}
             </button>
           </div>
+        </div>
+      </div>
 
-          {/* Motivation Quote Card */}
-          <div className="p-5 rounded-card bg-wit-surface border border-wit-line shadow-card">
-            <div className="font-serif text-3xl text-wit-gold leading-none">“</div>
-            <p className="font-serif text-sm italic text-wit-text leading-relaxed mt-1">
-              {getLocalizedText(
-                'Gieo một nhân thiện lành hôm nay, là gặt một quả an vui mai sau.',
-                'Sowing a wholesome seed today harvests a peaceful fruit tomorrow.',
-                '今日善い種を蒔けば、明日穏やかな果実が実ります。'
-              )}
-            </p>
-            <div className="text-[11px] text-wit-text-tertiary mt-3">
-              — {getLocalizedText('Tinh thần Nhân quả, Phần 1', 'Spirit of Cause & Effect, Part 1', '因果の精神、パート 1')}
-            </div>
-          </div>
+      {/* Motivation Quote - Full Width */}
+      <div className="p-6 md:p-8 rounded-card bg-wit-surface border border-wit-line shadow-card">
+        <div className="font-serif text-4xl text-wit-gold leading-none">"</div>
+        <p className="font-serif text-lg md:text-xl italic text-wit-text leading-relaxed mt-2">
+          {getLocalizedText(
+            'Gieo một nhân thiện lành hôm nay, là gặt một quả an vui mai sau.',
+            'Sowing a wholesome seed today harvests a peaceful fruit tomorrow.',
+            '今日善い種を蒔けば、明日穏やかな果実が実ります。'
+          )}
+        </p>
+        <div className="text-[12px] text-wit-text-tertiary mt-4">
+          — {getLocalizedText('Tinh thần Nhân quả, Phần 1', 'Spirit of Cause & Effect, Part 1', '因果の精神、パート 1')}
         </div>
       </div>
 
