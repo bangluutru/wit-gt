@@ -40,11 +40,22 @@ export default function LessonReader() {
   const { lessons, chapters, loading: lessonsLoading, getLessonById, getChapter, updateLesson } = useLessons();
   const { completedLessons, loading: progressLoading, completeLesson } = useProgress();
   const { terms } = useDictionary();
-  const { interfaceLang, preferredSourceLang, theme, setTheme } = useSettings();
+  const { interfaceLang, theme, setTheme } = useSettings();
   const { profile } = useAuth();
   const isAdmin = profile?.role === 'admin';
 
-  const [contentLang, setContentLang] = useState<Language>(preferredSourceLang);
+  const txt = (vi: string, en: string, jp: string) => {
+    if (interfaceLang === 'en') return en;
+    if (interfaceLang === 'jp') return jp;
+    return vi;
+  };
+
+  const [contentLang, setContentLang] = useState<Language>(interfaceLang);
+
+  // Sync content language when interface language changes
+  useEffect(() => {
+    setContentLang(interfaceLang);
+  }, [interfaceLang]);
   const [direction, setDirection] = useState<ReaderStyle>('A');
   const [tocHidden, setTocHidden] = useState(false);
   const [panelOpen, setPanelOpen] = useState(false);
@@ -358,20 +369,20 @@ export default function LessonReader() {
         {/* Top bar: breadcrumb + actions */}
         <div className="flex items-center justify-between gap-3 flex-wrap mb-4">
           <nav className="flex items-center gap-1.5 text-sm text-wit-text-tertiary flex-wrap min-w-0">
-            <Link to="/" className="hover:text-wit-text transition-colors flex items-center gap-1"><Home className="h-3.5 w-3.5" /> Trang chủ</Link>
+            <Link to="/" className="hover:text-wit-text transition-colors flex items-center gap-1"><Home className="h-3.5 w-3.5" /> {txt('Trang chủ', 'Home', 'ホーム')}</Link>
             <ChevronRight className="h-3.5 w-3.5 opacity-60" />
-            <Link to="/curriculum" className="hover:text-wit-text transition-colors">Giáo trình</Link>
+            <Link to="/curriculum" className="hover:text-wit-text transition-colors">{txt('Giáo trình', 'Curriculum', 'カリキュラム')}</Link>
             <ChevronRight className="h-3.5 w-3.5 opacity-60" />
-            <span className="text-wit-text font-medium">Học phần {String(lesson.lessonNo).padStart(2, '0')}</span>
+            <span className="text-wit-text font-medium">{txt('Học phần', 'Part', 'パート')} {String(lesson.lessonNo).padStart(2, '0')}</span>
           </nav>
           <div className="flex items-center gap-2 shrink-0">
             {isAdmin && !editing && (
               <button onClick={startEditing} className="inline-flex items-center gap-2 px-3.5 py-2 rounded-button border border-wit-line bg-wit-surface text-sm font-semibold text-wit-text-secondary hover:border-wit-red/30 hover:text-wit-red transition-colors">
-                <Pencil className="h-4 w-4" /> Sửa
+                <Pencil className="h-4 w-4" /> {txt('Sửa', 'Edit', '編集')}
               </button>
             )}
             <button onClick={() => setNavOpen(true)} className="inline-flex items-center gap-2 px-3.5 py-2 rounded-button border border-wit-line bg-wit-surface text-sm font-semibold text-wit-text hover:bg-wit-surface-2 transition-colors">
-              <LayoutGrid className="h-4 w-4" /> 76 học phần
+              <LayoutGrid className="h-4 w-4" /> {txt('76 học phần', '76 Parts', '76パート')}
             </button>
           </div>
         </div>
@@ -381,7 +392,7 @@ export default function LessonReader() {
           <div className="flex items-center gap-2 flex-wrap">
             {chapterTitle && (
               <span className="inline-block px-3 py-1 text-[11.5px] font-semibold rounded-full bg-wit-gold-soft text-wit-gold">
-                Chương {chapter?.orderIndex} · {chapterTitle}
+                {txt('Chương', 'Chapter', '章')} {chapter?.orderIndex} · {chapterTitle}
               </span>
             )}
             {isAdmin && <AdminPreviewBadge />}
@@ -391,9 +402,9 @@ export default function LessonReader() {
             <p className="mt-3 text-[15.5px] leading-relaxed text-wit-text-secondary max-w-[680px]">{parsed.chuyenDe}</p>
           )}
           <div className="mt-4.5 flex flex-wrap items-center gap-x-5 gap-y-2 text-[13.5px] text-wit-text-secondary mt-4">
-            <span className="inline-flex items-center gap-1.5">⏱ <b className="font-semibold text-wit-text">~{readMin} phút đọc</b></span>
-            <span className="inline-flex items-center gap-1.5">◷ {sections.length} phần</span>
-            {quizCount > 0 && <span className="inline-flex items-center gap-1.5">✎ {quizCount} câu trắc nghiệm</span>}
+            <span className="inline-flex items-center gap-1.5">⏱ <b className="font-semibold text-wit-text">~{readMin} {txt('phút đọc', 'min read', '分で読める')}</b></span>
+            <span className="inline-flex items-center gap-1.5">◷ {sections.length} {txt('phần', 'sections', 'セクション')}</span>
+            {quizCount > 0 && <span className="inline-flex items-center gap-1.5">✎ {quizCount} {txt('câu trắc nghiệm', 'quiz questions', 'クイズ問題')}</span>}
             <span className="inline-flex items-center gap-1.5 text-wit-gold">◉ {LANG_OPTIONS.find((l) => l.code === contentLang)?.label}</span>
           </div>
         </header>
@@ -419,8 +430,8 @@ export default function LessonReader() {
             {showRail && (
               <aside className="hidden lg:block sticky top-7 self-start">
                 <div className="flex items-center justify-between gap-2 pl-1 pb-3">
-                  <span className="text-[10.5px] font-bold uppercase tracking-[1.6px] text-wit-text-tertiary">Mục lục bài</span>
-                  <button onClick={() => setTocHidden(true)} className="text-[11.5px] font-semibold text-wit-text-tertiary hover:text-wit-text transition-colors" title="Ẩn mục lục">Ẩn ✕</button>
+                  <span className="text-[10.5px] font-bold uppercase tracking-[1.6px] text-wit-text-tertiary">{txt('Mục lục bài', 'Table of Contents', '目次')}</span>
+                  <button onClick={() => setTocHidden(true)} className="text-[11.5px] font-semibold text-wit-text-tertiary hover:text-wit-text transition-colors" title={txt('Ẩn mục lục', 'Hide Table of Contents', '目次を隠す')}>{txt('Ẩn ✕', 'Hide ✕', '非表示 ✕')}</button>
                 </div>
                 <nav className="flex flex-col gap-0.5">
                   {sections.map((s, i) => {
@@ -434,7 +445,7 @@ export default function LessonReader() {
                   })}
                 </nav>
                 <div className="mt-3.5 p-3.5 rounded-card border border-wit-line bg-wit-surface">
-                  <div className="flex justify-between text-[11.5px] text-wit-text-tertiary mb-2"><span>Tiến độ đọc</span><span className="font-bold text-wit-red">{Math.round(progress)}%</span></div>
+                  <div className="flex justify-between text-[11.5px] text-wit-text-tertiary mb-2"><span>{txt('Tiến độ đọc', 'Reading Progress', '読書の進捗')}</span><span className="font-bold text-wit-red">{Math.round(progress)}%</span></div>
                   <div className="h-1.5 rounded-full bg-wit-line overflow-hidden"><div className="h-full bg-gradient-to-r from-wit-red to-wit-gold rounded-full transition-[width] duration-100 ease-linear" style={{ width: `${progress}%` }} /></div>
                 </div>
               </aside>
@@ -505,22 +516,22 @@ export default function LessonReader() {
               <div className="mt-8 pt-6 border-t border-wit-line flex flex-col gap-4 pb-24 md:pb-12">
                 <div className="flex flex-col sm:flex-row items-center gap-3">
                   {status === 'completed' ? (
-                    <div className="flex items-center gap-2 text-wit-success"><CheckCircle2 className="h-5 w-5" /><span className="text-sm font-medium">Đã hoàn thành bài này</span></div>
+                    <div className="flex items-center gap-2 text-wit-success"><CheckCircle2 className="h-5 w-5" /><span className="text-sm font-medium">{txt('Đã hoàn thành bài này', 'Completed this lesson', 'このレッスンを完了しました')}</span></div>
                   ) : (
                     <button onClick={handleComplete} disabled={completing} className="flex items-center gap-2 px-6 py-3 rounded-button bg-wit-red text-white font-medium text-sm hover:bg-wit-red-hover transition-colors disabled:opacity-60 shadow-card hover:shadow-card-hover">
-                      <CheckCircle2 className="h-4 w-4" /> {completing ? 'Đang lưu...' : 'Hoàn thành bài học'}
+                      <CheckCircle2 className="h-4 w-4" /> {completing ? txt('Đang lưu...', 'Saving...', '保存中...') : txt('Hoàn thành bài học', 'Complete Lesson', 'レッスンを完了する')}
                     </button>
                   )}
                 </div>
                 <div className="flex items-center justify-between gap-3 flex-wrap">
                   {prev ? (
                     <button onClick={() => navigate(`/lessons/${prev.id}`)} className="inline-flex items-center gap-2 px-4 py-2.5 rounded-button border border-wit-line bg-wit-surface text-sm font-semibold text-wit-text-secondary hover:text-wit-text transition-colors">
-                      <ArrowLeft className="h-4 w-4 text-wit-red" /> HP {String(prev.lessonNo).padStart(2, '0')}
+                      <ArrowLeft className="h-4 w-4 text-wit-red" /> {txt('HP', 'Part', 'パート')} {String(prev.lessonNo).padStart(2, '0')}
                     </button>
                   ) : <span />}
                   {next && (
                     <button onClick={() => navigate(`/lessons/${next.id}`)} className="inline-flex items-center gap-2 px-4 py-2.5 rounded-button border border-wit-line bg-wit-surface text-sm font-semibold text-wit-text hover:border-wit-red/30 transition-colors text-right max-w-[60%]">
-                      <span className="truncate">HP {String(next.lessonNo).padStart(2, '0')} · {getLocalized(next, 'title', interfaceLang)}</span>
+                      <span className="truncate">{txt('HP', 'Part', 'パート')} {String(next.lessonNo).padStart(2, '0')} · {getLocalized(next, 'title', interfaceLang)}</span>
                       <ArrowRight className="h-4 w-4 text-wit-red shrink-0" />
                     </button>
                   )}
@@ -534,7 +545,7 @@ export default function LessonReader() {
       {/* Restore-TOC floating button */}
       {!editing && tocHidden && sections.length > 1 && (
         <button onClick={() => setTocHidden(false)} className="hidden lg:inline-flex items-center gap-2 fixed left-5 bottom-5 z-[55] px-4 py-2.5 rounded-full bg-wit-surface border border-wit-line shadow-popover text-sm font-semibold text-wit-text-secondary hover:text-wit-text transition-colors">
-          <List className="h-4 w-4" /> Mục lục
+          <List className="h-4 w-4" /> {txt('Mục lục', 'TOC', '目次')}
         </button>
       )}
 
@@ -545,28 +556,28 @@ export default function LessonReader() {
             <div className="flex flex-col items-end gap-2 animate-slide-up">
               {/* Language */}
               <div className="flex items-center gap-1.5 bg-wit-surface border border-wit-line shadow-popover rounded-card pl-3 pr-1.5 py-1.5">
-                <span className="text-[9.5px] font-bold uppercase tracking-[1.2px] text-wit-text-tertiary mr-0.5">Ngôn ngữ</span>
+                <span className="text-[9.5px] font-bold uppercase tracking-[1.2px] text-wit-text-tertiary mr-0.5">{txt('Ngôn ngữ', 'Language', '言語')}</span>
                 {LANG_OPTIONS.map((l) => (
                   <button key={l.code} onClick={() => setContentLang(l.code)} className={`px-2.5 py-1.5 rounded-button text-xs font-semibold transition-colors ${contentLang === l.code ? 'bg-wit-gold text-white' : 'text-wit-text-secondary hover:bg-wit-surface-2'}`}>{l.label}</button>
                 ))}
               </div>
               {/* Reader style */}
               <div className="flex items-center gap-1.5 bg-wit-surface border border-wit-line shadow-popover rounded-card pl-3 pr-1.5 py-1.5">
-                <span className="text-[9.5px] font-bold uppercase tracking-[1.2px] text-wit-text-tertiary mr-0.5">Phong cách</span>
+                <span className="text-[9.5px] font-bold uppercase tracking-[1.2px] text-wit-text-tertiary mr-0.5">{txt('Phong cách', 'Style', 'スタイル')}</span>
                 {(['A', 'B', 'C'] as ReaderStyle[]).map((s) => (
                   <button key={s} onClick={() => setDirection(s)} className={`px-2.5 py-1.5 rounded-button text-xs font-semibold transition-colors ${direction === s ? 'bg-wit-red text-white' : 'text-wit-text-secondary hover:bg-wit-surface-2'}`}>
-                    {s === 'A' ? 'A · Giáo trình' : s === 'B' ? 'B · Tĩnh lặng' : 'C · Tương tác'}
+                    {s === 'A' ? txt('A · Giáo trình', 'A · Curriculum', 'A · 教材') : s === 'B' ? txt('B · Tĩnh lặng', 'B · Focus', 'B · 静観') : txt('C · Tương tác', 'C · Interactive', 'C · 双方向')}
                   </button>
                 ))}
               </div>
               {/* Theme */}
               <div className="flex items-center gap-1.5 bg-wit-surface border border-wit-line shadow-popover rounded-card pl-3 pr-1.5 py-1.5">
-                <span className="text-[9.5px] font-bold uppercase tracking-[1.2px] text-wit-text-tertiary mr-0.5">Nền</span>
+                <span className="text-[9.5px] font-bold uppercase tracking-[1.2px] text-wit-text-tertiary mr-0.5">{txt('Nền', 'Theme', 'テーマ')}</span>
                 {THEME_ORDER.map((t) => {
                   const Icon = THEME_META[t].icon;
                   return (
                     <button key={t} onClick={() => setTheme(t)} className={`flex items-center gap-1 px-2.5 py-1.5 rounded-button text-xs font-semibold transition-colors ${theme === t ? 'bg-wit-gold text-white' : 'text-wit-text-secondary hover:bg-wit-surface-2'}`}>
-                      <Icon className="h-3.5 w-3.5" /> {THEME_META[t].label}
+                      <Icon className="h-3.5 w-3.5" /> {txt(THEME_META[t].label, THEME_META[t].label === 'Sáng' ? 'Light' : THEME_META[t].label === 'Ấm' ? 'Warm' : 'Dark', THEME_META[t].label === 'Sáng' ? 'ライト' : THEME_META[t].label === 'Ấm' ? 'ウォーム' : 'ダーク')}
                     </button>
                   );
                 })}
@@ -575,7 +586,7 @@ export default function LessonReader() {
           )}
           <button onClick={() => setPanelOpen((o) => !o)} className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-wit-surface border border-wit-line shadow-popover text-sm font-semibold text-wit-text-secondary hover:text-wit-text transition-colors">
             {panelOpen ? <X className="h-4 w-4" /> : <SlidersHorizontal className="h-4 w-4" />}
-            <span className="hidden sm:inline">{panelOpen ? 'Ẩn tùy chọn' : 'Tùy chọn'}</span>
+            <span className="hidden sm:inline">{panelOpen ? txt('Ẩn tùy chọn', 'Hide Options', 'オプション非表示') : txt('Tùy chọn', 'Options', 'オプション')}</span>
           </button>
         </div>
       )}
