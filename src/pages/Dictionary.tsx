@@ -203,7 +203,7 @@ export default function Dictionary() {
       {viewMode === 'visual' ? (
         <DiagramGallery
           terms={terms}
-          sourceLang={preferredSourceLang}
+          sourceLang={interfaceLang}
           searchQuery={searchQuery}
           emptyLabel={getLocalizedText(
             'Không tìm thấy đồ hình phù hợp.',
