@@ -13,7 +13,7 @@
 - **Brought transformation:** Shifts learners' awareness from level 1 (right – wrong) to level 3 (Emptiness of Nature), knowing how to shift inner states to stand above all emerging adversities.
 - **Outcomes:** Learners understand and operate the principle "The nature of hearing and seeing is the raft," achieving sustainable Inner Peace through recognizing the Nature of Emptiness of all things.
 
-### B. NỘI DUNG CHUYÊN SÂU: HUMAN STRUCTURE AND THE CODE OF EMPTINESS OF NATURE - THE JOURNEY OF FINDING TRUTH WITHIN
+### B. IN-DEPTH CONTENT: HUMAN STRUCTURE AND THE CODE OF EMPTINESS OF NATURE - THE JOURNEY OF FINDING TRUTH WITHIN
 
 #### I. Truth: The Unchanging Anchor amidst fluctuating life
 The journey of understanding the inner being begins with establishing a core concept: Truth. The Teacher defines: "Truth is what does not change across space and time."
@@ -38,7 +38,7 @@ This is the master key to achieve Inner Peace and stand above all emerging adver
 #### IV. Managing Inner Consciousness through 3 Blocks of Merit and Total Karma
 Comprehending the Human Structure helps us proactively manage our own Cause and Effect through the lens of energy:
 - **Three blocks of merit:** Bad merit (negative energy - from making others suffer), Good merit (positive energy - from making others happy), and Balanced merit (luminous energy - accumulated when helping others receive Truth or elevate their level of wisdom).
-- **Total Karma:** The sum of thoughts and actions across hằng hà sa số lifetimes (Knowledge - Conditions - Outcomes) stored in the Subconscious (storehouse consciousness).
+- **Total Karma:** The sum of thoughts and actions across countless lifetimes (Knowledge - Conditions - Outcomes) stored in the Subconscious (storehouse consciousness).
 
 *The Teacher asserts:* When we manage the vibration frequency of our inner being at a balanced to positive level, we will activate positive total karma and experience life as desired.
 
@@ -69,7 +69,7 @@ The sharing session concludes with the formula to rise above all adversities: St
 
 ### 2.3. Deep Insights
 
-- **Truth does not come from thinking:** Canding or using intellect to search for truth only moves us further away, because the moment we initiate a thought, Nature and Emotion interfere.
+- **Truth does not come from thinking:** Straining the intellect to search for truth only moves us further away, because the moment we initiate a thought, Nature and Emotion interfere.
 - **The Source of Inner Peace:** Inner Peace does not come from possessing matter, but from the balanced inner state when we are not attached to wants and imaginations.
 - **All things carry the Nature of Emptiness:** Things and people around us are what they are because of our projected labels. When the inner being has Emptiness of Nature, we see the Nature of Emptiness of all things and release all judgements.
 - **Be nobody to become anybody:** If you have defined yourself as somebody, you cannot become anybody else. When comprehending Emptiness of Nature, we release identity attachments (roles, titles) to unlock infinite potential.

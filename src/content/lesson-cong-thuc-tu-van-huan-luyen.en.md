@@ -26,7 +26,7 @@ To achieve this, we do not act on instinct but follow **4 Core Formulas** strict
   This formula protects the expert's inner state and recalls the correct total karma. We must understand two concepts:
   * **Role Attachment (Sĩ thân):** Attaching a title, status, or identity to oneself, mistakenly believing that one is that identity and living with it.
   * **Self-anchoring (Định thân):** The state of inner cognition of who one is, focusing all resources to become that person.
-  * **Operating Principle:** *"Being nobody - Self-anchoring who you are - Being nobody."* Before sharing, the Coach must **"Release"** (recognizing they are nobody, dismantling all role attachments). Then, we **"Self-anchor"** as someone who carries appreciation and gratitude, or anchor as a thấu suốt expert in a specific topic.
+  * **Operating Principle:** *"Being nobody - Self-anchoring who you are - Being nobody."* Before sharing, the Coach must **"Release"** (recognizing they are nobody, dismantling all role attachments). Then, we **"Self-anchor"** as someone who carries appreciation and gratitude, or anchor as an expert who brings deep, thorough clarity (thấu suốt) on a specific topic.
   * *Cause and Effect:* Humans only know things when they know who they are. When we "Release," we are not bound by role attachment. When we "Self-anchor," the corresponding total karma immediately flows, untaught wisdom (vô sư trí) is activated, letting us know exactly what to say. After sharing, we immediately **"Release"** back to being nobody to protect ourselves from arrogance.
   *(Note: Concepts and Mental State in training will be elaborated in topics: Standard Concepts in Training and Right Mental State in Training).*
 
@@ -112,7 +112,7 @@ D. Knowing ➔ Believing ➔ Understanding.
 
 **Question 3:** What is "Role Attachment" (Sĩ thân)?
 A. Focusing resources to become someone.
-B. Attaching titles or identities to oneself and hằng sống bound by them.
+B. Attaching titles or identities to oneself and living permanently bound by them.
 C. Forgiving others' mistakes.
 D. Replicating experts.
 *Correct Answer: B*

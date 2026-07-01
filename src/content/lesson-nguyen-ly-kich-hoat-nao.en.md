@@ -11,7 +11,7 @@
 - **Value of the topic:** Provides learners with a natural method to light up the inner treasure of knowledge, helping individuals proactively awaken their wisdom and rise above the influence of life's adversities.
 - **Significance for learners:** Breaks the passive habit of waiting for pain and loss to occur before making changes. Instead, it equips learners with the ability to proactively synthesize value every day so that adversities no longer have a chance to survive.
 - **Brought transformation:** Shifts the mindset from passive learning and passive experience to proactive cultivation. It transforms others' mistakes or undesirable situations into a launching pad for one's own maturity.
-- **Outcomes:** Learners become proficient in extracting daily "Lesson - Impression - Realisation", firmly grasping the key of Recognition, Gratitude, and Appretell of knowledge to comprehensively activate the brain and their personal potential.
+- **Outcomes:** Learners become proficient in extracting daily "Lesson - Impression - Realisation", firmly grasping the key of Recognition, Gratitude, and Outreach of knowledge to comprehensively activate the brain and their personal potential.
 
 ### B. In-depth Content: The Brain Activation Principle – Lighting Up Wisdom and Constructing the Total Karma Machine
 
@@ -41,7 +41,7 @@ This cultivation process does not stop in a few days. The wise point out the pat
 
 Many people fall into the trap of selfishness: learning a great lesson but keeping it strictly to themselves. According to the laws of nature, a pond that only receives water but has no outlet will eventually become a stagnant pond.
 
-For the Brain Activation Principle to exert its ultimate power, we must firmly grasp the key: Recognition, Gratitude, and Appretell. Synthesizing (L-I-R) is the simplest way to Recognize and show Gratitude for knowledge. But the seed of wisdom only truly shines and multiplies when we carry that lesson to Appretell (share) with others. Using one's own transformation to light up others activates positive relationship karma, which in turn unlocks knowledge karma, opening up the realm of Untaught Knowledge.
+For the Brain Activation Principle to exert its ultimate power, we must firmly grasp the key: Recognition, Gratitude, and Outreach. Synthesizing (L-I-R) is the simplest way to Recognize and show Gratitude for knowledge. But the seed of wisdom only truly shines and multiplies when we carry that lesson to promote (share) it with others. Using one's own transformation to light up others activates positive relationship karma, which in turn unlocks knowledge karma, opening up the realm of Untaught Knowledge.
 
 #### 5. Conclusion: Becoming the Master of One's Destiny
 
@@ -63,7 +63,7 @@ When you turn writing "Lesson - Impression - Realisation" into your daily breath
 ### 2.2. Key Knowledge
 
 - **The Essence of "If there is a lesson, there is no adversity":** Humans usually wait for pain and loss to happen before they change and seek lessons. But if we proactively synthesize lessons every day, challenges will be dissolved by the light of knowledge before they can even become "adversities".
-- **The Key of Recognition, Gratitude, and Appretell:** To successfully activate the brain, one cannot stop at "self-knowledge". Keeping a lesson to oneself blocks the flow of knowledge energy. One must use the energy of Honouring - Gratitude to recognize the lesson, and then carry it to Appretell (share) with others, which strongly activates the brain.
+- **The Key of Recognition, Gratitude, and Outreach:** To successfully activate the brain, one cannot stop at "self-knowledge". Keeping a lesson to oneself blocks the flow of knowledge energy. One must use the energy of Honouring - Gratitude to recognize the lesson, and then carry it out to promote (share) it with others, which strongly activates the brain.
 - **The 10,000 L-I-R Wisdom Machine:** Accumulating 10,000 Lessons - Impressions - Realisations is not a mechanical number, but a journey of constructing the wisdom machine. Once the quantity is sufficient, the capacity to retrieve data and the maturity of a person will break through beyond imagination.
 
 ### 2.3. Key Awareness
@@ -84,8 +84,8 @@ When you turn writing "Lesson - Impression - Realisation" into your daily breath
 **Example 2: Career Development and Learning Method**
 - *Pre-transformation context:* Participated in many professional courses and read many books, but the knowledge was often forgotten, making it difficult to access and apply to practical work.
 - *Old awareness:* Tried to use conscious effort to memorize everything, creating pressure on myself, and kept the knowledge to myself after learning.
-- *Applied knowledge:* The awareness of "Write to Forget" and the Key of Appretell.
-- *New action:* Took notes in class with a relaxed mentality to transfer data straight into the subconscious and then let go. After each day, synthesized 3 L-I-R items and shared (Appretell) them on social media with the energy of honouring and gratitude.
+- *Applied knowledge:* The awareness of "Write to Forget" and the Key of Outreach.
+- *New action:* Took notes in class with a relaxed mentality to transfer data straight into the subconscious and then let go. After each day, synthesized 3 L-I-R items and promoted (shared) them on social media with the energy of honouring and gratitude.
 - *Post-transformation outcome:* The brain was activated, resulting in a very sharp capacity to retrieve information. Personal value surged in the eyes of leadership, opening up outstanding career advancement opportunities.
 
 **Example 3: Protecting Mental Health in Adversity**
@@ -130,8 +130,8 @@ When you turn writing "Lesson - Impression - Realisation" into your daily breath
 **Example 2: Team Training and Capacity Development**
 - *Pre-transformation context:* The company invested heavily in inviting experts to train staff on skills, but after learning, staff could not apply them, and the knowledge was quickly lost.
 - *Old awareness:* Assumed that staff simply sitting passively and taking notes mechanically would automatically improve their working capacity.
-- *Applied knowledge:* The Key of Appretell of knowledge to flow the energy stream.
-- *New action:* Established an internal training culture: After each course, staff were required to synthesize L-I-R and organize presentation sessions (Appretell) for other departments with honouring and gratitude.
+- *Applied knowledge:* The Key of Outreach of knowledge to flow the energy stream.
+- *New action:* Established an internal training culture: After each course, staff were required to synthesize L-I-R and organize presentation (Outreach) sessions for other departments with honouring and gratitude.
 - *Post-transformation outcome:* Staff brains were strongly activated, turning expert knowledge into practical execution capabilities. The organization built a vast, continuously evolving internal repository of knowledge.
 
 **Example 3: Crisis Management and Project Failure**
@@ -146,7 +146,7 @@ When you turn writing "Lesson - Impression - Realisation" into your daily breath
 **Example 1: Changing Social Media Media Trends**
 - *Pre-transformation context:* Social media was flooded with toxic information, fake news, call-out dramas, and arguments, causing confusion and outrage among the public.
 - *Old awareness:* The online community tended to be curious, liked "inhaling drama", and focused on dissecting the mistakes, adversities, and downfalls of others.
-- *Applied knowledge:* Spreading light by practicing Appretell of L-I-R.
+- *Applied knowledge:* Spreading light by practicing Outreach of L-I-R.
 - *New action:* A community of people who comprehend the inner being initiated a trend of writing L-I-R on social media every day, continuously sharing positive perspectives and humane lessons from life events instead of joining in the criticism.
 - *Post-transformation outcome:* The energy of honouring and gratitude spread strongly, creating resistance for the community, gradually repelling negative information and elevating the general awareness of society.
 
@@ -169,7 +169,7 @@ When you turn writing "Lesson - Impression - Realisation" into your daily breath
 ## PART 3: WEEKLY DISCUSSION
 
 1. The mentor shared a core principle: "If a person proactively acquires lessons, the adversity will naturally cease to exist." Based on this awareness, analyze how you apply the habit of synthesizing daily "Lesson - Impression - Realisation" to prevent adversities from emerging and accelerate maturity across the 4 aspects of the human life house (Inner Being, Health, Relationships, Finances)? Give a practical example from your own life.
-2. Dissect the key of "Recognition, Gratitude, and Appretell" of knowledge. In your opinion, why does quietly keeping a lesson to oneself block the flow of knowledge energy, and how does the act of sharing (Appretell) with the energy of honouring and gratitude help individuals unlock the treasure of Total Karma (Knowledge, Conditions, Outcomes) from infinite lifetimes?
+2. Dissect the key of "Recognition, Gratitude, and Outreach" of knowledge. In your opinion, why does quietly keeping a lesson to oneself block the flow of knowledge energy, and how does the act of sharing (Outreach) with the energy of honouring and gratitude help individuals unlock the treasure of Total Karma (Knowledge, Conditions, Outcomes) from infinite lifetimes?
 3. Clarify the breakthrough awareness: "Write to forget, not write to remember." How does this mechanism of releasing conscious pressure send knowledge straight into the subconscious? Relying on your personal experience, demonstrate how "borrowing lessons" from others' experiences has saved you from paying the price in terms of pain and time.
 
 ---
@@ -218,13 +218,13 @@ When you turn writing "Lesson - Impression - Realisation" into your daily breath
 
 **Question 6:** Which key factor acts as the mandatory "key" to successfully activate the brain when having Lesson - Impression - Realisation?
 - A. Writing it down beautifully in a notebook and keeping it locked.
-- B. Recognizing, Honouring - Gratitude for the knowledge, and carrying it to Appretell (share) with others.
+- B. Recognizing, Honouring - Gratitude for the knowledge, and carrying it out to promote (share) with others.
 - C. Using conscious effort to memorize that knowledge.
 - D. Bringing the knowledge to judge those who do not know.
 
-> Correct Answer: **B** *(Explanation: Knowing but keeping it strictly to oneself blocks the energy stream; only practicing Appretell of the knowledge with honouring and gratitude activates the seed of wisdom).*
+> Correct Answer: **B** *(Explanation: Knowing but keeping it strictly to oneself blocks the energy stream; only practicing Outreach of the knowledge with honouring and gratitude activates the seed of wisdom).*
 
-**Question 7:** Continuously synthesizing and practicing Appretell of Lesson - Impression - Realisation every day has the ability to unlock which priceless treasure within humans?
+**Question 7:** Continuously synthesizing and practicing Outreach of Lesson - Impression - Realisation every day has the ability to unlock which priceless treasure within humans?
 - A. Beautiful memories of childhood.
 - B. Sharpness in financial calculations.
 - C. Total Karma (Knowledge, Conditions, Outcomes) stored from infinite lifetimes.
@@ -264,7 +264,7 @@ When you turn writing "Lesson - Impression - Realisation" into your daily breath
 
 **Requirements and Reflection Prompt:** Relying on the core knowledge of the topic and your personal experience, write a deep reflective essay on how you apply the Brain Activation Principle to your practical life. The essay should address the following key points:
 - The transformation in your awareness and life situation when shifting from the mindset of "waiting for adversity to happen before drawing lessons" to proactively synthesizing daily "Lesson - Impression - Realisation".
-- How you use the "Write to Forget" tool and the key of "Recognition - Gratitude - Appretell" to unlock your inner treasure of knowledge (Total Karma), thereby accelerating outstanding maturity across the 4 aspects: Inner Being, Health, Relationships, and Finances.
+- How you use the "Write to Forget" tool and the key of "Recognition - Gratitude - Outreach" to unlock your inner treasure of knowledge (Total Karma), thereby accelerating outstanding maturity across the 4 aspects: Inner Being, Health, Relationships, and Finances.
 
 *(Recommended length: 1,000 – 3,000 words)*
 

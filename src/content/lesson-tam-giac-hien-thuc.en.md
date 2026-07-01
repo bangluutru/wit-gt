@@ -67,7 +67,7 @@ Once materialized, one can easily transfer the reality of "Success" to others by
 
 - **Example 1 (Health Transformation):** I used to have a weak body and relied on medicine (intervening at the Matter corner). Realising health comes from source concepts, I replaced my information with "Iron Man health, model body shape," and held gratitude for my body. My physical health (Matter) naturally improved without forced medicine.
 - **Example 2 (Finance):** I worked hard but lacked money, holding negative views of the rich. I audited my Reality Triangle of Money, realised my Information (Knowing) was faulty, installed beneficial source concepts about wealth, and shifted my Energy to gratitude. Wealth and opportunities gathered naturally.
-- **Example 3 (Career):** I felt vague about success and worked without drive. I materialized "Success" into 3 corners: achieving desires (Information), becoming a person others like being near (Energy), and pursuing growth (Matter). This gave me clear direction to advance my life realm thong dong.
+- **Example 3 (Career):** I felt vague about success and worked without drive. I materialized "Success" into 3 corners: achieving desires (Information), becoming a person others like being near (Energy), and pursuing growth (Matter). This gave me clear direction to advance my life realm at ease, unhurried by pressure.
 
 ### 2.5. 03 Family Application Examples
 
@@ -91,8 +91,8 @@ Once materialized, one can easily transfer the reality of "Success" to others by
   - *Action:* Shifted from behavioral control to managing consciousness, providing clear source concepts of company vision (Information) and showing gratitude (Energy).
   - *Outcome:* Employees worked with high self-discipline and breakthrough efficiency.
 - **Example 2: Corporate Culture**
-  - *Context:* Core values like "Dedicating" or "Creativity" were too abstract.
-  - *Action:* Materialized "Dedicating" by defining its Information, Energy, and specific Material behaviors.
+  - *Context:* Core values like "Wholehearted Dedication" or "Creativity" were too abstract.
+  - *Action:* Materialized "Wholehearted Dedication" by defining its Information, Energy, and specific Material behaviors.
   - *Outcome:* Corporate culture became visible, simple to duplicate and transfer to new hires.
 - **Example 3: Talent Development**
   - *Context:* Best sellers could not teach new hires how to close sales.
@@ -128,7 +128,7 @@ Once materialized, one can easily transfer the reality of "Success" to others by
 > Correct Answer: **B**
 
 **Question 3:** What is the most accurate definition of "Source Concept"?
-- A. Sách vở knowledge accumulated by humanity.
+- A. Book-based knowledge accumulated by humanity.
 - B. Operating laws of nature governing life.
 - C. What we Know, Believe, and Understand about a thing, representing our reality of it.
 - D. The original energy of the universe.
@@ -198,7 +198,14 @@ Once materialized, one can easily transfer the reality of "Success" to others by
 **Choose one topic to write an essay (1,000 - 3,000 words):**
 - "Cội nguồn hiện thực: Decoding the matrix of Knowing - Believing - Understanding in personal development."
 - "Materializing the non-material: Turning Happiness and Wisdom into clear realities."
+- "Three perspectives governing life: Science, Religion, and Morality."
 - "The software of human life: Why upgrading apps is useless if the Operating System (Standard Reference Systems) is broken."
+- "From Fruit to Root: Ending the illusion of shaping matter."
+- "The art of Receiving and Transferring Reality in root-level education."
+- "The power of Common Language - Consensus - Companionship."
+- "Shifted Awareness, Shifted Reality: My own true story."
+- "Constructing the Reality Triangle for Prosperity (Money)."
+- "The power of the inner electromagnetic vibration state (the Energy corner)."
 
 ---
 

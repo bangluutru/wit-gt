@@ -39,7 +39,7 @@ The formula for sustainable success is **80% being a human (Concepts & Relations
 ### 2.2. Core Knowledge
 
 - **Three Pillars of Maturity:** Concepts - Social Relationships - Professional Expertise.
-- **Three Great Magic Treasures of Expertise:** Appretell (Quảng bá) - Cooperation (Phối hợp) - Guidance (Dẫn dắt).
+- **Three Great Magic Treasures of Expertise:** Outreach (Quảng bá) - Cooperation (Phối hợp) - Guidance (Dẫn dắt).
 - **Formula for Material Wealth Accumulation:** 7 steps starting from non-materializing oneself to accumulating virtue to govern the world (Đức hành thiên hạ).
 
 ### 2.3. Key Awareness
@@ -90,7 +90,7 @@ The formula for sustainable success is **80% being a human (Concepts & Relations
   - *Outcome:* Produced 10,000 dental prosthodontic experts with beautiful hearts and skills.
 - **Example 3: Leadership & Cooperation (Tam Đại Pháp Bảo)**
   - *Context:* Leader carried everything alone, limiting growth.
-  - *Action:* Mastered the 3 Magic Treasures: Appretell - Cooperation - Guidance, finding Left and Right Hand supporters.
+  - *Action:* Mastered the 3 Magic Treasures: Outreach - Cooperation - Guidance, finding Left and Right Hand supporters.
   - *Outcome:* The organization operated on consensus and synergy, allowing the leader to focus on strategy.
 
 ### 2.7. 03 Social Impact Examples
@@ -105,7 +105,7 @@ The formula for sustainable success is **80% being a human (Concepts & Relations
 
 1. Analyze the statement: "Capacity is limited, maturity is infinite." Why is maturity the key to sustainable success?
 2. Explain the mutual support in the Capacity Cycle. How will you use your strongest pillar to lift the other two?
-3. Why does mastering the Three Great Magic Treasures (Appretell - Cooperation - Guidance) simplify achieving your goals?
+3. Why does mastering the Three Great Magic Treasures (Outreach - Cooperation - Guidance) simplify achieving your goals?
 
 ---
 
@@ -137,7 +137,7 @@ The formula for sustainable success is **80% being a human (Concepts & Relations
 
 **Question 4:** What are the "Three Great Magic Treasures" of Expertise?
 - A. Learning - Training - Testing.
-- B. Appretell - Cooperation - Guidance.
+- B. Outreach - Cooperation - Guidance.
 - C. Hearing - Seeing - Speaking - Knowing.
 - D. Thinking - Technology - Finance.
 
@@ -185,7 +185,7 @@ The formula for sustainable success is **80% being a human (Concepts & Relations
 
 **Question 10:** How is "Maturity" felt inside?
 - A. Feeling older and more serious.
-- B. Feeling that one's Concepts, Relationships, and Expertise have grew compared to before.
+- B. Feeling that one's Concepts, Relationships, and Expertise have grown compared to before.
 - C. Feeling tired from responsibilities.
 - D. Feeling superior to others.
 

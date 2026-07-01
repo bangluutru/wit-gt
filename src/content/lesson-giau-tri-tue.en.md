@@ -91,7 +91,7 @@ The material manifestation of wisdom is "Trust." However, for negative past expe
 - **Example 2: Inner Being & Health (Facing Crisis)**
   - *Context:* Receiving unexpected bad news about health.
   - *Applied knowledge:* Level 3 Wisdom (Emptiness of Nature) as a protective shield.
-  - *Action:* Cut off all negative imagination immediately. Use Level 3: "Only know I am hearing this news." Do not let anxiety or dark viễn cảnh enter the mind.
+  - *Action:* Cut off all negative imagination immediately. Use Level 3: "Only know I am hearing this news." Do not let anxiety or dark visions of a worst-case future enter the mind.
   - *Outcome:* The inner being stays balanced and calm, allowing the intellect to find the best medical solutions.
 - **Example 3: Career & Project Management**
   - *Context:* Facing a massive project that leads to exhaustion and stress.
@@ -199,7 +199,13 @@ The material manifestation of wisdom is "Trust." However, for negative past expe
 - "Root cause is from me: The golden key to dissolve resentment and rebirth happiness."
 - "The raft of Emptiness of Nature: Shifting the inner being from storm to peace."
 - "The art of shifting awareness: Rising above arising problems in everyday life."
+- "Diligence as destiny: The material portrait of wisdom in work and life."
+- "The proactivity of light: The power of enlarging virtues to cultivate talent."
+- "Breaking free from self-identification: The philosophy of 'being no one to become anyone.'"
 - "Envisioning and manifesting: Separating belief from imagination to construct a desirable future."
+- "The portrait of a life-master: The interplay between Wisdom, Insight, Cleverness, and Erudition."
+- "Not seeking Untaught Knowledge: The art of preserving Emptiness of Nature."
+- "Lighting the lamp of Wisdom: The journey of non-materializing oneself to serve human life."
 
 ---
 

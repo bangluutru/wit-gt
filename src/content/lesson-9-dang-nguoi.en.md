@@ -84,7 +84,12 @@ Applying this in family and leadership constructs legacy. Parents who master thi
 2. Why is it said: "Achievements are brought by others"? How does this dissolve arrogance?
 3. Analyze "Treating" and "Attracting" regarding Talents. Why is cultivating the 7 dimensions of holistic wealth the best way to retain them?
 4. What is the difference in roles between a Cao nhân, an Expert, and a Thiện tri thức in helping humans solve problems?
-5. Explain: *"Instead of searching for the 9 types of people, strive to become the 9 types of people in 1."* How does this shift your life?
+5. Explain the message: *"A craftsman labors to feed himself; a teacher labors to feed his family (Làm thợ nuôi thân, làm thầy nuôi vợ)"* and break down the standards for a person to be recognized as a true Teacher (Thầy Cô).
+6. Explain: *"Instead of searching for the 9 types of people, strive to become the 9 types of people in 1."* How does this shift your life?
+7. Analyze the cause-and-effect logic of the 4-step ladder: "Enriching – Mastering – Becoming – Transforming/Being." Why must we "Enrich ourselves holistically" before we can hope to "Become the 9 types of people in 1"?
+8. Applying the knowledge of the "9 types of people" to family education: How does a parent becoming the 9 types of people in 1 shorten their children's growth path?
+9. How is "Thần tài" defined within the inner-being frame of reference? How can we activate the energy of Honouring & Gratitude to attract Thần tài into our lives?
+10. Reflect on your own life: In the past, which type of person did you miss or mistreat? With your current knowledge, how will you plan to establish and upgrade your own elite network of minds?
 
 ---
 
@@ -127,6 +132,46 @@ Applying this in family and leadership constructs legacy. Parents who master thi
 - B. Mastering $\rightarrow$ Enriching $\rightarrow$ Transforming $\rightarrow$ Becoming.
 - C. Enriching (7 dimensions of wealth) $\rightarrow$ Mastering (4 areas) $\rightarrow$ Becoming (wise, erudite) $\rightarrow$ Transforming/Being (9 types in 1).
 - D. Enriching material $\rightarrow$ Becoming expert $\rightarrow$ Mastering finance $\rightarrow$ Becoming famous.
+
+> Correct Answer: **C**
+
+**Question 6:** What is the correct sequence of the ladder toward ultimate maturity in human life?
+- A. Transforming/Being - Mastering - Enriching - Becoming.
+- B. Mastering - Enriching - Transforming/Being - Becoming.
+- C. Enriching (7 dimensions of holistic wealth) $\rightarrow$ Mastering (4 areas) $\rightarrow$ Becoming (Wisdom, insight...) $\rightarrow$ Transforming/Being (9 types of people in 1).
+- D. Enriching materially $\rightarrow$ Becoming an expert $\rightarrow$ Mastering finance $\rightarrow$ Becoming famous.
+
+> Correct Answer: **C**
+
+**Question 7:** What principle should learners follow when treating a Teacher (Thầy Cô)?
+- A. Compensate them generously with finances.
+- B. Show respect; listen - believe - follow - spread.
+- C. Continuously question and test the Teacher.
+- D. Take careful notes but no need to act.
+
+> Correct Answer: **B**
+
+**Question 8:** In family education philosophy, why do parents need to strive to become the 9 types of people in 1?
+- A. So their children must always fear and depend on their parents.
+- B. So they can be proud and boast of achievements to society.
+- C. To become a Good Connection, helping shorten their children's growth path without the children needing to struggle searching outside.
+- D. To decide every turning point in their children's lives for them.
+
+> Correct Answer: **C**
+
+**Question 9:** Who is the one who thoroughly understands human, world, and cosmic outlooks, holding the role of "Opening wisdom" for others?
+- A. Thiện tri thức.
+- B. Cao nhân.
+- C. Expert (Chuyên gia).
+- D. Minh sư.
+
+> Correct Answer: **A**
+
+**Question 10:** Instead of spending a lifetime searching for the 9 types of people, what breakthrough solution does the inner-being curriculum offer?
+- A. Join as many clubs as possible to expand your network.
+- B. Post recruitment ads with attractive benefits packages.
+- C. Strive to cultivate yourself to "Become the 9 types of people in 1," so that Good Connections are naturally attracted to you.
+- D. Wait for fate to bring people to you on its own.
 
 > Correct Answer: **C**
 

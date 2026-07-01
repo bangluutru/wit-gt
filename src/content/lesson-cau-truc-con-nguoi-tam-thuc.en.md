@@ -59,6 +59,10 @@ When this principle is applied widely in corporations, organizations, and family
 4. Why does the Teacher establish that the key to managing consciousness does not lie in forced thinking but in accumulating Merit and Virtue?
 5. What is the relationship between keeping a balanced, positive inner state and forming beneficial mental images and source concepts?
 6. When facing a problem where images and concepts are not yet clear, what is the first priority according to the consciousness principle?
+7. According to the philosophy studied, how can thinking "naturally arise" correctly without forcing oneself to strain in thought?
+8. Applying the Operating Principle of Inner Consciousness to the financial aspect: How do we shift from a state of debt to attracting abundance?
+9. Analyze the difference in life experience when the energy vibration frequency is at the Low, High, and Super High levels.
+10. From this topic, what lesson do you draw about controlling your inner electromagnetic state during communication to create harmony within your family?
 
 ---
 

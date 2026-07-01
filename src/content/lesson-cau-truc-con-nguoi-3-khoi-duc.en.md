@@ -105,6 +105,11 @@ The operation of the 3 blocks of merit is not random but follows the law of Caus
 3. Why is Balanced merit compared to a "mountain of gold" that is hard to burn but easy to be clouded? How does "Dogmatic Views" (Chấp kiến) cloud a person's wisdom?
 4. Explain the mechanism: "Honouring - Gratitude dissolves resentment, Tolerance dissolves anger, and Humbleness dissolves pride" in protecting merits.
 5. Analyze the awareness: "Humans are merit-accumulating machines." How does this change your attitude towards someone who once brought you undesirable outcomes?
+6. Reflect on yourself: In your current work, are you accumulating Good merit (making others happy) or Balanced merit (helping others raise their awareness)? Propose a concrete plan to increase both.
+7. From a cosmic perspective, what is the only thing we can carry with us when we leave this world? How does this awareness redirect your outlook on life?
+8. Why does a person who does many good deeds and much charity still struggle in life and suffer declining health? Use the principle of "burning merits" to explain this phenomenon.
+9. Apply the 3 blocks of merit to raising children: How would you set up a family environment to help your children accumulate their own merits from a young age, instead of only spending the merits their parents left behind?
+10. Macro vision: If a business builds its culture around "Protecting and accumulating Good merit - Balanced merit" instead of "Maximizing profit," what will happen to that organization over the next 10-20 years?
 
 ---
 

@@ -114,15 +114,47 @@ Let's examine the 7 Offerings:
 
 > Correct Answer: **C**
 
-**Question 3:** What is "Phòng thí"?
-- A. Donating money to build shelters.
-- B. Offering Tolerance, accommodating and not attaching to others' mistakes.
-- C. Defending oneself against others' schemes.
-- D. Hiding faults for family.
+**Question 3:** What is "Nhan thí" among the 7 Offerings understood as precisely?
+- A. Undergoing cosmetic surgery to have a beautiful face.
+- B. Offering a smile that radiates from inner joy, bringing life force to others.
+- C. Giving others cosmetics or clothes.
+- D. Forcing a smile despite inner suffering.
 
 > Correct Answer: **B**
 
-**Question 4:** What is **strictly forbidden** in Thân thí?
+**Question 4:** What is the peak of "Nhãn thí" (Vision/Eyes Offering)?
+- A. Seeing through others' wicked thoughts.
+- B. Being able to view many things at once.
+- C. Having beautiful eyes that attract others.
+- D. Holding the transformation, holding the image of a person's positive future.
+
+> Correct Answer: **D**
+
+**Question 5:** Which of the following does **NOT** belong to the group of 8 words of light in "Ngôn thí"?
+- A. Joy, Hope.
+- B. Belief, Wisdom.
+- C. Criticism, Fault-finding.
+- D. Affirmation, Praise.
+
+> Correct Answer: **C**
+
+**Question 6:** Which offering plays the most important role in helping people eliminate resentment and accumulate the most powerful merits and virtues?
+- A. Tọa thí.
+- B. Thân thí.
+- C. Tâm thí (Honouring - Gratitude).
+- D. Nhan thí.
+
+> Correct Answer: **C**
+
+**Question 7:** What state of mind does "Phòng thí" use to treat other people?
+- A. Using money to build houses for the homeless.
+- B. Offering Tolerance, accommodating and not attaching to others' mistakes.
+- C. Guarding against being harmed by others.
+- D. Hiding faults for family members.
+
+> Correct Answer: **B**
+
+**Question 8:** In the action principles of "Thân thí" (Kind Action Offering), which of the following is **absolutely forbidden**?
 - A. Benefits others, benefits self.
 - B. Benefits others, does not harm self.
 - C. Benefits others, harms self.
@@ -130,13 +162,21 @@ Let's examine the 7 Offerings:
 
 > Correct Answer: **C**
 
-**Question 5:** What is the correct priority when offering help (Thân thí)?
+**Question 9:** What is the correct order of priority when practicing "Thân thí" to help others?
 - A. Rich $\rightarrow$ Poor $\rightarrow$ Known $\rightarrow$ Stranger.
 - B. Person who NEEDS us $\rightarrow$ Person who is CLOSE $\rightarrow$ Person who APPRECIATES $\rightarrow$ Our BENEFACTOR.
 - C. Our BENEFACTOR $\rightarrow$ Person who NEEDS us $\rightarrow$ Person who is CLOSE $\rightarrow$ Person who APPRECIATES.
 - D. Children $\rightarrow$ Elderly $\rightarrow$ Women $\rightarrow$ Men.
 
 > Correct Answer: **B**
+
+**Question 10:** The action of "training and developing others so they can take on and perform even better in the position you currently hold" belongs to which type of offering?
+- A. Tọa thí (Position Offering).
+- B. Ngôn thí.
+- C. Nhãn thí.
+- D. Phòng thí.
+
+> Correct Answer: **A**
 
 ---
 

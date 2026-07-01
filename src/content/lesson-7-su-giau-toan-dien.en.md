@@ -80,6 +80,12 @@ I used to chase money, defining myself by income and capacity, which led to exha
 2. Why is trying to "solve problems" going against natural law, while "Holistic Wealth" is the root solution?
 3. Explain the Cross-illumination Principle. Why does lighting only one lamp fail to remove darkness?
 4. What is the difference in the sharing mechanism between Material and Non-material elements?
+5. What is "Non-materializing the material"? Give a real-life or business example illustrating how this art multiplies a product's value many times over.
+6. What is "Materializing the non-material"? How can we turn abstract concepts like Happiness and Peace into assets we can possess and transfer?
+7. How do you understand the message: "Do not let society value you by material factors (capacity, physical body)"? What is the solution?
+8. Analyze the importance of "Non-materializing oneself" for the career of a leader or entrepreneur.
+9. Applying the 7 Dimensions of Holistic Wealth to educating the younger generation, which "lamps" would you prioritize equipping your children with before they step into society?
+10. Since learning about the 7 Dimensions of Holistic Wealth, how has your awareness and life direction shifted?
 
 ---
 

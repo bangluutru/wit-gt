@@ -26,7 +26,7 @@ The highlights of the wealth journey are two leverage concepts: **"Non-materiali
 For prosperity to arrive thong dong and sustainably, sages have summarized the **"7-Step Formula for Material Wealth Accumulation"**:
 1. **Non-materializing oneself** (thắp sáng Trí tuệ, Tâm thái, Nhân cách, Phẩm chất). If one is not wealthy, the root cause is lacking these foundations.
 2. **Lifting Physical Health**.
-3. **Elevating the capacity of Appretell - Cooperation - Guidance**.
+3. **Elevating the capacity to Promote - Cooperate - Guide**.
 4. **Optimizing the value-creating tool** (satisfying Long-term, Large-scale, Wholesome criteria, and aligning with Tam Giác Giới).
 5. **Executing the 6 golden words in action** (Simple, Joyful, Trusting, Easy, Regular, Mindful).
 6. **Applying exponential duplication ($a^n$)**.
@@ -52,7 +52,7 @@ Looking at this formula, we find absolute freedom of time and consciousness. Onc
 - **The 7-Step Formula for Material Wealth Accumulation:**
   1. Non-materializing oneself.
   2. Lifting Physical Health.
-  3. Elevating the capacity of Appretell - Cooperation - Guidance.
+  3. Elevating the capacity to Promote - Cooperate - Guide.
   4. Optimizing the value-creating tool (Long - Large - Wholesome, aligning with Tam Giác Giới).
   5. Executing the 6 golden words in action.
   6. Applying exponential duplication ($a^n$).
@@ -103,7 +103,7 @@ Looking at this formula, we find absolute freedom of time and consciousness. Onc
 
 **Question 3:** What is the first and decisive step in the 7-step formula for wealth accumulation?
 - A. Optimizing the value-creating tool.
-- B. Elevating Appretell capacity.
+- B. Elevating Outreach capacity.
 - C. Non-materializing oneself.
 - D. Virtuous conduct governing the world.
 

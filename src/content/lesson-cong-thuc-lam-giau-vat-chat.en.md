@@ -27,7 +27,7 @@ At these two steps, we do not see cash, because **Money is being accumulated in 
 
 **THE 2ND RUNGLINE – CONVERGENCE OF ENERGY (STEPS 3 & 4)**
 When information is clear, energy begins to gather.
-* **Step 3: Elevate Appretell - Cooperation - Guidance capacities:** Money starts shifting into the Energy state. No matter how talented you are, if you do not know how to leverage support from people, you are forever working for yourself. Appretell is the key to attracting thousands of people sharing the same language, agreement, and accompaniment.
+* **Step 3: Elevate Outreach - Cooperation - Guidance capacities:** Money starts shifting into the Energy state. No matter how talented you are, if you do not know how to leverage support from people, you are forever working for yourself. Outreach is the key to attracting thousands of people sharing the same language, agreement, and accompaniment.
 * **Step 4: Anchor in a value-creation tool satisfying Long-lasting - Large-scale - Human-benefiting, and Alignment with the Three Realms:** (Money in the Energy state). We do not jump jobs or chase short-term trends. We choose a tool that brings long-lasting value (Lâu), scale expansion (Lớn), and human-benefiting qualities (Lành). Especially, it must align with the Three Realms, supported by the Government, the Rich, and the People.
 
 **THE 3RD RUNGLINE – MATERIAL DISPLAY & FINANCIAL ANCHORING (STEPS 5 & 6)**
@@ -53,7 +53,7 @@ From this 7-step roadmap, we establish a critical awareness: **Never let the ric
 The Formula for Material Wealth includes 7 core steps:
 1. **Non-materialize ourselves:** (Information state). Enriching Wisdom, Mental State, Personality, and Qualities.
 2. **Physical training:** (Information state). Nurturing a healthy body to sustain grand projects.
-3. **Elevate Appretell - Cooperation - Guidance capacities:** (Energy state). Leveraging support from people.
+3. **Elevate Outreach - Cooperation - Guidance capacities:** (Energy state). Leveraging support from people.
 4. **Anchor in a Long-lasting - Large-scale - Human-benefiting tool, aligning with the Three Realms:** (Energy state).
 5. **Realize the 6 Golden Words in action:** (Material display 1st time). Simplicity, Joy, Trust, Ease, Frequency, Mindfulness.
 6. **Apply the a^n formula (1 - 2 - 20 - 500 - 10,000):** (Investing back in Information & Energy). Replicating teams of experts.
@@ -111,7 +111,7 @@ D. Light, Sound, Material.
 **Question 3:** What are the first two steps in the Formula for Material Wealth?
 A. Finding a tool and realizing the 6 golden words.
 B. Non-materializing ourselves and physical training.
-C. Appretell and Selling.
+C. Outreach and Selling.
 D. Virtue conducts the world and applying the a^n formula.
 *Correct Answer: B*
 
@@ -167,7 +167,8 @@ D. Because law does not allow it.
 ---
 
 ### PART 5: WRITING ASSIGNMENT
-**Topic:** *Money is not just banknotes: Analyzing the cognitive shift when understanding that money exists in 3 states: Information, Energy, and Material.*
+**Topic 1:** *Money is not just banknotes: Analyzing the cognitive shift when understanding that money exists in 3 states: Information, Energy, and Material. How does this awareness help you dissolve financial pressure within your family?*
+**Topic 2:** *Non-materializing ourselves - The foundation of prosperity: Explain the importance of Step 1. Why is enriching Wisdom and Mental State for your spouse and children the shortest path to attracting material wealth?*
 
 ---
 

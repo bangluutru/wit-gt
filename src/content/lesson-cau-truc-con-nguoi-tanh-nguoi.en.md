@@ -124,7 +124,7 @@ Comprehending the 16 natures helps us understand the source of our own and other
 ### 2.3. Deep Insights
 
 - **Insight 1: Accept human nature (Breaking the "desire extinction" paradox):** Many try to kill desire/want to end suffering. The Teacher establishes: "Want and Imagination are the focus of human nature. Humans without want and imagination are no longer human." The key is not to kill it, but to master it. When we anchor wants toward the Positive (generosity, 7 dimensions of holistic wealth), we naturally create merits and achieve peace.
-- **Insight 2: The source of Tolerance (Releasing resentment):** Why do we get angry (Temperament at极Âm - Anger) with family members? Because our Want and Imagination regarding them are blocked. When we realize their character is just the shifting of the 16 natures driven by polar electromagnetism, we stop blaming. We adjust our own wants, activating Tolerance.
+- **Insight 2: The source of Tolerance (Releasing resentment):** Why do we frequently get angry (Temperament at its Yin extreme - Anger) with our children or spouse? Is it really because they are so bad? Because our Want and Imagination regarding them are blocked. When we realize their character is just the shifting of the 16 natures driven by polar electromagnetism, we stop blaming. We adjust our own wants, activating Tolerance.
 - **Insight 3: Releasing Identity Attachment to unlock infinite potential:** The suffering of parents or directors when losing authority comes from Identity Attachment—identifying with a title and living with it. The cognitive shift is: "If we have defined ourselves as somebody, we cannot become anybody else." Releasing the label allows us to enter the state of "being nobody," unlocking infinite potential.
 - **Insight 4: "Emptiness of Nature" – The unchanging anchor before storms:** When insulted, using Emotion to react or Nature to analyze causes huge fluctuations. The secret is using the Mind – knowing oneself is hearing/seeing – to receive. This stops want and imagination, returning the electromagnetism to balance and activating primal Inner Peace.
 
@@ -180,6 +180,7 @@ Comprehending the 16 natures helps us understand the source of our own and other
 1. **(Want & Finance):** Society condemns "Want" as the source of suffering, especially in chasing Wealth. However, the Human Structure reference system asserts: "Want and Imagination are the focus of human nature; humans without them are no longer human." How do you reconcile these views? How does proactively using Want (instead of killing it) help you build wealth while maintaining inner peace?
 2. **(Relationships & Tolerance):** Some argue: "In marriage or child rearing, if we always drop wants to avoid anger and use Emptiness of Nature or Tolerance, our loved ones will take advantage and continue to do wrong." Is this view correct under polar electromagnetic fluctuations? How does anchoring your own wants change relationships without using anger or stubbornness to force others?
 3. **(Health & Career):** Reflect on a health or career goal you worked hard on (Expression) but failed or quit. Did the failure come from a lack of Cognition (skills) or because your Wants and Imaginations regarding Wealth, Form, Fame, Eating, and Sleep were misaligned or negative? How will you adjust to shift from "forced effort" to "simple action"?
+4. **(Health & Reflecting on the "Motive" for Training):** Many people spend great effort and time on physical training and dieting, yet still fall into fatigue, pressure, or easily quit halfway. Under the 16 Human Natures reference system, could this failure come from your Want and Imagination regarding Form (physical appearance), Eating, and Sleep contradicting each other, or fluctuating at the Negative extreme (fear of illness, inferiority about appearance)? Look back at one of your own health goals: are you training out of a personal "motive" (wanting to prove yourself, fearing others' judgment), or out of a positive "motivation" (staying healthy in order to contribute, take on responsibility, and build holistic wealth)? Using the key of "Anchoring want and imagination," how will you reset your Reception (absorbing knowledge) and Expression (training action) so that your health journey becomes simple, joyful, trusting, and light?
 
 ---
 
@@ -269,10 +270,11 @@ Comprehending the 16 natures helps us understand the source of our own and other
 
 ## PART 5: WRITING ASSIGNMENT
 
-**Choose one of the following topics to write an essay (1,000 - 3,000 words):**
-- "Releasing Identity Attachment to unlock infinite potential: The art of 'being nobody' to master destiny."
-- "Reconciling Want and Peace: Proactively directing Want to construct a prosperous life."
-- "The focus of human nature: How Want and Imagination direct our emotions and actions."
+**TOPIC:** "Mastering the 16 Human Natures: The art of 'Anchoring Want and Imagination' to rise above Identity Attachment and construct a life of Six-Fold Great Fortune (Lục lộc đại thuận)."
+
+**TOPIC:** "Releasing 'Identity Attachment' and Mastering Temperament: The journey from seeking to change others to inner freedom and relationship harmony."
+
+**TOPIC:** "Shifting the Amplitude of Want: The art of erasing the 'Personal Motive' and constructing a 'Motivation for Survival' to attract resources and build material wealth."
 
 ---
 
