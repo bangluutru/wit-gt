@@ -5,6 +5,10 @@
 // ============================================================
 
 import type { Chapter, Lesson, DictionaryTerm } from './types';
+import lessonCongDongChuyenGiaVi from '../content/lesson-cong-thuc-phat-trien-cong-dong-chuyen-gia.vi.md?raw';
+import lessonCongDongChuyenGiaEn from '../content/lesson-cong-thuc-phat-trien-cong-dong-chuyen-gia.en.md?raw';
+import lessonLuanHoiVi from '../content/lesson-quy-luat-luan-hoi.vi.md?raw';
+import lessonLuanHoiEn from '../content/lesson-quy-luat-luan-hoi.en.md?raw';
 import lessonNhanQuaVi from '../content/lesson-nhan-thuc-ve-nhan-qua.vi.md?raw';
 import lessonNhanQuaEn from '../content/lesson-nhan-thuc-ve-nhan-qua.en.md?raw';
 import lessonNLASVi from '../content/lesson-nguyen-ly-anh-sang.vi.md?raw';
@@ -816,9 +820,9 @@ export const SEED_LESSONS: Lesson[] = [
     titleEn: 'Formula for Replicating the Expert Community 1-2-20-500-10,000',
     titleJp: 'Công thức phát triển Cộng đồng Chuyên gia 1-2-20-500-10.000',
     summaryVi: '', summaryEn: '', summaryJp: '',
-    contentVi: 'Đây là nội dung minh hoạ cho học phần “Công thức phát triển Cộng đồng Chuyên gia 1-2-20-500-10.000”. Nội dung chi tiết của học phần này sẽ được Team biên soạn WiT cập nhật.',
-    contentEn: 'This is illustrative content for the lesson “Formula for Replicating the Expert Community 1-2-20-500-10,000”. The full content of this lesson will be updated by the WiT editorial team.',
-    contentJp: 'これはレッスン「Công thức phát triển Cộng đồng Chuyên gia 1-2-20-500-10.000」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
+    contentVi: lessonCongDongChuyenGiaVi,
+    contentEn: lessonCongDongChuyenGiaEn,
+    contentJp: 'このレッスンの全内容は現在ベトナム語でご利用いただけます。日本語翻訳はWiT編集チームにより更新されます。',
     status: 'published',
     createdAt: new Date(), updatedAt: new Date(),
   },
@@ -1068,9 +1072,9 @@ export const SEED_LESSONS: Lesson[] = [
     titleEn: 'Law of Reincarnation',
     titleJp: 'Quy luật Luân hồi',
     summaryVi: '', summaryEn: '', summaryJp: '',
-    contentVi: 'Đây là nội dung minh hoạ cho học phần “Quy luật Luân hồi”. Nội dung chi tiết của học phần này sẽ được Team biên soạn WiT cập nhật.',
-    contentEn: 'This is illustrative content for the lesson “Law of Reincarnation”. The full content of this lesson will be updated by the WiT editorial team.',
-    contentJp: 'これはレッスン「Quy luật Luân hồi」の説明用コンテンツです。このレッスンの詳細な内容はWiT編集チームによって更新されます。',
+    contentVi: lessonLuanHoiVi,
+    contentEn: lessonLuanHoiEn,
+    contentJp: 'このレッスンの全内容は現在ベトナム語でご利用いただけます。日本語翻訳はWiT編集チームにより更新されます。',
     status: 'published',
     createdAt: new Date(), updatedAt: new Date(),
   },
