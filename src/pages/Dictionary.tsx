@@ -88,7 +88,7 @@ export default function Dictionary() {
       </div>
 
       {/* View mode tabs */}
-      <ViewModeTabs value={viewMode} onChange={setViewMode} />
+      <ViewModeTabs value={viewMode} onChange={setViewMode} interfaceLang={interfaceLang} />
 
       {viewMode === 'multilingual' ? (
         <MultilingualLookup interfaceLang={interfaceLang} defaultDefLang={defaultDefLang} />

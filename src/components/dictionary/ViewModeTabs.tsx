@@ -1,23 +1,31 @@
 import { Book, FileText, Image, Layers, Globe } from 'lucide-react';
-import type { DictionaryViewMode } from '../../lib/types';
+import type { DictionaryViewMode, Language } from '../../lib/types';
 
 interface ViewModeTabsProps {
   value: DictionaryViewMode;
   onChange: (mode: DictionaryViewMode) => void;
+  interfaceLang: Language;
 }
 
-const TABS: { mode: DictionaryViewMode; icon: typeof Book; label: string }[] = [
-  { mode: 'dictionary', icon: Book, label: 'Từ điển' },
-  { mode: 'definition', icon: FileText, label: 'Định nghĩa' },
-  { mode: 'visual', icon: Image, label: 'Đồ hình' },
-  { mode: 'flashcard', icon: Layers, label: 'Flashcard' },
-  { mode: 'multilingual', icon: Globe, label: 'Đa ngôn ngữ' },
+const TABS: { mode: DictionaryViewMode; icon: typeof Book; vi: string; en: string; jp: string }[] = [
+  { mode: 'dictionary', icon: Book, vi: 'Từ điển', en: 'Dictionary', jp: '辞書' },
+  { mode: 'definition', icon: FileText, vi: 'Định nghĩa', en: 'Definitions', jp: '定義' },
+  { mode: 'visual', icon: Image, vi: 'Đồ hình', en: 'Diagrams', jp: '図表' },
+  { mode: 'flashcard', icon: Layers, vi: 'Flashcard', en: 'Flashcard', jp: 'Flashcard' },
+  { mode: 'multilingual', icon: Globe, vi: 'Đa ngôn ngữ', en: 'Multilingual', jp: '多言語' },
 ];
 
-export default function ViewModeTabs({ value, onChange }: ViewModeTabsProps) {
+export default function ViewModeTabs({ value, onChange, interfaceLang }: ViewModeTabsProps) {
+  const getLabel = (tab: typeof TABS[number]) => {
+    if (interfaceLang === 'en') return tab.en;
+    if (interfaceLang === 'jp') return tab.jp;
+    return tab.vi;
+  };
+
   return (
     <div className="flex border-b border-wit-line">
-      {TABS.map(({ mode, icon: Icon, label }) => {
+      {TABS.map((tab) => {
+        const { mode, icon: Icon } = tab;
         const isActive = value === mode;
         return (
           <button
@@ -36,7 +44,7 @@ export default function ViewModeTabs({ value, onChange }: ViewModeTabsProps) {
             `}
           >
             <Icon className="h-4 w-4" />
-            <span className="hidden sm:inline">{label}</span>
+            <span className="hidden sm:inline">{getLabel(tab)}</span>
           </button>
         );
       })}
