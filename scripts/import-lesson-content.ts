@@ -1,9 +1,11 @@
 /**
  * Update lesson translations in Firestore (targeted, non-destructive).
  *
- * Reads the bundled English markdown files and writes ONLY `titleEn` +
- * `contentEn` onto the matching lesson docs (looked up by `lessonNo`).
- * No other fields are touched, so Vietnamese content is never overwritten.
+ * Reads the bundled English markdown files and writes `titleEn` + `contentEn`
+ * onto the matching lesson docs (looked up by `lessonNo`). If an entry also
+ * specifies `viFile`/`titleVi` (used for lessons whose Vietnamese source was
+ * only a placeholder in Firestore), those fields are updated too. No other
+ * fields are touched.
  *
  * To add more lessons later, append to LESSON_UPDATES below.
  *
@@ -26,7 +28,7 @@ const CONTENT_DIR = path.resolve('src', 'content');
 
 // ── What to update ───────────────────────────────────────────
 // Only the listed language fields are written; everything else is left intact.
-const LESSON_UPDATES: Array<{ lessonNo: number; titleEn: string; enFile: string }> = [
+const LESSON_UPDATES: Array<{ lessonNo: number; titleEn: string; enFile: string; titleVi?: string; viFile?: string }> = [
   {
     lessonNo: 1,
     titleEn: 'Awareness of Cause and Effect',
@@ -319,14 +321,11 @@ const LESSON_UPDATES: Array<{ lessonNo: number; titleEn: string; enFile: string 
   },
   {
     lessonNo: 61,
-    titleEn: 'Key (Recognition - Gratitude & Appretell)',
+    titleEn: 'Key (Recognition - Gratitude & Outreach)',
     enFile: 'lesson-chia-khoa-ghi-nhan-biet-on-quang-ba.en.md',
   },
-  {
-    lessonNo: 62,
-    titleEn: 'Time Optimization in Human Life',
-    enFile: 'lesson-toi-uu-hoa-thoi-gian-trong-nhan-sinh.en.md',
-  },
+  // lessonNo 62 intentionally omitted: its source .md files are empty (no VI or
+  // EN content has been authored yet) — do not push a blank contentEn over Firestore.
   {
     lessonNo: 63,
     titleEn: 'The True Desires of a Human Being',
@@ -364,12 +363,12 @@ const LESSON_UPDATES: Array<{ lessonNo: number; titleEn: string; enFile: string 
   },
   {
     lessonNo: 70,
-    titleEn: 'Three Treasured Methods: Appretell - Coordination - Lead',
+    titleEn: 'Three Treasured Methods: Outreach - Coordination - Lead',
     enFile: 'lesson-tam-dai-phap-bao-quang-ba-phoi-hop-dan-dat.en.md',
   },
   {
     lessonNo: 71,
-    titleEn: 'Code of the Appreteller',
+    titleEn: 'Code of the Outreach Expert',
     enFile: 'lesson-mat-ma-nha-quang-ba.en.md',
   },
   {
@@ -396,6 +395,20 @@ const LESSON_UPDATES: Array<{ lessonNo: number; titleEn: string; enFile: string 
     lessonNo: 76,
     titleEn: 'Career of Philosophical Education for Human Life',
     enFile: 'lesson-su-nghiep-giao-duc-triet-ly-cho-nhan-sinh.en.md',
+  },
+  {
+    lessonNo: 37,
+    titleEn: 'Formula for Replicating the Expert Community 1-2-20-500-10,000',
+    enFile: 'lesson-cong-thuc-phat-trien-cong-dong-chuyen-gia.en.md',
+    titleVi: 'Công thức phát triển Cộng đồng Chuyên gia 1-2-20-500-10.000',
+    viFile: 'lesson-cong-thuc-phat-trien-cong-dong-chuyen-gia.vi.md',
+  },
+  {
+    lessonNo: 55,
+    titleEn: 'Law of Reincarnation',
+    enFile: 'lesson-quy-luat-luan-hoi.en.md',
+    titleVi: 'Quy luật Luân hồi',
+    viFile: 'lesson-quy-luat-luan-hoi.vi.md',
   },
 ];
 
@@ -433,6 +446,21 @@ async function main() {
     }
     const contentEn = fs.readFileSync(mdPath, 'utf8');
 
+    const patch: Record<string, unknown> = {
+      titleEn: item.titleEn,
+      contentEn,
+      updatedAt: FieldValue.serverTimestamp(),
+    };
+    if (item.viFile) {
+      const viPath = path.join(CONTENT_DIR, item.viFile);
+      if (!fs.existsSync(viPath)) {
+        console.error(`❌ Missing content file: ${viPath}`);
+        continue;
+      }
+      patch.contentVi = fs.readFileSync(viPath, 'utf8');
+      if (item.titleVi) patch.titleVi = item.titleVi;
+    }
+
     const snap = await db
       .collection(COLLECTION)
       .where('lessonNo', '==', item.lessonNo)
@@ -444,13 +472,9 @@ async function main() {
     }
 
     for (const docSnap of snap.docs) {
-      await docSnap.ref.update({
-        titleEn: item.titleEn,
-        contentEn,
-        updatedAt: FieldValue.serverTimestamp(),
-      });
+      await docSnap.ref.update(patch);
       console.log(
-        `✅ lessonNo=${item.lessonNo} [${docSnap.id}] updated · titleEn="${item.titleEn}" · contentEn=${contentEn.length} chars`,
+        `✅ lessonNo=${item.lessonNo} [${docSnap.id}] updated · titleEn="${item.titleEn}" · contentEn=${contentEn.length} chars${item.viFile ? ' · +vi' : ''}`,
       );
       updated++;
     }

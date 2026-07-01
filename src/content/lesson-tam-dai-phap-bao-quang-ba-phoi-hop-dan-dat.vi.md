@@ -30,7 +30,7 @@
 #### 2.2. Trọng điểm tri thức (Key Knowledge)
 #### Đứng dưới lăng kính của Triết lý Giáo dục Tận gốc, Quảng bá - Phối hợp - Dẫn dắt không phải là những kỹ năng giao tiếp hay quản trị thông thường. Đây là hệ thống luận lý khoa học, là "Tam đại pháp bảo" giúp khơi thông mọi nguồn lực và biến ý tưởng thành hiện thực vật chất. Hệ thống này được cấu trúc qua các luận điểm then chốt:
 #### Bản chất của Tam Đại Pháp Bảo: Đây là bộ 3 công cụ tối thượng (The Three Treasure Methods of Life) và cũng là chìa khóa quan trọng nhất để con người sống thuận với vai trò trong nhân sinh, thuận với quy luật cộng sinh. Pháp bảo có quyền năng thỏa mãn trí tưởng tượng, giúp phóng đại năng lực cá nhân để thực hiện những điều vượt xa giới hạn thực tại.
-#### Thuật Quảng bá (Appretell) - Khởi điểm của mọi nguồn lực:
+#### Thuật Quảng bá (Outreach) - Khởi điểm của mọi nguồn lực:
 #### Định nghĩa cốt lõi: Là nhắc đi nhắc lại bức tranh lợi ích (của sự vật, sự việc, con người) với nguồn năng lượng Trân trọng - Biết ơn.
 #### Cơ chế vận hành: Con người thường từ chối đón nhận vì họ nghĩ mình không cần. Thuật quảng bá vận hành bằng cách làm rõ hình, rõ khái niệm nguồn có lợi, từ đó kích phát nhu cầu ẩn thành khát khao hiện hữu.
 #### Đối tượng áp dụng: Có thể áp dụng vô hạn để nâng tầm giá trị cho: Con người, tri thức, sản phẩm, dịch vụ, môi trường, ước mơ, dự án, doanh nghiệp....
