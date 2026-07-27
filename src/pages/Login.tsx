@@ -6,9 +6,11 @@ import { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { LogIn, Mail, Lock, Eye, EyeOff } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
+import { GoogleSignInButton } from '../components/auth/GoogleSignInButton';
+import { authErrorCode, authErrorMessage } from '../lib/authErrors';
 
 export default function Login() {
-  const { signIn, user, loading } = useAuth();
+  const { signIn, signInWithGoogle, user, loading } = useAuth();
   const navigate = useNavigate();
 
   const [email, setEmail] = useState('');
@@ -16,6 +18,7 @@ export default function Login() {
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState('');
   const [submitting, setSubmitting] = useState(false);
+  const [googleSubmitting, setGoogleSubmitting] = useState(false);
 
   // Redirect if already logged in
   useEffect(() => {
@@ -33,21 +36,27 @@ export default function Login() {
       await signIn(email, password);
       navigate('/', { replace: true });
     } catch (err: unknown) {
-      const message =
-        err instanceof Error ? err.message : 'Đăng nhập thất bại. Vui lòng thử lại.';
-      if (
-        message.includes('user-not-found') ||
-        message.includes('wrong-password') ||
-        message.includes('invalid-credential')
-      ) {
-        setError('Email hoặc mật khẩu không đúng.');
-      } else if (message.includes('too-many-requests')) {
-        setError('Quá nhiều lần thử. Vui lòng đợi một lúc.');
-      } else {
-        setError(message);
-      }
+      setError(authErrorMessage(err, 'Đăng nhập thất bại. Vui lòng thử lại.'));
     } finally {
       setSubmitting(false);
+    }
+  };
+
+  const handleGoogleSignIn = async () => {
+    setError('');
+    setGoogleSubmitting(true);
+
+    try {
+      await signInWithGoogle();
+      navigate('/', { replace: true });
+    } catch (err: unknown) {
+      // Người dùng chủ động đóng popup thì không cần báo lỗi đỏ.
+      const code = authErrorCode(err);
+      if (code !== 'auth/popup-closed-by-user' && code !== 'auth/cancelled-popup-request') {
+        setError(authErrorMessage(err, 'Đăng nhập Google thất bại. Vui lòng thử lại.'));
+      }
+    } finally {
+      setGoogleSubmitting(false);
     }
   };
 
@@ -103,9 +112,17 @@ export default function Login() {
 
             {/* Password Field */}
             <div className="space-y-1.5">
-              <label htmlFor="login-password" className="block text-sm font-semibold text-wit-text">
-                Mật khẩu
-              </label>
+              <div className="flex items-baseline justify-between gap-3">
+                <label htmlFor="login-password" className="block text-sm font-semibold text-wit-text">
+                  Mật khẩu
+                </label>
+                <Link
+                  to="/forgot-password"
+                  className="text-sm text-wit-red font-medium hover:underline"
+                >
+                  Quên mật khẩu?
+                </Link>
+              </div>
               <div className="relative">
                 <Lock className="absolute left-4 top-1/2 -translate-y-1/2 h-[18px] w-[18px] text-wit-text-tertiary" />
                 <input
@@ -131,7 +148,7 @@ export default function Login() {
             {/* Submit Button */}
             <button
               type="submit"
-              disabled={submitting}
+              disabled={submitting || googleSubmitting}
               className="w-full py-3 rounded-button bg-wit-red text-white font-semibold hover:bg-wit-red-dark transition-colors disabled:opacity-50 cursor-pointer flex items-center justify-center gap-2 text-[15px] shadow-card mt-2"
             >
               {submitting ? (
@@ -142,6 +159,22 @@ export default function Login() {
               <span>{submitting ? 'Đang đăng nhập...' : 'Đăng nhập'}</span>
             </button>
           </form>
+
+          {/* Divider */}
+          <div className="flex items-center gap-3 my-5">
+            <span className="h-px flex-1 bg-wit-line" />
+            <span className="text-xs font-medium text-wit-text-tertiary uppercase tracking-wide">
+              hoặc
+            </span>
+            <span className="h-px flex-1 bg-wit-line" />
+          </div>
+
+          {/* Google Sign-In */}
+          <GoogleSignInButton
+            onClick={handleGoogleSignIn}
+            loading={googleSubmitting}
+            disabled={submitting}
+          />
         </div>
 
         {/* Register Link */}

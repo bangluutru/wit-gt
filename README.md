@@ -6,7 +6,8 @@ Website giáo trình đa ngôn ngữ WiT: 76 học phần, 9 chương, từ đi�
 
 ## ✨ Tính năng
 
-- 🔐 Đăng ký/đăng nhập email
+- 🔐 Đăng ký/đăng nhập email + đăng nhập bằng Google
+- 🔑 Quên mật khẩu: gửi email đặt lại qua Firebase
 - 📚 76 học phần chia 9 chương, mở khoá tuần tự
 - 🌏 Nội dung đa ngôn ngữ: Việt / Anh / Nhật
 - 📖 Lesson Reader với song ngữ, highlight thuật ngữ
@@ -40,9 +41,12 @@ npm install
 ### 2. Firebase Setup
 
 1. Tạo project mới trên [Firebase Console](https://console.firebase.google.com/)
-2. Bật **Authentication** → Email/Password
-3. Tạo **Firestore Database** (chế độ test hoặc production)
-4. Vào **Project Settings** → lấy Firebase config
+2. Bật **Authentication** → Sign-in method → **Email/Password** và **Google**
+3. Vào **Authentication → Settings → Authorized domains**, thêm domain production
+   (ví dụ `wit-gt.pages.dev` và domain tuỳ chỉnh). Thiếu bước này, đăng nhập Google
+   sẽ báo lỗi `auth/unauthorized-domain` trên bản deploy — `localhost` đã có sẵn.
+4. Tạo **Firestore Database** (chế độ test hoặc production)
+5. Vào **Project Settings** → lấy Firebase config
 
 ### 3. Environment Variables
 

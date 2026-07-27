@@ -11,6 +11,7 @@ import Dashboard from './pages/Dashboard';
 import Wit365 from './pages/Wit365';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import ForgotPassword from './pages/ForgotPassword';
 import Roadmap from './pages/Roadmap';
 import Curriculum from './pages/Curriculum';
 import LessonReader from './pages/LessonReader';
@@ -32,6 +33,7 @@ export default function App() {
             {/* Public routes */}
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
+            <Route path="/forgot-password" element={<ForgotPassword />} />
 
             {/* Protected routes */}
             <Route element={<ProtectedRoute />}>

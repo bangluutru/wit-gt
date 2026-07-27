@@ -6,9 +6,11 @@ import { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { UserPlus, Mail, Lock, User, Eye, EyeOff } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
+import { GoogleSignInButton } from '../components/auth/GoogleSignInButton';
+import { authErrorCode, authErrorMessage } from '../lib/authErrors';
 
 export default function Register() {
-  const { signUp, user, loading } = useAuth();
+  const { signUp, signInWithGoogle, user, loading } = useAuth();
   const navigate = useNavigate();
 
   const [displayName, setDisplayName] = useState('');
@@ -17,6 +19,7 @@ export default function Register() {
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState('');
   const [submitting, setSubmitting] = useState(false);
+  const [googleSubmitting, setGoogleSubmitting] = useState(false);
 
   // Redirect if already logged in
   useEffect(() => {
@@ -40,19 +43,26 @@ export default function Register() {
       await signUp(email, password, displayName);
       navigate('/', { replace: true });
     } catch (err: unknown) {
-      const message =
-        err instanceof Error ? err.message : 'Đăng ký thất bại. Vui lòng thử lại.';
-      if (message.includes('email-already-in-use')) {
-        setError('Email này đã được sử dụng.');
-      } else if (message.includes('weak-password')) {
-        setError('Mật khẩu quá yếu. Hãy dùng ít nhất 6 ký tự.');
-      } else if (message.includes('invalid-email')) {
-        setError('Email không hợp lệ.');
-      } else {
-        setError(message);
-      }
+      setError(authErrorMessage(err, 'Đăng ký thất bại. Vui lòng thử lại.'));
     } finally {
       setSubmitting(false);
+    }
+  };
+
+  const handleGoogleSignIn = async () => {
+    setError('');
+    setGoogleSubmitting(true);
+
+    try {
+      await signInWithGoogle();
+      navigate('/', { replace: true });
+    } catch (err: unknown) {
+      const code = authErrorCode(err);
+      if (code !== 'auth/popup-closed-by-user' && code !== 'auth/cancelled-popup-request') {
+        setError(authErrorMessage(err, 'Đăng ký bằng Google thất bại. Vui lòng thử lại.'));
+      }
+    } finally {
+      setGoogleSubmitting(false);
     }
   };
 
@@ -156,7 +166,7 @@ export default function Register() {
             {/* Submit Button */}
             <button
               type="submit"
-              disabled={submitting}
+              disabled={submitting || googleSubmitting}
               className="w-full py-3 rounded-button bg-wit-red text-white font-semibold hover:bg-wit-red-dark transition-colors disabled:opacity-50 cursor-pointer flex items-center justify-center gap-2 text-[15px] shadow-card mt-2"
             >
               {submitting ? (
@@ -167,6 +177,23 @@ export default function Register() {
               <span>{submitting ? 'Đang tạo...' : 'Tạo tài khoản'}</span>
             </button>
           </form>
+
+          {/* Divider */}
+          <div className="flex items-center gap-3 my-5">
+            <span className="h-px flex-1 bg-wit-line" />
+            <span className="text-xs font-medium text-wit-text-tertiary uppercase tracking-wide">
+              hoặc
+            </span>
+            <span className="h-px flex-1 bg-wit-line" />
+          </div>
+
+          {/* Google Sign-Up */}
+          <GoogleSignInButton
+            onClick={handleGoogleSignIn}
+            loading={googleSubmitting}
+            disabled={submitting}
+            label="Tiếp tục với Google"
+          />
         </div>
 
         {/* Login Link */}

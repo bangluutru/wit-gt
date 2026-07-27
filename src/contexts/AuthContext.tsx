@@ -1,16 +1,20 @@
-import { createContext, useContext, useEffect, useState, type ReactNode } from 'react';
+import { createContext, useContext, useEffect, useRef, useState, type ReactNode } from 'react';
 import {
   onAuthStateChanged,
   signInWithEmailAndPassword,
   createUserWithEmailAndPassword,
+  signInWithPopup,
+  signInWithRedirect,
+  sendPasswordResetEmail,
   signOut as firebaseSignOut,
   updateProfile,
   type User,
 } from 'firebase/auth';
 import { doc, getDoc, setDoc, serverTimestamp, updateDoc } from 'firebase/firestore';
-import { auth, db } from '../lib/firebase';
+import { auth, db, googleProvider } from '../lib/firebase';
 import type { UserProfile } from '../lib/types';
 import { isAdminEmail } from '../lib/admin';
+import { authErrorCode } from '../lib/authErrors';
 
 interface AuthContextType {
   user: User | null;
@@ -18,6 +22,8 @@ interface AuthContextType {
   loading: boolean;
   signIn: (email: string, password: string) => Promise<void>;
   signUp: (email: string, password: string, displayName: string) => Promise<void>;
+  signInWithGoogle: () => Promise<void>;
+  resetPassword: (email: string) => Promise<void>;
   signOut: () => Promise<void>;
   refreshProfile: () => Promise<void>;
 }
@@ -28,6 +34,10 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
   const [profile, setProfile] = useState<UserProfile | null>(null);
   const [loading, setLoading] = useState(true);
+
+  // Trong lúc signUp/signInWithGoogle tự tạo profile, cờ này chặn listener
+  // onAuthStateChanged tạo trùng một profile với tên hiển thị mặc định.
+  const creatingProfile = useRef(false);
 
   const fetchProfile = async (uid: string): Promise<UserProfile | null> => {
     const snap = await getDoc(doc(db, 'users', uid));
@@ -68,12 +78,36 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     return { id: uid, ...newProfile };
   };
 
+  /**
+   * Lấy profile Firestore của user, tự tạo nếu chưa có.
+   * Cần cho đăng nhập Google (lần đầu chưa có document `users/{uid}`) và cũng
+   * tự vá cho tài khoản cũ bị thiếu profile.
+   */
+  const ensureProfile = async (firebaseUser: User): Promise<UserProfile> => {
+    const existing = await fetchProfile(firebaseUser.uid);
+    if (existing) return existing;
+
+    const email = firebaseUser.email ?? '';
+    const displayName =
+      firebaseUser.displayName?.trim() || email.split('@')[0] || 'Học viên WiT';
+    return createProfile(firebaseUser.uid, email, displayName);
+  };
+
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (firebaseUser) => {
       setUser(firebaseUser);
       if (firebaseUser) {
-        const p = await fetchProfile(firebaseUser.uid);
-        setProfile(p);
+        try {
+          // Khi signUp/signInWithGoogle đang tự tạo profile thì để hàm đó lo,
+          // tránh ghi đè tên hiển thị người dùng vừa nhập.
+          const p = creatingProfile.current
+            ? await fetchProfile(firebaseUser.uid)
+            : await ensureProfile(firebaseUser);
+          setProfile(p);
+        } catch (err) {
+          console.error('Failed to load user profile:', err);
+          setProfile(null);
+        }
       } else {
         setProfile(null);
       }
@@ -89,10 +123,43 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   };
 
   const signUp = async (email: string, password: string, displayName: string) => {
-    const cred = await createUserWithEmailAndPassword(auth, email, password);
-    await updateProfile(cred.user, { displayName });
-    const p = await createProfile(cred.user.uid, email, displayName);
-    setProfile(p);
+    creatingProfile.current = true;
+    try {
+      const cred = await createUserWithEmailAndPassword(auth, email, password);
+      await updateProfile(cred.user, { displayName });
+      const p = await createProfile(cred.user.uid, email, displayName);
+      setProfile(p);
+    } finally {
+      creatingProfile.current = false;
+    }
+  };
+
+  const signInWithGoogle = async () => {
+    creatingProfile.current = true;
+    try {
+      const cred = await signInWithPopup(auth, googleProvider);
+      const p = await ensureProfile(cred.user);
+      setProfile(p);
+    } catch (err) {
+      const code = authErrorCode(err);
+      // Một số trình duyệt (nhất là webview trên mobile) chặn popup —
+      // chuyển sang luồng redirect; profile sẽ được tạo bởi onAuthStateChanged.
+      if (
+        code === 'auth/popup-blocked' ||
+        code === 'auth/operation-not-supported-in-this-environment'
+      ) {
+        creatingProfile.current = false;
+        await signInWithRedirect(auth, googleProvider);
+        return;
+      }
+      throw err;
+    } finally {
+      creatingProfile.current = false;
+    }
+  };
+
+  const resetPassword = async (email: string) => {
+    await sendPasswordResetEmail(auth, email);
   };
 
   const signOutUser = async () => {
@@ -109,7 +176,17 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   return (
     <AuthContext.Provider
-      value={{ user, profile, loading, signIn, signUp, signOut: signOutUser, refreshProfile }}
+      value={{
+        user,
+        profile,
+        loading,
+        signIn,
+        signUp,
+        signInWithGoogle,
+        resetPassword,
+        signOut: signOutUser,
+        refreshProfile,
+      }}
     >
       {children}
     </AuthContext.Provider>
